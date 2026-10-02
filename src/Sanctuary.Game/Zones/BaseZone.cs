@@ -707,6 +707,8 @@ public abstract class BaseZone : IZone, IDisposable
             SubTextNameId = definition.SubTextNameId,
             Name = definition.Name,
             ModelId = definition.ModelId,
+            TerrainObjectId = definition.TerrainObjectId,
+            ReplaceTerrainObject = definition.ReplaceTerrainObject,
             TextureAlias = definition.TextureAlias,
             AutoSelectSingleInteraction = definition.AutoSelectSingleInteraction,
             InteractRange = definition.InteractRange,

@@ -13,6 +13,8 @@ public class NpcDefinition
     public string? Name { get; set; }
 
     public int ModelId { get; set; }
+    public int TerrainObjectId { get; set; }
+    public bool ReplaceTerrainObject { get; set; }
     public string ModelFileName { get; set; } = null!;
 
     public string? TextureAlias { get; set; }

@@ -47,6 +47,7 @@ public class Npc : IScriptableNpc, IEntity
 
     public int ModelId { get; set; }
     public int TerrainObjectId { get; set; }
+    public bool ReplaceTerrainObject { get; set; }
 
     public string? TextureAlias { get; set; }
     public string? TintAlias { get; set; }
@@ -329,7 +330,7 @@ public class Npc : IScriptableNpc, IEntity
             // playerUpdatePacketAddNpc.Hair = TODO
             // playerUpdatePacketAddNpc.ModelCustomization = TODO
 
-            ReplaceTerrainObject = default,
+            ReplaceTerrainObject = ReplaceTerrainObject,
 
             Unknown63 = default,
             Unknown64 = 3050,
