@@ -1,6 +1,6 @@
-using System;
-using System.Numerics;
-using System.Text.Json.Serialization;
+using System.Collections.Generic;
+
+using Sanctuary.Packet.Common;
 
 namespace Sanctuary.Game.Resources.Definitions;
 
@@ -15,5 +15,7 @@ public class NpcDefinition
     public string ModelFileName { get; set; } = null!;
 
     public string? TextureAlias { get; set; }
+    public NotificationInfo? Notification { get; set; }
+    public List<NotificationInfo> Notifications { get; set; } = [];
     public string[]? Scripts { get; set; }
 }

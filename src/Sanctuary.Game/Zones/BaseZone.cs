@@ -711,6 +711,12 @@ public abstract class BaseZone : IZone, IDisposable
             Visible = true
         };
 
+        if (definition.Notification is not null)
+            npc.Notification = Sanctuary.Game.Helpers.InteractionMenuHelper.GetNotification(npc.Guid, definition.Notification);
+
+        foreach (var notification in definition.Notifications)
+            npc.Notifications.Add(Sanctuary.Game.Helpers.InteractionMenuHelper.GetNotification(npc.Guid, notification));
+
         if (!TryRegisterEntity(_npcs, npc))
         {
             npc = null;
