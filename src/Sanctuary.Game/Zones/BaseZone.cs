@@ -16,6 +16,7 @@ using Sanctuary.Core.Collections;
 using Sanctuary.Core.Extensions;
 using Sanctuary.Core.IO;
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Resources.Definitions.Zones;
 using Sanctuary.Packet;
@@ -957,7 +958,7 @@ public abstract class BaseZone : IZone, IDisposable
             if (!_npcs.ContainsKey(node.Guid))
                 return;
 
-            node.DisposeAfterCollection();
+            EntityHelper.RemovePlayerGracefully(node, animate: true);
 
             if (!_resourceManager.CollectionNodePools.TryGetValue(node.PoolDefinition.Key, out var poolDefinition) ||
                 poolDefinition.ZoneDefinitionId != DefinitionId)
