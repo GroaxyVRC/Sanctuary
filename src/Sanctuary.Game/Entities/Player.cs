@@ -603,6 +603,9 @@ public sealed class Player : ClientPcData, IEntity
     public PlayerUpdatePacketSlotCompositeEffectOverride GetWeaponFlairOverridePacket() =>
         GetSlotCompositeEffectOverridePacket(WeaponSlot, GetEquippedCompositeEffectId(FlairShardSlot));
 
+    public void ClearWeaponFlairOverride() =>
+        SendTunneledToVisible(GetSlotCompositeEffectOverridePacket(WeaponSlot, 0), true);
+
     public void RefreshWeaponFlair(int profileId, int changedSlot)
     {
         if (profileId != ActiveProfileId || (changedSlot != WeaponSlot && changedSlot != FlairShardSlot))
