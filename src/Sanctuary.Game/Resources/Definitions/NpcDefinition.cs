@@ -15,6 +15,7 @@ public class NpcDefinition
     public string ModelFileName { get; set; } = null!;
 
     public string? TextureAlias { get; set; }
+    public bool OpensAtlas { get; set; }
     public bool AutoSelectSingleInteraction { get; set; }
     public int InteractRange { get; set; } = 100;
     public bool IsInteractable { get; set; } = true;

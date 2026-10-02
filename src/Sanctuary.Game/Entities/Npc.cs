@@ -70,6 +70,7 @@ public class Npc : IScriptableNpc, IEntity
 
     public int InteractRange { get; set; } = 100;
     public bool IsInteractable { get; set; } = true;
+    public bool OpensAtlas { get; set; }
     public bool AutoSelectSingleInteraction { get; set; }
     public List<InteractionData> Interactions { get; } = [];
     public InteractionList? InteractionList { get; set; }

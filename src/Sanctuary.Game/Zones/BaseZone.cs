@@ -707,6 +707,7 @@ public abstract class BaseZone : IZone, IDisposable
             Name = definition.Name,
             ModelId = definition.ModelId,
             TextureAlias = definition.TextureAlias,
+            OpensAtlas = definition.OpensAtlas,
             AutoSelectSingleInteraction = definition.AutoSelectSingleInteraction,
             InteractRange = definition.InteractRange,
             IsInteractable = definition.IsInteractable,
@@ -721,6 +722,9 @@ public abstract class BaseZone : IZone, IDisposable
 
         foreach (var notification in definition.Notifications)
             npc.Notifications.Add(Sanctuary.Game.Helpers.InteractionMenuHelper.GetNotification(npc.Guid, notification));
+
+        if (definition.OpensAtlas)
+            npc.Interactions.Add(Sanctuary.Game.Interactions.OpenAtlasInteraction.Data);
 
         if (!TryRegisterEntity(_npcs, npc))
         {
