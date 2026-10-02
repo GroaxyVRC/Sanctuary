@@ -707,6 +707,11 @@ public abstract class BaseZone : IZone, IDisposable
             Name = definition.Name,
             ModelId = definition.ModelId,
             TextureAlias = definition.TextureAlias,
+            AutoSelectSingleInteraction = definition.AutoSelectSingleInteraction,
+            InteractRange = definition.InteractRange,
+            IsInteractable = definition.IsInteractable,
+            InteractionList = definition.InteractionList,
+            InteractionUnknown = definition.InteractionUnknown,
             Scale = scale,
             Visible = true
         };

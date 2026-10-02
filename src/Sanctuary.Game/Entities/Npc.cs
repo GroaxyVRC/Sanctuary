@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 using Sanctuary.Core.Collections;
 using Sanctuary.Game.Pathfinding;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Zones;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -69,6 +70,10 @@ public class Npc : IScriptableNpc, IEntity
 
     public int InteractRange { get; set; } = 100;
     public bool IsInteractable { get; set; } = true;
+    public bool AutoSelectSingleInteraction { get; set; }
+    public List<InteractionData> Interactions { get; } = [];
+    public InteractionList? InteractionList { get; set; }
+    public bool InteractionUnknown { get; set; }
 
     public int MovementType => 2;
 
@@ -102,6 +107,20 @@ public class Npc : IScriptableNpc, IEntity
 
     public void OnInteract(Player player)
     {
+        if (InteractionList is not null)
+        {
+            if (InteractionMenuHelper.CanInteract(this, player))
+                player.SendTunneled(InteractionMenuHelper.GetInteractionListPacket(Guid, InteractionList, InteractionUnknown));
+            return;
+        }
+
+        if (Interactions.Count > 0)
+        {
+            if (InteractionMenuHelper.CanInteract(this, player))
+                player.SendTunneled(InteractionMenuHelper.GetInteractionListPacket(Guid, Name, Interactions, autoSelectSingle: AutoSelectSingleInteraction));
+            return;
+        }
+
         InteractAction?.Invoke(player);
     }
 
