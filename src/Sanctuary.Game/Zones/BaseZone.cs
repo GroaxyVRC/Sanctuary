@@ -706,6 +706,8 @@ public abstract class BaseZone : IZone, IDisposable
             NameId = definition.NameId,
             Name = definition.Name,
             ModelId = definition.ModelId,
+            TerrainObjectId = definition.TerrainObjectId,
+            ReplaceTerrainObject = definition.ReplaceTerrainObject,
             TextureAlias = definition.TextureAlias,
             Scale = scale,
             Visible = true
