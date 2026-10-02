@@ -707,7 +707,15 @@ public abstract class BaseZone : IZone, IDisposable
             Name = definition.Name,
             ModelId = definition.ModelId,
             TextureAlias = definition.TextureAlias,
-            Scale = scale,
+            TintAlias = definition.TintAlias,
+            TintId = definition.TintId,
+            Scale = definition.Scale ?? scale,
+            HideNamePlate = definition.HideNamePlate,
+            Disposition = definition.Disposition,
+            Animation = definition.Animation,
+            CompositeEffectId = definition.CompositeEffectId,
+            VerticalOffset = definition.VerticalOffset,
+            Attachments = new List<CharacterAttachmentData>(definition.Attachments),
             Visible = true
         };
 
