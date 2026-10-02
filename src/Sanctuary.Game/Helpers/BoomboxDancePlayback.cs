@@ -65,6 +65,9 @@ public sealed class BoomboxDanceSelection
         }
         if (!_turns.TryGetValue(player, out var turn))
             _turns[player] = turn = new Turn();
+        foreach (var guid in turn.Plays.Keys.Where(guid => !available.Any(source => source.Guid == guid)).ToArray())
+            turn.Plays.Remove(guid);
+
         if (candidates.Contains(turn.Owner) && now < turn.EndsAt)
             return turn.Owner;
         var minimum = candidates.Min(id => turn.Plays.GetValueOrDefault(id));

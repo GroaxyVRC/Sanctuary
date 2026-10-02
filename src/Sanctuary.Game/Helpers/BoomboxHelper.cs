@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -156,7 +156,7 @@ public static class BoomboxHelper
 
                 boomboxNpc.UpdateEveryTickAction = null;
                 boomboxNpc.UpdateEverySecondAction = null;
-                DespawnNpc(boomboxNpc, definition.SpawnEffectId);
+                EntityHelper.RemovePlayerGracefully(boomboxNpc, compositeEffectId: definition.SpawnEffectId, duration: 500);
                 return;
             }
 
@@ -272,7 +272,6 @@ public static class BoomboxHelper
                     }, true);
                 }
             }
-
             // A manually stripped transformation returns after a short grace period,
             // while leaving range removes both the form and this box's priority.
             if (transformModelId != 0 && definition.TransformReapplyDelayMs > 0)
@@ -375,7 +374,6 @@ public static class BoomboxHelper
             Unknown = 1
         }, true);
     }
-
     private static void SyncDance(List<Player> targets, int animationId)
     {
         if (targets.Count == 0)
@@ -392,8 +390,10 @@ public static class BoomboxHelper
             foreach (var visiblePlayer in player.VisiblePlayers.Values)
                 recipients.Add(visiblePlayer);
 
+        var data = Player.SerializeTunneled(playerUpdatePacketSetSynchronizedAnimations);
+
         foreach (var recipient in recipients)
-            recipient.SendTunneled(playerUpdatePacketSetSynchronizedAnimations);
+            recipient.SendSerialized(data);
     }
 
     private static void StopDancing(Player player, ulong owner, int transformModelId)
@@ -424,21 +424,4 @@ public static class BoomboxHelper
         }, true);
     }
 
-    private static void DespawnNpc(Npc npc, int effectId)
-    {
-        var playerUpdatePacketRemovePlayerGracefully = new PlayerUpdatePacketRemovePlayerGracefully
-        {
-            Guid = npc.Guid,
-            Animate = false,
-            Delay = 0,
-            EffectDelay = 0,
-            CompositeEffectId = effectId,
-            Duration = 500
-        };
-
-        foreach (var player in npc.Zone.Players)
-            player.SendTunneled(playerUpdatePacketRemovePlayerGracefully);
-
-        npc.Dispose();
-    }
 }

@@ -998,7 +998,7 @@ public abstract class BaseZone : IZone, IDisposable
             if (!_npcs.ContainsKey(node.Guid))
                 return;
 
-            node.DisposeAfterCollection();
+            EntityHelper.RemovePlayerGracefully(node, animate: true);
 
             if (!_resourceManager.CollectionNodePools.TryGetValue(node.PoolDefinition.Key, out var poolDefinition) ||
                 poolDefinition.ZoneDefinitionId != DefinitionId)

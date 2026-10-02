@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -9,6 +8,7 @@ using Microsoft.Extensions.Logging;
 
 using Sanctuary.Core.Collections;
 using Sanctuary.Game.Resources.Definitions;
+using Sanctuary.Game.Helpers;
 
 namespace Sanctuary.Game.Resources;
 
@@ -52,130 +52,71 @@ public class ConsumableCollection
                 CommentHandling = JsonCommentHandling.Skip
             });
 
-            var consumables = new ConsumableDefinitions();
-            JsonElement boomboxDefinitions = default;
-
             foreach (var property in jsonDocument.RootElement.EnumerateObject())
             {
                 switch (property.Name.ToLowerInvariant())
                 {
                     case "boomboxes":
-                        boomboxDefinitions = property.Value;
+                        ResourceHelper.LoadDefinitions<BoomboxDefinition>(property.Value, jsonSerializerOptions, _logger, filePath,
+                            entry => entry.ItemId,
+                            entry => entry.ItemId > 0 && entry.EffectIds is not null && entry.DanceSequence is not null
+                                && entry.DanceDurationsMs is not null && entry.IndependentDanceDurationsMs is not null
+                                && float.IsFinite(entry.Range) && entry.Range > 0 && entry.DurationMs > 0
+                                && float.IsFinite(entry.SpawnOffset) && entry.ModelId > 0
+                                && entry.DanceBlendMs >= 0 && entry.TransformReapplyDelayMs >= 0
+                                && (!(entry.SynchronizedDances || entry.StandingDanceAnimationId == 0) || entry.DanceDurationsMs.Count > 0)
+                                && (entry.DanceDurationsMs.Count == 0 || entry.DanceSequence.Length > 0)
+                                && entry.DanceDurationsMs.Values.All(durations => durations is not null
+                                && durations.Length == entry.DanceSequence.Length && durations.All(duration => duration > 0))
+                                && entry.IndependentDanceDurationsMs.Values.All(durations => durations is not null
+                                && durations.Count > 0 && durations.All(clip => clip.Key > 0 && clip.Value > 0)),
+                            Boomboxes.TryAdd);
                         break;
                     case "cakes":
-                        consumables.Cakes = property.Value.Deserialize<List<CakeItemDefinition>>(jsonSerializerOptions) ?? [];
+                        ResourceHelper.LoadDefinitions<CakeItemDefinition>(property.Value, jsonSerializerOptions, _logger, filePath,
+                            entry => entry.ItemId,
+                            entry => entry.ItemId > 0 && Enum.IsDefined(entry.Type) && entry.ModelId > 0
+                                && entry.CooldownMs >= 0 && entry.LifetimeMs > 0 && entry.InteractCooldownMs >= 0
+                                && entry.SpawnEffectIds is not null && entry.TransformAbilityIds is not null
+                                && entry.ScareGroups is not null && entry.ScareGroups.All(group => group is not null)
+                                && entry.OneShotAnimationMs > 0 && entry.OneShotIntervalMs > 0,
+                            Cakes.TryAdd);
                         break;
                     case "foodeffects":
-                        consumables.FoodEffects = property.Value.Deserialize<List<FoodEffectDefinition>>(jsonSerializerOptions) ?? [];
+                        ResourceHelper.LoadDefinitions<FoodEffectDefinition>(property.Value, jsonSerializerOptions, _logger, filePath,
+                            entry => entry.AbilityId, entry => entry.AbilityId > 0 && entry.EffectDelayMs >= 0,
+                            FoodEffects.TryAdd);
                         break;
                     case "transformations":
-                        consumables.Transformations = property.Value.Deserialize<List<TransformAbilityDefinition>>(jsonSerializerOptions) ?? [];
+                        ResourceHelper.LoadDefinitions<TransformAbilityDefinition>(property.Value, jsonSerializerOptions, _logger, filePath,
+                            entry => entry.AbilityId,
+                            entry => entry.AbilityId > 0 && entry.ModelId > 0 && entry.DurationMs > 0 && entry.CooldownMs >= 0,
+                            Transformations.TryAdd);
                         break;
                     case "randomtransformfoods":
-                        consumables.RandomTransformFoods = property.Value.Deserialize<List<RandomTransformFoodDefinition>>(jsonSerializerOptions) ?? [];
+                        ResourceHelper.LoadDefinitions<RandomTransformFoodDefinition>(property.Value, jsonSerializerOptions, _logger, filePath,
+                            entry => entry.ItemId,
+                            entry => entry.ItemId > 0 && entry.TransformAbilityIds is not null
+                                && entry.TransformAbilityIds.Length > 0 && entry.TransformAbilityIds.All(id => id > 0),
+                            RandomTransformFoods.TryAdd);
                         break;
                     case "partyfavors":
-                        consumables.PartyFavors = property.Value.Deserialize<List<PartyFavorDefinition>>(jsonSerializerOptions) ?? [];
+                        ResourceHelper.LoadDefinitions<PartyFavorDefinition>(property.Value, jsonSerializerOptions, _logger, filePath,
+                            entry => entry.ItemId,
+                            entry => entry.ItemId > 0 && entry.CooldownMs >= 0
+                                && float.IsFinite(entry.GestureSeconds) && entry.GestureSeconds > 0
+                                && float.IsFinite(entry.EffectSeconds) && entry.EffectSeconds > 0
+                                && float.IsFinite(entry.Range) && entry.Range > 0,
+                            PartyFavors.TryAdd);
                         break;
                 }
             }
 
-            if (boomboxDefinitions.ValueKind == JsonValueKind.Array)
-            {
-                foreach (var boomboxDefinition in boomboxDefinitions.EnumerateArray())
-                {
-                    try
-                    {
-                        var entry = boomboxDefinition.Deserialize<BoomboxDefinition>(jsonSerializerOptions);
-
-                        if (entry is not null)
-                            consumables.Boomboxes.Add(entry);
-                        else
-                            _logger.LogError("Invalid null boombox definition in file \"{file}\".", filePath);
-                    }
-                    catch (JsonException ex)
-                    {
-                        _logger.LogError(ex, "Failed to parse boombox definition in file \"{file}\". Entry={entry}", filePath, boomboxDefinition.GetRawText());
-                    }
-                }
-            }
-            else if (boomboxDefinitions.ValueKind != JsonValueKind.Undefined)
-            {
-                _logger.LogError("Invalid boombox definitions in file \"{file}\".", filePath);
-            }
-
-            foreach (var entry in consumables.Boomboxes)
-            {
-                if (entry.ItemId <= 0 || entry.EffectIds is null || entry.DanceSequence is null
-                    || entry.DanceDurationsMs is null || entry.IndependentDanceDurationsMs is null
-                    || !float.IsFinite(entry.Range) || entry.Range <= 0 || entry.DurationMs <= 0
-                    || !float.IsFinite(entry.SpawnOffset) || entry.ModelId <= 0
-                    || entry.DanceBlendMs < 0 || entry.TransformReapplyDelayMs < 0
-                    || ((entry.SynchronizedDances || entry.StandingDanceAnimationId == 0) && entry.DanceDurationsMs.Count == 0)
-                    || (entry.DanceDurationsMs.Count > 0 && entry.DanceSequence.Length == 0)
-                    || entry.DanceDurationsMs.Values.Any(d => d is null || d.Length != entry.DanceSequence.Length || d.Any(ms => ms <= 0))
-                    || entry.IndependentDanceDurationsMs.Values.Any(d => d is null || d.Count == 0 || d.Any(clip => clip.Key <= 0 || clip.Value <= 0)))
-                {
-                    _logger.LogError("Invalid boombox definition. ItemId={id} \"{file}\"", entry.ItemId, filePath);
-                    continue;
-                }
-
-                if (!Boomboxes.TryAdd(entry.ItemId, entry))
-                {
-                    _logger.LogWarning("Failed to add Boombox entry. ItemId={id} \"{file}\"", entry.ItemId, filePath);
-                    continue;
-                }
-            }
             _logger.LogInformation("Loaded {count} Boombox definitions.", Boomboxes.Count);
-
-            foreach (var entry in consumables.FoodEffects)
-            {
-                if (!FoodEffects.TryAdd(entry.AbilityId, entry))
-                {
-                    _logger.LogWarning("Failed to add FoodEffect entry. AbilityId={id} \"{file}\"", entry.AbilityId, filePath);
-                    return false;
-                }
-            }
-            _logger.LogInformation("Loaded {count} FoodEffect definitions.", FoodEffects.Count);
-
-            foreach (var entry in consumables.Cakes)
-            {
-                if (!Cakes.TryAdd(entry.ItemId, entry))
-                {
-                    _logger.LogWarning("Failed to add Cake entry. ItemId={id} \"{file}\"", entry.ItemId, filePath);
-                    return false;
-                }
-            }
             _logger.LogInformation("Loaded {count} Cake definitions.", Cakes.Count);
-
-            foreach (var entry in consumables.Transformations)
-            {
-                if (!Transformations.TryAdd(entry.AbilityId, entry))
-                {
-                    _logger.LogWarning("Failed to add Transformation entry. AbilityId={id} \"{file}\"", entry.AbilityId, filePath);
-                    return false;
-                }
-            }
+            _logger.LogInformation("Loaded {count} FoodEffect definitions.", FoodEffects.Count);
             _logger.LogInformation("Loaded {count} Transformation definitions.", Transformations.Count);
-
-            foreach (var entry in consumables.RandomTransformFoods)
-            {
-                if (!RandomTransformFoods.TryAdd(entry.ItemId, entry))
-                {
-                    _logger.LogWarning("Failed to add RandomTransformFood entry. ItemId={id} \"{file}\"", entry.ItemId, filePath);
-                    return false;
-                }
-            }
             _logger.LogInformation("Loaded {count} RandomTransformFood definitions.", RandomTransformFoods.Count);
-
-            foreach (var entry in consumables.PartyFavors)
-            {
-                if (!PartyFavors.TryAdd(entry.ItemId, entry))
-                {
-                    _logger.LogWarning("Failed to add PartyFavor entry. ItemId={id} \"{file}\"", entry.ItemId, filePath);
-                    return false;
-                }
-            }
             _logger.LogInformation("Loaded {count} PartyFavor definitions.", PartyFavors.Count);
         }
         catch (Exception ex)

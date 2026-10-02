@@ -1,6 +1,5 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
-using System.Collections.Frozen;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -136,15 +135,33 @@ public sealed class Player : ClientPcData, IEntity
         _connection.Send(UdpChannel.Reliable1, data);
     }
 
+    internal void SendSerialized(byte[] data)
+    {
+        _connection.Send(UdpChannel.Reliable1, data);
+    }
+
+    internal static byte[] SerializeTunneled(ISerializablePacket serializablePacket)
+    {
+        var packetTunneledClientPacket = new PacketTunneledClientPacket
+        {
+            Payload = serializablePacket.Serialize()
+        };
+
+        return packetTunneledClientPacket.Serialize();
+    }
+
     public void SendToVisible(ISerializablePacket serializablePacket, bool sendToSelf = false)
     {
-        var visiblePlayers = VisiblePlayers.ToFrozenDictionary();
+        if (VisiblePlayers.IsEmpty && !sendToSelf)
+            return;
 
-        foreach (var visiblePlayer in visiblePlayers)
-            visiblePlayer.Value.Send(serializablePacket);
+        var data = serializablePacket.Serialize();
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendSerialized(data);
 
         if (sendToSelf)
-            Send(serializablePacket);
+            SendSerialized(data);
     }
 
     public void SendTunneled(ISerializablePacket serializablePacket)
@@ -170,13 +187,16 @@ public sealed class Player : ClientPcData, IEntity
 
     public void SendTunneledToVisible(ISerializablePacket serializablePacket, bool sendToSelf = false)
     {
-        var visiblePlayers = VisiblePlayers.ToFrozenDictionary();
+        if (VisiblePlayers.IsEmpty && !sendToSelf)
+            return;
 
-        foreach (var visiblePlayer in visiblePlayers)
-            visiblePlayer.Value.SendTunneled(serializablePacket);
+        var data = SerializeTunneled(serializablePacket);
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendSerialized(data);
 
         if (sendToSelf)
-            SendTunneled(serializablePacket);
+            SendSerialized(data);
     }
 
     public void SendTunneledToVisibleDelayed(ISerializablePacket serializablePacket, int delayMs, bool sendToSelf = false)
@@ -215,19 +235,8 @@ public sealed class Player : ClientPcData, IEntity
             CharacterStats.GlideEnabled.Set(0),
             CharacterStats.JumpHeight.Set(0f));
 
-        SendTunneledToVisible(new PlayerUpdatePacketRemovePlayerGracefully
-        {
-            Guid = Mount.Guid,
-            Animate = false,
-            Delay = 0,
-            EffectDelay = 0,
-            CompositeEffectId = 0,
-            Duration = 1000
-        }, sendToSelf: true);
-
-        Mount.Dispose();
+        EntityHelper.RemovePlayerGracefully(Mount, recipients: VisiblePlayers.Values.Append(this));
         Mount = null;
-
         if (BoomboxDanceTransform != 0 && TemporaryAppearance == BoomboxDanceTransform)
             SendTunneledToVisible(new PlayerUpdatePacketUpdateTemporaryAppearance
             {
@@ -235,8 +244,6 @@ public sealed class Player : ClientPcData, IEntity
                 TemporaryAppearance = TemporaryAppearance
             }, true);
     }
-
-
 
     #endregion
 
@@ -567,25 +574,6 @@ public sealed class Player : ClientPcData, IEntity
 
         foreach (var npc in npcs)
             VisibleNpcs.TryRemove(npc.Guid, out _);
-    }
-
-    public void OnRemoveVisibleNpcGracefully(Npc npc, bool animate, int delay, int effectDelay,
-        int compositeEffectId, int duration)
-    {
-        if (npc is Mount)
-            return;
-
-        SendTunneled(new PlayerUpdatePacketRemovePlayerGracefully
-        {
-            Guid = npc.Guid,
-            Animate = animate,
-            Delay = delay,
-            EffectDelay = effectDelay,
-            CompositeEffectId = compositeEffectId,
-            Duration = duration
-        });
-
-        VisibleNpcs.TryRemove(npc.Guid, out _);
     }
 
     public void OnRemoveVisiblePlayers(params IEnumerable<Player> players)

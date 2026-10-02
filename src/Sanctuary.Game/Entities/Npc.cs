@@ -202,9 +202,14 @@ public class Npc : IScriptableNpc, IEntity
             Unknown = 0
         };
 
+        if (VisiblePlayers.IsEmpty)
+            return;
+
+        var data = Player.SerializeTunneled(playerUpdatePacketUpdatePosition);
+
         foreach (var visiblePlayer in VisiblePlayers)
         {
-            visiblePlayer.Value.SendTunneled(playerUpdatePacketUpdatePosition);
+            visiblePlayer.Value.SendSerialized(data);
         }
     }
 
@@ -477,17 +482,6 @@ public class Npc : IScriptableNpc, IEntity
         RemoveFromZone();
 
         Zone.ScriptManager.DeleteContext(this);
-    }
-
-    protected void DisposeGracefully(bool animate, int delay, int effectDelay, int compositeEffectId, int duration)
-    {
-        foreach (var visiblePlayer in VisiblePlayers)
-        {
-            visiblePlayer.Value.OnRemoveVisibleNpcGracefully(
-                this, animate, delay, effectDelay, compositeEffectId, duration);
-        }
-
-        RemoveFromZone();
     }
 
     private void RemoveFromZone()
