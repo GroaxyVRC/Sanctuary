@@ -33,6 +33,8 @@ public sealed class Player : ClientPcData, IEntity
 
     public IZone Zone { get; set; }
     public ZoneTile ZoneTile { get; private set; } = ZoneTile.Empty;
+    public ProjectileHelper Projectiles { get; } = new();
+
     public ConcurrentDictionary<ulong, Npc> VisibleNpcs { get; } = [];
     public ConcurrentDictionary<ulong, Player> VisiblePlayers { get; } = [];
 
