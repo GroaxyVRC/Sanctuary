@@ -493,6 +493,8 @@ public sealed class Player : ClientPcData, IEntity
             }
             else
                 SendTunneled(player.GetAddPcPacket());
+
+            SendTunneled(player.GetWeaponFlairOverridePacket());
         }
 
         foreach (var player in players)
