@@ -20787,5 +20787,71 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36143,
+    "CaptureGuid": "13125420056642",
+    "NameId": 440370,
+    "ModelId": 0,
+    "Scale": 1,
+    "Name": "Sunstone Valley Warpstone",
+    "OpensAtlas": true,
+    "AutoSelectSingleInteraction": true,
+    "CursorId": 17,
+    "Notification": {
+      "NotificationType": 6,
+      "IconId": 3,
+      "NameId": 440370
+    },
+    "TerrainObjectId": 1346725607,
+    "ReplaceTerrainObject": false
+  },
+  {
+    "Id": 36307,
+    "NameId": 116623,
+    "Name": "Stillwater Crossing Warpstone",
+    "ModelId": 0,
+    "TerrainObjectId": 1254775835,
+    "OpensAtlas": true,
+    "AutoSelectSingleInteraction": true,
+    "CursorId": 17,
+    "Notification": {
+      "NotificationType": 6,
+      "IconId": 3,
+      "NameId": 116623
+    },
+    "Comment": "Interaction NPC bound to the existing FabledRealms terrain Warpstone"
+  },
+  {
+    "Id": 36308,
+    "NameId": 93509,
+    "Name": "Blackspore Warpstone",
+    "ModelId": 0,
+    "TerrainObjectId": 1254779212,
+    "OpensAtlas": true,
+    "AutoSelectSingleInteraction": true,
+    "CursorId": 17,
+    "Notification": {
+      "NotificationType": 6,
+      "IconId": 3,
+      "NameId": 93509
+    },
+    "Comment": "Interaction NPC bound to the existing FabledRealms terrain Warpstone"
+  },
+  {
+    "Id": 36309,
+    "NameId": 440369,
+    "Name": "Rumble Ridge Warpstone",
+    "ModelId": 0,
+    "TerrainObjectId": 1345844843,
+    "OpensAtlas": true,
+    "AutoSelectSingleInteraction": true,
+    "CursorId": 17,
+    "Notification": {
+      "NotificationType": 6,
+      "IconId": 3,
+      "NameId": 440369
+    },
+    "Comment": "Interaction NPC bound to the existing FabledRealms terrain Warpstone"
   }
 ]

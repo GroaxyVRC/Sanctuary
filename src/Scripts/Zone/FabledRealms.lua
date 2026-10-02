@@ -3421,6 +3421,12 @@ local function spawnStaticNpcs(zone)
     zone:spawnNpcWithGuid(33082, 100000033191, -1418.3218, -27.002932, 347.82056, 1.370251)
     zone:spawnNpcWithGuid(33083, 100000033192, -721.4506, 9.538003, 949.2157, 1.370251)
     zone:spawnNpcWithGuid(33084, 100000033193, 50.92852, 32.425617, 370.30267, 1.370251)
+
+    -- Interaction NPCs for Warpstones embedded in the terrain.
+    zone:spawnNpcWithGuid(36143, "13125420056642", 902.139038, 2.06609654, 2235.62817, -0.820305467)
+    zone:spawnNpcWithGuid(36307, "100000036307", -1270.01453, -49.5988922, 785.111572, -0.383972555)
+    zone:spawnNpcWithGuid(36308, "100000036308", -2128.67554, -32.8866158, 1044.89343, -1.83259571)
+    zone:spawnNpcWithGuid(36309, "100000036309", 501.101013, 69.9525299, 1779.1543, -0.820305467)
 end
 
 registerCallback("start", function(zone)
