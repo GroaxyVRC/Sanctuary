@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -27,4 +28,9 @@ public static class WelcomeScreenHelper
             }
         ]
     };
+    // The native welcome callback treats a negative value as the first-login flag.
+    public static int SecondsSinceLastLogin(DateTimeOffset? previousLogin, DateTimeOffset loginTime) =>
+        previousLogin.HasValue
+            ? (int)Math.Clamp((loginTime - previousLogin.Value).TotalSeconds, 0, int.MaxValue)
+            : -1;
 }
