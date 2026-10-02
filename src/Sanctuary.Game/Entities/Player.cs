@@ -227,7 +227,16 @@ public sealed class Player : ClientPcData, IEntity
 
         Mount.Dispose();
         Mount = null;
+
+        if (BoomboxDanceTransform != 0 && TemporaryAppearance == BoomboxDanceTransform)
+            SendTunneledToVisible(new PlayerUpdatePacketUpdateTemporaryAppearance
+            {
+                Guid = Guid,
+                TemporaryAppearance = TemporaryAppearance
+            }, true);
     }
+
+
 
     #endregion
 
@@ -533,7 +542,7 @@ public sealed class Player : ClientPcData, IEntity
 
             // Native standing groups can resume independently. Timed routines must wait
             // for their next shared packet: SetAnimation cannot seek into a current clip.
-            if (player.BoomboxDanceIsStanding && player.BoomboxDanceAnimation != 0)
+            if (player.Mount is null && player.BoomboxDanceIsStanding && player.BoomboxDanceAnimation != 0)
                 SendTunneled(new PlayerUpdatePacketSetAnimation
                 {
                     Guid = player.Guid,

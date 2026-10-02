@@ -176,9 +176,10 @@ public static class BoomboxHelper
             }
 
             var now = Environment.TickCount64;
-            var eligible = inRange.Where(p => zoneDances.SelectOwner(p, now) == boomboxNpc.Guid);
+            var eligible = inRange.Where(p => (p.Mount is null || definition.ItemId == RealmsRollItemId)
+                && zoneDances.SelectOwner(p, now) == boomboxNpc.Guid);
             var newcomers = eligible.Where(p => p.BoomboxDanceOwner != boomboxNpc.Guid).ToList();
-            dancing = inRangeGuids;
+            dancing = inRange.Where(p => p.Mount is null).Select(p => p.Guid).ToHashSet();
             activeDancers = inRange.ToDictionary(p => p.Guid);
 
             foreach (var player in newcomers)
@@ -242,6 +243,33 @@ public static class BoomboxHelper
                     player.BoomboxDanceAnimation = animation;
                     if (animation != 0)
                         SyncDance([player], animation);
+                }
+            }
+
+            foreach (var player in inRange.Where(p => p.BoomboxDanceOwner == boomboxNpc.Guid))
+            {
+                if (player.Mount is not null)
+                {
+                    PauseDance(player);
+                    continue;
+                }
+
+                if (player.BoomboxDanceAnimation != 0)
+                    continue;
+
+                if (player.BoomboxDanceTransform != 0 && player.TemporaryAppearance == player.BoomboxDanceTransform)
+                    StartRealmsRollDance(player);
+                else if (definition.StandingDanceAnimationId != 0 && !definition.SynchronizedDances
+                         && definition.IndependentDanceDurationsMs.Count == 0)
+                {
+                    player.BoomboxDanceAnimation = definition.StandingDanceAnimationId;
+                    player.BoomboxDanceIsStanding = true;
+                    player.SendTunneledToVisible(new PlayerUpdatePacketSetAnimation
+                    {
+                        Guid = player.Guid,
+                        AnimationId = definition.StandingDanceAnimationId,
+                        Flags = 1
+                    }, true);
                 }
             }
 
@@ -311,7 +339,7 @@ public static class BoomboxHelper
 
         void StartRealmsRollDance(Player player)
         {
-            if (definition.ItemId != RealmsRollItemId || definition.DanceSequence.Length == 0)
+            if (definition.ItemId != RealmsRollItemId || definition.DanceSequence.Length == 0 || player.Mount is not null)
                 return;
 
             // Retain the dance while the client rebuilds the transformed actor.
@@ -325,6 +353,27 @@ public static class BoomboxHelper
                 Flags = 1
             }, true);
         }
+    }
+
+    public static void PauseDance(Player player)
+    {
+        if (player.BoomboxDanceAnimation == 0)
+            return;
+
+        player.BoomboxDanceAnimation = 0;
+        player.BoomboxDanceIsStanding = false;
+        player.SendTunneledToVisible(new PlayerUpdatePacketSetAnimation
+        {
+            Guid = player.Guid,
+            AnimationId = IdleAnimationId,
+            Flags = 1
+        }, true);
+        player.SendTunneledToVisible(new PlayerUpdatePacketSetAnimation
+        {
+            Guid = player.Guid,
+            AnimationId = IdleAnimationId,
+            Unknown = 1
+        }, true);
     }
 
     private static void SyncDance(List<Player> targets, int animationId)
