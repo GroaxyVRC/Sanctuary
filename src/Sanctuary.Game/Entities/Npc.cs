@@ -74,6 +74,7 @@ public class Npc : IScriptableNpc, IEntity
     public List<InteractionData> Interactions { get; } = [];
     public InteractionList? InteractionList { get; set; }
     public bool InteractionUnknown { get; set; }
+    public MerchantList? MerchantList { get; set; }
 
     public int MovementType => 2;
 

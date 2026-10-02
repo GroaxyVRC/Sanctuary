@@ -712,6 +712,7 @@ public abstract class BaseZone : IZone, IDisposable
             IsInteractable = definition.IsInteractable,
             InteractionList = definition.InteractionList,
             InteractionUnknown = definition.InteractionUnknown,
+            MerchantList = definition.MerchantList,
             Scale = scale,
             Visible = true
         };

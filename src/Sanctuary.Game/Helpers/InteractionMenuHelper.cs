@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Numerics;
 
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Interactions;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
 
@@ -22,7 +23,7 @@ public static class InteractionMenuHelper
         {
             commandPacketInteractionList.List.Interactions.Add(new InteractionData
             {
-                Id = interaction.Id,
+                Id = interaction.Type == MerchantInteraction.Type ? MerchantInteraction.Data.Id : interaction.Id,
                 IconId = interaction.IconId,
                 ButtonText = interaction.ButtonText,
                 Type = interaction.Type,
