@@ -21,15 +21,15 @@ public static class AbilityPacketDetonateProjectileHandler
 
     public static bool HandlePacket(GatewayConnection connection, ReadOnlySpan<byte> data)
     {
-        if (!AbilityPacketDetonateProjectile.TryDeserialize(data, out var packet))
+        if (!AbilityPacketDetonateProjectile.TryDeserialize(data, out var abilityPacketDetonateProjectile))
         {
             _logger.LogError("Failed to deserialize {packet}.", nameof(AbilityPacketDetonateProjectile));
             return false;
         }
 
-        var handled = connection.Player.Projectiles.HandleHit(connection.Player, packet);
+        var handled = connection.Player.Projectiles.HandleHit(connection.Player, abilityPacketDetonateProjectile);
         _logger.LogTrace("Projectile hit. Player: {guid}, target: {target}, animation: {animation}, handled: {handled}.",
-            connection.Player.Guid, packet.Guid, packet.CompositeEffectId, handled);
+            connection.Player.Guid, abilityPacketDetonateProjectile.Guid, abilityPacketDetonateProjectile.CompositeEffectId, handled);
         return true;
     }
 }

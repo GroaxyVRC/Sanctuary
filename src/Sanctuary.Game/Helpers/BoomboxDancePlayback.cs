@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Collections.Generic;
 
@@ -76,6 +76,8 @@ public sealed class BoomboxDanceSelection
         turn.EndsAt = long.MaxValue; // Reserved until this box actually sends its clip.
         return owner;
     }
+
+    public void Remove(ulong player) => _turns.Remove(player);
 
     public bool Owns(ulong player, ulong owner) =>
         _turns.TryGetValue(player, out var turn) && turn.Owner == owner;

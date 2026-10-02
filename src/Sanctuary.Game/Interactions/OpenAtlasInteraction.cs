@@ -30,8 +30,8 @@ public sealed class OpenAtlasInteraction : IInteraction
         if (other is not Npc stone)
             return;
 
-        var response = GetAtlasPacket(stone, player);
-        if (response is not null)
-            player.SendTunneled(response);
+        var executeScriptPacket = GetAtlasPacket(stone, player);
+        if (executeScriptPacket is not null)
+            player.SendTunneled(executeScriptPacket);
     }
 }

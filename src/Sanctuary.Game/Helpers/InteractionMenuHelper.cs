@@ -13,12 +13,12 @@ public static class InteractionMenuHelper
     public static CommandPacketInteractionList GetInteractionListPacket(ulong guid, string? name,
         IEnumerable<InteractionData> interactions, bool autoSelectSingle = false)
     {
-        var packet = new CommandPacketInteractionList();
-        packet.List.Guid = guid;
-        packet.List.Name = name ?? string.Empty;
+        var commandPacketInteractionList = new CommandPacketInteractionList();
+        commandPacketInteractionList.List.Guid = guid;
+        commandPacketInteractionList.List.Name = name ?? string.Empty;
         // The client skips the box for a single option when this flag is true.
-        packet.List.Unknown = autoSelectSingle;
-        packet.List.Unknown2 = true;
+        commandPacketInteractionList.List.Unknown = autoSelectSingle;
+        commandPacketInteractionList.List.Unknown2 = true;
         foreach (var interaction in interactions)
         {
             var id = interaction.Type switch
@@ -27,7 +27,7 @@ public static class InteractionMenuHelper
                 SnowballInteraction.Type => SnowballInteraction.Data.Id,
                 _ => interaction.Id
             };
-            packet.List.Interactions.Add(new InteractionData
+            commandPacketInteractionList.List.Interactions.Add(new InteractionData
             {
                 Id = id,
                 IconId = interaction.IconId,
@@ -39,26 +39,26 @@ public static class InteractionMenuHelper
                 TooltipId = interaction.TooltipId
             });
         }
-        return packet;
+        return commandPacketInteractionList;
     }
 
     public static CommandPacketInteractionList GetInteractionListPacket(ulong guid, InteractionList list, bool unknown = false)
     {
-        var packet = GetInteractionListPacket(guid, list.Name, list.Interactions, list.Unknown);
-        packet.List.Unknown2 = list.Unknown2;
-        packet.Unknown = unknown;
-        return packet;
+        var commandPacketInteractionList = GetInteractionListPacket(guid, list.Name, list.Interactions, list.Unknown);
+        commandPacketInteractionList.List.Unknown2 = list.Unknown2;
+        commandPacketInteractionList.Unknown = unknown;
+        return commandPacketInteractionList;
     }
 
     public static PlayerUpdatePacketNpcRelevance GetNpcRelevancePacket(IEnumerable<Npc> npcs)
     {
-        var packet = new PlayerUpdatePacketNpcRelevance();
+        var playerUpdatePacketNpcRelevance = new PlayerUpdatePacketNpcRelevance();
         foreach (var npc in npcs)
         {
             if (npc is Mount || (npc.HasCursor is null && npc.CursorId == 0))
                 continue;
 
-            packet.Entries.Add(new PlayerUpdatePacketNpcRelevance.Entry
+            playerUpdatePacketNpcRelevance.Entries.Add(new PlayerUpdatePacketNpcRelevance.Entry
             {
                 Guid = npc.Guid,
                 HasCursor = npc.HasCursor ?? npc.CursorId != 0,
@@ -66,7 +66,7 @@ public static class InteractionMenuHelper
                 Unknown2 = npc.RelevanceUnknown2
             });
         }
-        return packet;
+        return playerUpdatePacketNpcRelevance;
     }
 
     public static NotificationInfo GetNotification(ulong guid, NotificationInfo definition) => new()

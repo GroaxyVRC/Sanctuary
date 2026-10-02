@@ -21,13 +21,13 @@ public static class FreeInteractionNpcHandler
 
     public static bool HandlePacket(GatewayConnection connection, ReadOnlySpan<byte> data)
     {
-        if (!FreeInteractionNpc.TryDeserialize(data, out var packet))
+        if (!FreeInteractionNpc.TryDeserialize(data, out var freeInteractionNpc))
         {
             _logger.LogError("Failed to deserialize {packet}.", nameof(FreeInteractionNpc));
             return false;
         }
 
-        _logger.LogTrace("Received {name} packet. ( {packet} )", nameof(FreeInteractionNpc), packet);
+        _logger.LogTrace("Received {name} packet. ( {packet} )", nameof(FreeInteractionNpc), freeInteractionNpc);
         return true;
     }
 }

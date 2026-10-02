@@ -30038,7 +30038,8 @@
     "Name": "Boom Box",
     "HideNamePlate": true,
     "VerticalOffset": -0.1,
-    "Animation": 2100
+    "Animation": 2100,
+    "BoomboxItemId": 48244
   },
   {
     "Id": 33618,
@@ -33928,7 +33929,8 @@
     "Scale": 1,
     "Name": "Boom Box",
     "HideNamePlate": true,
-    "Animation": 2100
+    "Animation": 2100,
+    "BoomboxItemId": 48244
   },
   {
     "Id": 33840,
@@ -40655,16 +40657,6 @@
     "ModelFileName": "penguin_bert.adr",
     "Scale": 1,
     "Name": "Bert"
-  },
-  {
-    "Id": 36293,
-    "CaptureGuid": "40972476175351842",
-    "NameId": 436171,
-    "ModelId": 3832,
-    "ModelFileName": "mkt_jar_of_jitterbugs_01.adr",
-    "Scale": 1,
-    "Name": "Jar of Jitter Bugs",
-    "HideNamePlate": true
   },
   {
     "Id": 36295,

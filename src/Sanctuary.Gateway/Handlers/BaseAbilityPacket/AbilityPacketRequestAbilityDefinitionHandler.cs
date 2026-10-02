@@ -21,7 +21,7 @@ public static class AbilityPacketRequestAbilityDefinitionHandler
 
     public static bool HandlePacket(GatewayConnection connection, ReadOnlySpan<byte> data)
     {
-        if (!AbilityPacketRequestAbilityDefinition.TryDeserialize(data, out var packet))
+        if (!AbilityPacketRequestAbilityDefinition.TryDeserialize(data, out var abilityPacketRequestAbilityDefinition))
         {
             _logger.LogError("Failed to deserialize {packet}.", nameof(AbilityPacketRequestAbilityDefinition));
             return false;
@@ -29,7 +29,7 @@ public static class AbilityPacketRequestAbilityDefinitionHandler
 
         Sanctuary.Game.Interactions.SnowballInteraction.Update(connection.Player);
         var definition = connection.Player.NpcAbility?.Definition;
-        if (definition is not null && definition.Id == packet.AbilityId)
+        if (definition is not null && definition.Id == abilityPacketRequestAbilityDefinition.AbilityId)
             connection.SendTunneled(new AbilityPacketAbilityDefinition { Definition = definition });
         return true;
     }

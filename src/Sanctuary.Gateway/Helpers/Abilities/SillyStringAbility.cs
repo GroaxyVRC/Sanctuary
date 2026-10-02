@@ -34,15 +34,15 @@ public sealed class SillyStringAbility(AbilityServices services) : ConsumableAbi
         foreach (var visiblePlayer in player.VisiblePlayers.Values)
             recipients.Add(visiblePlayer);
 
-        var sync = new PlayerUpdatePacketSetSynchronizedAnimations();
-        sync.Animations.Add(new PlayerUpdatePacketSetSynchronizedAnimations.Animation { Guid = player.Guid, AnimationId = favor.AnimationId });
+        var playerUpdatePacketSetSynchronizedAnimations = new PlayerUpdatePacketSetSynchronizedAnimations();
+        playerUpdatePacketSetSynchronizedAnimations.Animations.Add(new PlayerUpdatePacketSetSynchronizedAnimations.Animation { Guid = player.Guid, AnimationId = favor.AnimationId });
 
         foreach (var recipient in recipients)
-            recipient.SendTunneled(sync);
+            recipient.SendTunneled(playerUpdatePacketSetSynchronizedAnimations);
 
         var tagId = NextEffectTagId();
 
-        var beam = new PlayerUpdatePacketAddEffectTagCompositeEffect
+        var playerUpdatePacketAddEffectTagCompositeEffect = new PlayerUpdatePacketAddEffectTagCompositeEffect
         {
             Guid = target.Guid,
             TagId = tagId,
@@ -51,7 +51,7 @@ public sealed class SillyStringAbility(AbilityServices services) : ConsumableAbi
         };
 
         foreach (var recipient in recipients)
-            recipient.SendTunneled(beam);
+            recipient.SendTunneled(playerUpdatePacketAddEffectTagCompositeEffect);
 
         _logger.LogTrace("Silly String: {who} sprayed {target}.", player.Name, target.Name);
 

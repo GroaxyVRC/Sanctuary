@@ -48,28 +48,28 @@ public class SnowballInteraction : IInteraction
             Unused = player.Guid,
             AbilityId = definition.PickupAbilityId
         }, true);
-        var pickup = new AbilityPacketLaunchAndLand
+        var abilityPacketLaunchAndLand = new AbilityPacketLaunchAndLand
         {
             Guid = player.Guid,
             Unknown10 = definition.PickupEffectId,
             Unknown15 = EffectTagIdGenerator.Next(),
             TargetLocation = new Vector4(0, 0, 0, 1)
         };
-        pickup.ActionBar.Slot = -1;
-        pickup.ProjectileParameters.Unknown5 = 1;
-        pickup.ProjectileParameters.Unknown8 = new Vector4(0, 0, 0, 1);
-        pickup.ProjectileParameters.Unknown12 = new Vector4(0, 1, 0, 0);
-        pickup.ProjectileParameters.Unknown15 = 1;
-        pickup.ProjectileParameters.Unknown16 = 1;
-        pickup.ProjectileParameters.Unknown18 = definition.PickupAnimationId;
-        pickup.ProjectileParameters.Unknown27 = 100;
-        pickup.Targets.Add(Target.CreateTarget(unchecked((long)player.Guid)));
-        player.SendTunneledToVisible(pickup, true);
+        abilityPacketLaunchAndLand.ActionBar.Slot = -1;
+        abilityPacketLaunchAndLand.ProjectileParameters.Unknown5 = 1;
+        abilityPacketLaunchAndLand.ProjectileParameters.Unknown8 = new Vector4(0, 0, 0, 1);
+        abilityPacketLaunchAndLand.ProjectileParameters.Unknown12 = new Vector4(0, 1, 0, 0);
+        abilityPacketLaunchAndLand.ProjectileParameters.Unknown15 = 1;
+        abilityPacketLaunchAndLand.ProjectileParameters.Unknown16 = 1;
+        abilityPacketLaunchAndLand.ProjectileParameters.Unknown18 = definition.PickupAnimationId;
+        abilityPacketLaunchAndLand.ProjectileParameters.Unknown27 = 100;
+        abilityPacketLaunchAndLand.Targets.Add(Target.CreateTarget(unchecked((long)player.Guid)));
+        player.SendTunneledToVisible(abilityPacketLaunchAndLand, true);
 
         player.SendTunneled(new AbilityPacketAbilityDefinition { Definition = definition.Definition });
-        var set = new AbilityPacketSetDefinition { ProfileId = player.NpcAbilityProfileId };
-        set.AbilitySet.Abilities[definition.Slot] = definition.Ability;
-        player.SendTunneled(set);
+        var abilityPacketSetDefinition = new AbilityPacketSetDefinition { ProfileId = player.NpcAbilityProfileId };
+        abilityPacketSetDefinition.AbilitySet.Abilities[definition.Slot] = definition.Ability;
+        player.SendTunneled(abilityPacketSetDefinition);
     }
 
     public static void Update(Player player)
@@ -79,19 +79,19 @@ public class SnowballInteraction : IInteraction
         if (DateTimeOffset.UtcNow < player.NpcAbilityExpiresAt && player.ActiveProfileId == player.NpcAbilityProfileId)
             return;
 
-        var set = new AbilityPacketSetDefinition { ProfileId = player.NpcAbilityProfileId };
+        var abilityPacketSetDefinition = new AbilityPacketSetDefinition { ProfileId = player.NpcAbilityProfileId };
         player.NpcAbility = null;
         player.RemoveEffect(player.NpcAbilityEffectId);
         player.NpcAbilityEffectId = 0;
-        player.SendTunneled(set);
+        player.SendTunneled(abilityPacketSetDefinition);
         player.SendToolbar();
     }
 
-    public static bool HandleAbility(Player player, AbilityPacketClientRequestStartAbility request)
+    public static bool HandleAbility(Player player, AbilityPacketClientRequestStartAbility abilityPacketClientRequestStartAbility)
     {
         Update(player);
         var definition = player.NpcAbility;
-        if (definition is null || request.Data.Id != ActionBarId || request.Data.Slot != definition.Slot)
+        if (definition is null || abilityPacketClientRequestStartAbility.Data.Id != ActionBarId || abilityPacketClientRequestStartAbility.Data.Slot != definition.Slot)
             return false;
 
         var now = DateTimeOffset.UtcNow;
@@ -101,7 +101,7 @@ public class SnowballInteraction : IInteraction
             return true;
         }
 
-        var target = player.FindTarget(request.Target == 1 ? 0 : request.Guid, definition.Ability.Range);
+        var target = player.FindTarget(abilityPacketClientRequestStartAbility.Target == 1 ? 0 : abilityPacketClientRequestStartAbility.Guid, definition.Ability.Range);
         var targetGuid = target?.Guid ?? 0;
         var targetPosition = target?.Position ?? player.Position + new Vector4(player.GetFacingDirection() * definition.Ability.Range, 0);
         var distance = Vector3.DistanceSquared(new Vector3(player.Position.X, player.Position.Y, player.Position.Z),
@@ -119,7 +119,7 @@ public class SnowballInteraction : IInteraction
             Unused = player.Guid,
             AbilityId = definition.Definition.Id
         }, true);
-        var packet = new AbilityPacketLaunchAndLand
+        var abilityPacketLaunchAndLand = new AbilityPacketLaunchAndLand
         {
             Guid = player.Guid,
             Unknown2 = definition.Definition.Unknown19,
@@ -129,20 +129,20 @@ public class SnowballInteraction : IInteraction
             Unknown10 = definition.Definition.CompositeEffect,
             Unknown15 = EffectTagIdGenerator.Next(),
             TargetLocation = targetGuid == 0 ? targetPosition : new Vector4(0, 0, 0, 1),
-            ActionBar = request.Data,
+            ActionBar = abilityPacketClientRequestStartAbility.Data,
             ProjectileParameters = definition.ProjectileParameters
         };
         if (targetGuid == 0)
-            packet.Targets.Add(Target.CreateTargetLocation(targetPosition, targetPosition));
+            abilityPacketLaunchAndLand.Targets.Add(Target.CreateTargetLocation(targetPosition, targetPosition));
         else
-            packet.Targets.Add(Target.CreateTarget(unchecked((long)targetGuid)));
+            abilityPacketLaunchAndLand.Targets.Add(Target.CreateTarget(unchecked((long)targetGuid)));
 
         if (targetGuid != 0)
             player.Projectiles.AddProjectile(player, targetGuid, definition.HitAnimationId, definition.RecoveryAnimationId,
                 definition.RecoveryDelayMs, definition.HitReportTimeoutMs,
                 (int)(MathF.Sqrt(distance) / BitConverter.Int32BitsToSingle(definition.ProjectileParameters.Unknown3) * 1000));
 
-        player.SendTunneledToVisible(packet, true);
+        player.SendTunneledToVisible(abilityPacketLaunchAndLand, true);
         return true;
     }
 }

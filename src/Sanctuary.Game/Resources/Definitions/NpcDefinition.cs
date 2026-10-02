@@ -26,6 +26,7 @@ public class NpcDefinition
     public int Animation { get; set; } = 1;
     public int CompositeEffectId { get; set; }
     public float VerticalOffset { get; set; }
+    public int BoomboxItemId { get; set; }
     public bool OpensAtlas { get; set; }
     public bool AutoSelectSingleInteraction { get; set; }
     public int InteractRange { get; set; } = 100;

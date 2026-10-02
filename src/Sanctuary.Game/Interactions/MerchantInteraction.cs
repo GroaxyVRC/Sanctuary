@@ -29,11 +29,11 @@ public class MerchantInteraction : IInteraction
             !InteractionMenuHelper.CanInteract(npc, player))
             return;
 
-        var packet = new CoinStoreMerchantListPacket();
-        packet.MerchantList.Unknown = npc.MerchantList.Unknown;
-        packet.MerchantList.Unknown2 = unchecked((long)player.Guid);
-        packet.MerchantList.NpcGuid = npc.Guid;
-        packet.MerchantList.Unknown4 = npc.MerchantList.Unknown4;
+        var coinStoreMerchantListPacket = new CoinStoreMerchantListPacket();
+        coinStoreMerchantListPacket.MerchantList.Unknown = npc.MerchantList.Unknown;
+        coinStoreMerchantListPacket.MerchantList.Unknown2 = unchecked((long)player.Guid);
+        coinStoreMerchantListPacket.MerchantList.NpcGuid = npc.Guid;
+        coinStoreMerchantListPacket.MerchantList.Unknown4 = npc.MerchantList.Unknown4;
         var definitions = new List<ClientItemDefinition>();
 
         foreach (var entry in npc.MerchantList.Entries)
@@ -43,7 +43,7 @@ public class MerchantInteraction : IInteraction
 
             definitions.Add(definition);
 
-            packet.MerchantList.Entries.Add(new MerchantList.Entry
+            coinStoreMerchantListPacket.MerchantList.Entries.Add(new MerchantList.Entry
             {
                 ItemDefinitionId = definition.Id,
                 IconId = definition.Icon.Id,
@@ -68,6 +68,6 @@ public class MerchantInteraction : IInteraction
         };
 
         player.SendTunneled(playerUpdatePacketItemDefinitions);
-        player.SendTunneled(packet);
+        player.SendTunneled(coinStoreMerchantListPacket);
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -23,13 +23,13 @@ public static class PacketTunneledClientPacketHandler
 
     public static bool HandlePacket(GatewayConnection connection, Span<byte> data)
     {
-        if (!PacketTunneledClientPacket.TryDeserialize(data, out var packet))
+        if (!PacketTunneledClientPacket.TryDeserialize(data, out var packetTunneledClientPacket))
         {
             _logger.LogError("Failed to deserialize {packet}.", nameof(PacketTunneledClientPacket));
             return false;
         }
 
-        var reader = new PacketReader(packet.Payload);
+        var reader = new PacketReader(packetTunneledClientPacket.Payload);
 
         if (!reader.TryRead(out short opCode))
         {
@@ -46,23 +46,23 @@ public static class PacketTunneledClientPacketHandler
             BasePlayerUpdatePacket.OpCode => BasePlayerUpdatePacketHandler.HandlePacket(connection, reader),
             BaseAbilityPacket.OpCode => BaseAbilityPacketHandler.HandlePacket(connection, reader),
             BaseInventoryPacket.OpCode => BaseInventoryPacketHandler.HandlePacket(connection, reader),
-            PacketGameTimeSync.OpCode => PacketGameTimeSyncHandler.HandlePacket(connection, packet.Payload),
+            PacketGameTimeSync.OpCode => PacketGameTimeSyncHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
             PacketBaseInGamePurchase.OpCode => PacketBaseInGamePurchaseHandler.HandlePacket(connection, reader),
             AnnouncementDataSendPacket.OpCode => AnnouncementBasePacketHandler.HandlePacket(connection, reader),
             BaseQuickChatPacket.OpCode => BaseQuickChatPacketHandler.HandlePacket(connection, reader),
-            PacketZoneTeleportRequest.OpCode => PacketZoneTeleportRequestHandler.HandlePacket(connection, packet.Payload),
-            PacketClientMetrics.OpCode => PacketClientMetricsHandler.HandlePacket(connection, packet.Payload),
-            PacketClientLog.OpCode => PacketClientLogHandler.HandlePacket(connection, packet.Payload),
-            PacketZoneSafeTeleportRequest.OpCode => PacketZoneSafeTeleportRequestHandler.HandlePacket(connection, packet.Payload),
-            PlayerUpdatePacketUpdatePosition.OpCode => PlayerUpdatePacketUpdatePositionHandler.HandlePacket(connection, packet.Payload),
-            PlayerUpdatePacketCameraUpdate.OpCode => PlayerUpdatePacketCameraUpdateHandler.HandlePacket(connection, packet.Payload),
+            PacketZoneTeleportRequest.OpCode => PacketZoneTeleportRequestHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
+            PacketClientMetrics.OpCode => PacketClientMetricsHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
+            PacketClientLog.OpCode => PacketClientLogHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
+            PacketZoneSafeTeleportRequest.OpCode => PacketZoneSafeTeleportRequestHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
+            PlayerUpdatePacketUpdatePosition.OpCode => PlayerUpdatePacketUpdatePositionHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
+            PlayerUpdatePacketCameraUpdate.OpCode => PlayerUpdatePacketCameraUpdateHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
             BaseHousingPacket.OpCode => BaseHousingPacketHandler.HandlePacket(connection, reader),
             BasePlayerTitlePacket.OpCode => BasePlayerTitlePacketHandler.HandlePacket(connection, reader),
             BaseFotomatPacket.OpCode => BaseFotomatPacketHandler.HandlePacket(connection, reader),
-            PlayerUpdatePacketJump.OpCode => PlayerUpdatePacketJumpHandler.HandlePacket(connection, packet.Payload),
+            PlayerUpdatePacketJump.OpCode => PlayerUpdatePacketJumpHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
             BaseCoinStorePacket.OpCode => BaseCoinStorePacketHandler.HandlePacket(connection, reader),
             MountBasePacket.OpCode => MountBasePacketHandler.HandlePacket(connection, reader),
-            PacketClientInitializationDetails.OpCode => PacketClientInitializationDetailsHandler.HandlePacket(connection, packet.Payload),
+            PacketClientInitializationDetails.OpCode => PacketClientInitializationDetailsHandler.HandlePacket(connection, packetTunneledClientPacket.Payload),
             BaseNameChangePacket.OpCode => BaseNameChangePacketHandler.HandlePacket(connection, reader),
             _ => false
         };

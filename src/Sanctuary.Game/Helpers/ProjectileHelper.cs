@@ -37,17 +37,17 @@ public class ProjectileHelper
         });
     }
 
-    public bool HandleHit(Player player, AbilityPacketDetonateProjectile packet)
+    public bool HandleHit(Player player, AbilityPacketDetonateProjectile abilityPacketDetonateProjectile)
     {
         var now = DateTimeOffset.UtcNow;
         _projectiles.RemoveAll(x => x.ExpiresAt <= now);
-        var projectile = _projectiles.FirstOrDefault(x => x.Guid == packet.Guid && x.AnimationId == packet.CompositeEffectId);
+        var projectile = _projectiles.FirstOrDefault(x => x.Guid == abilityPacketDetonateProjectile.Guid && x.AnimationId == abilityPacketDetonateProjectile.CompositeEffectId);
         if (projectile is null)
             return false;
 
         _projectiles.Remove(projectile);
-        IEntity? target = player.VisiblePlayers.TryGetValue(packet.Guid, out var otherPlayer) ? otherPlayer :
-            player.VisibleNpcs.TryGetValue(packet.Guid, out var npc) ? npc : null;
+        IEntity? target = player.VisiblePlayers.TryGetValue(abilityPacketDetonateProjectile.Guid, out var otherPlayer) ? otherPlayer :
+            player.VisibleNpcs.TryGetValue(abilityPacketDetonateProjectile.Guid, out var npc) ? npc : null;
         return target is not null && ReferenceEquals(target.Zone, player.Zone);
     }
 
