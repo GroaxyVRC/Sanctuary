@@ -77,6 +77,8 @@ public class Npc : IScriptableNpc, IEntity
     public int ImageSetId { get; set; }
 
     public byte CursorId { get; set; }
+    public bool? HasCursor { get; set; }
+    public bool RelevanceUnknown2 { get; set; }
 
     public NotificationInfo? Notification { get; set; }
 

@@ -15,5 +15,8 @@ public class NpcDefinition
     public string ModelFileName { get; set; } = null!;
 
     public string? TextureAlias { get; set; }
+    public byte CursorId { get; set; }
+    public bool? HasCursor { get; set; }
+    public bool RelevanceUnknown2 { get; set; }
     public string[]? Scripts { get; set; }
 }

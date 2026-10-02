@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Frozen;
 using System.Collections.Generic;
@@ -437,21 +437,7 @@ public sealed class Player : ClientPcData, IEntity
             SendTunneled(npc.GetAddNpcPacket());
         }
 
-        var playerUpdatePacketNpcRelevance = new PlayerUpdatePacketNpcRelevance();
-
-        foreach (var npc in npcs)
-        {
-            if (npc.CursorId == 0)
-                continue;
-
-            playerUpdatePacketNpcRelevance.Entries.Add(new PlayerUpdatePacketNpcRelevance.Entry
-            {
-                Guid = npc.Guid,
-                HasCursor = true,
-                CursorId = npc.CursorId
-            });
-        }
-
+        var playerUpdatePacketNpcRelevance = InteractionMenuHelper.GetNpcRelevancePacket(npcs);
         if (playerUpdatePacketNpcRelevance.Entries.Count > 0)
             SendTunneled(playerUpdatePacketNpcRelevance);
 

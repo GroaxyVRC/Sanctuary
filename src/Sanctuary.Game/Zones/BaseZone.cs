@@ -707,6 +707,9 @@ public abstract class BaseZone : IZone, IDisposable
             Name = definition.Name,
             ModelId = definition.ModelId,
             TextureAlias = definition.TextureAlias,
+            CursorId = definition.CursorId,
+            HasCursor = definition.HasCursor,
+            RelevanceUnknown2 = definition.RelevanceUnknown2,
             Scale = scale,
             Visible = true
         };
