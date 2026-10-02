@@ -33,4 +33,83 @@ public static class WelcomeScreenHelper
         previousLogin.HasValue
             ? (int)Math.Clamp((loginTime - previousLogin.Value).TotalSeconds, 0, int.MaxValue)
             : -1;
+
+    public static PacketLoadWelcomeScreen GetWelcomeScreenPacket(int secondsSinceLastLogin, int stationCash,
+        IEnumerable<ContentInfo>? contents = null, IEnumerable<ClaimCodeInfo>? claimCodes = null)
+    {
+        var packetLoadWelcomeScreen = new PacketLoadWelcomeScreen
+        {
+            SecondsSinceLastLogin = secondsSinceLastLogin,
+            StartingScWalletBalance = stationCash
+        };
+
+        packetLoadWelcomeScreen.Contents.AddRange(contents ??
+        [
+            new ContentInfo
+            {
+                NameId = 6185,
+                DescriptionId = 6186,
+            },
+            new ContentInfo
+            {
+                NameId = 6187,
+                DescriptionId = 6188,
+            },
+            new ContentInfo
+            {
+                NameId = 6189,
+                DescriptionId = 6190,
+            }
+        ]);
+
+        packetLoadWelcomeScreen.ClaimCodes.AddRange(claimCodes ??
+        [
+            new ClaimCodeInfo
+            {
+                Code = "MMMDONUT",
+                NameId = 401519,
+                DescriptionId = 401534,
+                IconId = 929
+            },
+            new ClaimCodeInfo
+            {
+                Code = "BERRYCUPCAKE",
+                NameId = 401517,
+                DescriptionId = 401532,
+                IconId = 939
+            },
+            new ClaimCodeInfo
+            {
+                Code = "SKELETAL",
+                NameId = 409157,
+                DescriptionId = 109132,
+                IconId = 3459,
+                TintAlias = "navy"
+            },
+            new ClaimCodeInfo
+            {
+                Code = "STRAWBERRIES",
+                NameId = 409158,
+                DescriptionId = 108948,
+                IconId = 3441,
+                TintAlias = "concrete"
+            },
+            new ClaimCodeInfo
+            {
+                Code = "FROGGY",
+                NameId = 409159,
+                DescriptionId = 3141,
+                IconId = 1258
+            },
+            new ClaimCodeInfo
+            {
+                Code = "SANDWICH",
+                NameId = 409160,
+                DescriptionId = 2430,
+                IconId = 949
+            }
+        ]);
+
+        return packetLoadWelcomeScreen;
+    }
 }
