@@ -327,6 +327,18 @@ public sealed class Player : ClientPcData, IEntity
         return nearest;
     }
 
+    public Vector3 GetFacingDirection()
+    {
+        var direction = new Vector3(Rotation.X, 0, Rotation.Z);
+        if (Rotation.W != 0)
+            direction = Vector3.Transform(Vector3.UnitZ, Rotation);
+
+        var lengthSquared = direction.LengthSquared();
+
+        return float.IsFinite(lengthSquared) && lengthSquared > 0
+            ? Vector3.Normalize(direction) : Vector3.UnitZ;
+    }
+
     private void UpdateZoneTile()
     {
         var newZoneTile = Zone.GetTileFromPosition(Position);
