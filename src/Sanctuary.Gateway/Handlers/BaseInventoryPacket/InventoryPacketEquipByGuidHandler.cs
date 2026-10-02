@@ -153,81 +153,12 @@ public static class InventoryPacketEquipByGuidHandler
 
         playerUpdatePacketEquipItemChange.WieldType = itemClass.WieldType;
 
-        connection.Player.SendTunneledToVisible(playerUpdatePacketEquipItemChange);
+        if (packet.ProfileId == connection.Player.ActiveProfileId)
+            connection.Player.SendTunneledToVisible(playerUpdatePacketEquipItemChange);
 
         connection.Player.SendToolbar();
 
-        // Update the Weapon composite effect if we have a Flair Shard equipped.
-        if (packet.Slot == 13)
-        {
-            if (profile.Items.TryGetValue(7, out var weaponProfileItem))
-            {
-                var weaponClientItem = connection.Player.Items.SingleOrDefault(x => x.Id == weaponProfileItem.Id);
-
-                if (weaponClientItem is not null)
-                {
-                    playerUpdatePacketEquipItemChange.Id = weaponClientItem.Id;
-
-                    if (!_resourceManager.ClientItemDefinitions.TryGetValue(weaponClientItem.Definition, out var weaponClientItemDefinition))
-                        return true;
-
-                    playerUpdatePacketEquipItemChange.Attachment.ModelName = weaponClientItemDefinition.ModelName;
-                    playerUpdatePacketEquipItemChange.Attachment.TextureAlias = weaponClientItemDefinition.TextureAlias;
-                    playerUpdatePacketEquipItemChange.Attachment.TintAlias = weaponClientItemDefinition.TintAlias;
-                    playerUpdatePacketEquipItemChange.Attachment.TintId = weaponClientItem.Tint;
-
-                    playerUpdatePacketEquipItemChange.Attachment.CompositeEffectId = clientItemDefinition.CompositeEffectId > 0
-                        ? clientItemDefinition.CompositeEffectId
-                        : weaponClientItemDefinition.CompositeEffectId;
-
-                    playerUpdatePacketEquipItemChange.Attachment.Slot = weaponClientItemDefinition.Slot;
-
-                    playerUpdatePacketEquipItemChange.ProfileId = connection.Player.ActiveProfileId;
-
-                    if (!_resourceManager.ItemClasses.TryGetValue(weaponClientItemDefinition.Class, out itemClass))
-                        return true;
-
-                    playerUpdatePacketEquipItemChange.WieldType = itemClass.WieldType;
-
-                    connection.Player.SendTunneledToVisible(playerUpdatePacketEquipItemChange, true);
-                }
-            }
-        }
-        else if (packet.Slot == 7)
-        {
-            if (profile.Items.TryGetValue(13, out var flairShardProfileItem))
-            {
-                var flairShardClientItem = connection.Player.Items.SingleOrDefault(x => x.Id == flairShardProfileItem.Id);
-
-                if (flairShardClientItem is not null)
-                {
-                    playerUpdatePacketEquipItemChange.Id = clientItem.Id;
-
-                    if (!_resourceManager.ClientItemDefinitions.TryGetValue(flairShardClientItem.Definition, out var flairShardClientItemDefinition))
-                        return true;
-
-                    playerUpdatePacketEquipItemChange.Attachment.ModelName = clientItemDefinition.ModelName;
-                    playerUpdatePacketEquipItemChange.Attachment.TextureAlias = clientItemDefinition.TextureAlias;
-                    playerUpdatePacketEquipItemChange.Attachment.TintAlias = clientItemDefinition.TintAlias;
-                    playerUpdatePacketEquipItemChange.Attachment.TintId = clientItem.Tint;
-
-                    playerUpdatePacketEquipItemChange.Attachment.CompositeEffectId = flairShardClientItemDefinition.CompositeEffectId > 0
-                        ? flairShardClientItemDefinition.CompositeEffectId
-                        : clientItemDefinition.CompositeEffectId;
-
-                    playerUpdatePacketEquipItemChange.Attachment.Slot = clientItemDefinition.Slot;
-
-                    playerUpdatePacketEquipItemChange.ProfileId = connection.Player.ActiveProfileId;
-
-                    if (!_resourceManager.ItemClasses.TryGetValue(clientItemDefinition.Class, out itemClass))
-                        return true;
-
-                    playerUpdatePacketEquipItemChange.WieldType = itemClass.WieldType;
-
-                    connection.Player.SendTunneledToVisible(playerUpdatePacketEquipItemChange, true);
-                }
-            }
-        }
+        connection.Player.RefreshWeaponFlair(packet.ProfileId, packet.Slot);
 
         return true;
     }

@@ -1,8 +1,12 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using System.Runtime.CompilerServices;
 
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Helpers;
+using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Zones;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -11,12 +15,22 @@ namespace Sanctuary.Gateway.Helpers.Abilities;
 
 public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility(services)
 {
-    // How long a boombox stays out, which is also its use cooldown.
-    private const int BoomboxDurationMs = 180_000;
+    private sealed record DanceSource(Vector3 Center, BoomboxDefinition Definition, long ExpiresAt);
+    private sealed class ZoneDances
+    {
+        public readonly Dictionary<ulong, DanceSource> Sources = new();
+        public readonly BoomboxDanceSelection Selection = new();
 
-    // PFX_smoke_black_explosion
-    private const int PoofEffectId = 21;
-
+        public ulong SelectOwner(Player player, long now)
+        {
+            var position = new Vector3(player.Position.X, player.Position.Y, player.Position.Z);
+            var available = Sources.Where(pair => pair.Value.ExpiresAt > now
+                && Vector3.Distance(position, pair.Value.Center) <= pair.Value.Definition.Range).ToArray();
+            return Selection.Select(player.Guid, now,
+                available.Select(pair => (pair.Key, pair.Value.Definition.Priority)));
+        }
+    }
+    private static readonly ConditionalWeakTable<IZone, ZoneDances> DanceStates = new();
     public override bool Matches(ClientItemDefinition itemDefinition) =>
         _resourceManager.Consumables.Boomboxes.ContainsKey(itemDefinition.Id);
 
@@ -25,30 +39,30 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
         if (player.IsItemOnCooldown(itemDefinition.Id))
             return SendFailure(player);
 
-        SpawnBoomboxNpc(player, itemDefinition);
+        if (!_resourceManager.Consumables.Boomboxes.TryGetValue(itemDefinition.Id, out var definition))
+            return SendFailure(player);
 
-        player.StartItemCooldown(itemDefinition.Id, ClampCooldown(BoomboxDurationMs));
-        player.StartActionBarCooldown(ActionBarId, slot, itemDefinition.Icon.Id, itemDefinition.NameId, clientItem.Count, ClampCooldown(BoomboxDurationMs));
+        SpawnBoomboxNpc(player, itemDefinition, definition);
+
+        player.StartItemCooldown(itemDefinition.Id, ClampCooldown(definition.DurationMs));
+        player.StartActionBarCooldown(ActionBarId, slot, itemDefinition.Icon.Id, itemDefinition.NameId, clientItem.Count, ClampCooldown(definition.DurationMs));
 
         return true;
     }
 
-    private void SpawnBoomboxNpc(Player player, ClientItemDefinition itemDefinition)
+    private void SpawnBoomboxNpc(Player player, ClientItemDefinition itemDefinition, BoomboxDefinition definition)
     {
-        _resourceManager.Consumables.Boomboxes.TryGetValue(itemDefinition.Id, out var boomboxDefinition);
-
-        var modelId = boomboxDefinition?.ModelId ?? 1062;
-        var effectIds = boomboxDefinition?.EffectIds ?? [];
+        var modelId = definition.ModelId;
+        var effectIds = definition.EffectIds;
         var effectId = effectIds.Length > 0 ? effectIds[System.Random.Shared.Next(effectIds.Length)] : 0;
 
-        var danceSequence = boomboxDefinition?.DanceSequence ?? [3501, 3502, 3503, 3504, 3505];
-        var transformModelId = boomboxDefinition?.TransformModelId ?? 0;
+        var transformModelId = definition.TransformModelId;
 
         var leftDirection = Vector3.Transform(new Vector3(-1, 0, 0), player.Rotation);
         var spawnPosition = new Vector4(
-            player.Position.X + leftDirection.X * 2.0f,
-            player.Position.Y + leftDirection.Y * 2.0f,
-            player.Position.Z + leftDirection.Z * 2.0f,
+            player.Position.X + leftDirection.X * definition.SpawnOffset,
+            player.Position.Y + leftDirection.Y * definition.SpawnOffset,
+            player.Position.Z + leftDirection.Z * definition.SpawnOffset,
             player.Position.W
         );
 
@@ -60,7 +74,7 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
             npc.TextureAlias = itemDefinition.TextureAlias ?? "";
             npc.TintAlias = itemDefinition.TintAlias ?? "";
             npc.Scale = 1.0f;
-            npc.Animation = 2100; // Bouncing animation
+            npc.Animation = definition.SpawnAnimationId; // Bouncing animation
             npc.CompositeEffectId = effectId; // Owned by the entity, so the client stops it on RemovePlayer
             npc.HideNamePlate = true;
             npc.IsInteractable = false;
@@ -69,7 +83,7 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
         if (boomboxNpc is null)
             return;
 
-        var poofRecipients = BroadcastSpawn(player, boomboxNpc, spawnPosition, PoofEffectId);
+        var poofRecipients = BroadcastSpawn(player, boomboxNpc, spawnPosition, definition.SpawnEffectId);
 
         // Tag-attached so it can be stopped cleanly on despawn.
         var songTagId = 0;
@@ -90,29 +104,109 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
                 recipient.SendTunneled(songEffect);
         }
 
-        StartDanceLoop(player.Zone, boomboxNpc, spawnPosition, danceSequence, songTagId, effectId, transformModelId);
+        StartDanceLoop(player.Zone, boomboxNpc, spawnPosition, definition, songTagId, effectId, transformModelId, itemDefinition.NameId);
     }
 
-    private static void StartDanceLoop(IZone zone, Npc boomboxNpc, Vector4 spawnPosition, int[] danceSequence, int songTagId, int effectId, int transformModelId)
+    private static void StartDanceLoop(IZone zone, Npc boomboxNpc, Vector4 spawnPosition, BoomboxDefinition definition, int songTagId, int effectId, int transformModelId, int transformBuffNameId)
     {
-        const float BoomboxRangeInMeters = 15.0f;
-        const int SwitchMs = 4000;
-
         var danceCenter = new Vector3(spawnPosition.X, spawnPosition.Y, spawnPosition.Z);
 
         var dancing = new HashSet<ulong>();
-        var elapsedMs = 0;
-        var sinceSwitch = SwitchMs; // so a dance starts on the first tick
-        var sequenceIndex = 0;
-        var previousAnim = -1;
-        var currentAnim = 0;
+        var activeDancers = new Dictionary<ulong, Player>();
+        var startedAt = Environment.TickCount64;
+        var playback = new Dictionary<ulong, BoomboxDancePlayback>();
+        var transformed = new HashSet<ulong>();
+        var transformReapplyAt = new Dictionary<ulong, long>();
+        var sharedPlayback = BoomboxDancePlayback.CreateSynchronized(definition);
+        var zoneDances = DanceStates.GetValue(zone, _ => new ZoneDances());
+        lock (zoneDances)
+            zoneDances.Sources[boomboxNpc.Guid] = new(danceCenter, definition, startedAt + definition.DurationMs);
+        var independentNextAt = new Dictionary<ulong, long>();
+        var wasPlaying = false;
+        var expired = false;
 
-        boomboxNpc.UpdateEverySecondAction = () =>
+        // Serialize overlapping boxes as well as tick/second callbacks, so priority
+        // checks and ownership transfers cannot race each other.
+        boomboxNpc.UpdateEveryTickAction = () => { lock (zoneDances) UpdateDanceTick(); };
+        boomboxNpc.UpdateEverySecondAction = () => { lock (zoneDances) UpdateParticipants(); };
+
+        // Select and advance full dance clips at zone tick resolution.
+        void UpdateDanceTick()
         {
-            if (elapsedMs >= BoomboxDurationMs)
+            if (expired)
+                return;
+            var now = Environment.TickCount64;
+            // Choose from every live box before any one callback can renew its own dance.
+            foreach (var participant in zone.Players)
+                zoneDances.SelectOwner(participant, now);
+            // Transfers also run at clip boundaries, rather than waiting for the next second.
+            UpdateParticipants();
+            if (now - startedAt >= definition.DurationMs)
+                return;
+            if (sharedPlayback is not null)
             {
-                foreach (var player in zone.Players.Where(p => dancing.Contains(p.Guid)))
-                    StopDancing(player, transformModelId);
+                var targets = zone.Players.Where(p => dancing.Contains(p.Guid)
+                    && p.BoomboxDanceOwner == boomboxNpc.Guid
+                    && zoneDances.Selection.Owns(p.Guid, boomboxNpc.Guid)
+                    && definition.DanceDurationsMs.ContainsKey(p.TemporaryAppearance != 0 ? p.TemporaryAppearance : p.Model)).ToList();
+                // Wait for the longest actor variant. A late arrival joins at the next boundary,
+                // because packet 63 has no playback offset and cannot join a clip midway.
+                if (targets.Count > 0 && !wasPlaying)
+                    sharedPlayback.Resume();
+                wasPlaying = targets.Count > 0;
+                var animation = targets.Count > 0 ? sharedPlayback.Advance(now) : 0;
+                if (animation != 0)
+                {
+                    foreach (var player in targets)
+                    {
+                        player.BoomboxDanceAnimation = animation;
+                        zoneDances.Selection.Started(player.Guid, boomboxNpc.Guid, sharedPlayback.NextClipAt);
+                    }
+                    SyncDance(targets, animation);
+                }
+                return;
+            }
+            foreach (var player in zone.Players.Where(p => dancing.Contains(p.Guid)
+                         && p.BoomboxDanceOwner == boomboxNpc.Guid
+                         && zoneDances.Selection.Owns(p.Guid, boomboxNpc.Guid)))
+            {
+                if (definition.IndependentDanceDurationsMs.TryGetValue(player.Model, out var choices))
+                {
+                    if (now < independentNextAt.GetValueOrDefault(player.Guid))
+                        continue;
+                    var options = choices.Where(pair => pair.Key != player.BoomboxDanceAnimation).ToArray();
+                    if (options.Length == 0)
+                        options = choices.ToArray();
+                    var selected = options[Random.Shared.Next(options.Length)];
+                    var endsAt = now + selected.Value - Math.Clamp(definition.DanceBlendMs, 0, selected.Value - 1);
+                    independentNextAt[player.Guid] = endsAt;
+                    player.BoomboxDanceAnimation = selected.Key;
+                    zoneDances.Selection.Started(player.Guid, boomboxNpc.Guid, endsAt);
+                    SyncDance([player], selected.Key);
+                    continue;
+                }
+                if (!playback.TryGetValue(player.Guid, out var clock))
+                    continue;
+                var animation = clock.Advance(now);
+                if (animation != 0)
+                {
+                    player.BoomboxDanceAnimation = animation;
+                    zoneDances.Selection.Started(player.Guid, boomboxNpc.Guid, clock.NextClipAt);
+                    SyncDance([player], animation);
+                }
+            }
+        }
+
+        void UpdateParticipants()
+        {
+            if (expired)
+                return;
+            if (Environment.TickCount64 - startedAt >= definition.DurationMs)
+            {
+                expired = true;
+                zoneDances.Sources.Remove(boomboxNpc.Guid);
+                foreach (var player in activeDancers.Values)
+                    StopDancing(player, boomboxNpc.Guid, transformed.Contains(player.Guid) ? transformModelId : 0);
 
                 if (songTagId != 0)
                 {
@@ -126,54 +220,115 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
                         player.SendTunneled(stopSong);
                 }
 
-                DespawnNpc(boomboxNpc, PoofEffectId);
+                boomboxNpc.UpdateEveryTickAction = null;
+                boomboxNpc.UpdateEverySecondAction = null;
+                DespawnNpc(boomboxNpc, definition.SpawnEffectId);
                 return;
-            }
-
-            // Only flag a change when the id differs, so multi-dance boomboxes don't restart
-            // the crowd every rotation.
-            var animChanged = false;
-
-            if (sinceSwitch >= SwitchMs)
-            {
-                var selected = danceSequence.Length > 0 ? danceSequence[sequenceIndex % danceSequence.Length] : 3501;
-                sequenceIndex++;
-                sinceSwitch = 0;
-
-                // A single-clip sequence (Totem, Realms Roll) never changes id, and the client
-                // stops after one play-through unless it's re-triggered every rotation.
-                if (selected != previousAnim || danceSequence.Length <= 1)
-                {
-                    currentAnim = selected;
-                    previousAnim = selected;
-                    animChanged = true;
-                }
             }
 
             var players = zone.Players.ToList();
             var inRange = players.Where(p =>
-                Vector3.Distance(new Vector3(p.Position.X, p.Position.Y, p.Position.Z), danceCenter) <= BoomboxRangeInMeters)
+                Vector3.Distance(new Vector3(p.Position.X, p.Position.Y, p.Position.Z), danceCenter) <= definition.Range)
                 .ToList();
             var inRangeGuids = inRange.Select(p => p.Guid).ToHashSet();
 
-            foreach (var player in players.Where(p => dancing.Contains(p.Guid) && !inRangeGuids.Contains(p.Guid)))
-                StopDancing(player, transformModelId);
-
-            var newcomers = inRange.Where(p => !dancing.Contains(p.Guid)).ToList();
-            dancing = inRangeGuids;
-
-            if (transformModelId != 0)
+            foreach (var player in activeDancers.Values.Where(p => !inRangeGuids.Contains(p.Guid)))
             {
-                foreach (var player in newcomers.Where(p => p.TemporaryAppearance == 0))
-                    player.ApplyTemporaryAppearance(transformModelId, 0);
+                StopDancing(player, boomboxNpc.Guid, transformed.Contains(player.Guid) ? transformModelId : 0);
+                playback.Remove(player.Guid);
+                independentNextAt.Remove(player.Guid);
+                transformed.Remove(player.Guid);
+                transformReapplyAt.Remove(player.Guid);
             }
 
-            // Re-sync everyone on a rotation to stay phase-locked, otherwise only start late
-            // arrivals so the rest don't hitch.
-            if (animChanged)
-                SyncDance(inRange, currentAnim);
-            else if (newcomers.Count > 0)
-                SyncDance(newcomers, currentAnim);
+            var now = Environment.TickCount64;
+            var eligible = inRange.Where(p => zoneDances.SelectOwner(p, now) == boomboxNpc.Guid);
+            var newcomers = eligible.Where(p => p.BoomboxDanceOwner != boomboxNpc.Guid).ToList();
+            dancing = inRangeGuids;
+            activeDancers = inRange.ToDictionary(p => p.Guid);
+
+            foreach (var player in newcomers)
+            {
+                // Transfer ownership without leaving another boombox's temporary model behind.
+                if (player.BoomboxDanceOwner != boomboxNpc.Guid && player.BoomboxDanceTransform != 0 && player.TemporaryAppearance == player.BoomboxDanceTransform)
+                    player.RemoveTemporaryAppearance();
+                if (player.BoomboxDanceOwner != boomboxNpc.Guid)
+                    player.BoomboxDanceTransform = 0;
+                player.BoomboxDanceOwner = boomboxNpc.Guid;
+                player.BoomboxDancePriority = definition.Priority;
+                player.BoomboxDanceAnimation = 0;
+                player.BoomboxDanceIsStanding = !definition.SynchronizedDances && definition.StandingDanceAnimationId != 0
+                    && definition.IndependentDanceDurationsMs.Count == 0;
+                independentNextAt.Remove(player.Guid);
+                if (transformModelId != 0 && player.TemporaryAppearance == 0 && definition.TransformReapplyDelayMs == 0)
+                {
+                    player.ApplyTemporaryAppearance(transformModelId,
+                        (int)Math.Max(1, definition.DurationMs - (Environment.TickCount64 - startedAt)),
+                        buffNameId: transformBuffNameId);
+                    player.BoomboxDanceTransform = transformModelId;
+                    transformed.Add(player.Guid);
+                    transformReapplyAt.Remove(player.Guid);
+                }
+
+                // Clear a standing dance left by another boombox before playing one-shot clips.
+                if (!player.BoomboxDanceIsStanding)
+                    player.SendTunneledToVisible(new PlayerUpdatePacketSetAnimation
+                    {
+                        Guid = player.Guid, AnimationId = IdleAnimationId, Flags = 1
+                    }, true);
+
+                if (sharedPlayback is not null)
+                    continue;
+
+                if (definition.IndependentDanceDurationsMs.Count > 0)
+                    continue;
+                if (definition.StandingDanceAnimationId != 0)
+                {
+                    player.BoomboxDanceAnimation = definition.StandingDanceAnimationId;
+                    player.SendTunneledToVisible(new PlayerUpdatePacketSetAnimation
+                    {
+                        Guid = player.Guid,
+                        AnimationId = definition.StandingDanceAnimationId,
+                        Flags = 1
+                    }, true);
+                }
+                else if (player.TemporaryAppearance == 0
+                         && definition.DanceDurationsMs.TryGetValue(player.Model, out var durations))
+                {
+                    playback[player.Guid] = new BoomboxDancePlayback(definition.DanceSequence, durations, definition.DanceBlendMs);
+                    var animation = playback[player.Guid].Advance(Environment.TickCount64);
+                    player.BoomboxDanceAnimation = animation;
+                    if (animation != 0)
+                        SyncDance([player], animation);
+                }
+            }
+
+            // A manually stripped transformation returns after a short grace period,
+            // while leaving range removes both the form and this box's priority.
+            if (transformModelId != 0 && definition.TransformReapplyDelayMs > 0)
+            {
+                foreach (var player in inRange.Where(p => p.BoomboxDanceOwner == boomboxNpc.Guid))
+                {
+                    if (player.TemporaryAppearance != 0)
+                    {
+                        transformReapplyAt.Remove(player.Guid);
+                        continue;
+                    }
+                    var transformNow = Environment.TickCount64;
+                    if (!transformReapplyAt.TryGetValue(player.Guid, out var reapplyAt))
+                    {
+                        transformReapplyAt[player.Guid] = transformNow + definition.TransformReapplyDelayMs;
+                        continue;
+                    }
+                    if (transformNow < reapplyAt)
+                        continue;
+                    player.ApplyTemporaryAppearance(transformModelId,
+                        (int)Math.Max(1, definition.DurationMs - (transformNow - startedAt)), buffNameId: transformBuffNameId);
+                    player.BoomboxDanceTransform = transformModelId;
+                    transformed.Add(player.Guid);
+                    transformReapplyAt.Remove(player.Guid);
+                }
+            }
 
             // This targets the boombox's guid, not the player's, so a newcomer whose tile
             // visibility hasn't caught up drops it as an unknown entity and never hears the song.
@@ -197,9 +352,7 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
                 }
             }
 
-            elapsedMs += 1000;
-            sinceSwitch += 1000;
-        };
+        }
     }
 
     private static void SyncDance(List<Player> targets, int animationId)
@@ -222,8 +375,15 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
             recipient.SendTunneled(sync);
     }
 
-    private static void StopDancing(Player player, int transformModelId)
+    private static void StopDancing(Player player, ulong owner, int transformModelId)
     {
+        if (player.BoomboxDanceOwner != owner)
+            return;
+        player.BoomboxDanceOwner = 0;
+        player.BoomboxDancePriority = 0;
+        player.BoomboxDanceAnimation = 0;
+        player.BoomboxDanceIsStanding = false;
+        player.BoomboxDanceTransform = 0;
         if (transformModelId != 0 && player.TemporaryAppearance == transformModelId)
             player.RemoveTemporaryAppearance();
 
@@ -232,6 +392,14 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
             Guid = player.Guid,
             AnimationId = IdleAnimationId,
             Flags = 1
+        }, true);
+
+        // Changing the standing group alone does not interrupt a currently playing one-shot.
+        player.SendTunneledToVisible(new PlayerUpdatePacketSetAnimation
+        {
+            Guid = player.Guid,
+            AnimationId = IdleAnimationId,
+            Unknown = 1
         }, true);
     }
 }

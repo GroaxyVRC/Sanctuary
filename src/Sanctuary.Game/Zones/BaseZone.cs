@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,6 +16,7 @@ using Sanctuary.Core.Collections;
 using Sanctuary.Core.Extensions;
 using Sanctuary.Core.IO;
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Resources.Definitions.Zones;
 using Sanctuary.Packet;
@@ -440,6 +441,11 @@ public abstract class BaseZone : IZone, IDisposable
 
     private void SendInGamePurchase(Player player)
     {
+        var packetInGamePurchaseStoreBundleGroups = new PacketInGamePurchaseStoreBundleGroups
+        {
+            BundleGroups = _resourceManager.StoreBundleGroups.ToDictionary()
+        };
+
         var packetInGamePurchaseEnableMarketplace = new PacketInGamePurchaseEnableMarketplace
         {
             Enabled = true
@@ -487,11 +493,11 @@ public abstract class BaseZone : IZone, IDisposable
             }
 
             player.SendTunneled(packetInGamePurchaseStoreBundles);
+
+            if (packetInGamePurchaseStoreBundleGroups.BundleGroups.TryGetValue(WelcomeScreenHelper.PopularItemsGroupId, out var popularItems))
+                packetInGamePurchaseStoreBundleGroups.BundleGroups[WelcomeScreenHelper.PopularItemsGroupId] = WelcomeScreenHelper.GetPopularItems(
+                    popularItems, packetInGamePurchaseStoreBundles.Store.Bundles.Values);
         }
-
-        var packetInGamePurchaseStoreBundleGroups = new PacketInGamePurchaseStoreBundleGroups();
-
-        packetInGamePurchaseStoreBundleGroups.BundleGroups = _resourceManager.StoreBundleGroups.ToDictionary();
 
         player.SendTunneled(packetInGamePurchaseStoreBundleGroups);
     }
@@ -704,12 +710,43 @@ public abstract class BaseZone : IZone, IDisposable
         {
             Guid = GetNpcGuid(guid),
             NameId = definition.NameId,
+            SubTextNameId = definition.SubTextNameId,
             Name = definition.Name,
             ModelId = definition.ModelId,
+            TerrainObjectId = definition.TerrainObjectId,
+            ReplaceTerrainObject = definition.ReplaceTerrainObject,
             TextureAlias = definition.TextureAlias,
-            Scale = scale,
+            TintAlias = definition.TintAlias,
+            TintId = definition.TintId,
+            Scale = definition.Scale ?? scale,
+            HideNamePlate = definition.HideNamePlate,
+            Disposition = definition.Disposition,
+            Animation = definition.Animation,
+            CompositeEffectId = definition.CompositeEffectId,
+            VerticalOffset = definition.VerticalOffset,
+            OpensAtlas = definition.OpensAtlas,
+            AutoSelectSingleInteraction = definition.AutoSelectSingleInteraction,
+            InteractRange = definition.InteractRange,
+            IsInteractable = definition.IsInteractable,
+            CursorId = definition.CursorId,
+            HasCursor = definition.HasCursor,
+            RelevanceUnknown2 = definition.RelevanceUnknown2,
+            InteractionList = definition.InteractionList,
+            InteractionUnknown = definition.InteractionUnknown,
+            MerchantList = definition.MerchantList,
+            Ability = definition.Ability,
+            Attachments = new List<CharacterAttachmentData>(definition.Attachments),
             Visible = true
         };
+
+        if (definition.Notification is not null)
+            npc.Notification = Sanctuary.Game.Helpers.InteractionMenuHelper.GetNotification(npc.Guid, definition.Notification);
+
+        foreach (var notification in definition.Notifications)
+            npc.Notifications.Add(Sanctuary.Game.Helpers.InteractionMenuHelper.GetNotification(npc.Guid, notification));
+
+        if (definition.OpensAtlas)
+            npc.Interactions.Add(Sanctuary.Game.Interactions.OpenAtlasInteraction.Data);
 
         if (!TryRegisterEntity(_npcs, npc))
         {

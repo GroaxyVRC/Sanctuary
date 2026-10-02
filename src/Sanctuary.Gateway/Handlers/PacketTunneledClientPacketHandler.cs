@@ -48,6 +48,7 @@ public static class PacketTunneledClientPacketHandler
             BaseInventoryPacket.OpCode => BaseInventoryPacketHandler.HandlePacket(connection, reader),
             PacketGameTimeSync.OpCode => PacketGameTimeSyncHandler.HandlePacket(connection, packet.Payload),
             PacketBaseInGamePurchase.OpCode => PacketBaseInGamePurchaseHandler.HandlePacket(connection, reader),
+            AnnouncementDataSendPacket.OpCode => AnnouncementBasePacketHandler.HandlePacket(connection, reader),
             BaseQuickChatPacket.OpCode => BaseQuickChatPacketHandler.HandlePacket(connection, reader),
             PacketZoneTeleportRequest.OpCode => PacketZoneTeleportRequestHandler.HandlePacket(connection, packet.Payload),
             PacketClientMetrics.OpCode => PacketClientMetricsHandler.HandlePacket(connection, packet.Payload),

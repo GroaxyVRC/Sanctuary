@@ -23,8 +23,7 @@ public sealed class SillyStringAbility(AbilityServices services) : ConsumableAbi
 
         // Not aimable, so there's no selected target to honour. Skip last time's victim unless
         // they're the only one around.
-        var target = player.FindNearestPlayer(favor!.Range, player.LastSillyStringTarget)
-            ?? player.FindNearestPlayer(favor.Range);
+        var target = player.FindTarget(0, favor!.Range, player.LastSillyStringTarget) as Player;
 
         if (target is null)
             return SendFailure(player); // nobody nearby to spray - can isn't used

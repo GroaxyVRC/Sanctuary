@@ -157,9 +157,12 @@ public static class InventoryPacketEquipByItemRecordHandler
 
         playerUpdatePacketEquipItemChange.WieldType = itemClass.WieldType;
 
-        connection.Player.SendTunneledToVisible(playerUpdatePacketEquipItemChange);
+        if (packet.ProfileId == connection.Player.ActiveProfileId)
+            connection.Player.SendTunneledToVisible(playerUpdatePacketEquipItemChange);
 
         connection.Player.SendToolbar();
+
+        connection.Player.RefreshWeaponFlair(packet.ProfileId, packet.Slot);
 
         return true;
     }

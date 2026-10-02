@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -55,6 +56,18 @@ public class ConsumableCollection
 
             foreach (var entry in consumables.Boomboxes)
             {
+                if (!float.IsFinite(entry.Range) || entry.Range <= 0 || entry.DurationMs <= 0
+                    || !float.IsFinite(entry.SpawnOffset) || entry.ModelId <= 0
+                    || entry.DanceBlendMs < 0 || entry.TransformReapplyDelayMs < 0
+                    || ((entry.SynchronizedDances || entry.StandingDanceAnimationId == 0) && entry.DanceDurationsMs.Count == 0)
+                    || (entry.DanceDurationsMs.Count > 0 && entry.DanceSequence.Length == 0)
+                    || entry.DanceDurationsMs.Values.Any(d => d.Length != entry.DanceSequence.Length || d.Any(ms => ms <= 0))
+                    || entry.IndependentDanceDurationsMs.Values.Any(d => d.Count == 0 || d.Any(clip => clip.Key <= 0 || clip.Value <= 0)))
+                {
+                    _logger.LogError("Invalid boombox definition. ItemId={id} \"{file}\"", entry.ItemId, filePath);
+                    return false;
+                }
+
                 if (!Boomboxes.TryAdd(entry.ItemId, entry))
                 {
                     _logger.LogWarning("Failed to add Boombox entry. ItemId={id} \"{file}\"", entry.ItemId, filePath);
