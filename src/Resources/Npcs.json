@@ -20787,5 +20787,34 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33536,
+    "CaptureGuid": "71193377898514",
+    "NameId": 4228,
+    "ModelId": 849,
+    "ModelFileName": "sg_foodtray_01.adr",
+    "Scale": 1,
+    "Name": "Fish",
+    "VerticalOffset": -0.02
+  },
+  {
+    "Id": 33537,
+    "CaptureGuid": "71124658421778",
+    "NameId": 399427,
+    "ModelId": 275,
+    "ModelFileName": "sg_farming_node_rich_01.adr",
+    "Scale": 1,
+    "Name": "Fruit",
+    "VerticalOffset": -0.06
+  },
+  {
+    "Id": 33539,
+    "CaptureGuid": "69818988363794",
+    "NameId": 37143,
+    "ModelId": 269,
+    "ModelFileName": "sg_pies.adr",
+    "Scale": 1,
+    "Name": "Pie"
   }
 ]
