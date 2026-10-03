@@ -20787,5 +20787,39 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33111,
+    "CaptureGuid": "49478023250002",
+    "NameId": 74626,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Dog Owner",
+    "TextureAlias": "sanctuary_01",
+    "TintAlias": "sanctuary_01_LightBlue",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33112,
+    "CaptureGuid": "49546742726738",
+    "NameId": 74626,
+    "ModelId": 555,
+    "ModelFileName": "human_m_freestyle_09.agr",
+    "Scale": 1,
+    "Name": "Dog Owner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33121,
+    "CaptureGuid": "52570399703122",
+    "NameId": 74626,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Dog Owner",
+    "TextureAlias": "sanctuary_02",
+    "TintAlias": "sanctuary_02_Pink",
+    "HideNamePlate": true
   }
 ]
