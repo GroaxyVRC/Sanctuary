@@ -20787,5 +20787,194 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33088,
+    "CaptureGuid": "22115576881086546",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33090,
+    "CaptureGuid": "21195285648638034",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33099,
+    "CaptureGuid": "10156876100534354",
+    "NameId": 434545,
+    "ModelId": 3631,
+    "ModelFileName": "overworld_root_wildroot_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Wildroot Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434545,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33110,
+    "CaptureGuid": "22189656477007954",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33113,
+    "CaptureGuid": "21886672304078930",
+    "NameId": 434504,
+    "ModelId": 3629,
+    "ModelFileName": "overworld_bush_stickfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stickfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434504,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33126,
+    "CaptureGuid": "15623579194359890",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33135,
+    "CaptureGuid": "20781594398687314",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
