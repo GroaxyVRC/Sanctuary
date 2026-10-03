@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33603,
+    "CaptureGuid": "38001870635042",
+    "NameId": 420570,
+    "ModelId": 1928,
+    "ModelFileName": "robgoblin_m_xmas.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Builder",
+    "HideNamePlate": true
   }
 ]
