@@ -20787,5 +20787,33 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33213,
+    "CaptureGuid": "53188874993746",
+    "NameId": 100833,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Queensfields Harvesting",
+    "TerrainObjectId": 1254769517,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100833,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
