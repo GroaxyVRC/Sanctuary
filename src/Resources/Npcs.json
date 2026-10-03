@@ -20787,5 +20787,50 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33767,
+    "CaptureGuid": "22952305229858",
+    "NameId": 46375,
+    "ModelId": 170,
+    "ModelFileName": "dog_large_pointy.adr",
+    "Scale": 1,
+    "Name": "Curious Dog",
+    "TextureAlias": "darkmark",
+    "TintAlias": "darkmark-charcoal",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33768,
+    "CaptureGuid": "22883585753122",
+    "NameId": 92327,
+    "ModelId": 47,
+    "ModelFileName": "penguin_baby_01.adr",
+    "Scale": 1,
+    "Name": "Annoyed Penguin",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33769,
+    "CaptureGuid": "23089744183330",
+    "NameId": 92352,
+    "ModelId": 171,
+    "ModelFileName": "dog_large_shortears.adr",
+    "Scale": 1,
+    "Name": "Backyard Dog",
+    "TextureAlias": "solid",
+    "TintAlias": "solid-rusty",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33770,
+    "CaptureGuid": "23021024706594",
+    "NameId": 5159,
+    "ModelId": 198,
+    "ModelFileName": "birds_raven.adr",
+    "Scale": 1,
+    "Name": "Raven",
+    "HideNamePlate": true,
+    "Animation": 2100
   }
 ]
