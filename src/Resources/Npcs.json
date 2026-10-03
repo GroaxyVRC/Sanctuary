@@ -20787,5 +20787,18 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33673,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "15736760172578",
+    "NameId": 39812,
+    "ModelId": 41,
+    "ModelFileName": "fairy_f_01.adr",
+    "Scale": 1,
+    "Name": "Edward",
+    "TextureAlias": "01",
+    "TintAlias": "tumbleweed",
+    "HideNamePlate": true
   }
 ]
