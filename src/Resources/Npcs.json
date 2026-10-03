@@ -20787,5 +20787,39 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33659,
+    "CaptureGuid": "38345468018722",
+    "NameId": 3277,
+    "ModelId": 7,
+    "ModelFileName": "humanchild_f_skirtandtunic.adr",
+    "Scale": 1,
+    "Name": "Human Child",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33660,
+    "CaptureGuid": "24670292148258",
+    "NameId": 3277,
+    "ModelId": 688,
+    "ModelFileName": "humanchild_m_afro.adr",
+    "Scale": 1,
+    "Name": "Human Child",
+    "TextureAlias": "cubanblue",
+    "TintAlias": "red",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33661,
+    "CaptureGuid": "24739011624994",
+    "NameId": 3277,
+    "ModelId": 9,
+    "ModelFileName": "humanchild_m_tshirtwithbeltbig.adr",
+    "Scale": 1,
+    "Name": "Human Child",
+    "TextureAlias": "africanblue",
+    "TintAlias": "blue",
+    "HideNamePlate": true
   }
 ]
