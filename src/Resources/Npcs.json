@@ -20787,5 +20787,53 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33637,
+    "CaptureGuid": "12163347382306",
+    "NameId": 36719,
+    "ModelId": 826,
+    "ModelFileName": "human_f_snowhill.adr",
+    "Scale": 1,
+    "Name": "Customer",
+    "TextureAlias": "argylescarf",
+    "TintAlias": "poofs-green",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33638,
+    "CaptureGuid": "12232066859042",
+    "NameId": 36719,
+    "ModelId": 826,
+    "ModelFileName": "human_f_snowhill.adr",
+    "Scale": 1,
+    "Name": "Customer",
+    "TextureAlias": "poofs",
+    "TintAlias": "poofs-pink",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33639,
+    "CaptureGuid": "12300786335778",
+    "NameId": 36719,
+    "ModelId": 837,
+    "ModelFileName": "human_m_snowhill.adr",
+    "Scale": 1,
+    "Name": "Customer",
+    "TextureAlias": "hoodedjacket",
+    "TintAlias": "hoodedjacket-red",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33640,
+    "CaptureGuid": "12369505812514",
+    "NameId": 36719,
+    "ModelId": 837,
+    "ModelFileName": "human_m_snowhill.adr",
+    "Scale": 1,
+    "Name": "Customer",
+    "TextureAlias": "goggles",
+    "TintAlias": "goggles-blue",
+    "HideNamePlate": true
   }
 ]
