@@ -20787,5 +20787,61 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36114,
+    "CaptureGuid": "40940727777099810",
+    "NameId": 7740,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Fireflies",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 109,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7740,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 15363,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36115,
+    "CaptureGuid": "40940659057623074",
+    "NameId": 7740,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Fireflies",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 109,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7740,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 15363,
+        "Enabled": true
+      }
+    ]
   }
 ]
