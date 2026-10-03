@@ -20787,5 +20787,38 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33102,
+    "CaptureGuid": "7971459301458",
+    "NameId": 18364,
+    "ModelId": 220,
+    "ModelFileName": "bixie_m_warrior.adr",
+    "Scale": 1,
+    "Name": "Bixie Guard",
+    "HideNamePlate": true,
+    "VerticalOffset": 10
+  },
+  {
+    "Id": 33170,
+    "CaptureGuid": "7902739824722",
+    "NameId": 18364,
+    "ModelId": 220,
+    "ModelFileName": "bixie_m_warrior.adr",
+    "Scale": 1,
+    "Name": "Bixie Guard",
+    "HideNamePlate": true,
+    "VerticalOffset": 8
+  },
+  {
+    "Id": 33244,
+    "CaptureGuid": "7834020347986",
+    "NameId": 18364,
+    "ModelId": 220,
+    "ModelFileName": "bixie_m_warrior.adr",
+    "Scale": 1,
+    "Name": "Bixie Guard",
+    "HideNamePlate": true,
+    "VerticalOffset": 7
   }
 ]
