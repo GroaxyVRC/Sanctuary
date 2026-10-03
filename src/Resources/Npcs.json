@@ -20787,5 +20787,107 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33504,
+    "CaptureGuid": "37383395344402",
+    "NameId": 78101,
+    "ModelId": 377,
+    "ModelFileName": "fairy_farmer_f.adr",
+    "Scale": 1,
+    "Name": "Pixie Farmer",
+    "TextureAlias": "farmer_f_01",
+    "TintAlias": "farmer_f_01_yellow",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33513,
+    "CaptureGuid": "37314675867666",
+    "NameId": 78124,
+    "ModelId": 424,
+    "ModelFileName": "human_m_farmer_henry.agr",
+    "Scale": 1,
+    "Name": "Human Farmer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33514,
+    "CaptureGuid": "87754771791890",
+    "NameId": 78124,
+    "ModelId": 424,
+    "ModelFileName": "human_m_farmer_henry.agr",
+    "Scale": 1,
+    "Name": "Human Farmer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33553,
+    "CaptureGuid": "37245956390930",
+    "NameId": 78124,
+    "ModelId": 424,
+    "ModelFileName": "human_m_farmer_henry.agr",
+    "Scale": 1,
+    "Name": "Human Farmer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33554,
+    "CaptureGuid": "37452114821138",
+    "NameId": 78101,
+    "ModelId": 32,
+    "ModelFileName": "fairy_m_farmer_01.adr",
+    "Scale": 1,
+    "Name": "Pixie Farmer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33859,
+    "CaptureGuid": "22127671509026",
+    "NameId": 78124,
+    "ModelId": 424,
+    "ModelFileName": "human_m_farmer_henry.agr",
+    "Scale": 1,
+    "Name": "Human Farmer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33882,
+    "CaptureGuid": "22196390985762",
+    "NameId": 78101,
+    "ModelId": 377,
+    "ModelFileName": "fairy_farmer_f.adr",
+    "Scale": 1,
+    "Name": "Pixie Farmer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33901,
+    "CaptureGuid": "22058952032290",
+    "NameId": 78124,
+    "ModelId": 424,
+    "ModelFileName": "human_m_farmer_henry.agr",
+    "Scale": 1,
+    "Name": "Human Farmer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33923,
+    "CaptureGuid": "21371757264930",
+    "NameId": 78124,
+    "ModelId": 424,
+    "ModelFileName": "human_m_farmer_henry.agr",
+    "Scale": 1,
+    "Name": "Human Farmer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33924,
+    "CaptureGuid": "21440476741666",
+    "NameId": 78101,
+    "ModelId": 32,
+    "ModelFileName": "fairy_m_farmer_01.adr",
+    "Scale": 1,
+    "Name": "Pixie Farmer",
+    "HideNamePlate": true
   }
 ]
