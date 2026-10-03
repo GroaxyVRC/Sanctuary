@@ -309,37 +309,9 @@
       "Image": "1"
     },
     "Entries": {
-      "5800": {
-        "StoreBundleId": 5800,
-        "DisplayOrder": 3
-      },
-      "5799": {
-        "StoreBundleId": 5799,
-        "DisplayOrder": 4
-      },
-      "5798": {
-        "StoreBundleId": 5798,
-        "DisplayOrder": 5
-      },
-      "5787": {
-        "StoreBundleId": 5787,
-        "DisplayOrder": 20
-      },
-      "5792": {
-        "StoreBundleId": 5792,
-        "DisplayOrder": 10
-      },
-      "5782": {
-        "StoreBundleId": 5782,
-        "DisplayOrder": 40
-      },
-      "5797": {
-        "StoreBundleId": 5797,
-        "DisplayOrder": 30
-      },
-      "5777": {
-        "StoreBundleId": 5777,
-        "DisplayOrder": 50
+      "4859": {
+        "StoreBundleId": 4859,
+        "DisplayOrder": 1
       }
     }
   },
