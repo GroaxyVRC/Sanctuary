@@ -20787,5 +20787,63 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33434,
+    "SubTextNameId": 4571,
+    "CaptureGuid": "4466765987922",
+    "NameId": 14700,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Orchid",
+    "TextureAlias": "sanctuary_01",
+    "TintAlias": "sanctuary_01_Purple",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 14700,
+        "ReferenceId": 4571,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33435,
+    "SubTextNameId": 4574,
+    "CaptureGuid": "122389388066898",
+    "NameId": 5102530,
+    "ModelId": 780,
+    "ModelFileName": "human_sanctuary_m.adr",
+    "Scale": 1,
+    "Name": "Biff",
+    "TextureAlias": "01",
+    "TintAlias": "01-red",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102530,
+        "ReferenceId": 4574,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
