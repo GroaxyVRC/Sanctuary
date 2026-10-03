@@ -714,7 +714,15 @@ public abstract class BaseZone : IZone, IDisposable
             InteractionList = definition.InteractionList,
             InteractionUnknown = definition.InteractionUnknown,
             MerchantList = definition.MerchantList,
-            Scale = scale,
+            TintAlias = definition.TintAlias,
+            TintId = definition.TintId,
+            Scale = definition.Scale ?? scale,
+            HideNamePlate = definition.HideNamePlate,
+            Disposition = definition.Disposition,
+            Animation = definition.Animation,
+            CompositeEffectId = definition.CompositeEffectId,
+            VerticalOffset = definition.VerticalOffset,
+            Attachments = new List<CharacterAttachmentData>(definition.Attachments),
             Visible = true
         };
 
