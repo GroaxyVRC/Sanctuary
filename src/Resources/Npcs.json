@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33390,
+    "SubTextNameId": 24621,
+    "CaptureGuid": "14705968021586",
+    "NameId": 21276,
+    "ModelId": 442,
+    "ModelFileName": "fairy_m_courier_01.agr",
+    "Scale": 1,
+    "Name": "Felipe"
+  },
+  {
+    "Id": 33399,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "5634997092434",
+    "NameId": 10088,
+    "ModelId": 398,
+    "ModelFileName": "fairy_sanctuary_m_01.adr",
+    "Scale": 1,
+    "Name": "Flurti",
+    "TextureAlias": "sanctuary-m-03",
+    "TintAlias": "sanctuary-m-red"
   }
 ]
