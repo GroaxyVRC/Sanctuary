@@ -20787,5 +20787,61 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33972,
+    "CaptureGuid": "36077725286434",
+    "NameId": 416257,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Right Side Soccer Gate ",
+    "TerrainObjectId": 1254789685,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 119,
+        "IconState": 22,
+        "Unknown": 0,
+        "NameId": 416257,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33973,
+    "CaptureGuid": "36146444763170",
+    "NameId": 416258,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Left Side Soccer Gate",
+    "TerrainObjectId": 1254789670,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 119,
+        "IconState": 22,
+        "Unknown": 0,
+        "NameId": 416258,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
