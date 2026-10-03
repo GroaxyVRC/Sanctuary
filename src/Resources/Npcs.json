@@ -20787,5 +20787,32 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33466,
+    "CaptureGuid": "52776558133266",
+    "NameId": 117044,
+    "ModelId": 732,
+    "ModelFileName": "fairy_m_chaz_strongarm.agr",
+    "Scale": 1,
+    "Name": "Chaz Strongarm"
+  },
+  {
+    "Id": 33468,
+    "CaptureGuid": "47622597378066",
+    "NameId": 103818,
+    "ModelId": 553,
+    "ModelFileName": "human_m_freestyle_07.agr",
+    "Scale": 0.8,
+    "Name": "Big Mike"
+  },
+  {
+    "Id": 33469,
+    "CaptureGuid": "35046933135378",
+    "NameId": 76038,
+    "ModelId": 391,
+    "ModelFileName": "fairy_m_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Len Tyril"
   }
 ]
