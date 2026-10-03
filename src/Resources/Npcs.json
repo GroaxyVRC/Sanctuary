@@ -20787,5 +20787,14 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33334,
+    "CaptureGuid": "21234318311506",
+    "NameId": 23792,
+    "ModelId": 359,
+    "ModelFileName": "human_f_chef_01.agr",
+    "Scale": 1,
+    "Name": "Helga Humbleloaf"
   }
 ]
