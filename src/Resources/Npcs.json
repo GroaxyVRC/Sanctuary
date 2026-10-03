@@ -20787,5 +20787,32 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33400,
+    "SubTextNameId": 15717,
+    "CaptureGuid": "4398046511186",
+    "NameId": 14699,
+    "ModelId": 398,
+    "ModelFileName": "fairy_sanctuary_m_01.adr",
+    "Scale": 1,
+    "Name": "Ikee",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 14699,
+        "ReferenceId": 15717,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
