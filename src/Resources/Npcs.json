@@ -20787,5 +20787,59 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33641,
+    "SubTextNameId": 2941,
+    "CaptureGuid": "41918880808994",
+    "NameId": 5102505,
+    "ModelId": 4578,
+    "ModelFileName": "fairy_f_merchant_chef_asian_phoenix.agr",
+    "Scale": 1,
+    "Name": "Skye",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102505,
+        "ReferenceId": 2941,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33649,
+    "SubTextNameId": 5102733,
+    "CaptureGuid": "33191507263522",
+    "NameId": 408638,
+    "ModelId": 1585,
+    "ModelFileName": "fairy_m_chip_numbwing.agr",
+    "Scale": 1,
+    "Name": "Chip Numbwing",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 408638,
+        "ReferenceId": 5102733,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
