@@ -20787,5 +20787,115 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33614,
+    "CaptureGuid": "39307540693026",
+    "NameId": 427724,
+    "ModelId": 2119,
+    "ModelFileName": "human_m_pirate_01.agr",
+    "Scale": 1,
+    "Name": "Captain Ironsides",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 427724,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33615,
+    "CaptureGuid": "37314675867682",
+    "NameId": 420397,
+    "ModelId": 837,
+    "ModelFileName": "human_m_snowhill.adr",
+    "Scale": 1,
+    "Name": "Calvin Coldcastle",
+    "TextureAlias": "goggles",
+    "TintAlias": "goggles-green",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 170,
+        "IconState": 239,
+        "Unknown": 0,
+        "NameId": 420397,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33620,
+    "CaptureGuid": "34840774705186",
+    "NameId": 408640,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Frostbitten Banks",
+    "TerrainObjectId": 1259130091,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 151,
+        "IconState": 236,
+        "Unknown": 0,
+        "NameId": 408640,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33623,
+    "CaptureGuid": "41644002902050",
+    "NameId": 5102405,
+    "ModelId": 4552,
+    "ModelFileName": "penguin_baby_8bit_01.adr",
+    "Scale": 3,
+    "Name": "Momma Meepster",
+    "TextureAlias": "penguin_baby8bit-P",
+    "TintAlias": "dyetint-amethyst",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 5102405,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
