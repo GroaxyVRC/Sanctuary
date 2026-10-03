@@ -93,9 +93,9 @@ public sealed class Player : ClientPcData, IEntity
     // its own pending re-enable instead of it firing later and silently un-deleting the slot.
     private readonly ConcurrentDictionary<(int, int), (DateTimeOffset SendAt, ISerializablePacket Packet)> _delayedSlotPackets = new();
 
-    public void ScheduleSlotPacket(int actionBarId, int slotIndex, ISerializablePacket packet, int delayMs)
+    public void ScheduleSlotPacket(int actionBarId, int slotIndex, ISerializablePacket serializablePacket, int delayMs)
     {
-        _delayedSlotPackets[(actionBarId, slotIndex)] = (DateTimeOffset.UtcNow.AddMilliseconds(delayMs), packet);
+        _delayedSlotPackets[(actionBarId, slotIndex)] = (DateTimeOffset.UtcNow.AddMilliseconds(delayMs), serializablePacket);
     }
 
     public void CancelScheduledSlotPacket(int actionBarId, int slotIndex) => _delayedSlotPackets.TryRemove((actionBarId, slotIndex), out _);
