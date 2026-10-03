@@ -20787,5 +20787,121 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33815,
+    "SubTextNameId": 140512,
+    "CaptureGuid": "40898808896290850",
+    "NameId": 38909,
+    "ModelId": 650,
+    "ModelFileName": "sg_collection_node_leaves_rare_01.adr",
+    "Scale": 1,
+    "Name": "Leaf Pile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5741,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 38909,
+        "ReferenceId": 140512,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 34062,
+    "SubTextNameId": 140512,
+    "CaptureGuid": "40915782607044642",
+    "NameId": 20748,
+    "ModelId": 671,
+    "ModelFileName": "sg_collection_node_robgoblin_junkpile_rare_01.adr",
+    "Scale": 0.75,
+    "Name": "Robgoblin Junkpile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5741,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 20748,
+        "ReferenceId": 140512,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36272,
+    "SubTextNameId": 140512,
+    "CaptureGuid": "40944713506750498",
+    "NameId": 16975,
+    "ModelId": 670,
+    "ModelFileName": "sg_collection_node_flowers_rare_01.adr",
+    "Scale": 1.25,
+    "Name": "Wild Flowers",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5741,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 16975,
+        "ReferenceId": 140512,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36304,
+    "SubTextNameId": 140512,
+    "CaptureGuid": "40961687217504290",
+    "NameId": 16975,
+    "ModelId": 670,
+    "ModelFileName": "sg_collection_node_flowers_rare_01.adr",
+    "Scale": 1.25,
+    "Name": "Wild Flowers",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5741,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 16975,
+        "ReferenceId": 140512,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
