@@ -20787,5 +20787,31 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33445,
+    "CaptureGuid": "122664265973842",
+    "NameId": 5102577,
+    "ModelId": 4605,
+    "ModelFileName": "human_m_sunstone_jones.agr",
+    "Scale": 1,
+    "Name": "Sunstone Jones",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 341,
+        "IconState": 378,
+        "Unknown": 0,
+        "NameId": 5102577,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
