@@ -20787,5 +20787,44 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33736,
+    "CaptureGuid": "2405181685794",
+    "NameId": 4726,
+    "ModelId": 181,
+    "ModelFileName": "human_f_explorer_caucasian01.agr",
+    "Scale": 1,
+    "Name": "Senari"
+  },
+  {
+    "Id": 33737,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "274877906978",
+    "NameId": 182,
+    "ModelId": 34,
+    "ModelFileName": "fairy_f_lorina.adr",
+    "Scale": 1,
+    "Name": "Mayor Crystalline"
+  },
+  {
+    "Id": 33741,
+    "CaptureGuid": "21509196218402",
+    "NameId": 79022,
+    "ModelId": 657,
+    "ModelFileName": "fairy_m_freestyle_08.agr",
+    "Scale": 1,
+    "Name": "Tevin"
+  },
+  {
+    "Id": 33761,
+    "CaptureGuid": "9002251452450",
+    "NameId": 4809,
+    "ModelId": 335,
+    "ModelFileName": "sh_sign01.adr",
+    "Scale": 1,
+    "Name": "Snowhill Town Hall",
+    "TextureAlias": "townhall",
+    "HideNamePlate": true
   }
 ]
