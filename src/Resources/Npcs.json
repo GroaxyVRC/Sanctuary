@@ -20787,5 +20787,87 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33662,
+    "SubTextNameId": 441418,
+    "CaptureGuid": "40338332844066",
+    "NameId": 441346,
+    "ModelId": 4106,
+    "ModelFileName": "robgoblin_m_banker.adr",
+    "Scale": 1,
+    "Name": "Yoink",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 343,
+        "IconState": 380,
+        "Unknown": 0,
+        "NameId": 441346,
+        "ReferenceId": 441418,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33666,
+    "SubTextNameId": 5102255,
+    "CaptureGuid": "41369124995106",
+    "NameId": 5102292,
+    "ModelId": 4521,
+    "ModelFileName": "fairy_f_merchant_medic_asian_cupid.agr",
+    "Scale": 1,
+    "Name": "Spratt",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102292,
+        "ReferenceId": 5102255,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33691,
+    "CaptureGuid": "13125420056610",
+    "NameId": 36827,
+    "ModelId": 837,
+    "ModelFileName": "human_m_snowhill.adr",
+    "Scale": 1,
+    "Name": "Willie",
+    "TextureAlias": "goggles",
+    "TintAlias": "goggles-brown",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 36827,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
