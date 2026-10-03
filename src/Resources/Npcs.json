@@ -20787,5 +20787,85 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33961,
+    "CaptureGuid": "32916629356578",
+    "NameId": 407425,
+    "ModelId": 1085,
+    "ModelFileName": "human_m_soccerred.agr",
+    "Scale": 1,
+    "Name": "Soccer Player",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33962,
+    "CaptureGuid": "32985348833314",
+    "NameId": 407425,
+    "ModelId": 1084,
+    "ModelFileName": "human_m_soccerblue.agr",
+    "Scale": 1,
+    "Name": "Soccer Player",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33979,
+    "CaptureGuid": "31404800868386",
+    "NameId": 407425,
+    "ModelId": 1085,
+    "ModelFileName": "human_m_soccerred.agr",
+    "Scale": 1,
+    "Name": "Soccer Player",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33980,
+    "CaptureGuid": "31336081391650",
+    "NameId": 407425,
+    "ModelId": 1085,
+    "ModelFileName": "human_m_soccerred.agr",
+    "Scale": 1,
+    "Name": "Soccer Player",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33981,
+    "CaptureGuid": "31198642438178",
+    "NameId": 407425,
+    "ModelId": 1084,
+    "ModelFileName": "human_m_soccerblue.agr",
+    "Scale": 1,
+    "Name": "Soccer Player",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33984,
+    "CaptureGuid": "31129922961442",
+    "NameId": 407425,
+    "ModelId": 1084,
+    "ModelFileName": "human_m_soccerblue.agr",
+    "Scale": 1,
+    "Name": "Soccer Player",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33985,
+    "CaptureGuid": "31473520345122",
+    "NameId": 407425,
+    "ModelId": 1085,
+    "ModelFileName": "human_m_soccerred.agr",
+    "Scale": 1,
+    "Name": "Soccer Player",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33990,
+    "CaptureGuid": "31267361914914",
+    "NameId": 407425,
+    "ModelId": 1084,
+    "ModelFileName": "human_m_soccerblue.agr",
+    "Scale": 1,
+    "Name": "Soccer Player",
+    "HideNamePlate": true
   }
 ]
