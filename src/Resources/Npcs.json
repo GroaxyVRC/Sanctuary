@@ -20787,5 +20787,60 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33822,
+    "CaptureGuid": "43636867727394",
+    "NameId": 116741,
+    "ModelId": 4546,
+    "ModelFileName": "sg_troll_hut_02_snow.adr",
+    "Scale": 1,
+    "Name": "Ice Troll Scout",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 116741,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33823,
+    "CaptureGuid": "6116033429538",
+    "NameId": 5698,
+    "ModelId": 251,
+    "ModelFileName": "sh_cave_entrance_bat_cave_01.adr",
+    "Scale": 0.8,
+    "Name": "Frostfang Caverns",
+    "VerticalOffset": -0.1,
+    "TerrainObjectId": 1345838138,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 5698,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
