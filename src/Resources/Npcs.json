@@ -20787,5 +20787,32 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33355,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "46866683134034",
+    "NameId": 38111,
+    "ModelId": 648,
+    "ModelFileName": "human_m_tcg_poe_tatters.agr",
+    "Scale": 1,
+    "Name": "Poe Tatters",
+    "HasCursor": true,
+    "CursorId": 23,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 39,
+        "IconState": 10,
+        "Unknown": 0,
+        "NameId": 38111,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
