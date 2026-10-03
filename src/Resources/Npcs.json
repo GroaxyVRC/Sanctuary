@@ -20787,5 +20787,34 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33397,
+    "SubTextNameId": 432606,
+    "CaptureGuid": "98062693302354",
+    "NameId": 432605,
+    "ModelId": 68,
+    "ModelFileName": "sh_icecube_01.adr",
+    "Scale": 1,
+    "Name": "Dress Up!",
+    "TerrainObjectId": 1287004708,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 432605,
+        "ReferenceId": 432606,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
