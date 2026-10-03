@@ -20787,5 +20787,60 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33455,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "33741263077394",
+    "NameId": 73178,
+    "ModelId": 521,
+    "ModelFileName": "sh_bucket_01.adr",
+    "Scale": 1,
+    "Name": "Bait Bucket",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 86,
+        "IconState": 145,
+        "Unknown": 0,
+        "NameId": 73178,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33463,
+    "CaptureGuid": "33074959030943762",
+    "NameId": 76565,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 2,
+    "Name": "Sparkling Water",
+    "HideNamePlate": true,
+    "CompositeEffectId": 15381,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 104,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 76565,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 1107,
+        "Enabled": true
+      }
+    ]
   }
 ]
