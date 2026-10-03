@@ -20787,5 +20787,32 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33790,
+    "CaptureGuid": "42193758715938",
+    "NameId": 420171,
+    "ModelId": 1963,
+    "ModelFileName": "human_m_tiger_the_party_animal_holiday.agr",
+    "Scale": 1,
+    "Name": "Tiger the Party Animal",
+    "CompositeEffectId": 15588,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 420171,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
