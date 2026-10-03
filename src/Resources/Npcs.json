@@ -20787,5 +20787,65 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33459,
+    "CaptureGuid": "119846767427602",
+    "NameId": 41197,
+    "ModelId": 131,
+    "ModelFileName": "antelope_female.adr",
+    "Scale": 1,
+    "Name": "Antelope",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33563,
+    "CaptureGuid": "113593295044626",
+    "NameId": 41197,
+    "ModelId": 131,
+    "ModelFileName": "antelope_female.adr",
+    "Scale": 1,
+    "Name": "Antelope",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33573,
+    "CaptureGuid": "97581656965138",
+    "NameId": 41197,
+    "ModelId": 131,
+    "ModelFileName": "antelope_female.adr",
+    "Scale": 1,
+    "Name": "Antelope",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33574,
+    "CaptureGuid": "106446469464082",
+    "NameId": 41197,
+    "ModelId": 131,
+    "ModelFileName": "antelope_female.adr",
+    "Scale": 1,
+    "Name": "Antelope",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33576,
+    "CaptureGuid": "145410412773394",
+    "NameId": 41197,
+    "ModelId": 130,
+    "ModelFileName": "antelope.adr",
+    "Scale": 1,
+    "Name": "Antelope",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33579,
+    "CaptureGuid": "22127671509010",
+    "NameId": 41197,
+    "ModelId": 131,
+    "ModelFileName": "antelope_female.adr",
+    "Scale": 1,
+    "Name": "Antelope",
+    "HideNamePlate": true
   }
 ]
