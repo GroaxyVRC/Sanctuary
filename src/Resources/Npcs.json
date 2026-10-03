@@ -20787,5 +20787,29 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33705,
+    "CaptureGuid": "23708219473954",
+    "NameId": 92420,
+    "ModelId": 221,
+    "ModelFileName": "chugawug_m_02.adr",
+    "Scale": 1,
+    "Name": "Tower Defender",
+    "TextureAlias": "chugawug_m_02",
+    "TintAlias": "chugawug_m_02_blue",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33708,
+    "CaptureGuid": "23639499997218",
+    "NameId": 92420,
+    "ModelId": 826,
+    "ModelFileName": "human_f_snowhill.adr",
+    "Scale": 1,
+    "Name": "Tower Defender",
+    "TextureAlias": "poofs",
+    "TintAlias": "poofs-pink",
+    "HideNamePlate": true
   }
 ]
