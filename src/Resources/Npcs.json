@@ -20787,5 +20787,205 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33133,
+    "CaptureGuid": "15337912329568338",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33134,
+    "CaptureGuid": "15341898059219026",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33147,
+    "CaptureGuid": "19778702355202130",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33151,
+    "CaptureGuid": "15341829339742290",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33152,
+    "CaptureGuid": "16733330024169554",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33171,
+    "CaptureGuid": "16738209107017810",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33175,
+    "CaptureGuid": "16731405878820946",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33178,
+    "CaptureGuid": "19776022295609426",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33183,
+    "CaptureGuid": "19779664427876434",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33194,
+    "CaptureGuid": "19775884856655954",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33196,
+    "CaptureGuid": "19779595708399698",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33197,
+    "CaptureGuid": "19780076744736850",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33205,
+    "CaptureGuid": "16741438922424402",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33212,
+    "CaptureGuid": "19774235589214290",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33215,
+    "CaptureGuid": "19779733147353170",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33216,
+    "CaptureGuid": "19779114672062546",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33219,
+    "CaptureGuid": "19778977233109074",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33223,
+    "CaptureGuid": "16734017218936914",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33226,
+    "CaptureGuid": "19777190526713938",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33227,
+    "CaptureGuid": "19778839794155602",
+    "NameId": 22612,
+    "ModelId": 256,
+    "ModelFileName": "sg_fairy_flora_03_flower03.adr",
+    "Scale": 1,
+    "Name": "Bixie Bud",
+    "HideNamePlate": true
   }
 ]
