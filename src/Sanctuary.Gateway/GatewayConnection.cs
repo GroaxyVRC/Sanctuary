@@ -151,19 +151,19 @@ public class GatewayConnection : UdpConnection
         _logger.LogError("[PacketCorrupt] Guid: {guid}, Reason: {reason}, Data: {data}", Player?.Guid, reason, Convert.ToHexString(data));
     }
 
-    public void SendTunneled(ISerializablePacket packet, bool reliable = true, bool secure = false)
+    public void SendTunneled(ISerializablePacket serializablePacket, bool reliable = true, bool secure = false)
     {
-        var packetTunneled = new PacketTunneledClientPacket
+        var packetTunneledClientPacket = new PacketTunneledClientPacket
         {
-            Payload = packet.Serialize()
+            Payload = serializablePacket.Serialize()
         };
 
-        Send(packetTunneled, reliable, secure);
+        Send(packetTunneledClientPacket, reliable, secure);
     }
 
-    public void Send(ISerializablePacket packet, bool reliable = true, bool secure = false)
+    public void Send(ISerializablePacket serializablePacket, bool reliable = true, bool secure = false)
     {
-        var data = packet.Serialize();
+        var data = serializablePacket.Serialize();
 
         if (secure)
             InternalSendSecure(data);
