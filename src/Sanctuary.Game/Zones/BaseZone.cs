@@ -16,6 +16,7 @@ using Sanctuary.Core.Collections;
 using Sanctuary.Core.Extensions;
 using Sanctuary.Core.IO;
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Resources.Definitions.Zones;
 using Sanctuary.Packet;
@@ -1085,7 +1086,12 @@ public abstract class BaseZone : IZone, IDisposable
 
     public bool TryRemovePlayer(ulong guid)
     {
-        return _players.TryRemove(guid, out _) && _entities.TryRemove(guid, out _);
+        if (!_players.TryRemove(guid, out _))
+            return false;
+
+        BoomboxHelper.RemovePlayer(this, guid);
+
+        return _entities.TryRemove(guid, out _);
     }
 
     #endregion
