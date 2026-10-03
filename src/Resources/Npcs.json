@@ -20787,5 +20787,88 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33423,
+    "SubTextNameId": 4572,
+    "CaptureGuid": "122320668590162",
+    "NameId": 5102529,
+    "ModelId": 889,
+    "ModelFileName": "human_f_sanctuary.adr",
+    "Scale": 1,
+    "Name": "Calista",
+    "TextureAlias": "goldthread",
+    "TintAlias": "goldthread-green",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102529,
+        "ReferenceId": 4572,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33433,
+    "SubTextNameId": 5102998,
+    "CaptureGuid": "123557619171410",
+    "NameId": 5102997,
+    "ModelId": 4748,
+    "ModelFileName": "human_m_edwin.agr",
+    "Scale": 1,
+    "Name": "Edwin",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 5102997,
+        "ReferenceId": 5102998,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33447,
+    "SubTextNameId": 5102739,
+    "CaptureGuid": "56624848830546",
+    "NameId": 79006,
+    "ModelId": 570,
+    "ModelFileName": "fairy_f_freestyle_08.agr",
+    "Scale": 1,
+    "Name": "Yia",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 79006,
+        "ReferenceId": 5102739,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
