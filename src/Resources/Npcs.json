@@ -20787,5 +20787,29 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33586,
+    "CaptureGuid": "39582418599970",
+    "NameId": 430054,
+    "ModelId": 15,
+    "ModelFileName": "chugawug_m_miner_01.adr",
+    "Scale": 1,
+    "Name": "Builder2",
+    "TextureAlias": "miner-01",
+    "TintAlias": "miner-red",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33590,
+    "CaptureGuid": "39513699123234",
+    "NameId": 430053,
+    "ModelId": 38,
+    "ModelFileName": "human_m_miner_01.adr",
+    "Scale": 1,
+    "Name": "Builder1",
+    "TextureAlias": "miner-01",
+    "TintAlias": "miner-orange",
+    "HideNamePlate": true
   }
 ]
