@@ -20787,5 +20787,63 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33652,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "893353197602",
+    "NameId": 3070,
+    "ModelId": 48,
+    "ModelFileName": "fairy_m_01.adr",
+    "Scale": 1,
+    "Name": "Mr. Twinkle",
+    "TextureAlias": "01",
+    "TintAlias": "raisin",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 3070,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33653,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "6047313952802",
+    "NameId": 6375,
+    "ModelId": 49,
+    "ModelFileName": "fairy_m_02.adr",
+    "Scale": 1,
+    "Name": "Big J",
+    "TextureAlias": "02",
+    "TintAlias": "blizzard",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 6375,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
