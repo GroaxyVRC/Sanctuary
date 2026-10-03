@@ -20787,5 +20787,86 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33743,
+    "CaptureGuid": "30167850287138",
+    "NameId": 394914,
+    "ModelId": 1067,
+    "ModelFileName": "fairy_f_autumn_mistflower.agr",
+    "Scale": 1,
+    "Name": "Autumn Mistflower",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 118,
+        "IconState": 201,
+        "Unknown": 0,
+        "NameId": 394914,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33772,
+    "CaptureGuid": "13469017440290",
+    "NameId": 36923,
+    "ModelId": 41,
+    "ModelFileName": "fairy_f_01.adr",
+    "Scale": 1,
+    "Name": "Scarlet Shadeveil",
+    "TextureAlias": "01",
+    "TintAlias": "mahogany",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 36923,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33776,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "18073222381602",
+    "NameId": 47830,
+    "ModelId": 391,
+    "ModelFileName": "fairy_m_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Steele",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 47830,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
