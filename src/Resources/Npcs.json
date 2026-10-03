@@ -20787,5 +20787,31 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33389,
+    "CaptureGuid": "7421703487570",
+    "NameId": 17267,
+    "ModelId": 340,
+    "ModelFileName": "sg_mailbox_group_01.adr",
+    "Scale": 1,
+    "Name": "Sanctuary Postboxes",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 22,
+        "IconState": 11,
+        "Unknown": 0,
+        "NameId": 17267,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
