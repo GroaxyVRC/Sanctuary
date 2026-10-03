@@ -20787,5 +20787,112 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33379,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "186642098815058",
+    "NameId": 140745,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Hard Bixie Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 80,
+        "IconState": 138,
+        "Unknown": 0,
+        "NameId": 140745,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33383,
+    "CaptureGuid": "65008624992338",
+    "NameId": 140744,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Easy Bixie Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 80,
+        "IconState": 138,
+        "Unknown": 0,
+        "NameId": 140744,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33384,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "186573379338322",
+    "NameId": 140746,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Bixie Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 65,
+        "IconState": 69,
+        "Unknown": 0,
+        "NameId": 140746,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33388,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "186367220908114",
+    "NameId": 93863,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Medium Bixie Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 80,
+        "IconState": 138,
+        "Unknown": 0,
+        "NameId": 93863,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
