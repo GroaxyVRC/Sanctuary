@@ -6415,12 +6415,6 @@
     "ModelFileName": "faeriedrake.adr"
   },
   {
-    "Id": 2402,
-    "ModelId": 414,
-    "ModelFileName": "fairy_seaside_m_01_lod0.adr",
-    "TextureAlias": "tshirt"
-  },
-  {
     "Id": 2403,
     "ModelId": 555,
     "ModelFileName": "human_m_freestyle_09.agr"
