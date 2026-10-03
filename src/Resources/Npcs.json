@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33370,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2542620639314",
+    "NameId": 10077,
+    "ModelId": 344,
+    "ModelFileName": "fairy_royalguard_f.adr",
+    "Scale": 1,
+    "Name": "Guard Slashi",
+    "TextureAlias": "02"
+  },
+  {
+    "Id": 33453,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2611340116050",
+    "NameId": 10079,
+    "ModelId": 345,
+    "ModelFileName": "fairy_royalguard_m.adr",
+    "Scale": 1,
+    "Name": "Guard Banee",
+    "TextureAlias": "03"
   }
 ]
