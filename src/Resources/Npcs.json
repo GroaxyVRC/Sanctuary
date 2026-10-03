@@ -20787,5 +20787,32 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33624,
+    "SubTextNameId": 440942,
+    "CaptureGuid": "40829951980601378",
+    "NameId": 440941,
+    "ModelId": 4103,
+    "ModelFileName": "sogg_f_vendor.adr",
+    "Scale": 1,
+    "Name": "Cragara",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 344,
+        "IconState": 381,
+        "Unknown": 0,
+        "NameId": 440941,
+        "ReferenceId": 440942,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
