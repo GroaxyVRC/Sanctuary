@@ -20787,5 +20787,35 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33395,
+    "CaptureGuid": "12438225289298",
+    "NameId": 15993,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Fire Hydrant",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33642,
+    "CaptureGuid": "6459630813218",
+    "NameId": 15993,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Fire Hydrant",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33777,
+    "CaptureGuid": "6528350289954",
+    "NameId": 15993,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Fire Hydrant",
+    "HideNamePlate": true
   }
 ]
