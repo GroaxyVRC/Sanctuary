@@ -3,6 +3,7 @@ using System.Linq;
 using System.Numerics;
 
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Zones;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -171,9 +172,9 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
             // Re-sync everyone on a rotation to stay phase-locked, otherwise only start late
             // arrivals so the rest don't hitch.
             if (animChanged)
-                SyncDance(inRange, currentAnim);
+                BoomboxHelper.SyncDance(inRange, currentAnim);
             else if (newcomers.Count > 0)
-                SyncDance(newcomers, currentAnim);
+                BoomboxHelper.SyncDance(newcomers, currentAnim);
 
             // This targets the boombox's guid, not the player's, so a newcomer whose tile
             // visibility hasn't caught up drops it as an unknown entity and never hears the song.
@@ -200,26 +201,6 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
             elapsedMs += 1000;
             sinceSwitch += 1000;
         };
-    }
-
-    private static void SyncDance(List<Player> targets, int animationId)
-    {
-        if (targets.Count == 0)
-            return;
-
-        var sync = new PlayerUpdatePacketSetSynchronizedAnimations();
-
-        foreach (var player in targets)
-            sync.Animations.Add(new PlayerUpdatePacketSetSynchronizedAnimations.Animation { Guid = player.Guid, AnimationId = animationId });
-
-        var recipients = new HashSet<Player>(targets);
-
-        foreach (var player in targets)
-            foreach (var visiblePlayer in player.VisiblePlayers.Values)
-                recipients.Add(visiblePlayer);
-
-        foreach (var recipient in recipients)
-            recipient.SendTunneled(sync);
     }
 
     private static void StopDancing(Player player, int transformModelId)
