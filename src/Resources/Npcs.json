@@ -20787,5 +20787,85 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33634,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "11063835754530",
+    "NameId": 23788,
+    "ModelId": 32,
+    "ModelFileName": "fairy_m_farmer_01.adr",
+    "Scale": 1,
+    "Name": "Lucca De'Flor",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": true,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 23788,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33645,
+    "CaptureGuid": "26044681682978",
+    "NameId": 117257,
+    "ModelId": 559,
+    "ModelFileName": "human_m_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Tad Slopeslider",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 117257,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33650,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "5909874999330",
+    "NameId": 6156,
+    "ModelId": 12,
+    "ModelFileName": "fairychild_m_pointyhair.adr",
+    "Scale": 1,
+    "Name": "Kiel",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 6156,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
