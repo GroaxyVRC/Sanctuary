@@ -20787,5 +20787,486 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33087,
+    "CaptureGuid": "687194767442",
+    "NameId": 7262,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Queensfields",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33093,
+    "CaptureGuid": "106309030510674",
+    "NameId": 442487,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Eastern Bixie Fields",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33101,
+    "CaptureGuid": "39788577030226",
+    "NameId": 70013,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey Collection",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33106,
+    "CaptureGuid": "24945170055250",
+    "NameId": 37238,
+    "ModelId": 27,
+    "ModelFileName": "mail_01.adr",
+    "Scale": 1,
+    "Name": "Chain Letters"
+  },
+  {
+    "Id": 33114,
+    "CaptureGuid": "49409303773266",
+    "NameId": 2239,
+    "ModelId": 173,
+    "ModelFileName": "dog_small_pointy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "TextureAlias": "solid",
+    "TintAlias": "solid-tan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33115,
+    "CaptureGuid": "36833639530578",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33119,
+    "CaptureGuid": "49340584296530",
+    "NameId": 2239,
+    "ModelId": 170,
+    "ModelFileName": "dog_large_pointy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "TextureAlias": "spots",
+    "TintAlias": "spots-ivory",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33120,
+    "CaptureGuid": "52639119179858",
+    "NameId": 2239,
+    "ModelId": 172,
+    "ModelFileName": "dog_small_floppy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "TextureAlias": "lightmark",
+    "TintAlias": "lightmark-gold",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33122,
+    "CaptureGuid": "125069447659602",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33157,
+    "CaptureGuid": "99574521790546",
+    "NameId": 434683,
+    "ModelId": 3636,
+    "ModelFileName": "sg_chugawug_sacks_02.adr",
+    "Scale": 1,
+    "Name": "Sack of Soil 2",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33158,
+    "CaptureGuid": "99505802313810",
+    "NameId": 434682,
+    "ModelId": 3635,
+    "ModelFileName": "sg_chugawug_sacks_01.adr",
+    "Scale": 1,
+    "Name": "Sack of Soil 1",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33159,
+    "CaptureGuid": "99299643883602",
+    "NameId": 434641,
+    "ModelId": 3417,
+    "ModelFileName": "farming_dirt_mound_01.adr",
+    "Scale": 1,
+    "Name": "Topsoil Mound",
+    "HideNamePlate": true,
+    "VerticalOffset": -0.1
+  },
+  {
+    "Id": 33160,
+    "CaptureGuid": "99230924406866",
+    "NameId": 434639,
+    "ModelId": 3410,
+    "ModelFileName": "farming_farmers_market_lv1_01.adr",
+    "Scale": 1,
+    "Name": "Farming Wagon",
+    "TextureAlias": "Default0",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33169,
+    "CaptureGuid": "73461120630866",
+    "NameId": 388173,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Force Warp Effect Caster",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33331,
+    "CaptureGuid": "138332306669650",
+    "NameId": 430046,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "cloud plane",
+    "HideNamePlate": true,
+    "CompositeEffectId": 16564
+  },
+  {
+    "Id": 33337,
+    "CaptureGuid": "84456236908626",
+    "NameId": 416765,
+    "ModelId": 1726,
+    "ModelFileName": "evnt_halloween_candybag_01.adr",
+    "Scale": 1,
+    "Name": "Goo'd Candy"
+  },
+  {
+    "Id": 33341,
+    "CaptureGuid": "68719476818",
+    "NameId": 3499,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Sanctuary",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33343,
+    "CaptureGuid": "6459630813266",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33378,
+    "CaptureGuid": "130567005798482",
+    "NameId": 430046,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "cloud plane",
+    "HideNamePlate": true,
+    "CompositeEffectId": 16564
+  },
+  {
+    "Id": 33424,
+    "CaptureGuid": "6528350290002",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33432,
+    "CaptureGuid": "41437844471890",
+    "NameId": 36515,
+    "ModelId": 541,
+    "ModelFileName": "ss_deco_flower_04.adr",
+    "Scale": 1,
+    "Name": "Flowers",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33436,
+    "CaptureGuid": "6665789243474",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33541,
+    "CaptureGuid": "4810363371538",
+    "NameId": 18899,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Lakeshore",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33546,
+    "CaptureGuid": "98475010162706",
+    "NameId": 76481,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Infiltrator Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33568,
+    "CaptureGuid": "36215164239890",
+    "NameId": 76481,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Infiltrator Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33572,
+    "CaptureGuid": "87342454931474",
+    "NameId": 76481,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Infiltrator Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33575,
+    "CaptureGuid": "107064944754706",
+    "NameId": 76481,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Infiltrator Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33580,
+    "CaptureGuid": "962072674322",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33581,
+    "CaptureGuid": "893353197586",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33582,
+    "CaptureGuid": "755914244114",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33595,
+    "CaptureGuid": "1992864825378",
+    "NameId": 3961,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Snowhill",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33600,
+    "CaptureGuid": "28587302322210",
+    "NameId": 388173,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Force Warp Effect Caster",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33630,
+    "CaptureGuid": "11132555231266",
+    "NameId": 24362,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Hot Food Basket"
+  },
+  {
+    "Id": 33647,
+    "CaptureGuid": "13400297963554",
+    "NameId": 36866,
+    "ModelId": 84,
+    "ModelFileName": "sh_crate_01.adr",
+    "Scale": 1,
+    "Name": "Willie's Crate",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33684,
+    "CaptureGuid": "17592186044450",
+    "NameId": 2239,
+    "ModelId": 173,
+    "ModelFileName": "dog_small_pointy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "HideNamePlate": true,
+    "Animation": 5403
+  },
+  {
+    "Id": 33846,
+    "CaptureGuid": "8933531975714",
+    "NameId": 22776,
+    "ModelId": 336,
+    "ModelFileName": "sg_sign01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pasture",
+    "TextureAlias": "corn",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33877,
+    "CaptureGuid": "26731876450338",
+    "NameId": 140766,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Perrys Farm Locator",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33948,
+    "CaptureGuid": "35046933135394",
+    "NameId": 2239,
+    "ModelId": 172,
+    "ModelFileName": "dog_small_floppy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33955,
+    "CaptureGuid": "45767171506210",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33957,
+    "CaptureGuid": "34909494181922",
+    "NameId": 2239,
+    "ModelId": 169,
+    "ModelFileName": "dog_large_floppy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33974,
+    "CaptureGuid": "42880953483298",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33975,
+    "CaptureGuid": "47691316854818",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33976,
+    "CaptureGuid": "34978213658658",
+    "NameId": 2239,
+    "ModelId": 978,
+    "ModelFileName": "dog_large_lab.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33986,
+    "CaptureGuid": "17798344474658",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 34016,
+    "CaptureGuid": "31817117728786",
+    "NameId": 71298,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Sasparilla Sample",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 36126,
+    "CaptureGuid": "14362370637890",
+    "NameId": 440486,
+    "ModelId": 4048,
+    "ModelFileName": "gw_roadhouse_01_gas.adr",
+    "Scale": 1,
+    "Name": "Skullz Fuel Station",
+    "HideNamePlate": true,
+    "VerticalOffset": -0.48
+  },
+  {
+    "Id": 36170,
+    "CaptureGuid": "21440476741698",
+    "NameId": 440486,
+    "ModelId": 4048,
+    "ModelFileName": "gw_roadhouse_01_gas.adr",
+    "Scale": 1,
+    "Name": "Skullz Fuel Station",
+    "HideNamePlate": true,
+    "VerticalOffset": -0.48
   }
 ]
