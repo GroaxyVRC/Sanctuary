@@ -714,6 +714,7 @@ public abstract class BaseZone : IZone, IDisposable
             InteractionList = definition.InteractionList,
             InteractionUnknown = definition.InteractionUnknown,
             MerchantList = definition.MerchantList,
+            Ability = definition.Ability,
             TintAlias = definition.TintAlias,
             TintId = definition.TintId,
             Scale = definition.Scale ?? scale,

@@ -21,9 +21,15 @@ public static class InteractionMenuHelper
         commandPacketInteractionList.List.Unknown2 = true;
         foreach (var interaction in interactions)
         {
+            var id = interaction.Type switch
+            {
+                MerchantInteraction.Type => MerchantInteraction.Data.Id,
+                SnowballInteraction.Type => SnowballInteraction.Data.Id,
+                _ => interaction.Id
+            };
             commandPacketInteractionList.List.Interactions.Add(new InteractionData
             {
-                Id = interaction.Type == MerchantInteraction.Type ? MerchantInteraction.Data.Id : interaction.Id,
+                Id = id,
                 IconId = interaction.IconId,
                 ButtonText = interaction.ButtonText,
                 Type = interaction.Type,

@@ -14,6 +14,7 @@ using Sanctuary.Game.ChatCommands;
 using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Interactions;
 using Sanctuary.Game.Resources.Definitions.Combat;
+using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Zones;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -251,8 +252,16 @@ public sealed class Player : ClientPcData, IEntity
         }
     }
 
+    public int NpcAbilityEffectId { get; set; }
+
+    public NpcAbilityDefinition? NpcAbility { get; set; }
+    public DateTimeOffset NpcAbilityExpiresAt { get; set; }
+    public DateTimeOffset NpcAbilityNextCastAt { get; set; }
+    public int NpcAbilityProfileId { get; set; }
+
     public void UpdateEverySecond()
     {
+        SnowballInteraction.Update(this);
     }
 
     // The client animates the cooldown sweep itself from TotalRefreshTime -

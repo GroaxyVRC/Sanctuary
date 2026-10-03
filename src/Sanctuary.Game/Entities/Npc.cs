@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 using Sanctuary.Core.Collections;
 using Sanctuary.Game.Pathfinding;
+using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Zones;
 using Sanctuary.Packet;
@@ -75,6 +76,7 @@ public class Npc : IScriptableNpc, IEntity
     public InteractionList? InteractionList { get; set; }
     public bool InteractionUnknown { get; set; }
     public MerchantList? MerchantList { get; set; }
+    public NpcAbilityDefinition? Ability { get; set; }
 
     public int MovementType => 2;
 
