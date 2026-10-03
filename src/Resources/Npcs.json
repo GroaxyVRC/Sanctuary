@@ -20787,5 +20787,173 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33484,
+    "CaptureGuid": "35940286332946",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791344,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33507,
+    "CaptureGuid": "35871566856210",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791343,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33525,
+    "CaptureGuid": "35802847379474",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791351,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33551,
+    "CaptureGuid": "35596688949266",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791541,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33552,
+    "CaptureGuid": "35734127902738",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791540,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33559,
+    "CaptureGuid": "35665408426002",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791564,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
