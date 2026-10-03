@@ -20787,5 +20787,33 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33313,
+    "CaptureGuid": "122732985450578",
+    "NameId": 5102585,
+    "ModelId": 4606,
+    "ModelFileName": "human_f_kara_loft.agr",
+    "Scale": 1,
+    "Name": "Kara Loft"
+  },
+  {
+    "Id": 33339,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "3023656976466",
+    "NameId": 10089,
+    "ModelId": 241,
+    "ModelFileName": "fairychild_f_pigtailsdress.adr",
+    "Scale": 1,
+    "Name": "Posey"
+  },
+  {
+    "Id": 33375,
+    "CaptureGuid": "84387517431890",
+    "NameId": 416388,
+    "ModelId": 1711,
+    "ModelFileName": "human_f_mannequin_costume_brideoffrankenstein.agr",
+    "Scale": 1,
+    "Name": "Shelly"
   }
 ]
