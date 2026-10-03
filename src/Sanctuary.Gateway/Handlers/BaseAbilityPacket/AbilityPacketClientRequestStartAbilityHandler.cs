@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Sanctuary.Database;
 using Sanctuary.Game;
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Interactions;
 using Sanctuary.Gateway.Helpers.Abilities;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common.Attributes;
@@ -53,6 +54,9 @@ public static class AbilityPacketClientRequestStartAbilityHandler
             _logger.LogError("Failed to deserialize {packet}.", nameof(AbilityPacketClientRequestStartAbility));
             return false;
         }
+
+        if (SnowballInteraction.HandleAbility(connection.Player, abilityPacketClientRequestStartAbility))
+            return true;
 
         if (abilityPacketClientRequestStartAbility.Data.Id == ConsumableAbility.ActionBarId)
             return HandleItemAbility(connection.Player, abilityPacketClientRequestStartAbility);

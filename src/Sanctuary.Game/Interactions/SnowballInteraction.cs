@@ -13,6 +13,7 @@ namespace Sanctuary.Game.Interactions;
 public class SnowballInteraction : IInteraction
 {
     public const int Type = 33;
+    private const int ActionBarId = 1;
     public static readonly InteractionData Data = new() { Id = IInteraction.UniqueId++, Type = Type };
     public int Id => Data.Id;
 
@@ -84,5 +85,64 @@ public class SnowballInteraction : IInteraction
         player.NpcAbilityEffectId = 0;
         player.SendTunneled(abilityPacketSetDefinition);
         player.SendToolbar();
+    }
+
+    public static bool HandleAbility(Player player, AbilityPacketClientRequestStartAbility abilityPacketClientRequestStartAbility)
+    {
+        Update(player);
+        var definition = player.NpcAbility;
+        if (definition is null || abilityPacketClientRequestStartAbility.Data.Id != ActionBarId || abilityPacketClientRequestStartAbility.Data.Slot != definition.Slot)
+            return false;
+
+        var now = DateTimeOffset.UtcNow;
+        if (now < player.NpcAbilityNextCastAt)
+        {
+            player.SendTunneled(new AbilityPacketFailed { StringId = 3079 });
+            return true;
+        }
+
+        var target = player.FindTarget(abilityPacketClientRequestStartAbility.Target == 1 ? 0 : abilityPacketClientRequestStartAbility.Guid, definition.Ability.Range);
+        var targetGuid = target?.Guid ?? 0;
+        var targetPosition = target?.Position ?? player.Position + new Vector4(player.GetFacingDirection() * definition.Ability.Range, 0);
+        var distance = Vector3.DistanceSquared(new Vector3(player.Position.X, player.Position.Y, player.Position.Z),
+            new Vector3(targetPosition.X, targetPosition.Y, targetPosition.Z));
+        if (!float.IsFinite(distance) || (target is not null && distance > definition.Ability.Range * definition.Ability.Range))
+        {
+            player.SendTunneled(new AbilityPacketFailed { StringId = 3079 });
+            return true;
+        }
+
+        player.NpcAbilityNextCastAt = now.AddMilliseconds(definition.Definition.Unknown20);
+        player.SendTunneledToVisible(new AbilityPacketStartCasting
+        {
+            CasterGuid = player.Guid,
+            Unused = player.Guid,
+            AbilityId = definition.Definition.Id
+        }, true);
+        var abilityPacketLaunchAndLand = new AbilityPacketLaunchAndLand
+        {
+            Guid = player.Guid,
+            Unknown2 = definition.Definition.Unknown19,
+            Unknown4 = definition.Definition.Unknown12,
+            Unknown6 = definition.Definition.Unknown20,
+            Unknown9 = definition.Definition.Unknown13,
+            Unknown10 = definition.Definition.CompositeEffect,
+            Unknown15 = EffectTagIdGenerator.Next(),
+            TargetLocation = targetGuid == 0 ? targetPosition : new Vector4(0, 0, 0, 1),
+            ActionBar = abilityPacketClientRequestStartAbility.Data,
+            ProjectileParameters = definition.ProjectileParameters
+        };
+        if (targetGuid == 0)
+            abilityPacketLaunchAndLand.Targets.Add(Target.CreateTargetLocation(targetPosition, targetPosition));
+        else
+            abilityPacketLaunchAndLand.Targets.Add(Target.CreateTarget(unchecked((long)targetGuid)));
+
+        if (targetGuid != 0)
+            player.Projectiles.AddProjectile(player, targetGuid, definition.HitAnimationId, definition.RecoveryAnimationId,
+                definition.RecoveryDelayMs, definition.HitReportTimeoutMs,
+                (int)(MathF.Sqrt(distance) / BitConverter.Int32BitsToSingle(definition.ProjectileParameters.Unknown3) * 1000));
+
+        player.SendTunneledToVisible(abilityPacketLaunchAndLand, true);
+        return true;
     }
 }
