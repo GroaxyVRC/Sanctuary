@@ -928,8 +928,6 @@ public sealed class Player : ClientPcData, IEntity
 
     #region Combat
 
-    private const int PrimaryWeaponSlot = 7;
-
     private int _energy = 100;
 
     public int Energy
@@ -949,15 +947,7 @@ public sealed class Player : ClientPcData, IEntity
 
     private int MaxEnergy { get; set; } = 100;
 
-    public int GetEquippedWeaponDefinitionId()
-    {
-        if (!ActiveProfile.Items.TryGetValue(PrimaryWeaponSlot, out var profileItem))
-            return 0;
-
-        var clientItem = Items.FirstOrDefault(x => x.Id == profileItem.Id);
-
-        return clientItem?.Definition ?? 0;
-    }
+    public int GetEquippedWeaponDefinitionId() => GetEquippedItem(WeaponSlot)?.Definition ?? 0;
 
     public bool SendToolbar()
     {
