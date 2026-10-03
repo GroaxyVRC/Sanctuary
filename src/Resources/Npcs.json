@@ -20787,5 +20787,61 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33416,
+    "SubTextNameId": 15717,
+    "CaptureGuid": "3642132267090",
+    "NameId": 10175,
+    "ModelId": 574,
+    "ModelFileName": "fairy_m_blacksmith_01.agr",
+    "Scale": 1,
+    "Name": "Crofti",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 10175,
+        "ReferenceId": 15717,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33479,
+    "SubTextNameId": 15717,
+    "CaptureGuid": "5428838662162",
+    "NameId": 19676,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Bluerose",
+    "TextureAlias": "sanctuary_03",
+    "TintAlias": "sanctuary_03_Blue",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 19676,
+        "ReferenceId": 15717,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
