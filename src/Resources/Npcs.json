@@ -20787,5 +20787,63 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33373,
+    "SubTextNameId": 5102738,
+    "CaptureGuid": "4535485464658",
+    "NameId": 14701,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Dani",
+    "TextureAlias": "sanctuary_02",
+    "TintAlias": "sanctuary_02_Amber",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 14701,
+        "ReferenceId": 5102738,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33422,
+    "SubTextNameId": 5102738,
+    "CaptureGuid": "5703716569170",
+    "NameId": 15413,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Ruby",
+    "TextureAlias": "sanctuary_03",
+    "TintAlias": "sanctuary_03_Black",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 15413,
+        "ReferenceId": 5102738,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
