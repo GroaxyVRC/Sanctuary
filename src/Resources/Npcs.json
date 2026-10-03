@@ -20787,5 +20787,970 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33458,
+    "CaptureGuid": "112012747079698",
+    "NameId": 7231,
+    "ModelId": 4017,
+    "ModelFileName": "sg_mining_node_northeastwildssilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Silver Vein",
+    "TextureAlias": "Silver",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7231,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33474,
+    "CaptureGuid": "137232795041810",
+    "NameId": 7231,
+    "ModelId": 4017,
+    "ModelFileName": "sg_mining_node_northeastwildssilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Silver Vein",
+    "TextureAlias": "Silver",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7231,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33562,
+    "CaptureGuid": "153725469458450",
+    "NameId": 7231,
+    "ModelId": 4017,
+    "ModelFileName": "sg_mining_node_northeastwildssilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Silver Vein",
+    "TextureAlias": "Silver",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7231,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33585,
+    "CaptureGuid": "77309411328034",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33587,
+    "CaptureGuid": "55319178772514",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33608,
+    "CaptureGuid": "56899726737442",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33616,
+    "CaptureGuid": "40708593384685602",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33629,
+    "CaptureGuid": "56418690400290",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33738,
+    "CaptureGuid": "40063454937122",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33771,
+    "CaptureGuid": "37770011120500770",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33820,
+    "CaptureGuid": "40868709765480482",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33821,
+    "CaptureGuid": "47210280517666",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33860,
+    "CaptureGuid": "31829006198243362",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33939,
+    "CaptureGuid": "77790447665186",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33940,
+    "CaptureGuid": "50989851738146",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33999,
+    "CaptureGuid": "56212531970082",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 34010,
+    "CaptureGuid": "28502777365790754",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 34012,
+    "CaptureGuid": "77927886618658",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36116,
+    "CaptureGuid": "40935024060530722",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36119,
+    "CaptureGuid": "32160715112514",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36120,
+    "CaptureGuid": "20409684590658",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36127,
+    "CaptureGuid": "24876450578498",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36131,
+    "CaptureGuid": "46316927320130",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36134,
+    "CaptureGuid": "28862180229186",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36136,
+    "CaptureGuid": "28930899705922",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36138,
+    "CaptureGuid": "34840774705218",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36157,
+    "CaptureGuid": "47553877901378",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36164,
+    "CaptureGuid": "48722109005890",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36165,
+    "CaptureGuid": "20478404067394",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36181,
+    "CaptureGuid": "107982555927543874",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36185,
+    "CaptureGuid": "37039797960770",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36217,
+    "CaptureGuid": "20547123544130",
+    "NameId": 7559,
+    "ModelId": 4023,
+    "ModelFileName": "sg_mining_node_sunstonegold_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Gold Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7559,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36218,
+    "CaptureGuid": "48790828482626",
+    "NameId": 7559,
+    "ModelId": 4023,
+    "ModelFileName": "sg_mining_node_sunstonegold_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Gold Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7559,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36262,
+    "CaptureGuid": "32229434589250",
+    "NameId": 7559,
+    "ModelId": 4023,
+    "ModelFileName": "sg_mining_node_sunstonegold_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Gold Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7559,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36303,
+    "CaptureGuid": "40918119069253666",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
