@@ -241,6 +241,12 @@ public sealed class Player : ClientPcData, IEntity
 
         Mount.Dispose();
         Mount = null;
+        if (BoomboxDanceTransform != 0 && TemporaryAppearance == BoomboxDanceTransform)
+            SendTunneledToVisible(new PlayerUpdatePacketUpdateTemporaryAppearance
+            {
+                Guid = Guid,
+                TemporaryAppearance = TemporaryAppearance
+            }, true);
     }
 
     #endregion
