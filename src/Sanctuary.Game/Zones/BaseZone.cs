@@ -704,12 +704,36 @@ public abstract class BaseZone : IZone, IDisposable
         {
             Guid = GetNpcGuid(guid),
             NameId = definition.NameId,
+            SubTextNameId = definition.SubTextNameId,
             Name = definition.Name,
             ModelId = definition.ModelId,
             TextureAlias = definition.TextureAlias,
-            Scale = scale,
+            AutoSelectSingleInteraction = definition.AutoSelectSingleInteraction,
+            InteractRange = definition.InteractRange,
+            IsInteractable = definition.IsInteractable,
+            InteractionList = definition.InteractionList,
+            InteractionUnknown = definition.InteractionUnknown,
+            MerchantList = definition.MerchantList,
+            TintAlias = definition.TintAlias,
+            TintId = definition.TintId,
+            Scale = definition.Scale ?? scale,
+            HideNamePlate = definition.HideNamePlate,
+            Disposition = definition.Disposition,
+            Animation = definition.Animation,
+            CompositeEffectId = definition.CompositeEffectId,
+            VerticalOffset = definition.VerticalOffset,
+            Attachments = new List<CharacterAttachmentData>(definition.Attachments),
+            CursorId = definition.CursorId,
+            HasCursor = definition.HasCursor,
+            RelevanceUnknown2 = definition.RelevanceUnknown2,
             Visible = true
         };
+
+        if (definition.Notification is not null)
+            npc.Notification = Sanctuary.Game.Helpers.InteractionMenuHelper.GetNotification(npc.Guid, definition.Notification);
+
+        foreach (var notification in definition.Notifications)
+            npc.Notifications.Add(Sanctuary.Game.Helpers.InteractionMenuHelper.GetNotification(npc.Guid, notification));
 
         if (!TryRegisterEntity(_npcs, npc))
         {
