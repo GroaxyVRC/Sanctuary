@@ -4,6 +4,8 @@ using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
+using Sanctuary.Core.Helpers;
+using Sanctuary.Game;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common.Attributes;
 
@@ -13,56 +15,61 @@ namespace Sanctuary.Gateway.Handlers;
 public static class PacketPortraitDataRequestHandler
 {
     private static ILogger _logger = null!;
+    private static IZoneManager _zoneManager = null!;
 
     public static void ConfigureServices(IServiceProvider serviceProvider)
     {
         var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
         _logger = loggerFactory.CreateLogger(nameof(PacketPortraitDataRequestHandler));
+        _zoneManager = serviceProvider.GetRequiredService<IZoneManager>();
     }
 
     public static bool HandlePacket(GatewayConnection connection, ReadOnlySpan<byte> data)
     {
-        if (!PacketPortraitDataRequest.TryDeserialize(data, out var packet))
+        if (!PacketPortraitDataRequest.TryDeserialize(data, out var packetPortraitDataRequest))
         {
             _logger.LogError("Failed to deserialize {packet}.", nameof(PacketPortraitDataRequest));
             return false;
         }
 
-        _logger.LogTrace("Received {name} packet. ( {packet} )", nameof(PacketPortraitDataRequest), packet);
+        _logger.LogTrace("Received {name} packet. ( {packet} )", nameof(PacketPortraitDataRequest), packetPortraitDataRequest);
 
-        var path = Path.Combine("Images", packet.Guid.ToString(), "headshot.png");
+        var path = Path.Combine(PortraitStorage.GetCharacterDirectory(packetPortraitDataRequest.Guid), "headshot.png");
 
         if (!File.Exists(path))
             return true;
 
+        if (!_zoneManager.TryGetPlayer(packetPortraitDataRequest.Guid, out var portraitPlayer))
+            return true;
+
         var packetPlayerImageData = new PacketPlayerImageData
         {
-            Guid = packet.Guid,
-            Provider = packet.Provider,
+            Guid = packetPortraitDataRequest.Guid,
+            Provider = packetPortraitDataRequest.Provider,
             Portrait =
             {
                 Unknown2 = 1,
 
-                Guid = packet.Guid,
+                Guid = packetPortraitDataRequest.Guid,
 
-                ModelId = connection.Player.Model,
+                ModelId = portraitPlayer.Model,
 
-                Attachments = connection.Player.GetAttachments(),
+                Attachments = portraitPlayer.GetAttachments(),
 
-                Head = connection.Player.Head,
-                Hair = connection.Player.Hair,
-                SkinTone = connection.Player.SkinTone,
-                FacePaint = connection.Player.FacePaint,
-                ModelCustomization = connection.Player.ModelCustomization,
+                Head = portraitPlayer.Head,
+                Hair = portraitPlayer.Hair,
+                SkinTone = portraitPlayer.SkinTone,
+                FacePaint = portraitPlayer.FacePaint,
+                ModelCustomization = portraitPlayer.ModelCustomization,
 
-                HairColor = connection.Player.HairColor,
-                EyeColor = connection.Player.EyeColor,
-                HeadId = connection.Player.HeadId,
-                HairId = connection.Player.HairId,
-                SkinToneId = connection.Player.SkinToneId,
-                FacePaintId = connection.Player.FacePaintId,
+                HairColor = portraitPlayer.HairColor,
+                EyeColor = portraitPlayer.EyeColor,
+                HeadId = portraitPlayer.HeadId,
+                HairId = portraitPlayer.HairId,
+                SkinToneId = portraitPlayer.SkinToneId,
+                FacePaintId = portraitPlayer.FacePaintId,
 
-                Provider = packet.Provider
+                Provider = packetPortraitDataRequest.Provider
             },
             PngPayload = File.ReadAllBytes(path)
         };
