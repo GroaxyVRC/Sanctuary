@@ -20787,5 +20787,26 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33846,
+    "CaptureGuid": "8933531975714",
+    "NameId": 22776,
+    "ModelId": 336,
+    "ModelFileName": "sg_sign01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pasture",
+    "TextureAlias": "corn",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33877,
+    "CaptureGuid": "26731876450338",
+    "NameId": 140766,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Perrys Farm Locator",
+    "HideNamePlate": true
   }
 ]
