@@ -20787,5 +20787,116 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33668,
+    "CaptureGuid": "36902359007266",
+    "NameId": 419832,
+    "ModelId": 45,
+    "ModelFileName": "human_f_santa.adr",
+    "Scale": 1,
+    "Name": "Candi Ivy",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 177,
+        "IconState": 242,
+        "Unknown": 0,
+        "NameId": 419832,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33669,
+    "CaptureGuid": "24120536334370",
+    "NameId": 92578,
+    "ModelId": 30,
+    "ModelFileName": "fairy_m_old_01.adr",
+    "Scale": 1,
+    "Name": "Jonathon Forkpath",
+    "TextureAlias": "old-01",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 92578,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33670,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "687194767394",
+    "NameId": 3063,
+    "ModelId": 49,
+    "ModelFileName": "fairy_m_02.adr",
+    "Scale": 1,
+    "Name": "Murphy",
+    "TextureAlias": "02",
+    "TintAlias": "jungle",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 3063,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33672,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "5772436045858",
+    "NameId": 5454,
+    "ModelId": 48,
+    "ModelFileName": "fairy_m_01.adr",
+    "Scale": 1,
+    "Name": "Lealin",
+    "TextureAlias": "01",
+    "TintAlias": "barndoor",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 5454,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
