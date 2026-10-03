@@ -20787,5 +20787,40 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33759,
+    "CaptureGuid": "13262859010082",
+    "NameId": 36853,
+    "ModelId": 826,
+    "ModelFileName": "human_f_snowhill.adr",
+    "Scale": 1,
+    "Name": "Snowhill Neighbor",
+    "TextureAlias": "argylescarf",
+    "TintAlias": "argylescarf-green",
+    "HideNamePlate": true,
+    "Animation": 3101
+  },
+  {
+    "Id": 33762,
+    "CaptureGuid": "13056700579874",
+    "NameId": 36808,
+    "ModelId": 42,
+    "ModelFileName": "fairy_f_02.adr",
+    "Scale": 1,
+    "Name": "Clara Chatterhag",
+    "TintAlias": "raincloud"
+  },
+  {
+    "Id": 33766,
+    "CaptureGuid": "13331578486818",
+    "NameId": 36854,
+    "ModelId": 8,
+    "ModelFileName": "humanchild_m_tshirtwithbaggypants.adr",
+    "Scale": 1,
+    "Name": "Pleading Son",
+    "TextureAlias": "caucasianblue",
+    "TintAlias": "purple",
+    "HideNamePlate": true
   }
 ]
