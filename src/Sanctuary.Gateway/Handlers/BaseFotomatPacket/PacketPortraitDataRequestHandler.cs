@@ -4,6 +4,7 @@ using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
+using Sanctuary.Core.Helpers;
 using Sanctuary.Game;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common.Attributes;
@@ -33,7 +34,7 @@ public static class PacketPortraitDataRequestHandler
 
         _logger.LogTrace("Received {name} packet. ( {packet} )", nameof(PacketPortraitDataRequest), packetPortraitDataRequest);
 
-        var path = Path.Combine("Images", packetPortraitDataRequest.Guid.ToString(), "headshot.png");
+        var path = Path.Combine(PortraitStorage.GetCharacterDirectory(packetPortraitDataRequest.Guid), "headshot.png");
 
         if (!File.Exists(path))
             return true;
