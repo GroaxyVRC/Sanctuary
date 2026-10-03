@@ -20787,5 +20787,31 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33481,
+    "CaptureGuid": "15736760172562",
+    "NameId": 36164,
+    "ModelId": 273,
+    "ModelFileName": "sg_anvil_stump_01.adr",
+    "Scale": 1.5,
+    "Name": "Anvil",
+    "HasCursor": true,
+    "CursorId": 22,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 47,
+        "IconState": 60,
+        "Unknown": 0,
+        "NameId": 36164,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
