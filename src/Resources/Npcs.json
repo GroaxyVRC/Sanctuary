@@ -20787,5 +20787,48 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 34007,
+    "CaptureGuid": "48034914238498",
+    "NameId": 104067,
+    "ModelId": 176,
+    "ModelFileName": "wolf.adr",
+    "Scale": 1,
+    "Name": "Frostfang Growler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 104067,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ],
+    "InteractionList": {
+      "Unknown": true,
+      "Interactions": [
+        {
+          "Id": 4891,
+          "IconId": 1345,
+          "ButtonText": 3301,
+          "Type": 2,
+          "Param1": 174,
+          "Param2": 0,
+          "TooltipId": 0
+        }
+      ],
+      "Name": "",
+      "Unknown2": true
+    },
+    "InteractionUnknown": false
   }
 ]
