@@ -59,8 +59,17 @@ public class ConsumableCollection
                     case "boomboxes":
                         ResourceHelper.LoadDefinitions<BoomboxDefinition>(property.Value, jsonSerializerOptions, _logger, filePath,
                             entry => entry.ItemId,
-                            entry => entry.ItemId > 0 && entry.ModelId > 0
-                                && entry.EffectIds is not null && entry.DanceSequence is not null,
+                            entry => entry.ItemId > 0 && entry.EffectIds is not null && entry.DanceSequence is not null
+                                && entry.DanceDurationsMs is not null && entry.IndependentDanceDurationsMs is not null
+                                && float.IsFinite(entry.Range) && entry.Range > 0 && entry.DurationMs > 0
+                                && float.IsFinite(entry.SpawnOffset) && entry.ModelId > 0
+                                && entry.DanceBlendMs >= 0 && entry.TransformReapplyDelayMs >= 0
+                                && (!(entry.SynchronizedDances || entry.StandingDanceAnimationId == 0) || entry.DanceDurationsMs.Count > 0)
+                                && (entry.DanceDurationsMs.Count == 0 || entry.DanceSequence.Length > 0)
+                                && entry.DanceDurationsMs.Values.All(durations => durations is not null
+                                && durations.Length == entry.DanceSequence.Length && durations.All(duration => duration > 0))
+                                && entry.IndependentDanceDurationsMs.Values.All(durations => durations is not null
+                                && durations.Count > 0 && durations.All(clip => clip.Key > 0 && clip.Value > 0)),
                             Boomboxes.TryAdd);
                         break;
                     case "cakes":
