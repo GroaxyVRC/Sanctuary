@@ -20787,5 +20787,23 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33480,
+    "CaptureGuid": "12300786335762",
+    "NameId": 22881,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Norvin's Barrel"
+  },
+  {
+    "Id": 33557,
+    "CaptureGuid": "27075473834002",
+    "NameId": 21364,
+    "ModelId": 84,
+    "ModelFileName": "sh_crate_01.adr",
+    "Scale": 1,
+    "Name": "Crate"
   }
 ]
