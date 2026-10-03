@@ -20787,5 +20787,114 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33706,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "57930518888482",
+    "NameId": 93806,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Penguin Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 71,
+        "IconState": 72,
+        "Unknown": 0,
+        "NameId": 93806,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33707,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "25151328485410",
+    "NameId": 93834,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Medium Penguin Defense",
+    "VerticalOffset": -0.1,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 83,
+        "IconState": 141,
+        "Unknown": 0,
+        "NameId": 93834,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33710,
+    "CaptureGuid": "26594437496866",
+    "NameId": 140375,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Easy Penguin Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 83,
+        "IconState": 141,
+        "Unknown": 0,
+        "NameId": 140375,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33719,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "25220047962146",
+    "NameId": 93846,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Hard Penguin Defense",
+    "VerticalOffset": -0.15,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 83,
+        "IconState": 141,
+        "Unknown": 0,
+        "NameId": 93846,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
