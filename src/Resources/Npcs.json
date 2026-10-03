@@ -20787,5 +20787,42 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33609,
+    "CaptureGuid": "5497558138914",
+    "NameId": 5448,
+    "ModelId": 36,
+    "ModelFileName": "fairy_f_valinda.adr",
+    "Scale": 1,
+    "Name": "Frostpetal"
+  },
+  {
+    "Id": 33621,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "5566277615650",
+    "NameId": 5449,
+    "ModelId": 12,
+    "ModelFileName": "fairychild_m_pointyhair.adr",
+    "Scale": 1,
+    "Name": "Little J"
+  },
+  {
+    "Id": 33633,
+    "CaptureGuid": "14018773254178",
+    "NameId": 38092,
+    "ModelId": 644,
+    "ModelFileName": "fairy_m_tcg_rick_garfield.agr",
+    "Scale": 1,
+    "Name": "Garrison Gold"
+  },
+  {
+    "Id": 33718,
+    "CaptureGuid": "6665789243426",
+    "NameId": 16826,
+    "ModelId": 731,
+    "ModelFileName": "fairy_f_morninglory.agr",
+    "Scale": 1,
+    "Name": "Morninglory"
   }
 ]
