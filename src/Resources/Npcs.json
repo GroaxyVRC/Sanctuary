@@ -20787,5 +20787,155 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33584,
+    "CaptureGuid": "4879082848290",
+    "NameId": 2060,
+    "ModelId": 130,
+    "ModelFileName": "antelope.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33596,
+    "CaptureGuid": "4947802325026",
+    "NameId": 2060,
+    "ModelId": 133,
+    "ModelFileName": "forest_doe.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33597,
+    "CaptureGuid": "5085241278498",
+    "NameId": 2060,
+    "ModelId": 132,
+    "ModelFileName": "forest_buck.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33828,
+    "CaptureGuid": "5016521801762",
+    "NameId": 2060,
+    "ModelId": 132,
+    "ModelFileName": "forest_buck.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33829,
+    "CaptureGuid": "4810363371554",
+    "NameId": 2060,
+    "ModelId": 131,
+    "ModelFileName": "antelope_female.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33835,
+    "CaptureGuid": "42262478192674",
+    "NameId": 2060,
+    "ModelId": 133,
+    "ModelFileName": "forest_doe.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33935,
+    "CaptureGuid": "5153960755234",
+    "NameId": 2060,
+    "ModelId": 133,
+    "ModelFileName": "forest_doe.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33938,
+    "CaptureGuid": "5360119185442",
+    "NameId": 2060,
+    "ModelId": 131,
+    "ModelFileName": "antelope_female.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33943,
+    "CaptureGuid": "3435973836834",
+    "NameId": 2060,
+    "ModelId": 130,
+    "ModelFileName": "antelope.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33949,
+    "CaptureGuid": "5222680231970",
+    "NameId": 2060,
+    "ModelId": 130,
+    "ModelFileName": "antelope.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33950,
+    "CaptureGuid": "5291399708706",
+    "NameId": 2060,
+    "ModelId": 130,
+    "ModelFileName": "antelope.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 34005,
+    "CaptureGuid": "5428838662178",
+    "NameId": 2060,
+    "ModelId": 133,
+    "ModelFileName": "forest_doe.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 34009,
+    "CaptureGuid": "3367254360098",
+    "NameId": 2060,
+    "ModelId": 133,
+    "ModelFileName": "forest_doe.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 34014,
+    "CaptureGuid": "1099511627794",
+    "NameId": 2060,
+    "ModelId": 133,
+    "ModelFileName": "forest_doe.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 34015,
+    "CaptureGuid": "1649267441682",
+    "NameId": 2060,
+    "ModelId": 132,
+    "ModelFileName": "forest_buck.adr",
+    "Scale": 1,
+    "Name": "Deer",
+    "HideNamePlate": true
   }
 ]
