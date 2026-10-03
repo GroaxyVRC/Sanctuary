@@ -20787,5 +20787,60 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33310,
+    "CaptureGuid": "95451353186386",
+    "NameId": 429986,
+    "ModelId": 744,
+    "ModelFileName": "human_blackspore_miner_m.adr",
+    "Scale": 1,
+    "Name": "Manager Shin",
+    "TextureAlias": "miner_01",
+    "TintAlias": "miner_01_orange",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 429986,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33954,
+    "SubTextNameId": 408589,
+    "CaptureGuid": "30305289240610",
+    "NameId": 401744,
+    "ModelId": 1457,
+    "ModelFileName": "human_m_manager_landon.agr",
+    "Scale": 1,
+    "Name": "Manager Landon",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 401744,
+        "ReferenceId": 408589,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
