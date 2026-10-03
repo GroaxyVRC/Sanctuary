@@ -20787,5 +20787,75 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33593,
+    "CaptureGuid": "23158463660066",
+    "NameId": 18744,
+    "ModelId": 135,
+    "ModelFileName": "billygoat.adr",
+    "Scale": 1,
+    "Name": "Billygoat",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33594,
+    "CaptureGuid": "23227183136802",
+    "NameId": 5254,
+    "ModelId": 136,
+    "ModelFileName": "nannygoat.adr",
+    "Scale": 1,
+    "Name": "Goat",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33908,
+    "CaptureGuid": "44392781971490",
+    "NameId": 18744,
+    "ModelId": 135,
+    "ModelFileName": "billygoat.adr",
+    "Scale": 1,
+    "Name": "Billygoat",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33934,
+    "CaptureGuid": "27831388078114",
+    "NameId": 5254,
+    "ModelId": 136,
+    "ModelFileName": "nannygoat.adr",
+    "Scale": 1,
+    "Name": "Goat",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33942,
+    "CaptureGuid": "27762668601378",
+    "NameId": 18744,
+    "ModelId": 135,
+    "ModelFileName": "billygoat.adr",
+    "Scale": 1,
+    "Name": "Billygoat",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33963,
+    "CaptureGuid": "44461501448226",
+    "NameId": 5254,
+    "ModelId": 136,
+    "ModelFileName": "nannygoat.adr",
+    "Scale": 1,
+    "Name": "Goat",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33978,
+    "CaptureGuid": "46797963657250",
+    "NameId": 18744,
+    "ModelId": 135,
+    "ModelFileName": "billygoat.adr",
+    "Scale": 1,
+    "Name": "Billygoat",
+    "HideNamePlate": true
   }
 ]
