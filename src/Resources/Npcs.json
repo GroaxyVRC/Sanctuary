@@ -20787,5 +20787,34 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36130,
+    "CaptureGuid": "19035295055938",
+    "NameId": 439216,
+    "ModelId": 4031,
+    "ModelFileName": "dwarf_m_biker_on_bike.agr",
+    "Scale": 1,
+    "Name": "Skullz Roughrider",
+    "TextureAlias": "skullz_skullthug",
+    "TintAlias": "dyetint",
+    "Disposition": 0,
+    "Animation": 8661,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
+  },
+  {
+    "Id": 36269,
+    "CaptureGuid": "120344365158629442",
+    "NameId": 439216,
+    "ModelId": 4031,
+    "ModelFileName": "dwarf_m_biker_on_bike.agr",
+    "Scale": 1,
+    "Name": "Skullz Roughrider",
+    "TextureAlias": "skullz_skullthug",
+    "TintAlias": "dyetint",
+    "Disposition": 0,
+    "Animation": 8661
   }
 ]
