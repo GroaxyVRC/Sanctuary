@@ -20787,5 +20787,25 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33471,
+    "CaptureGuid": "125481764519954",
+    "NameId": 18892,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Campfire",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33483,
+    "CaptureGuid": "24120536334354",
+    "NameId": 18892,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Campfire",
+    "HideNamePlate": true
   }
 ]
