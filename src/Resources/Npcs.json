@@ -20787,5 +20787,57 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33342,
+    "CaptureGuid": "87479893885010",
+    "NameId": 429145,
+    "ModelId": 488,
+    "ModelFileName": "chugawug_farmer_m.adr",
+    "Scale": 1,
+    "Name": "Coin Farmer Dang Dang",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 429145,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33610,
+    "CaptureGuid": "39376260169762",
+    "NameId": 429152,
+    "ModelId": 488,
+    "ModelFileName": "chugawug_farmer_m.adr",
+    "Scale": 1,
+    "Name": "Coin Farmer Lubag",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 429152,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
