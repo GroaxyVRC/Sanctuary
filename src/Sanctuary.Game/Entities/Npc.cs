@@ -11,6 +11,7 @@ using Sanctuary.Core.Collections;
 using Sanctuary.Game.Pathfinding;
 using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Helpers;
+using Sanctuary.Game.Interactions;
 using Sanctuary.Game.Zones;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -115,6 +116,14 @@ public class Npc : IScriptableNpc, IEntity
 
     public void OnInteract(Player player)
     {
+        if (OpensAtlas)
+        {
+            var executeScriptPacket = OpenAtlasInteraction.GetAtlasPacket(this, player);
+            if (executeScriptPacket is not null)
+                player.SendTunneled(executeScriptPacket);
+            return;
+        }
+
         if (InteractionList is not null)
         {
             if (InteractionMenuHelper.CanInteract(this, player))

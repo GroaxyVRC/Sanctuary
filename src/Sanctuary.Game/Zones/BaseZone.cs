@@ -749,9 +749,6 @@ public abstract class BaseZone : IZone, IDisposable
         foreach (var notification in definition.Notifications)
             npc.Notifications.Add(Sanctuary.Game.Helpers.InteractionMenuHelper.GetNotification(npc.Guid, notification));
 
-        if (definition.OpensAtlas)
-            npc.Interactions.Add(Sanctuary.Game.Interactions.OpenAtlasInteraction.Data);
-
         if (!TryRegisterEntity(_npcs, npc))
         {
             npc = null;
