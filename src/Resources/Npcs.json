@@ -20787,5 +20787,31 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33132,
+    "CaptureGuid": "18966575579218",
+    "NameId": 23141,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey's Honey Keg",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 22,
+        "IconState": 11,
+        "Unknown": 0,
+        "NameId": 23141,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
