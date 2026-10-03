@@ -20787,5 +20787,5607 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33088,
+    "CaptureGuid": "22115576881086546",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33090,
+    "CaptureGuid": "21195285648638034",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33099,
+    "CaptureGuid": "10156876100534354",
+    "NameId": 434545,
+    "ModelId": 3631,
+    "ModelFileName": "overworld_root_wildroot_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Wildroot Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434545,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33110,
+    "CaptureGuid": "22189656477007954",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33113,
+    "CaptureGuid": "21886672304078930",
+    "NameId": 434504,
+    "ModelId": 3629,
+    "ModelFileName": "overworld_bush_stickfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stickfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434504,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33126,
+    "CaptureGuid": "15623579194359890",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33135,
+    "CaptureGuid": "20781594398687314",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33136,
+    "CaptureGuid": "20831622177751122",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33137,
+    "CaptureGuid": "22399525758959698",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33138,
+    "CaptureGuid": "10714328495816786",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33148,
+    "CaptureGuid": "22381658695008338",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33149,
+    "CaptureGuid": "22381933572915282",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33150,
+    "CaptureGuid": "22395608748785746",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33153,
+    "CaptureGuid": "20772179830374482",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33154,
+    "CaptureGuid": "21095436248940626",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33155,
+    "CaptureGuid": "21095504968417362",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33172,
+    "CaptureGuid": "22393409725530194",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33173,
+    "CaptureGuid": "22399663197913170",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33174,
+    "CaptureGuid": "22395952346169426",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33176,
+    "CaptureGuid": "22393478445006930",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33177,
+    "CaptureGuid": "22399731917389906",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33179,
+    "CaptureGuid": "22393547164483666",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33180,
+    "CaptureGuid": "22395746187739218",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33181,
+    "CaptureGuid": "22393615883960402",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33182,
+    "CaptureGuid": "22395540029309010",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33184,
+    "CaptureGuid": "22382002292392018",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33185,
+    "CaptureGuid": "22395814907215954",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33186,
+    "CaptureGuid": "20772592147234898",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33187,
+    "CaptureGuid": "20778570741710930",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33188,
+    "CaptureGuid": "20778708180664402",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33189,
+    "CaptureGuid": "21045820786737234",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33190,
+    "CaptureGuid": "22381521256054866",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33191,
+    "CaptureGuid": "22381796133961810",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33192,
+    "CaptureGuid": "22381864853438546",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33193,
+    "CaptureGuid": "22395883626692690",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33198,
+    "CaptureGuid": "20778776900141138",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33200,
+    "CaptureGuid": "20772660866711634",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33201,
+    "CaptureGuid": "20772248549851218",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33202,
+    "CaptureGuid": "21461367462559826",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33203,
+    "CaptureGuid": "21460955145699410",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33204,
+    "CaptureGuid": "22456288046743634",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33206,
+    "CaptureGuid": "21044446397202514",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33207,
+    "CaptureGuid": "21070010042548306",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33208,
+    "CaptureGuid": "21656462057013330",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33209,
+    "CaptureGuid": "22381589975531602",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33210,
+    "CaptureGuid": "22381727414485074",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33211,
+    "CaptureGuid": "22395677468262482",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33213,
+    "CaptureGuid": "53188874993746",
+    "NameId": 100833,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Queensfields Harvesting",
+    "TerrainObjectId": 1254769517,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100833,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33214,
+    "CaptureGuid": "21044308958249042",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33217,
+    "CaptureGuid": "20772111110897746",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33218,
+    "CaptureGuid": "21461092584652882",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33220,
+    "CaptureGuid": "21809500331704402",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33221,
+    "CaptureGuid": "22456356766220370",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33222,
+    "CaptureGuid": "22128289984282706",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33224,
+    "CaptureGuid": "20771973671944274",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33225,
+    "CaptureGuid": "21095573687894098",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33228,
+    "CaptureGuid": "21809431612227666",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33229,
+    "CaptureGuid": "20831484738797650",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33230,
+    "CaptureGuid": "21095161371033682",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33231,
+    "CaptureGuid": "21092687469871186",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33232,
+    "CaptureGuid": "21092824908824658",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33233,
+    "CaptureGuid": "21461023865176146",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33234,
+    "CaptureGuid": "21092756189347922",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33235,
+    "CaptureGuid": "21092893628301394",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33236,
+    "CaptureGuid": "21092962347778130",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33237,
+    "CaptureGuid": "21809362892750930",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33238,
+    "CaptureGuid": "20780907203919954",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33239,
+    "CaptureGuid": "20781113362350162",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33240,
+    "CaptureGuid": "21348117764898898",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33241,
+    "CaptureGuid": "21460817706745938",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33314,
+    "CaptureGuid": "22279747711008850",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33325,
+    "CaptureGuid": "21699686607880274",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33327,
+    "CaptureGuid": "22049743622373458",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33344,
+    "CaptureGuid": "21908250219774034",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33359,
+    "CaptureGuid": "21206486923346002",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33362,
+    "CaptureGuid": "21422128641343570",
+    "NameId": 434506,
+    "ModelId": 3630,
+    "ModelFileName": "overworld_root_chugaroot_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Chugaroot Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434506,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33472,
+    "CaptureGuid": "111462991265810",
+    "NameId": 434506,
+    "ModelId": 3630,
+    "ModelFileName": "overworld_root_chugaroot_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Chugaroot Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434506,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33473,
+    "CaptureGuid": "133247065391122",
+    "NameId": 434506,
+    "ModelId": 3630,
+    "ModelFileName": "overworld_root_chugaroot_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Chugaroot Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434506,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33475,
+    "CaptureGuid": "144654498529298",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33484,
+    "CaptureGuid": "35940286332946",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791344,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33485,
+    "CaptureGuid": "137438953472018",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33486,
+    "CaptureGuid": "79577154060306",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33487,
+    "CaptureGuid": "79645873537042",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33488,
+    "CaptureGuid": "118953414230034",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33489,
+    "CaptureGuid": "124519691845650",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33490,
+    "CaptureGuid": "129536213647378",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33491,
+    "CaptureGuid": "143005231087634",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33492,
+    "CaptureGuid": "145135534866450",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33493,
+    "CaptureGuid": "104178726731794",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33494,
+    "CaptureGuid": "112218905509906",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33495,
+    "CaptureGuid": "112150186033170",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33496,
+    "CaptureGuid": "118815975276562",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33497,
+    "CaptureGuid": "124382252892178",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33498,
+    "CaptureGuid": "140393890971666",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33499,
+    "CaptureGuid": "140462610448402",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33500,
+    "CaptureGuid": "95039036325906",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33501,
+    "CaptureGuid": "104041287778322",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33502,
+    "CaptureGuid": "104110007255058",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33503,
+    "CaptureGuid": "137301514518546",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33505,
+    "CaptureGuid": "79370995630098",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33507,
+    "CaptureGuid": "35871566856210",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791343,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33508,
+    "CaptureGuid": "104247446208530",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33509,
+    "CaptureGuid": "112081466556434",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33510,
+    "CaptureGuid": "133796821205010",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33511,
+    "CaptureGuid": "95245194756114",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33512,
+    "CaptureGuid": "112287624986642",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33515,
+    "CaptureGuid": "140531329925138",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33516,
+    "CaptureGuid": "29936815406317586",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33517,
+    "CaptureGuid": "133728101728274",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33518,
+    "CaptureGuid": "124450972368914",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33519,
+    "CaptureGuid": "79508434583570",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33520,
+    "CaptureGuid": "95176475279378",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33521,
+    "CaptureGuid": "118884694753298",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33522,
+    "CaptureGuid": "29936746686840850",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33523,
+    "CaptureGuid": "29936884125794322",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33524,
+    "CaptureGuid": "95107755802642",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33525,
+    "CaptureGuid": "35802847379474",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791351,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33526,
+    "CaptureGuid": "129330055217170",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33527,
+    "CaptureGuid": "129467494170642",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33528,
+    "CaptureGuid": "118747255799826",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33529,
+    "CaptureGuid": "93939524698130",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33530,
+    "CaptureGuid": "133590662774802",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33531,
+    "CaptureGuid": "79439715106834",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33532,
+    "CaptureGuid": "124313533415442",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33551,
+    "CaptureGuid": "35596688949266",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791541,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33552,
+    "CaptureGuid": "35734127902738",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791540,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33559,
+    "CaptureGuid": "35665408426002",
+    "NameId": 100837,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Lakesfield Harvesting",
+    "TerrainObjectId": 1254791564,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100837,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33561,
+    "CaptureGuid": "111531710742546",
+    "NameId": 434507,
+    "ModelId": 3656,
+    "ModelFileName": "overworld_vinehigh_moonbean_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Moonbean Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434507,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33577,
+    "CaptureGuid": "12873288296431634",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33588,
+    "CaptureGuid": "3150306972008482",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33722,
+    "CaptureGuid": "14819011560734754",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33827,
+    "CaptureGuid": "44942537785378",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33850,
+    "CaptureGuid": "40819369181218",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33851,
+    "CaptureGuid": "21577915695138",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789946,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33852,
+    "CaptureGuid": "54631984005154",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33853,
+    "CaptureGuid": "45148696215586",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33854,
+    "CaptureGuid": "50096498540578",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33855,
+    "CaptureGuid": "53257594470434",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33856,
+    "CaptureGuid": "55044300865570",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33857,
+    "CaptureGuid": "55387898249250",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33858,
+    "CaptureGuid": "56281251446818",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33861,
+    "CaptureGuid": "36953761175830562",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33862,
+    "CaptureGuid": "51883204935714",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33863,
+    "CaptureGuid": "52639119179810",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33864,
+    "CaptureGuid": "36953692456353826",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33865,
+    "CaptureGuid": "47278999994402",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33866,
+    "CaptureGuid": "31382948074749986",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33867,
+    "CaptureGuid": "36955479162748962",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33868,
+    "CaptureGuid": "36955547882225698",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33869,
+    "CaptureGuid": "40829402224787490",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33870,
+    "CaptureGuid": "55731495632930",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33871,
+    "CaptureGuid": "36953829895307298",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33872,
+    "CaptureGuid": "36953898614784034",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33873,
+    "CaptureGuid": "40837442403565602",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33874,
+    "CaptureGuid": "40837511123042338",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33875,
+    "CaptureGuid": "31809833464234018",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33876,
+    "CaptureGuid": "31809902183710754",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33878,
+    "CaptureGuid": "31809970903187490",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33883,
+    "CaptureGuid": "21921513078818",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789945,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33884,
+    "CaptureGuid": "36953348858970146",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33885,
+    "CaptureGuid": "36953417578446882",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33886,
+    "CaptureGuid": "36953486297923618",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33887,
+    "CaptureGuid": "36954036053737506",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33888,
+    "CaptureGuid": "36954104773214242",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33889,
+    "CaptureGuid": "40830776614322210",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33890,
+    "CaptureGuid": "36954173492690978",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33891,
+    "CaptureGuid": "40829470944264226",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33892,
+    "CaptureGuid": "40830707894845474",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33893,
+    "CaptureGuid": "36959945928736802",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33894,
+    "CaptureGuid": "51264729645090",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33895,
+    "CaptureGuid": "52845277610018",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33896,
+    "CaptureGuid": "31809764744757282",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33897,
+    "CaptureGuid": "36959739770306594",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33898,
+    "CaptureGuid": "36960083367690274",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33899,
+    "CaptureGuid": "54013508714530",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33900,
+    "CaptureGuid": "49134425866274",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33902,
+    "CaptureGuid": "36954310931644450",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33903,
+    "CaptureGuid": "36959533611876386",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33904,
+    "CaptureGuid": "36959671050829858",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33905,
+    "CaptureGuid": "41025527611426",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33906,
+    "CaptureGuid": "55250459295778",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33907,
+    "CaptureGuid": "21715354648610",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789833,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33910,
+    "CaptureGuid": "56143812493346",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33911,
+    "CaptureGuid": "55868934586402",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33912,
+    "CaptureGuid": "54769422958626",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33913,
+    "CaptureGuid": "54357106098210",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33914,
+    "CaptureGuid": "53944789237794",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33915,
+    "CaptureGuid": "52776558133282",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33916,
+    "CaptureGuid": "52020643889186",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33917,
+    "CaptureGuid": "49065706389538",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33918,
+    "CaptureGuid": "21852793602082",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789834,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33919,
+    "CaptureGuid": "56487409877026",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33920,
+    "CaptureGuid": "36959808489783330",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33921,
+    "CaptureGuid": "36959877209260066",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33922,
+    "CaptureGuid": "36960014648213538",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33925,
+    "CaptureGuid": "45354854645794",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33926,
+    "CaptureGuid": "45286135169058",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33927,
+    "CaptureGuid": "21646635171874",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789830,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33928,
+    "CaptureGuid": "50302656970786",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33929,
+    "CaptureGuid": "54425825574946",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33930,
+    "CaptureGuid": "54838142435362",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33931,
+    "CaptureGuid": "55181739819042",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33932,
+    "CaptureGuid": "55594056679458",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33933,
+    "CaptureGuid": "56762287783970",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33941,
+    "CaptureGuid": "21784074125346",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789831,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33983,
+    "CaptureGuid": "53051436040226",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36305,
+    "CaptureGuid": "31808321635745826",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
