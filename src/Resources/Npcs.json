@@ -20787,5 +20787,75 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33108,
+    "CaptureGuid": "96619584290898",
+    "NameId": 5103,
+    "ModelId": 3172,
+    "ModelFileName": "hsg_checkpoint_track_02.adr",
+    "Scale": 1,
+    "Name": "Circular Checkpoint",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33109,
+    "CaptureGuid": "96550864814162",
+    "NameId": 5103,
+    "ModelId": 3172,
+    "ModelFileName": "hsg_checkpoint_track_02.adr",
+    "Scale": 1,
+    "Name": "Circular Checkpoint",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33123,
+    "CaptureGuid": "96688303767634",
+    "NameId": 5103,
+    "ModelId": 3172,
+    "ModelFileName": "hsg_checkpoint_track_02.adr",
+    "Scale": 1,
+    "Name": "Circular Checkpoint",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33124,
+    "CaptureGuid": "96757023244370",
+    "NameId": 5103,
+    "ModelId": 3172,
+    "ModelFileName": "hsg_checkpoint_track_02.adr",
+    "Scale": 1,
+    "Name": "Circular Checkpoint",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33311,
+    "CaptureGuid": "96482145337426",
+    "NameId": 5103,
+    "ModelId": 3172,
+    "ModelFileName": "hsg_checkpoint_track_02.adr",
+    "Scale": 1,
+    "Name": "Circular Checkpoint",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33312,
+    "CaptureGuid": "96825742721106",
+    "NameId": 5103,
+    "ModelId": 3172,
+    "ModelFileName": "hsg_checkpoint_track_02.adr",
+    "Scale": 1,
+    "Name": "Circular Checkpoint",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33830,
+    "CaptureGuid": "39788577030178",
+    "NameId": 5103,
+    "ModelId": 3172,
+    "ModelFileName": "hsg_checkpoint_track_02.adr",
+    "Scale": 1,
+    "Name": "Circular Checkpoint",
+    "HideNamePlate": true
   }
 ]
