@@ -20787,5 +20787,16 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33825,
+    "CaptureGuid": "8589934592034",
+    "NameId": 6468,
+    "ModelId": 177,
+    "ModelFileName": "wolf_evil.adr",
+    "Scale": 1,
+    "Name": "Frostfang Wolf",
+    "HideNamePlate": true,
+    "Animation": 1301
   }
 ]
