@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33671,
+    "CaptureGuid": "17867063951394",
+    "NameId": 45979,
+    "ModelId": 521,
+    "ModelFileName": "sh_bucket_01.adr",
+    "Scale": 1,
+    "Name": "Hot Water Bucket",
+    "CompositeEffectId": 5509
   }
 ]
