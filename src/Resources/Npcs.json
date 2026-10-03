@@ -20787,5 +20787,59 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33306,
+    "SubTextNameId": 46437,
+    "CaptureGuid": "36490042146898",
+    "NameId": 45951,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Florina",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 45951,
+        "ReferenceId": 46437,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33307,
+    "SubTextNameId": 46438,
+    "CaptureGuid": "62603443306578",
+    "NameId": 116863,
+    "ModelId": 557,
+    "ModelFileName": "human_m_freestyle_11.agr",
+    "Scale": 1,
+    "Name": "Brent",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 116863,
+        "ReferenceId": 46438,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
