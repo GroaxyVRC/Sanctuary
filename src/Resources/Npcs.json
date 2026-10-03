@@ -20787,5 +20787,35 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36149,
+    "CaptureGuid": "15530601742402",
+    "NameId": 439208,
+    "ModelId": 1682,
+    "ModelFileName": "robgoblin_m_master.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Tinkerer",
+    "TextureAlias": "bear",
+    "TintAlias": "bear-rust",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
+  },
+  {
+    "Id": 36152,
+    "CaptureGuid": "26388279066690",
+    "NameId": 439208,
+    "ModelId": 1682,
+    "ModelFileName": "robgoblin_m_master.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Tinkerer",
+    "TextureAlias": "bear",
+    "TintAlias": "bear-rust",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
   }
 ]
