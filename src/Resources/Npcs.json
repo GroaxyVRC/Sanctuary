@@ -20787,5 +20787,33 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33309,
+    "CaptureGuid": "96413425860690",
+    "NameId": 5103,
+    "ModelId": 3171,
+    "ModelFileName": "hsg_checkpoint_track_01.adr",
+    "Scale": 1,
+    "Name": "Circular Checkpoint",
+    "HideNamePlate": true,
+    "VerticalOffset": -1,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5103,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
