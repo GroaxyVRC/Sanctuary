@@ -20787,5 +20787,75 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36129,
+    "CaptureGuid": "50371376447554",
+    "NameId": 36239,
+    "ModelId": 3986,
+    "ModelFileName": "vulture_sunstone.adr",
+    "Scale": 1,
+    "Name": "Vulture",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 36135,
+    "CaptureGuid": "36421322670146",
+    "NameId": 36239,
+    "ModelId": 3986,
+    "ModelFileName": "vulture_sunstone.adr",
+    "Scale": 1,
+    "Name": "Vulture",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 36139,
+    "CaptureGuid": "52501680226370",
+    "NameId": 36239,
+    "ModelId": 3986,
+    "ModelFileName": "vulture_sunstone.adr",
+    "Scale": 1,
+    "Name": "Vulture",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 36145,
+    "CaptureGuid": "44530220924994",
+    "NameId": 36239,
+    "ModelId": 3986,
+    "ModelFileName": "vulture_sunstone.adr",
+    "Scale": 1,
+    "Name": "Vulture",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 36153,
+    "CaptureGuid": "50921132261442",
+    "NameId": 36239,
+    "ModelId": 3986,
+    "ModelFileName": "vulture_sunstone.adr",
+    "Scale": 1,
+    "Name": "Vulture",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 36154,
+    "CaptureGuid": "51470888075330",
+    "NameId": 36239,
+    "ModelId": 3986,
+    "ModelFileName": "vulture_sunstone.adr",
+    "Scale": 1,
+    "Name": "Vulture",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 36155,
+    "CaptureGuid": "54082228191298",
+    "NameId": 36239,
+    "ModelId": 3986,
+    "ModelFileName": "vulture_sunstone.adr",
+    "Scale": 1,
+    "Name": "Vulture",
+    "HideNamePlate": true
   }
 ]
