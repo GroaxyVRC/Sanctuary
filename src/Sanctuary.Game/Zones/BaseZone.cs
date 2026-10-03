@@ -704,6 +704,7 @@ public abstract class BaseZone : IZone, IDisposable
         {
             Guid = GetNpcGuid(guid),
             NameId = definition.NameId,
+            SubTextNameId = definition.SubTextNameId,
             Name = definition.Name,
             ModelId = definition.ModelId,
             TextureAlias = definition.TextureAlias,
