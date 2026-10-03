@@ -20787,5 +20787,50 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33648,
+    "CaptureGuid": "21990232555554",
+    "NameId": 90117,
+    "ModelId": 573,
+    "ModelFileName": "fairy_f_freestyle_11.agr",
+    "Scale": 1,
+    "Name": "Downey"
+  },
+  {
+    "Id": 33654,
+    "CaptureGuid": "12987981103138",
+    "NameId": 36807,
+    "ModelId": 7,
+    "ModelFileName": "humanchild_f_skirtandtunic.adr",
+    "Scale": 1,
+    "Name": "Marcie"
+  },
+  {
+    "Id": 33714,
+    "CaptureGuid": "22539988369442",
+    "NameId": 91660,
+    "ModelId": 548,
+    "ModelFileName": "human_f_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Tanda T. Toes"
+  },
+  {
+    "Id": 33740,
+    "CaptureGuid": "8246337208354",
+    "NameId": 21849,
+    "ModelId": 439,
+    "ModelFileName": "human_f_mary.agr",
+    "Scale": 1,
+    "Name": "Annabelle"
+  },
+  {
+    "Id": 33723,
+    "CaptureGuid": "37795712204834",
+    "NameId": 420500,
+    "ModelId": 1577,
+    "ModelFileName": "dwarf_m_edwingoldstory.adr",
+    "Scale": 1,
+    "Name": "Spindle"
   }
 ]
