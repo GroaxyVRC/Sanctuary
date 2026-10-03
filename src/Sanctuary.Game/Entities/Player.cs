@@ -336,6 +336,25 @@ public sealed class Player : ClientPcData, IEntity
         return nearest;
     }
 
+    public IEntity? FindTarget(ulong guid, float range, ulong excludeGuid = 0)
+    {
+        if (!float.IsFinite(range) || range < 0)
+            return null;
+
+        if (guid == 0 || guid == Guid)
+            return FindNearestPlayer(range, excludeGuid) ?? FindNearestPlayer(range);
+
+        IEntity? target = VisiblePlayers.TryGetValue(guid, out var player) ? player :
+            VisibleNpcs.TryGetValue(guid, out var npc) ? npc : null;
+        if (target is null || !ReferenceEquals(target.Zone, Zone))
+            return null;
+
+        var distance = Vector3.DistanceSquared(new Vector3(Position.X, Position.Y, Position.Z),
+            new Vector3(target.Position.X, target.Position.Y, target.Position.Z));
+
+        return float.IsFinite(distance) && distance <= range * range ? target : null;
+    }
+
     private void UpdateZoneTile()
     {
         var newZoneTile = Zone.GetTileFromPosition(Position);
