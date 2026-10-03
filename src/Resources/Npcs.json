@@ -20787,5 +20787,88 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33315,
+    "SubTextNameId": 429561,
+    "CaptureGuid": "89747636617298",
+    "NameId": 409940,
+    "ModelId": 558,
+    "ModelFileName": "human_m_freestyle_05.agr",
+    "Scale": 1,
+    "Name": "Clark",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 409940,
+        "ReferenceId": 429561,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33326,
+    "CaptureGuid": "130635725275218",
+    "NameId": 430047,
+    "ModelId": 525,
+    "ModelFileName": "human_m_wizard_rio.agr",
+    "Scale": 1,
+    "Name": "Rio Cloudjumps",
+    "CompositeEffectId": 16565,
+    "Animation": 2110,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 430047,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33330,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2954937499730",
+    "NameId": 10087,
+    "ModelId": 167,
+    "ModelFileName": "troll_peasant_02.adr",
+    "Scale": 1.5,
+    "Name": "Gulsh",
+    "TintAlias": "saphire",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 10087,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
