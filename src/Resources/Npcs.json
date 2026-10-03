@@ -20787,5 +20787,59 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33535,
+    "SubTextNameId": 2935,
+    "CaptureGuid": "84181359001618",
+    "NameId": 5102438,
+    "ModelId": 4562,
+    "ModelFileName": "fairy_m_merchant_warrior_caucasian_fire.agr",
+    "Scale": 1,
+    "Name": "Alexander",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102438,
+        "ReferenceId": 2935,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33665,
+    "SubTextNameId": 2935,
+    "CaptureGuid": "41850161332258",
+    "NameId": 5102437,
+    "ModelId": 4559,
+    "ModelFileName": "human_f_merchant_warrior_caucasian.agr",
+    "Scale": 1,
+    "Name": "Sonja",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102437,
+        "ReferenceId": 2935,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
