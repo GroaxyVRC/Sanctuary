@@ -20787,5 +20787,61 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33168,
+    "CaptureGuid": "70162585747538",
+    "NameId": 384749,
+    "ModelId": 468,
+    "ModelFileName": "fairy_druid_m.adr",
+    "Scale": 1,
+    "Name": "Kellin Warpwatcher",
+    "TextureAlias": "base_02",
+    "TintAlias": "mahogany",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 384749,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33601,
+    "CaptureGuid": "26250840113186",
+    "NameId": 130731,
+    "ModelId": 468,
+    "ModelFileName": "fairy_druid_m.adr",
+    "Scale": 1,
+    "Name": "Vaelen Warpwatcher",
+    "TextureAlias": "base_03",
+    "TintAlias": "olive",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 130731,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
