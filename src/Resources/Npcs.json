@@ -20787,5 +20787,109 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33336,
+    "CaptureGuid": "83288005804114",
+    "NameId": 415047,
+    "ModelId": 1692,
+    "ModelFileName": "skeleton_m_01.adr",
+    "Scale": 1,
+    "Name": "Halloween Harry",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 415047,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33338,
+    "CaptureGuid": "97925254348882",
+    "NameId": 416777,
+    "ModelId": 438,
+    "ModelFileName": "human_m_andrew.agr",
+    "Scale": 1,
+    "Name": "Ghost Hunter",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 416777,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33376,
+    "CaptureGuid": "83769042141266",
+    "NameId": 415613,
+    "ModelId": 1713,
+    "ModelFileName": "human_m_costume_finklestein.agr",
+    "Scale": 1,
+    "Name": "Finklestein",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 415613,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33438,
+    "CaptureGuid": "83562883711058",
+    "NameId": 415500,
+    "ModelId": 1708,
+    "ModelFileName": "fairy_m_costume_skelly.agr",
+    "Scale": 1,
+    "Name": "Skelly",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 415500,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
