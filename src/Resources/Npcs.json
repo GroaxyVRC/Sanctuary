@@ -20787,5 +20787,78 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33139,
+    "CaptureGuid": "16904991277138",
+    "NameId": 18314,
+    "ModelId": 211,
+    "ModelFileName": "bixie_f_mage.adr",
+    "Scale": 1,
+    "Name": "Wounded Bixie",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5017,
+    "Animation": 1152
+  },
+  {
+    "Id": 33140,
+    "CaptureGuid": "7765300871250",
+    "NameId": 18314,
+    "ModelId": 220,
+    "ModelFileName": "bixie_m_warrior.adr",
+    "Scale": 1,
+    "Name": "Wounded Bixie",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5017,
+    "Animation": 1152
+  },
+  {
+    "Id": 33141,
+    "CaptureGuid": "134140418588754",
+    "NameId": 18314,
+    "ModelId": 220,
+    "ModelFileName": "bixie_m_warrior.adr",
+    "Scale": 1,
+    "Name": "Wounded Bixie",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5017,
+    "Animation": 1152
+  },
+  {
+    "Id": 33142,
+    "CaptureGuid": "7696581394514",
+    "NameId": 18314,
+    "ModelId": 220,
+    "ModelFileName": "bixie_m_warrior.adr",
+    "Scale": 1,
+    "Name": "Wounded Bixie",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5017,
+    "VerticalOffset": -0.2,
+    "Animation": 1152
+  },
+  {
+    "Id": 33144,
+    "CaptureGuid": "124519691845714",
+    "NameId": 18314,
+    "ModelId": 220,
+    "ModelFileName": "bixie_m_warrior.adr",
+    "Scale": 1,
+    "Name": "Wounded Bixie",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5017,
+    "Animation": 1152
+  },
+  {
+    "Id": 33145,
+    "CaptureGuid": "141493402599506",
+    "NameId": 18314,
+    "ModelId": 220,
+    "ModelFileName": "bixie_m_warrior.adr",
+    "Scale": 1,
+    "Name": "Wounded Bixie",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5017,
+    "Animation": 1152
   }
 ]
