@@ -630,6 +630,10 @@ public abstract class BaseZone : IZone, IDisposable
 
         spawnedNpc.UpdatePosition(position, rotation);
 
+        if (definition.BoomboxItemId != 0 && _resourceManager.Consumables.Boomboxes.TryGetValue(definition.BoomboxItemId, out var boomboxDefinition))
+            Sanctuary.Game.Helpers.BoomboxHelper.StartDanceLoop(this, spawnedNpc, position, boomboxDefinition,
+                0, 0, 0, 0, permanent: true);
+
         npc = spawnedNpc;
         return true;
     }
