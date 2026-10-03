@@ -30,6 +30,7 @@ public static class BaseAbilityPacketHandler
 
         return opCode switch
         {
+            AbilityPacketRequestAbilityDefinition.OpCode => AbilityPacketRequestAbilityDefinitionHandler.HandlePacket(connection, reader.Span),
             AbilityPacketClientRequestStartAbility.OpCode => AbilityPacketClientRequestStartAbilityHandler.HandlePacket(connection, reader.Span),
             _ => false
         };
