@@ -20787,5 +20787,70 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33091,
+    "CaptureGuid": "22519647404294226",
+    "NameId": 440712,
+    "ModelId": 211,
+    "ModelFileName": "bixie_f_mage.adr",
+    "Scale": 1,
+    "Name": "Bixie Battlemage",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
+  },
+  {
+    "Id": 33092,
+    "CaptureGuid": "22519578684817490",
+    "NameId": 440712,
+    "ModelId": 211,
+    "ModelFileName": "bixie_f_mage.adr",
+    "Scale": 1,
+    "Name": "Bixie Battlemage",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
+  },
+  {
+    "Id": 33104,
+    "CaptureGuid": "22513531370864722",
+    "NameId": 440712,
+    "ModelId": 211,
+    "ModelFileName": "bixie_f_mage.adr",
+    "Scale": 1,
+    "Name": "Bixie Battlemage",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
+  },
+  {
+    "Id": 33125,
+    "CaptureGuid": "22519922282201170",
+    "NameId": 440712,
+    "ModelId": 211,
+    "ModelFileName": "bixie_f_mage.adr",
+    "Scale": 1,
+    "Name": "Bixie Battlemage",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
+  },
+  {
+    "Id": 33162,
+    "CaptureGuid": "22512706737143890",
+    "NameId": 440712,
+    "ModelId": 211,
+    "ModelFileName": "bixie_f_mage.adr",
+    "Scale": 1,
+    "Name": "Bixie Battlemage",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
   }
 ]
