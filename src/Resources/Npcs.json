@@ -20787,5 +20787,119 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33163,
+    "SubTextNameId": 103007,
+    "CaptureGuid": "100261716557906",
+    "NameId": 100674,
+    "ModelId": 364,
+    "ModelFileName": "dog_small_fluffy.adr",
+    "Scale": 1,
+    "Name": "Rascal",
+    "TextureAlias": "lightmark",
+    "TintAlias": "lightmark-gray",
+    "HasCursor": true,
+    "CursorId": 24,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": -1,
+        "IconId": 101,
+        "IconState": 189,
+        "Unknown": 0,
+        "NameId": 100674,
+        "ReferenceId": 103007,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33164,
+    "CaptureGuid": "100192997081170",
+    "NameId": 420571,
+    "ModelId": 1759,
+    "ModelFileName": "tyrannosaurus_m.adr",
+    "Scale": 1,
+    "Name": "Zax",
+    "TextureAlias": "trex-dino",
+    "TintAlias": "trex-army",
+    "HasCursor": true,
+    "CursorId": 24,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": -1,
+        "IconId": 101,
+        "IconState": 189,
+        "Unknown": 0,
+        "NameId": 420571,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33305,
+    "SubTextNameId": 103007,
+    "CaptureGuid": "100055558127698",
+    "NameId": 389081,
+    "ModelId": 514,
+    "ModelFileName": "dog_large_dalmation.adr",
+    "Scale": 1,
+    "Name": "Dot",
+    "TextureAlias": "dalmation",
+    "TintAlias": "white",
+    "HasCursor": true,
+    "CursorId": 24,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": -1,
+        "IconId": 101,
+        "IconState": 189,
+        "Unknown": 0,
+        "NameId": 389081,
+        "ReferenceId": 103007,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33308,
+    "CaptureGuid": "100124277604434",
+    "NameId": 4560,
+    "ModelId": 1760,
+    "ModelFileName": "triceratops_m_basic.adr",
+    "Scale": 1,
+    "Name": "Iggy",
+    "TextureAlias": "stripes",
+    "TintAlias": "triceratops-brown",
+    "HasCursor": true,
+    "CursorId": 24,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": -1,
+        "IconId": 101,
+        "IconState": 189,
+        "Unknown": 0,
+        "NameId": 4560,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
