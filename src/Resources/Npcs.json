@@ -20787,5 +20787,24 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33357,
+    "CaptureGuid": "73598559584338",
+    "NameId": 388395,
+    "ModelId": 824,
+    "ModelFileName": "human_f_medicstudent.agr",
+    "Scale": 1,
+    "Name": "Beth Callahan"
+  },
+  {
+    "Id": 33358,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "1511828488274",
+    "NameId": 7609,
+    "ModelId": 362,
+    "ModelFileName": "fairy_f_freestyle_glitter_01.agr",
+    "Scale": 1,
+    "Name": "Glitter"
   }
 ]
