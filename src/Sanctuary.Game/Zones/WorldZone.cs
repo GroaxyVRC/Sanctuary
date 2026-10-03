@@ -86,7 +86,7 @@ public sealed class WorldZone : BaseZone
         // DO NOT REMOVE even if it's not fully implemented. This packet is needed
         // due to an Area Definition called "Newbiezone" in FabledRealmsAreas.xml.
 
-        var adventurersJournal = new AdventurersJournalInfoPacket();
+        var adventurersJournalInfoPacket = new AdventurersJournalInfoPacket();
 
         AdventurersJournalRegionDefinition[] regions =
         [
@@ -132,7 +132,7 @@ public sealed class WorldZone : BaseZone
             }
         ];
 
-        adventurersJournal.Regions = regions.ToDictionary(x => x.Id);
+        adventurersJournalInfoPacket.Regions = regions.ToDictionary(x => x.Id);
 
         AdventurersJournalHubDefinition[] hubs =
         [
@@ -268,7 +268,7 @@ public sealed class WorldZone : BaseZone
             }
         ];
 
-        adventurersJournal.Hubs = hubs.ToDictionary(x => x.Id);
+        adventurersJournalInfoPacket.Hubs = hubs.ToDictionary(x => x.Id);
 
         AdventurersJournalHubQuestDefinition[] hubQuests =
         [
@@ -622,7 +622,7 @@ public sealed class WorldZone : BaseZone
             }
         ];
 
-        adventurersJournal.HubQuests = hubQuests.ToDictionary(x => x.Id);
+        adventurersJournalInfoPacket.HubQuests = hubQuests.ToDictionary(x => x.Id);
 
         AdventurersJournalStickerDefinition[] stickers =
         [
@@ -820,9 +820,9 @@ public sealed class WorldZone : BaseZone
             }
         ];
 
-        adventurersJournal.Stickers = stickers.ToDictionary(x => x.Id);
+        adventurersJournalInfoPacket.Stickers = stickers.ToDictionary(x => x.Id);
 
-        player.SendTunneled(adventurersJournal);
+        player.SendTunneled(adventurersJournalInfoPacket);
     }
 
     private void SendWelcomeInfo(Player player)
