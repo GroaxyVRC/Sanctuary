@@ -200,7 +200,7 @@ public class Npc : IScriptableNpc, IEntity
 
     public virtual PlayerUpdatePacketAddNpc GetAddNpcPacket()
     {
-        var packet = new PlayerUpdatePacketAddNpc
+        var playerUpdatePacketAddNpc = new PlayerUpdatePacketAddNpc
         {
             Guid = Guid,
 
@@ -323,7 +323,7 @@ public class Npc : IScriptableNpc, IEntity
             NameplateImageId = NameplateImageId
         };
 
-        return packet;
+        return playerUpdatePacketAddNpc;
     }
 
     #region Equatable
@@ -409,7 +409,7 @@ public class Npc : IScriptableNpc, IEntity
 
     public void Say(string message)
     {
-        var packet = new PacketChat
+        var packetChat = new PacketChat
         {
             Channel = ChatChannel.WorldSay,
             FromGuid = Guid,
@@ -418,19 +418,19 @@ public class Npc : IScriptableNpc, IEntity
         };
 
         foreach (var visiblePlayer in VisiblePlayers)
-            visiblePlayer.Value.SendTunneled(packet);
+            visiblePlayer.Value.SendTunneled(packetChat);
     }
 
     public void SayLocalized(int stringId)
     {
-        var packet = new ChatPacketFromStringId
+        var chatPacketFromStringId = new ChatPacketFromStringId
         {
             SpeakerGuid = Guid,
             StringId = stringId
         };
 
         foreach (var visiblePlayer in VisiblePlayers)
-            visiblePlayer.Value.SendTunneled(packet);
+            visiblePlayer.Value.SendTunneled(chatPacketFromStringId);
     }
 
     public void MoveTo(float x, float y, float z, bool direct)
