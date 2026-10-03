@@ -20787,5 +20787,173 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33851,
+    "CaptureGuid": "21577915695138",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789946,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33883,
+    "CaptureGuid": "21921513078818",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789945,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33907,
+    "CaptureGuid": "21715354648610",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789833,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33918,
+    "CaptureGuid": "21852793602082",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789834,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33927,
+    "CaptureGuid": "21646635171874",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789830,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33941,
+    "CaptureGuid": "21784074125346",
+    "NameId": 100836,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Perry's Pastures Harvesting",
+    "TerrainObjectId": 1254789831,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 18,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 36,
+        "IconState": 61,
+        "Unknown": 0,
+        "NameId": 100836,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
