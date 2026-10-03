@@ -20523,13 +20523,6 @@
     "ModelFileName": "present_02.adr"
   },
   {
-    "Id": 31443,
-    "NameId": 420986,
-    "Name": "Snowman Invader",
-    "ModelId": 1907,
-    "ModelFileName": "snowman_present.adr"
-  },
-  {
     "Id": 31445,
     "NameId": 420986,
     "Name": "Snowman Invader",
@@ -20727,20 +20720,6 @@
     "Id": 32755,
     "ModelId": 3107,
     "ModelFileName": "hsg_floral_lamp_01.adr"
-  },
-  {
-    "Id": 32813,
-    "NameId": 419832,
-    "Name": "Candi Ivy",
-    "ModelId": 45,
-    "ModelFileName": "human_f_santa.adr"
-  },
-  {
-    "Id": 32815,
-    "NameId": 415047,
-    "Name": "Halloween Harry",
-    "ModelId": 1692,
-    "ModelFileName": "skeleton_m_01.adr"
   },
   {
     "Id": 32889,
