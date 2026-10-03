@@ -20787,5 +20787,16 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33599,
+    "CaptureGuid": "37933151158306",
+    "NameId": 420569,
+    "ModelId": 140,
+    "ModelFileName": "snowman.adr",
+    "Scale": 1,
+    "Name": "Toppled Snowman",
+    "HideNamePlate": true,
+    "Animation": 1152
   }
 ]
