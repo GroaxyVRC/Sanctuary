@@ -20787,5 +20787,57 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33482,
+    "CaptureGuid": "15874199126034",
+    "NameId": 2061,
+    "ModelId": 419,
+    "ModelFileName": "sg_cooking_table_nodes_01.adr",
+    "Scale": 1,
+    "Name": "Cooking Table",
+    "HasCursor": true,
+    "CursorId": 15,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 35,
+        "IconState": 58,
+        "Unknown": 0,
+        "NameId": 2061,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33636,
+    "CaptureGuid": "11338713661474",
+    "NameId": 2061,
+    "ModelId": 419,
+    "ModelFileName": "sg_cooking_table_nodes_01.adr",
+    "Scale": 1,
+    "Name": "Cooking Table",
+    "HasCursor": true,
+    "CursorId": 15,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 35,
+        "IconState": 58,
+        "Unknown": 0,
+        "NameId": 2061,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
