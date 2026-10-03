@@ -20787,5 +20787,86 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33476,
+    "SubTextNameId": 5102502,
+    "CaptureGuid": "84456236908562",
+    "NameId": 5102506,
+    "ModelId": 4572,
+    "ModelFileName": "human_f_merchant_chef_african.agr",
+    "Scale": 1,
+    "Name": "Lorraine",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102506,
+        "ReferenceId": 5102502,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33477,
+    "SubTextNameId": 5102092,
+    "CaptureGuid": "83150566850578",
+    "NameId": 5102119,
+    "ModelId": 4497,
+    "ModelFileName": "fairy_m_merchant_blacksmith_asian_magma.agr",
+    "Scale": 1,
+    "Name": "Masa",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102119,
+        "ReferenceId": 5102092,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33506,
+    "SubTextNameId": 5102555,
+    "CaptureGuid": "84799834292242",
+    "NameId": 5102559,
+    "ModelId": 4596,
+    "ModelFileName": "human_m_merchant_miner_african.agr",
+    "Scale": 1,
+    "Name": "Grasberg",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102559,
+        "ReferenceId": 5102555,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
