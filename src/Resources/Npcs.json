@@ -20787,5 +20787,59 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33589,
+    "CaptureGuid": "26525718020130",
+    "NameId": 116212,
+    "ModelId": 4547,
+    "ModelFileName": "sh_standard_yeti_01.adr",
+    "Scale": 1,
+    "Name": "Frosty Yeti",
+    "Animation": 1301,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 116212,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33816,
+    "CaptureGuid": "46454366273570",
+    "NameId": 116212,
+    "ModelId": 4547,
+    "ModelFileName": "sh_standard_yeti_01.adr",
+    "Scale": 1,
+    "Name": "Frosty Yeti",
+    "Animation": 1301,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 116212,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
