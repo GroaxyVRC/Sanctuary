@@ -20787,5 +20787,25 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33356,
+    "CaptureGuid": "46797963657298",
+    "NameId": 20704,
+    "ModelId": 104,
+    "ModelFileName": "sh_table_battlepets_01.adr",
+    "Scale": 1,
+    "Name": "Card Table",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33631,
+    "CaptureGuid": "14087492730914",
+    "NameId": 20704,
+    "ModelId": 104,
+    "ModelFileName": "sh_table_battlepets_01.adr",
+    "Scale": 1,
+    "Name": "Card Table",
+    "HideNamePlate": true
   }
 ]
