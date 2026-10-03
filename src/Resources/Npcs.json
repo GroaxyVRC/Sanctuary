@@ -20787,5 +20787,53 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33354,
+    "CaptureGuid": "60816736911442",
+    "NameId": 103686,
+    "ModelId": 544,
+    "ModelFileName": "sg_rock_01.adr",
+    "Scale": 1,
+    "Name": "Planter",
+    "HideNamePlate": true,
+    "TerrainObjectId": 1254770273,
+    "ReplaceTerrainObject": false
+  },
+  {
+    "Id": 33415,
+    "CaptureGuid": "61297773248594",
+    "NameId": 103686,
+    "ModelId": 544,
+    "ModelFileName": "sg_rock_01.adr",
+    "Scale": 1,
+    "Name": "Planter",
+    "HideNamePlate": true,
+    "TerrainObjectId": 1254770546,
+    "ReplaceTerrainObject": false
+  },
+  {
+    "Id": 33420,
+    "CaptureGuid": "60954175864914",
+    "NameId": 103686,
+    "ModelId": 544,
+    "ModelFileName": "sg_rock_01.adr",
+    "Scale": 1,
+    "Name": "Planter",
+    "HideNamePlate": true,
+    "TerrainObjectId": 1254770646,
+    "ReplaceTerrainObject": false
+  },
+  {
+    "Id": 33421,
+    "CaptureGuid": "60885456388178",
+    "NameId": 103686,
+    "ModelId": 544,
+    "ModelFileName": "sg_rock_01.adr",
+    "Scale": 1,
+    "Name": "Planter",
+    "HideNamePlate": true,
+    "TerrainObjectId": 1254770771,
+    "ReplaceTerrainObject": false
   }
 ]
