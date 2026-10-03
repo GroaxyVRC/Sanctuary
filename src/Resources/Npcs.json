@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33647,
+    "CaptureGuid": "13400297963554",
+    "NameId": 36866,
+    "ModelId": 84,
+    "ModelFileName": "sh_crate_01.adr",
+    "Scale": 1,
+    "Name": "Willie's Crate",
+    "HideNamePlate": true
   }
 ]
