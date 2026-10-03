@@ -20787,5 +20787,117 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33322,
+    "CaptureGuid": "96963181674578",
+    "NameId": 6403,
+    "ModelId": 3209,
+    "ModelFileName": "trex_armor_mount.adr",
+    "Scale": 1,
+    "Name": "Armored T-Rex",
+    "TextureAlias": "armor",
+    "TintAlias": "saphire",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 6403,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33323,
+    "CaptureGuid": "96894462197842",
+    "NameId": 436152,
+    "ModelId": 3366,
+    "ModelFileName": "ball_m_bowlingball.adr",
+    "Scale": 1,
+    "Name": "Bowling Ball",
+    "TextureAlias": "bowlingball_basic",
+    "TintAlias": "grape",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 436152,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33324,
+    "CaptureGuid": "96069828477010",
+    "NameId": 6369,
+    "ModelId": 3199,
+    "ModelFileName": "panthera_m_tiger_lava.adr",
+    "Scale": 1,
+    "Name": "Lava Tiger",
+    "TextureAlias": "tiger-lava",
+    "TintAlias": "merlot",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 6369,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33329,
+    "CaptureGuid": "96138547953746",
+    "NameId": 430179,
+    "ModelId": 3208,
+    "ModelFileName": "panthera_m_sabertooth_stone.adr",
+    "Scale": 1,
+    "Name": "Stone Sabertooth",
+    "TextureAlias": "tiger-stripes",
+    "TintAlias": "raincloud",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 430179,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
