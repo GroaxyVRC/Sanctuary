@@ -20787,5 +20787,229 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33713,
+    "CaptureGuid": "40884858842513442",
+    "NameId": 38909,
+    "ModelId": 326,
+    "ModelFileName": "sg_collection_node_leaves_01.adr",
+    "Scale": 1,
+    "Name": "Leaf Pile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 38909,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33753,
+    "CaptureGuid": "40903138223325218",
+    "NameId": 38909,
+    "ModelId": 326,
+    "ModelFileName": "sg_collection_node_leaves_01.adr",
+    "Scale": 1,
+    "Name": "Leaf Pile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 38909,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33754,
+    "CaptureGuid": "40903206942801954",
+    "NameId": 38909,
+    "ModelId": 326,
+    "ModelFileName": "sg_collection_node_leaves_01.adr",
+    "Scale": 1,
+    "Name": "Leaf Pile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 38909,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33755,
+    "CaptureGuid": "40903344381755426",
+    "NameId": 16975,
+    "ModelId": 248,
+    "ModelFileName": "sg_collection_node_flowers_01.adr",
+    "Scale": 1,
+    "Name": "Wild Flowers",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 16975,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33803,
+    "CaptureGuid": "40884790123036706",
+    "NameId": 16975,
+    "ModelId": 248,
+    "ModelFileName": "sg_collection_node_flowers_01.adr",
+    "Scale": 1,
+    "Name": "Wild Flowers",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 16975,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33849,
+    "CaptureGuid": "40899083774197794",
+    "NameId": 16975,
+    "ModelId": 248,
+    "ModelFileName": "sg_collection_node_flowers_01.adr",
+    "Scale": 1,
+    "Name": "Wild Flowers",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 16975,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 34003,
+    "CaptureGuid": "40898946335244322",
+    "NameId": 20748,
+    "ModelId": 333,
+    "ModelFileName": "sg_collection_node_robgoblin_junkpile_01.adr",
+    "Scale": 0.5,
+    "Name": "Robgoblin Junkpile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 20748,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 34008,
+    "CaptureGuid": "40899152493674530",
+    "NameId": 20748,
+    "ModelId": 333,
+    "ModelFileName": "sg_collection_node_robgoblin_junkpile_01.adr",
+    "Scale": 0.5,
+    "Name": "Robgoblin Junkpile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 20748,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
