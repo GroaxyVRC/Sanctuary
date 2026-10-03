@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 34018,
+    "CaptureGuid": "74010876444690",
+    "NameId": 401730,
+    "ModelId": 655,
+    "ModelFileName": "fairy_m_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Upset Mechanic",
+    "HideNamePlate": true
   }
 ]
