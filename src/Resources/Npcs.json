@@ -20787,5 +20787,86 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33457,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "86380382257170",
+    "NameId": 15623,
+    "ModelId": 168,
+    "ModelFileName": "troll_shaman.adr",
+    "Scale": 1,
+    "Name": "Troll Summoner",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 15623,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33467,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "106583908417554",
+    "NameId": 15623,
+    "ModelId": 168,
+    "ModelFileName": "troll_shaman.adr",
+    "Scale": 1,
+    "Name": "Troll Summoner",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 15623,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33470,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "25220047962130",
+    "NameId": 15623,
+    "ModelId": 168,
+    "ModelFileName": "troll_shaman.adr",
+    "Scale": 1,
+    "Name": "Troll Summoner",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 15623,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
