@@ -20787,5 +20787,31 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33332,
+    "CaptureGuid": "131666517426258",
+    "NameId": 436321,
+    "ModelId": 3836,
+    "ModelFileName": "sg_spot_the_difference_01.adr",
+    "Scale": 1,
+    "Name": "Spot the Difference",
+    "HasCursor": true,
+    "CursorId": 0,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 333,
+        "IconState": 375,
+        "Unknown": 0,
+        "NameId": 436321,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
