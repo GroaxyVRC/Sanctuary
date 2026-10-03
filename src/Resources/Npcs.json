@@ -20787,5 +20787,32 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33567,
+    "CaptureGuid": "76690936037394",
+    "NameId": 427569,
+    "ModelId": 424,
+    "ModelFileName": "human_m_farmer_henry.agr",
+    "Scale": 1,
+    "Name": "Charlie",
+    "Disposition": 2,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 185,
+        "IconState": 246,
+        "Unknown": 0,
+        "NameId": 427569,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
