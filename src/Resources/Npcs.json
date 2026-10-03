@@ -20787,5 +20787,55 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33089,
+    "CaptureGuid": "18691697672274",
+    "NameId": 22673,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey Keg",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33195,
+    "CaptureGuid": "18622978195538",
+    "NameId": 22673,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey Keg",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33242,
+    "CaptureGuid": "18554258718802",
+    "NameId": 22673,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey Keg",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33243,
+    "CaptureGuid": "18485539242066",
+    "NameId": 22673,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey Keg",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33245,
+    "CaptureGuid": "18416819765330",
+    "NameId": 22673,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey Keg",
+    "HideNamePlate": true
   }
 ]
