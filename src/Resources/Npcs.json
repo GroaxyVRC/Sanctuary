@@ -20787,5 +20787,25 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33690,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "962072674338",
+    "NameId": 3224,
+    "ModelId": 14,
+    "ModelFileName": "chugawug_m_01.adr",
+    "Scale": 1,
+    "Name": "Grog"
+  },
+  {
+    "Id": 33773,
+    "SubTextNameId": 70888,
+    "CaptureGuid": "8727373545506",
+    "NameId": 22435,
+    "ModelId": 345,
+    "ModelFileName": "fairy_royalguard_m.adr",
+    "Scale": 1,
+    "Name": "Drill Sergeant Dewey"
   }
 ]
