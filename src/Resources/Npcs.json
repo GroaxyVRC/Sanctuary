@@ -20787,5 +20787,83 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33592,
+    "CaptureGuid": "22471268892706",
+    "NameId": 78096,
+    "ModelId": 1938,
+    "ModelFileName": "sg_spawner_wolf_01.adr",
+    "Scale": 1,
+    "Name": "Frostfang Snarler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 78096,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33607,
+    "CaptureGuid": "45904610459682",
+    "NameId": 78096,
+    "ModelId": 1938,
+    "ModelFileName": "sg_spawner_wolf_01.adr",
+    "Scale": 1,
+    "Name": "Frostfang Snarler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 78096,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33728,
+    "CaptureGuid": "47828755808290",
+    "NameId": 78096,
+    "ModelId": 1938,
+    "ModelFileName": "sg_spawner_wolf_01.adr",
+    "Scale": 1,
+    "Name": "Frostfang Snarler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 78096,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
