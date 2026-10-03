@@ -20787,5 +20787,58 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33465,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "16492674416658",
+    "NameId": 36468,
+    "ModelId": 366,
+    "ModelFileName": "fairy_f_freestyle_03.agr",
+    "Scale": 1,
+    "Name": "Dori Tendersole",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 36468,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33542,
+    "CaptureGuid": "34909494181906",
+    "NameId": 76029,
+    "ModelId": 385,
+    "ModelFileName": "fairy_f_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Lan Spryleaf",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 76029,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
