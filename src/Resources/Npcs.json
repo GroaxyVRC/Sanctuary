@@ -20787,5 +20787,85 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33361,
+    "CaptureGuid": "136751758704722",
+    "NameId": 4233,
+    "ModelId": 402,
+    "ModelFileName": "squirrel.adr",
+    "Scale": 1,
+    "Name": "Squirrel",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33598,
+    "CaptureGuid": "27625229647906",
+    "NameId": 4233,
+    "ModelId": 402,
+    "ModelFileName": "squirrel.adr",
+    "Scale": 1,
+    "Name": "Squirrel",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33832,
+    "CaptureGuid": "44255343018018",
+    "NameId": 4233,
+    "ModelId": 402,
+    "ModelFileName": "squirrel.adr",
+    "Scale": 1,
+    "Name": "Squirrel",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33833,
+    "CaptureGuid": "44324062494754",
+    "NameId": 4233,
+    "ModelId": 402,
+    "ModelFileName": "squirrel.adr",
+    "Scale": 1,
+    "Name": "Squirrel",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33845,
+    "CaptureGuid": "46729244180514",
+    "NameId": 4233,
+    "ModelId": 402,
+    "ModelFileName": "squirrel.adr",
+    "Scale": 1,
+    "Name": "Squirrel",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33937,
+    "CaptureGuid": "49752901156898",
+    "NameId": 4233,
+    "ModelId": 402,
+    "ModelFileName": "squirrel.adr",
+    "Scale": 1,
+    "Name": "Squirrel",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33988,
+    "CaptureGuid": "27693949124642",
+    "NameId": 4233,
+    "ModelId": 402,
+    "ModelFileName": "squirrel.adr",
+    "Scale": 1,
+    "Name": "Squirrel",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33998,
+    "CaptureGuid": "48515950575650",
+    "NameId": 4233,
+    "ModelId": 402,
+    "ModelFileName": "squirrel.adr",
+    "Scale": 1,
+    "Name": "Squirrel",
+    "HideNamePlate": true
   }
 ]
