@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33331,
+    "CaptureGuid": "138332306669650",
+    "NameId": 430046,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "cloud plane",
+    "HideNamePlate": true,
+    "CompositeEffectId": 16564
+  },
+  {
+    "Id": 33378,
+    "CaptureGuid": "130567005798482",
+    "NameId": 430046,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "cloud plane",
+    "HideNamePlate": true,
+    "CompositeEffectId": 16564
   }
 ]
