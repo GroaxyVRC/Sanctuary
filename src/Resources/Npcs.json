@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33885,
+    "CaptureGuid": "36953417578446882",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33886,
+    "CaptureGuid": "36953486297923618",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33887,
+    "CaptureGuid": "36954036053737506",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33888,
+    "CaptureGuid": "36954104773214242",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33889,
+    "CaptureGuid": "40830776614322210",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33890,
+    "CaptureGuid": "36954173492690978",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33891,
+    "CaptureGuid": "40829470944264226",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33892,
+    "CaptureGuid": "40830707894845474",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
