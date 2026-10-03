@@ -650,7 +650,7 @@ public sealed class Player : ClientPcData, IEntity
     public PlayerUpdatePacketAddPc GetAddPcPacket()
     {
         bool isReferee = IsMod || IsAdmin;
-        var packet = new PlayerUpdatePacketAddPc
+        var playerUpdatePacketAddPc = new PlayerUpdatePacketAddPc
         {
             Guid = Guid,
 
@@ -695,21 +695,21 @@ public sealed class Player : ClientPcData, IEntity
         var activeTitle = Titles.FirstOrDefault(x => x.Id == ActiveTitle);
 
         if (activeTitle is not null)
-            packet.Title = activeTitle;
+            playerUpdatePacketAddPc.Title = activeTitle;
 
         if (Mount is not null)
         {
-            packet.MountGuid = Mount.Guid;
-            packet.MountSeat = Mount.Seat;
-            packet.MountQueuePosition = Mount.QueuePosition;
+            playerUpdatePacketAddPc.MountGuid = Mount.Guid;
+            playerUpdatePacketAddPc.MountSeat = Mount.Seat;
+            playerUpdatePacketAddPc.MountQueuePosition = Mount.QueuePosition;
 
-            packet.NameVerticalOffset = Mount.Definition.NameVerticalOffset;
+            playerUpdatePacketAddPc.NameVerticalOffset = Mount.Definition.NameVerticalOffset;
         }
 
         if (GuildData is not null)
-            packet.Guilds.Add(0, GuildData.Guid);
+            playerUpdatePacketAddPc.Guilds.Add(0, GuildData.Guid);
 
-        return packet;
+        return playerUpdatePacketAddPc;
     }
 
     public const int ChangeFormBuffIconId = 3843;
@@ -917,7 +917,7 @@ public sealed class Player : ClientPcData, IEntity
             return false;
         }
 
-        var setDefinition = new AbilityPacketSetDefinition { ProfileId = kit.ProfileId };
+        var abilityPacketSetDefinition = new AbilityPacketSetDefinition { ProfileId = kit.ProfileId };
 
         var weaponDefinitionId = GetEquippedWeaponDefinitionId();
 
@@ -927,18 +927,18 @@ public sealed class Player : ClientPcData, IEntity
 
             if (basic is not null)
             {
-                setDefinition.AbilitySet.Abilities[0] = CreateToolbarSlot(kit.BasicSlotDefId, basic.IconId, weaponDefinition.NameId, manaCost: 0);
+                abilityPacketSetDefinition.AbilitySet.Abilities[0] = CreateToolbarSlot(kit.BasicSlotDefId, basic.IconId, weaponDefinition.NameId, manaCost: 0);
                 SendAbilityDefinition(kit.BasicSlotDefId, basic);
             }
 
             if (special is not null)
             {
-                setDefinition.AbilitySet.Abilities[1] = CreateToolbarSlot(kit.SpecialSlotDefId, special.IconId, weaponDefinition.NameId, special.EnergyCost);
+                abilityPacketSetDefinition.AbilitySet.Abilities[1] = CreateToolbarSlot(kit.SpecialSlotDefId, special.IconId, weaponDefinition.NameId, special.EnergyCost);
                 SendAbilityDefinition(kit.SpecialSlotDefId, special);
             }
         }
 
-        SendTunneled(setDefinition);
+        SendTunneled(abilityPacketSetDefinition);
 
         MaxEnergy = kit.Energy.Max;
         // Resync energy against the new max.
