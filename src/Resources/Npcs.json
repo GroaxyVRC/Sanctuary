@@ -20787,5 +20787,55 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33087,
+    "CaptureGuid": "687194767442",
+    "NameId": 7262,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Queensfields",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33093,
+    "CaptureGuid": "106309030510674",
+    "NameId": 442487,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Eastern Bixie Fields",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33341,
+    "CaptureGuid": "68719476818",
+    "NameId": 3499,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Sanctuary",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33541,
+    "CaptureGuid": "4810363371538",
+    "NameId": 18899,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Lakeshore",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33595,
+    "CaptureGuid": "1992864825378",
+    "NameId": 3961,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Snowhill",
+    "HideNamePlate": true
   }
 ]
