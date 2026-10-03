@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 34016,
+    "CaptureGuid": "31817117728786",
+    "NameId": 71298,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Sasparilla Sample",
+    "HideNamePlate": true
   }
 ]
