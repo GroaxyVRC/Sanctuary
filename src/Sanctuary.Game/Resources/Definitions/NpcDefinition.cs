@@ -15,5 +15,6 @@ public class NpcDefinition
     public string ModelFileName { get; set; } = null!;
 
     public string? TextureAlias { get; set; }
+    public NpcAbilityDefinition? Ability { get; set; }
     public string[]? Scripts { get; set; }
 }
