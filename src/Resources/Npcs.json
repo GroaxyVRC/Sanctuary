@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36136,
+    "CaptureGuid": "28930899705922",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36138,
+    "CaptureGuid": "34840774705218",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36157,
+    "CaptureGuid": "47553877901378",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36164,
+    "CaptureGuid": "48722109005890",
+    "NameId": 7557,
+    "ModelId": 4024,
+    "ModelFileName": "sg_mining_node_sunstoneiron_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Iron Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7557,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36165,
+    "CaptureGuid": "20478404067394",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36181,
+    "CaptureGuid": "107982555927543874",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36185,
+    "CaptureGuid": "37039797960770",
+    "NameId": 7558,
+    "ModelId": 4025,
+    "ModelFileName": "sg_mining_node_sunstonesilver_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Silver Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7558,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36217,
+    "CaptureGuid": "20547123544130",
+    "NameId": 7559,
+    "ModelId": 4023,
+    "ModelFileName": "sg_mining_node_sunstonegold_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Gold Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7559,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
