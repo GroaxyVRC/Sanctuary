@@ -20787,5 +20787,52 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33720,
+    "CaptureGuid": "24876450578466",
+    "NameId": 2230,
+    "ModelId": 826,
+    "ModelFileName": "human_f_snowhill.adr",
+    "Scale": 1,
+    "Name": "Human",
+    "TextureAlias": "stripedscarf",
+    "TintAlias": "stripedscarf-purple",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33721,
+    "CaptureGuid": "24807731101730",
+    "NameId": 2230,
+    "ModelId": 837,
+    "ModelFileName": "human_m_snowhill.adr",
+    "Scale": 1,
+    "Name": "Human",
+    "TextureAlias": "hoodedjacket",
+    "TintAlias": "hoodedjacket-red",
+    "HideNamePlate": true,
+    "Animation": 3101
+  },
+  {
+    "Id": 33760,
+    "CaptureGuid": "40903756698615842",
+    "NameId": 2230,
+    "ModelId": 504,
+    "ModelFileName": "human_f_freestyle_07.agr",
+    "Scale": 1,
+    "Name": "Human",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 36286,
+    "CaptureGuid": "40970964346863650",
+    "NameId": 2230,
+    "ModelId": 780,
+    "ModelFileName": "human_sanctuary_m.adr",
+    "Scale": 1,
+    "Name": "Human",
+    "TextureAlias": "02",
+    "TintAlias": "02-rust",
+    "HideNamePlate": true
   }
 ]
