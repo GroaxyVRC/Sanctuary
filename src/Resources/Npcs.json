@@ -20787,5 +20787,59 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33478,
+    "SubTextNameId": 5101979,
+    "CaptureGuid": "83013127897106",
+    "NameId": 5101986,
+    "ModelId": 4489,
+    "ModelFileName": "fairy_f_merchant_archer_caucasian_forest.agr",
+    "Scale": 1,
+    "Name": "Kimi",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5101986,
+        "ReferenceId": 5101979,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33667,
+    "SubTextNameId": 5101979,
+    "CaptureGuid": "41094247088162",
+    "NameId": 5101985,
+    "ModelId": 4476,
+    "ModelFileName": "human_m_merchant_archer_asian.agr",
+    "Scale": 1,
+    "Name": "Tommy",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5101985,
+        "ReferenceId": 5101979,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
