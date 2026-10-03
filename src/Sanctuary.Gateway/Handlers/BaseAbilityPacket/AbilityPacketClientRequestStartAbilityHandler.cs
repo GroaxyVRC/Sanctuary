@@ -55,6 +55,9 @@ public static class AbilityPacketClientRequestStartAbilityHandler
             return false;
         }
 
+        _logger.LogTrace("Received ability request. Player: {guid}, action bar: {id}, slot: {slot}, target: {target}.",
+            connection.Player.Guid, abilityPacketClientRequestStartAbility.Data.Id, abilityPacketClientRequestStartAbility.Data.Slot, abilityPacketClientRequestStartAbility.Guid);
+
         if (SnowballInteraction.HandleAbility(connection.Player, abilityPacketClientRequestStartAbility))
             return true;
 
