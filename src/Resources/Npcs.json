@@ -20787,5 +20787,113 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33791,
+    "SubTextNameId": 5102215,
+    "CaptureGuid": "9816096215400482",
+    "NameId": 134483,
+    "ModelId": 1954,
+    "ModelFileName": "human_f_mannequin_winterholiday09_girlyelf.agr",
+    "Scale": 1,
+    "Name": "Toy Maker Outfit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 134483,
+        "ReferenceId": 5102215,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33792,
+    "SubTextNameId": 5102215,
+    "CaptureGuid": "9816164934877218",
+    "NameId": 134488,
+    "ModelId": 1955,
+    "ModelFileName": "human_f_mannequin_winterholiday09_girlysanta.agr",
+    "Scale": 1,
+    "Name": "Miss Santa Outfit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 134488,
+        "ReferenceId": 5102215,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33793,
+    "SubTextNameId": 5102215,
+    "CaptureGuid": "9816233654353954",
+    "NameId": 134486,
+    "ModelId": 1956,
+    "ModelFileName": "human_f_mannequin_winterholiday09_girlytoysoldier.agr",
+    "Scale": 1,
+    "Name": "Toy Soldier Outfit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 134486,
+        "ReferenceId": 5102215,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33797,
+    "SubTextNameId": 5102214,
+    "CaptureGuid": "9816302373830690",
+    "NameId": 134489,
+    "ModelId": 1957,
+    "ModelFileName": "human_m_mannequin_winterholiday09_santasuit.agr",
+    "Scale": 1,
+    "Name": "Santa Claus Outfit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 134489,
+        "ReferenceId": 5102214,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
