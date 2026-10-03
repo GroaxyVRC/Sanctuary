@@ -20787,5 +20787,229 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36118,
+    "CaptureGuid": "40940796496576546",
+    "NameId": 20748,
+    "ModelId": 333,
+    "ModelFileName": "sg_collection_node_robgoblin_junkpile_01.adr",
+    "Scale": 0.5,
+    "Name": "Robgoblin Junkpile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 20748,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36271,
+    "CaptureGuid": "40968078128840738",
+    "NameId": 38909,
+    "ModelId": 326,
+    "ModelFileName": "sg_collection_node_leaves_01.adr",
+    "Scale": 1,
+    "Name": "Leaf Pile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 38909,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36273,
+    "CaptureGuid": "40967528373026850",
+    "NameId": 38909,
+    "ModelId": 326,
+    "ModelFileName": "sg_collection_node_leaves_01.adr",
+    "Scale": 1,
+    "Name": "Leaf Pile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 38909,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36274,
+    "CaptureGuid": "40967597092503586",
+    "NameId": 38909,
+    "ModelId": 326,
+    "ModelFileName": "sg_collection_node_leaves_01.adr",
+    "Scale": 1,
+    "Name": "Leaf Pile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 38909,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36275,
+    "CaptureGuid": "40957632768376866",
+    "NameId": 38909,
+    "ModelId": 326,
+    "ModelFileName": "sg_collection_node_leaves_01.adr",
+    "Scale": 1,
+    "Name": "Leaf Pile",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 38909,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36277,
+    "CaptureGuid": "40968009409364002",
+    "NameId": 16975,
+    "ModelId": 248,
+    "ModelFileName": "sg_collection_node_flowers_01.adr",
+    "Scale": 1,
+    "Name": "Wild Flowers",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 16975,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36278,
+    "CaptureGuid": "40967871970410530",
+    "NameId": 16975,
+    "ModelId": 248,
+    "ModelFileName": "sg_collection_node_flowers_01.adr",
+    "Scale": 1,
+    "Name": "Wild Flowers",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 16975,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36284,
+    "CaptureGuid": "40967803250933794",
+    "NameId": 16975,
+    "ModelId": 248,
+    "ModelFileName": "sg_collection_node_flowers_01.adr",
+    "Scale": 1,
+    "Name": "Wild Flowers",
+    "HideNamePlate": true,
+    "CompositeEffectId": 1107,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 16975,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
