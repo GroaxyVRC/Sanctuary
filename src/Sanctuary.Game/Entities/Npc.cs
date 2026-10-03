@@ -80,6 +80,7 @@ public class Npc : IScriptableNpc, IEntity
     public byte CursorId { get; set; }
 
     public NotificationInfo? Notification { get; set; }
+    public List<NotificationInfo> Notifications { get; set; } = [];
 
     public List<CharacterAttachmentData> Attachments { get; set; } = [];
 
