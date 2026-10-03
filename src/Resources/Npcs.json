@@ -20787,5 +20787,32 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33333,
+    "CaptureGuid": "95588792139858",
+    "NameId": 5091,
+    "ModelId": 151,
+    "ModelFileName": "sg_treasure_chest_01.adr",
+    "Scale": 1,
+    "Name": "Treasure Chest",
+    "TextureAlias": "Default3",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5091,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
