@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33228,
+    "CaptureGuid": "21809431612227666",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33229,
+    "CaptureGuid": "20831484738797650",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33230,
+    "CaptureGuid": "21095161371033682",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33231,
+    "CaptureGuid": "21092687469871186",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33232,
+    "CaptureGuid": "21092824908824658",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33233,
+    "CaptureGuid": "21461023865176146",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33234,
+    "CaptureGuid": "21092756189347922",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33235,
+    "CaptureGuid": "21092893628301394",
+    "NameId": 5100853,
+    "ModelId": 3669,
+    "ModelFileName": "overworld_tree_honeytwig_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Honeytwig Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100853,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
