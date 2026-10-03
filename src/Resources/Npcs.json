@@ -20787,5 +20787,50 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36254,
+    "CaptureGuid": "34084860461122",
+    "NameId": 439217,
+    "ModelId": 4011,
+    "ModelFileName": "dwarf_m_bikerthug_skullz.adr",
+    "Scale": 1,
+    "Name": "Skullz Thug",
+    "TextureAlias": "skullz_mohawkthug",
+    "TintAlias": "rosepetal",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
+  },
+  {
+    "Id": 36255,
+    "CaptureGuid": "44405151477268546",
+    "NameId": 439217,
+    "ModelId": 4011,
+    "ModelFileName": "dwarf_m_bikerthug_skullz.adr",
+    "Scale": 1,
+    "Name": "Skullz Thug",
+    "TextureAlias": "skullz_mohawkthug",
+    "TintAlias": "rosepetal",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
+  },
+  {
+    "Id": 36267,
+    "CaptureGuid": "3023656976450",
+    "NameId": 439217,
+    "ModelId": 4011,
+    "ModelFileName": "dwarf_m_bikerthug_skullz.adr",
+    "Scale": 1,
+    "Name": "Skullz Thug",
+    "TextureAlias": "skullz_mohawkthug",
+    "TintAlias": "rosepetal",
+    "Disposition": 0,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false
   }
 ]
