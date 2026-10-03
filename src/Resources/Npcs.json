@@ -20787,5 +20787,25 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33971,
+    "CaptureGuid": "30992484007970",
+    "NameId": 407424,
+    "ModelId": 1422,
+    "ModelFileName": "human_f_cheetahs_teammate01.agr",
+    "Scale": 1,
+    "Name": "Goalie",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33989,
+    "CaptureGuid": "31061203484706",
+    "NameId": 407424,
+    "ModelId": 1422,
+    "ModelFileName": "human_f_cheetahs_teammate01.agr",
+    "Scale": 1,
+    "Name": "Goalie",
+    "HideNamePlate": true
   }
 ]
