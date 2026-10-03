@@ -20787,5 +20787,14 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33143,
+    "CaptureGuid": "100605313941586",
+    "NameId": 441907,
+    "ModelId": 345,
+    "ModelFileName": "fairy_royalguard_m.adr",
+    "Scale": 1,
+    "Name": "Sergeant Larkspur"
   }
 ]
