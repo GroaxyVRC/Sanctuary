@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33456,
+    "CaptureGuid": "106927505801234",
+    "NameId": 73446,
+    "ModelId": 417,
+    "ModelFileName": "duck_f_01.adr",
+    "Scale": 1,
+    "Name": "Lakeshore Duck",
+    "HideNamePlate": true,
+    "CompositeEffectId": 46
+  },
+  {
+    "Id": 33549,
+    "CaptureGuid": "87067577024530",
+    "NameId": 73446,
+    "ModelId": 417,
+    "ModelFileName": "duck_f_01.adr",
+    "Scale": 1,
+    "Name": "Lakeshore Duck",
+    "HideNamePlate": true,
+    "CompositeEffectId": 46
   }
 ]
