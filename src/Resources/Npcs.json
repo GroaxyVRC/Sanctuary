@@ -20787,5 +20787,59 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33692,
+    "CaptureGuid": "2954937499682",
+    "NameId": 5012,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Way Back Way"
+  },
+  {
+    "Id": 33729,
+    "CaptureGuid": "2886218022946",
+    "NameId": 5011,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Snowy Alley"
+  },
+  {
+    "Id": 33739,
+    "CaptureGuid": "2267742732322",
+    "NameId": 4100,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "3 Snowdrip Ln."
+  },
+  {
+    "Id": 33742,
+    "CaptureGuid": "2473901162530",
+    "NameId": 5006,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Snowhill St."
+  },
+  {
+    "Id": 33764,
+    "CaptureGuid": "2199023255586",
+    "NameId": 4099,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "2 Snowdrip Ln."
+  },
+  {
+    "Id": 33765,
+    "CaptureGuid": "2130303778850",
+    "NameId": 4098,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Snowdrip Ln."
   }
 ]
