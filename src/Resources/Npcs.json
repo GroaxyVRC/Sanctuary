@@ -20787,5 +20787,60 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33604,
+    "CaptureGuid": "38070590111778",
+    "NameId": 420583,
+    "ModelId": 1935,
+    "ModelFileName": "robgoblin_m_reindeerantlers.adr",
+    "Scale": 1,
+    "Name": "Crafty Robgoblin",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 420583,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33717,
+    "CaptureGuid": "25082609008674",
+    "NameId": 2232,
+    "ModelId": 189,
+    "ModelFileName": "robgoblin_m_bruiser.adr",
+    "Scale": 1,
+    "Name": "Robgoblin",
+    "TextureAlias": "Colander",
+    "TintAlias": "Skin05",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 2232,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
