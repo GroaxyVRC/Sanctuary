@@ -20787,5 +20787,87 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36218,
+    "CaptureGuid": "48790828482626",
+    "NameId": 7559,
+    "ModelId": 4023,
+    "ModelFileName": "sg_mining_node_sunstonegold_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Gold Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7559,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36262,
+    "CaptureGuid": "32229434589250",
+    "NameId": 7559,
+    "ModelId": 4023,
+    "ModelFileName": "sg_mining_node_sunstonegold_01.adr",
+    "Scale": 0.5,
+    "Name": "Sunstone Gold Vein",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7559,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36303,
+    "CaptureGuid": "40918119069253666",
+    "NameId": 7228,
+    "ModelId": 4019,
+    "ModelFileName": "sg_mining_node_snowhillcopper_01.adr",
+    "Scale": 0.5,
+    "Name": "Copper Vein",
+    "TextureAlias": "Copper",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 20,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 340,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 7228,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
