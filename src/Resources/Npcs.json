@@ -20787,5 +20787,50 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33627,
+    "CaptureGuid": "2611340116002",
+    "NameId": 5007,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Icecrest Ct."
+  },
+  {
+    "Id": 33628,
+    "CaptureGuid": "3161095929890",
+    "NameId": 5015,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Hot Springs Drive"
+  },
+  {
+    "Id": 33635,
+    "CaptureGuid": "2680059592738",
+    "NameId": 5008,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "2 Icecrest Ct."
+  },
+  {
+    "Id": 33646,
+    "CaptureGuid": "2817498546210",
+    "NameId": 5009,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "3 Icecrest Ct."
+  },
+  {
+    "Id": 33651,
+    "CaptureGuid": "2748779069474",
+    "NameId": 5010,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Frozen Pond Way"
   }
 ]
