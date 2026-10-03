@@ -20787,5 +20787,77 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33100,
+    "CaptureGuid": "66932770340946",
+    "NameId": 4231,
+    "ModelId": 403,
+    "ModelFileName": "rabbit.adr",
+    "Scale": 1,
+    "Name": "Rabbit",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33166,
+    "CaptureGuid": "128505421496402",
+    "NameId": 4231,
+    "ModelId": 403,
+    "ModelFileName": "rabbit.adr",
+    "Scale": 1,
+    "Name": "Rabbit",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33360,
+    "CaptureGuid": "68650757259346",
+    "NameId": 4231,
+    "ModelId": 403,
+    "ModelFileName": "rabbit.adr",
+    "Scale": 1,
+    "Name": "Rabbit",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33547,
+    "CaptureGuid": "127474629345298",
+    "NameId": 4231,
+    "ModelId": 403,
+    "ModelFileName": "rabbit.adr",
+    "Scale": 1,
+    "Name": "Rabbit",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33555,
+    "CaptureGuid": "122114510159890",
+    "NameId": 4231,
+    "ModelId": 403,
+    "ModelFileName": "rabbit.adr",
+    "Scale": 1,
+    "Name": "Rabbit",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33560,
+    "CaptureGuid": "91053306675218",
+    "NameId": 4231,
+    "ModelId": 403,
+    "ModelFileName": "rabbit.adr",
+    "Scale": 1,
+    "Name": "Rabbit",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33693,
+    "CaptureGuid": "23295902613538",
+    "NameId": 4231,
+    "ModelId": 403,
+    "ModelFileName": "rabbit.adr",
+    "Scale": 1,
+    "Name": "Rabbit",
+    "TextureAlias": "rabbit",
+    "TintAlias": "rabbit-purple",
+    "HideNamePlate": true
   }
 ]
