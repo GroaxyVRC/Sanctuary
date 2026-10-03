@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33199,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "18760417149010",
+    "NameId": 22697,
+    "ModelId": 171,
+    "ModelFileName": "dog_large_shortears.adr",
+    "Scale": 1,
+    "Name": "Ol' Mange"
   }
 ]
