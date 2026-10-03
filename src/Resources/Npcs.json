@@ -20787,5 +20787,35 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33944,
+    "CaptureGuid": "9070970929186",
+    "NameId": 22806,
+    "ModelId": 8,
+    "ModelFileName": "humanchild_m_tshirtwithbaggypants.adr",
+    "Scale": 1,
+    "Name": "Rusty"
+  },
+  {
+    "Id": 33947,
+    "CaptureGuid": "36009005809698",
+    "NameId": 74594,
+    "ModelId": 1774,
+    "ModelFileName": "unicorn_f.adr",
+    "Scale": 1,
+    "Name": "Cinnamon",
+    "TextureAlias": "spots",
+    "TintAlias": "spots-pink",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33956,
+    "CaptureGuid": "36215164239906",
+    "NameId": 410454,
+    "ModelId": 1454,
+    "ModelFileName": "dog_large_husky.adr",
+    "Scale": 1,
+    "Name": "Kicky"
   }
 ]
