@@ -20787,5 +20787,31 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33611,
+    "CaptureGuid": "24945170055202",
+    "NameId": 2243,
+    "ModelId": 382,
+    "ModelFileName": "dwarf_miner_m.adr",
+    "Scale": 1,
+    "Name": "Dwarf",
+    "TextureAlias": "01",
+    "TintAlias": "01-green",
+    "HideNamePlate": true,
+    "Animation": 3101
+  },
+  {
+    "Id": 33612,
+    "CaptureGuid": "25013889531938",
+    "NameId": 2236,
+    "ModelId": 14,
+    "ModelFileName": "chugawug_m_01.adr",
+    "Scale": 1,
+    "Name": "Chugawug",
+    "TextureAlias": "m_01",
+    "TintAlias": "black",
+    "HideNamePlate": true,
+    "Animation": 3101
   }
 ]
