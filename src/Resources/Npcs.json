@@ -20787,5 +20787,86 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33345,
+    "CaptureGuid": "4810363371602",
+    "NameId": 15627,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "2 Sunrise St."
+  },
+  {
+    "Id": 33374,
+    "CaptureGuid": "6184752906322",
+    "NameId": 15651,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "2 Sunset St."
+  },
+  {
+    "Id": 33377,
+    "CaptureGuid": "5085241278546",
+    "NameId": 15629,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "4 Sunrise St."
+  },
+  {
+    "Id": 33398,
+    "CaptureGuid": "4741643894866",
+    "NameId": 15626,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Sunrise St."
+  },
+  {
+    "Id": 33419,
+    "CaptureGuid": "5841155522642",
+    "NameId": 15650,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "1 Sunset St."
+  },
+  {
+    "Id": 33425,
+    "CaptureGuid": "6253472383058",
+    "NameId": 15653,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "4 Sunset St."
+  },
+  {
+    "Id": 33429,
+    "CaptureGuid": "5909874999378",
+    "NameId": 15652,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "3 Sunset St."
+  },
+  {
+    "Id": 33437,
+    "CaptureGuid": "5978594476114",
+    "NameId": 15654,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "5 Sunset St."
+  },
+  {
+    "Id": 33439,
+    "CaptureGuid": "4879082848338",
+    "NameId": 15628,
+    "ModelId": 910,
+    "ModelFileName": "sg_mailbox_01.adr",
+    "Scale": 1,
+    "Name": "3 Sunrise St."
   }
 ]
