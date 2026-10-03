@@ -20787,5 +20787,85 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33732,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2336462209058",
+    "NameId": 4554,
+    "ModelId": 32,
+    "ModelFileName": "fairy_m_farmer_01.adr",
+    "Scale": 1,
+    "Name": "Cinn",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 4554,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33763,
+    "SubTextNameId": 420810,
+    "CaptureGuid": "38208029065250",
+    "NameId": 420809,
+    "ModelId": 38,
+    "ModelFileName": "human_m_miner_01.adr",
+    "Scale": 1,
+    "Name": "Everett",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 177,
+        "IconState": 242,
+        "Unknown": 0,
+        "NameId": 420809,
+        "ReferenceId": 420810,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33813,
+    "CaptureGuid": "6253472383010",
+    "NameId": 7053,
+    "ModelId": 11,
+    "ModelFileName": "fairychild_f_sleevesandshorts.adr",
+    "Scale": 1,
+    "Name": "Wintara",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 7053,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
