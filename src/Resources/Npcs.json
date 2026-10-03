@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33523,
+    "CaptureGuid": "29936884125794322",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33524,
+    "CaptureGuid": "95107755802642",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33526,
+    "CaptureGuid": "129330055217170",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33527,
+    "CaptureGuid": "129467494170642",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33528,
+    "CaptureGuid": "118747255799826",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33529,
+    "CaptureGuid": "93939524698130",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33530,
+    "CaptureGuid": "133590662774802",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33531,
+    "CaptureGuid": "79439715106834",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
