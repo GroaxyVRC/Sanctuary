@@ -523,6 +523,16 @@ public sealed class Player : ClientPcData, IEntity
             }
             else
                 SendTunneled(player.GetAddPcPacket());
+
+            // Native standing groups can resume independently. Timed routines must wait
+            // for their next shared packet: SetAnimation cannot seek into a current clip.
+            if (player.Mount is null && player.BoomboxDanceIsStanding && player.BoomboxDanceAnimation != 0)
+                SendTunneled(new PlayerUpdatePacketSetAnimation
+                {
+                    Guid = player.Guid,
+                    AnimationId = player.BoomboxDanceAnimation,
+                    Flags = 1
+                });
         }
 
         foreach (var player in players)
