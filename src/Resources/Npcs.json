@@ -20787,5 +20787,92 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33426,
+    "SubTextNameId": 47154,
+    "CaptureGuid": "68307159875666",
+    "NameId": 382902,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Baxi Sparkletoes",
+    "TextureAlias": "sanctuary_01",
+    "TintAlias": "sanctuary_01_Blue",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 382902,
+        "ReferenceId": 47154,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33427,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "3367254360146",
+    "NameId": 10094,
+    "ModelId": 401,
+    "ModelFileName": "fairy_seaside_f_01.adr",
+    "Scale": 1,
+    "Name": "Cadie",
+    "TextureAlias": "seaside_dress",
+    "TintAlias": "seaside_dress-yellow",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 10094,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33428,
+    "SubTextNameId": 4575,
+    "CaptureGuid": "4329327034450",
+    "NameId": 14698,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Periwinkle",
+    "TextureAlias": "sanctuary_03",
+    "TintAlias": "sanctuary_03_Red",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 14698,
+        "ReferenceId": 4575,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
