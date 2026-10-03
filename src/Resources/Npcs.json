@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 36126,
+    "CaptureGuid": "14362370637890",
+    "NameId": 440486,
+    "ModelId": 4048,
+    "ModelFileName": "gw_roadhouse_01_gas.adr",
+    "Scale": 1,
+    "Name": "Skullz Fuel Station",
+    "HideNamePlate": true,
+    "VerticalOffset": -0.48
+  },
+  {
+    "Id": 36170,
+    "CaptureGuid": "21440476741698",
+    "NameId": 440486,
+    "ModelId": 4048,
+    "ModelFileName": "gw_roadhouse_01_gas.adr",
+    "Scale": 1,
+    "Name": "Skullz Fuel Station",
+    "HideNamePlate": true,
+    "VerticalOffset": -0.48
   }
 ]
