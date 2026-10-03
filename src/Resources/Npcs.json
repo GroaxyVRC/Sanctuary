@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33863,
+    "CaptureGuid": "52639119179810",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33864,
+    "CaptureGuid": "36953692456353826",
+    "NameId": 434503,
+    "ModelId": 3654,
+    "ModelFileName": "overworld_tree_starnut_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Starnut Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434503,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33865,
+    "CaptureGuid": "47278999994402",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33866,
+    "CaptureGuid": "31382948074749986",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33867,
+    "CaptureGuid": "36955479162748962",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33868,
+    "CaptureGuid": "36955547882225698",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33869,
+    "CaptureGuid": "40829402224787490",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33870,
+    "CaptureGuid": "55731495632930",
+    "NameId": 434141,
+    "ModelId": 3652,
+    "ModelFileName": "overworld_bush_snowberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Snowberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434141,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
