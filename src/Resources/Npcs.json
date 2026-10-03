@@ -20787,5 +20787,47 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33157,
+    "CaptureGuid": "99574521790546",
+    "NameId": 434683,
+    "ModelId": 3636,
+    "ModelFileName": "sg_chugawug_sacks_02.adr",
+    "Scale": 1,
+    "Name": "Sack of Soil 2",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33158,
+    "CaptureGuid": "99505802313810",
+    "NameId": 434682,
+    "ModelId": 3635,
+    "ModelFileName": "sg_chugawug_sacks_01.adr",
+    "Scale": 1,
+    "Name": "Sack of Soil 1",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33159,
+    "CaptureGuid": "99299643883602",
+    "NameId": 434641,
+    "ModelId": 3417,
+    "ModelFileName": "farming_dirt_mound_01.adr",
+    "Scale": 1,
+    "Name": "Topsoil Mound",
+    "HideNamePlate": true,
+    "VerticalOffset": -0.1
+  },
+  {
+    "Id": 33160,
+    "CaptureGuid": "99230924406866",
+    "NameId": 434639,
+    "ModelId": 3410,
+    "ModelFileName": "farming_farmers_market_lv1_01.adr",
+    "Scale": 1,
+    "Name": "Farming Wagon",
+    "TextureAlias": "Default0",
+    "HideNamePlate": true
   }
 ]
