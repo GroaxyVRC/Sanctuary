@@ -20787,5 +20787,34 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33543,
+    "CaptureGuid": "37726992728082",
+    "NameId": 21359,
+    "ModelId": 545,
+    "ModelFileName": "human_f_freestyle_03.agr",
+    "Scale": 1,
+    "Name": "Human Girl",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33544,
+    "CaptureGuid": "37795712204818",
+    "NameId": 21357,
+    "ModelId": 573,
+    "ModelFileName": "fairy_f_freestyle_11.agr",
+    "Scale": 1,
+    "Name": "Pixie Girl",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33545,
+    "CaptureGuid": "64321430224914",
+    "NameId": 388323,
+    "ModelId": 485,
+    "ModelFileName": "fairy_petulia_f.adr",
+    "Scale": 1,
+    "Name": "Natali"
   }
 ]

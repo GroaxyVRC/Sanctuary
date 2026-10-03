@@ -3421,6 +3421,9 @@ local function spawnStaticNpcs(zone)
     zone:spawnNpcWithGuid(33082, 100000033191, -1418.3218, -27.002932, 347.82056, 1.370251)
     zone:spawnNpcWithGuid(33083, 100000033192, -721.4506, 9.538003, 949.2157, 1.370251)
     zone:spawnNpcWithGuid(33084, 100000033193, 50.92852, 32.425617, 370.30267, 1.370251)
+    zone:spawnNpcWithGuid(33543, "37726992728082", -750.3093, 4.134318, 886.6468, -3.00973797)
+    zone:spawnNpcWithGuid(33544, "37795712204818", -747.22253, 3.614951, 883.3975, -1.86554206)
+    zone:spawnNpcWithGuid(33545, "64321430224914", -721.9529, 9.966442, 885.3096, -0.604641049)
 end
 
 registerCallback("start", function(zone)
