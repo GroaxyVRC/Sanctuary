@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33643,
+    "CaptureGuid": "11201274708002",
+    "NameId": 24426,
+    "ModelId": 339,
+    "ModelFileName": "human_f_freestyle_01.agr",
+    "Scale": 1,
+    "Name": "Iggy's Owner",
+    "HideNamePlate": true
   }
 ]
