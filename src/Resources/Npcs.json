@@ -20787,5 +20787,45 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33546,
+    "CaptureGuid": "98475010162706",
+    "NameId": 76481,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Infiltrator Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33568,
+    "CaptureGuid": "36215164239890",
+    "NameId": 76481,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Infiltrator Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33572,
+    "CaptureGuid": "87342454931474",
+    "NameId": 76481,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Infiltrator Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33575,
+    "CaptureGuid": "107064944754706",
+    "NameId": 76481,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Robgoblin Infiltrator Spawner",
+    "HideNamePlate": true
   }
 ]
