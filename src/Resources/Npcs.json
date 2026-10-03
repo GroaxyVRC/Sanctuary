@@ -20787,5 +20787,199 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33456,
+    "CaptureGuid": "106927505801234",
+    "NameId": 73446,
+    "ModelId": 417,
+    "ModelFileName": "duck_f_01.adr",
+    "Scale": 1,
+    "Name": "Lakeshore Duck",
+    "HideNamePlate": true,
+    "CompositeEffectId": 46
+  },
+  {
+    "Id": 33466,
+    "CaptureGuid": "52776558133266",
+    "NameId": 117044,
+    "ModelId": 732,
+    "ModelFileName": "fairy_m_chaz_strongarm.agr",
+    "Scale": 1,
+    "Name": "Chaz Strongarm"
+  },
+  {
+    "Id": 33468,
+    "CaptureGuid": "47622597378066",
+    "NameId": 103818,
+    "ModelId": 553,
+    "ModelFileName": "human_m_freestyle_07.agr",
+    "Scale": 0.8,
+    "Name": "Big Mike"
+  },
+  {
+    "Id": 33469,
+    "CaptureGuid": "35046933135378",
+    "NameId": 76038,
+    "ModelId": 391,
+    "ModelFileName": "fairy_m_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Len Tyril"
+  },
+  {
+    "Id": 33480,
+    "CaptureGuid": "12300786335762",
+    "NameId": 22881,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Norvin's Barrel"
+  },
+  {
+    "Id": 33534,
+    "CaptureGuid": "11407433138194",
+    "NameId": 22805,
+    "ModelId": 519,
+    "ModelFileName": "human_m_hooligan_brawler_03.agr",
+    "Scale": 1,
+    "Name": "Rourke Ironfist"
+  },
+  {
+    "Id": 33536,
+    "CaptureGuid": "71193377898514",
+    "NameId": 4228,
+    "ModelId": 849,
+    "ModelFileName": "sg_foodtray_01.adr",
+    "Scale": 1,
+    "Name": "Fish",
+    "VerticalOffset": -0.02
+  },
+  {
+    "Id": 33537,
+    "CaptureGuid": "71124658421778",
+    "NameId": 399427,
+    "ModelId": 275,
+    "ModelFileName": "sg_farming_node_rich_01.adr",
+    "Scale": 1,
+    "Name": "Fruit",
+    "VerticalOffset": -0.06
+  },
+  {
+    "Id": 33538,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "5153960755218",
+    "NameId": 19671,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Merri De'Flor"
+  },
+  {
+    "Id": 33539,
+    "CaptureGuid": "69818988363794",
+    "NameId": 37143,
+    "ModelId": 269,
+    "ModelFileName": "sg_pies.adr",
+    "Scale": 1,
+    "Name": "Pie"
+  },
+  {
+    "Id": 33540,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "19035295055890",
+    "NameId": 38107,
+    "ModelId": 643,
+    "ModelFileName": "fairy_f_tcg_bry.agr",
+    "Scale": 1,
+    "Name": "Bry"
+  },
+  {
+    "Id": 33543,
+    "CaptureGuid": "37726992728082",
+    "NameId": 21359,
+    "ModelId": 545,
+    "ModelFileName": "human_f_freestyle_03.agr",
+    "Scale": 1,
+    "Name": "Human Girl",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33544,
+    "CaptureGuid": "37795712204818",
+    "NameId": 21357,
+    "ModelId": 573,
+    "ModelFileName": "fairy_f_freestyle_11.agr",
+    "Scale": 1,
+    "Name": "Pixie Girl",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33545,
+    "CaptureGuid": "64321430224914",
+    "NameId": 388323,
+    "ModelId": 485,
+    "ModelFileName": "fairy_petulia_f.adr",
+    "Scale": 1,
+    "Name": "Natali"
+  },
+  {
+    "Id": 33548,
+    "CaptureGuid": "33073172324548626",
+    "NameId": 2232,
+    "ModelId": 189,
+    "ModelFileName": "robgoblin_m_bruiser.adr",
+    "Scale": 1,
+    "Name": "Robgoblin",
+    "TextureAlias": "Bikini",
+    "TintAlias": "Skin05",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33549,
+    "CaptureGuid": "87067577024530",
+    "NameId": 73446,
+    "ModelId": 417,
+    "ModelFileName": "duck_f_01.adr",
+    "Scale": 1,
+    "Name": "Lakeshore Duck",
+    "HideNamePlate": true,
+    "CompositeEffectId": 46
+  },
+  {
+    "Id": 33550,
+    "CaptureGuid": "37933151158290",
+    "NameId": 40577,
+    "ModelId": 391,
+    "ModelFileName": "fairy_m_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Guard",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33557,
+    "CaptureGuid": "27075473834002",
+    "NameId": 21364,
+    "ModelId": 84,
+    "ModelFileName": "sh_crate_01.adr",
+    "Scale": 1,
+    "Name": "Crate"
+  },
+  {
+    "Id": 33571,
+    "CaptureGuid": "35115652612114",
+    "NameId": 76040,
+    "ModelId": 391,
+    "ModelFileName": "fairy_m_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Mort McFly"
+  },
+  {
+    "Id": 33578,
+    "CaptureGuid": "34978213658642",
+    "NameId": 76041,
+    "ModelId": 385,
+    "ModelFileName": "fairy_f_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Tyn Redwing"
   }
 ]
