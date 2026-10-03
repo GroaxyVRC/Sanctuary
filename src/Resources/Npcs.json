@@ -20787,5 +20787,142 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33114,
+    "CaptureGuid": "49409303773266",
+    "NameId": 2239,
+    "ModelId": 173,
+    "ModelFileName": "dog_small_pointy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "TextureAlias": "solid",
+    "TintAlias": "solid-tan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33115,
+    "CaptureGuid": "36833639530578",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33119,
+    "CaptureGuid": "49340584296530",
+    "NameId": 2239,
+    "ModelId": 170,
+    "ModelFileName": "dog_large_pointy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "TextureAlias": "spots",
+    "TintAlias": "spots-ivory",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33120,
+    "CaptureGuid": "52639119179858",
+    "NameId": 2239,
+    "ModelId": 172,
+    "ModelFileName": "dog_small_floppy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "TextureAlias": "lightmark",
+    "TintAlias": "lightmark-gold",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33122,
+    "CaptureGuid": "125069447659602",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33684,
+    "CaptureGuid": "17592186044450",
+    "NameId": 2239,
+    "ModelId": 173,
+    "ModelFileName": "dog_small_pointy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "HideNamePlate": true,
+    "Animation": 5403
+  },
+  {
+    "Id": 33948,
+    "CaptureGuid": "35046933135394",
+    "NameId": 2239,
+    "ModelId": 172,
+    "ModelFileName": "dog_small_floppy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33955,
+    "CaptureGuid": "45767171506210",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33957,
+    "CaptureGuid": "34909494181922",
+    "NameId": 2239,
+    "ModelId": 169,
+    "ModelFileName": "dog_large_floppy.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33974,
+    "CaptureGuid": "42880953483298",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33975,
+    "CaptureGuid": "47691316854818",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33976,
+    "CaptureGuid": "34978213658658",
+    "NameId": 2239,
+    "ModelId": 978,
+    "ModelFileName": "dog_large_lab.adr",
+    "Scale": 1,
+    "Name": "Dog",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33986,
+    "CaptureGuid": "17798344474658",
+    "NameId": 16220,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Dog Pee",
+    "HideNamePlate": true
   }
 ]
