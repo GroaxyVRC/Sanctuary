@@ -268,22 +268,22 @@ public sealed class Player : ClientPcData, IEntity
 
     private static ClientUpdatePacketUpdateActionBarSlot BuildActionBarSlotPacket(int actionBarId, int slotIndex, int iconId, int iconTintId, int nameId, int count, int cooldownMs, bool enabled, int elapsed)
     {
-        var packet = new ClientUpdatePacketUpdateActionBarSlot { Data = { Id = actionBarId, Slot = slotIndex } };
-        packet.Slot.IsEmpty = false;
-        packet.Slot.IconId = iconId;
-        packet.Slot.IconTintId = iconTintId;
-        packet.Slot.NameId = nameId;
-        packet.Slot.Unknown5 = 1;
-        packet.Slot.Unknown6 = 4;
-        packet.Slot.Unknown7 = 15;
-        packet.Slot.Enabled = enabled;
-        packet.Slot.Unknown10 = elapsed;
-        packet.Slot.TotalRefreshTime = cooldownMs;
-        packet.Slot.Unknown12 = elapsed;
-        packet.Slot.Quantity = count;
-        packet.Slot.ForceDismount = true;
-        packet.Slot.Unknown15 = elapsed;
-        return packet;
+        var clientUpdatePacketUpdateActionBarSlot = new ClientUpdatePacketUpdateActionBarSlot { Data = { Id = actionBarId, Slot = slotIndex } };
+        clientUpdatePacketUpdateActionBarSlot.Slot.IsEmpty = false;
+        clientUpdatePacketUpdateActionBarSlot.Slot.IconId = iconId;
+        clientUpdatePacketUpdateActionBarSlot.Slot.IconTintId = iconTintId;
+        clientUpdatePacketUpdateActionBarSlot.Slot.NameId = nameId;
+        clientUpdatePacketUpdateActionBarSlot.Slot.Unknown5 = 1;
+        clientUpdatePacketUpdateActionBarSlot.Slot.Unknown6 = 4;
+        clientUpdatePacketUpdateActionBarSlot.Slot.Unknown7 = 15;
+        clientUpdatePacketUpdateActionBarSlot.Slot.Enabled = enabled;
+        clientUpdatePacketUpdateActionBarSlot.Slot.Unknown10 = elapsed;
+        clientUpdatePacketUpdateActionBarSlot.Slot.TotalRefreshTime = cooldownMs;
+        clientUpdatePacketUpdateActionBarSlot.Slot.Unknown12 = elapsed;
+        clientUpdatePacketUpdateActionBarSlot.Slot.Quantity = count;
+        clientUpdatePacketUpdateActionBarSlot.Slot.ForceDismount = true;
+        clientUpdatePacketUpdateActionBarSlot.Slot.Unknown15 = elapsed;
+        return clientUpdatePacketUpdateActionBarSlot;
     }
 
     public void UpdatePosition(Vector4 position, Quaternion rotation, bool updateZoneArea = true)
