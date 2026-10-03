@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33689,
+    "CaptureGuid": "24601572671522",
+    "NameId": 2231,
+    "ModelId": 571,
+    "ModelFileName": "fairy_f_freestyle_09.agr",
+    "Scale": 1,
+    "Name": "Pixie",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33697,
+    "CaptureGuid": "24532853194786",
+    "NameId": 2236,
+    "ModelId": 222,
+    "ModelFileName": "chugawug_f_02.adr",
+    "Scale": 1,
+    "Name": "Chugawug",
+    "TextureAlias": "chugawug_f_02",
+    "TintAlias": "chugawug_f_02_teal",
+    "HideNamePlate": true
   }
 ]
