@@ -20787,5 +20787,145 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33564,
+    "CaptureGuid": "76965813944338",
+    "NameId": 4893,
+    "ModelId": 2064,
+    "ModelFileName": "wyvern_m.adr",
+    "Scale": 1,
+    "Name": "Gold-Tipped Dragon",
+    "TextureAlias": "basic-goldtips",
+    "TintAlias": "goldtips-black",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 4893,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33565,
+    "CaptureGuid": "76897094467602",
+    "NameId": 5570,
+    "ModelId": 2040,
+    "ModelFileName": "trex_mount.adr",
+    "Scale": 1,
+    "Name": "Striped T-Rex",
+    "TextureAlias": "basic",
+    "TintAlias": "trexbasic-orange",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 5570,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33566,
+    "CaptureGuid": "76828374990866",
+    "NameId": 5570,
+    "ModelId": 2040,
+    "ModelFileName": "trex_mount.adr",
+    "Scale": 1,
+    "Name": "Striped T-Rex",
+    "TextureAlias": "basic",
+    "TintAlias": "trexbasic-green",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 5570,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33569,
+    "CaptureGuid": "77378130804754",
+    "NameId": 6403,
+    "ModelId": 3209,
+    "ModelFileName": "trex_armor_mount.adr",
+    "Scale": 1,
+    "Name": "Armored T-Rex",
+    "TextureAlias": "armor",
+    "TintAlias": "charcoal",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 6403,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33570,
+    "CaptureGuid": "76759655514130",
+    "NameId": 4893,
+    "ModelId": 2064,
+    "ModelFileName": "wyvern_m.adr",
+    "Scale": 1,
+    "Name": "Gold-Tipped Dragon",
+    "TextureAlias": "basic-goldtips",
+    "TintAlias": "goldtips-red",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 4893,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
