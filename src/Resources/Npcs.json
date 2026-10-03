@@ -20787,5 +20787,23 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33571,
+    "CaptureGuid": "35115652612114",
+    "NameId": 76040,
+    "ModelId": 391,
+    "ModelFileName": "fairy_m_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Mort McFly"
+  },
+  {
+    "Id": 33578,
+    "CaptureGuid": "34978213658642",
+    "NameId": 76041,
+    "ModelId": 385,
+    "ModelFileName": "fairy_f_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Tyn Redwing"
   }
 ]
