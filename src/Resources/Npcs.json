@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33128,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "1992864825426",
+    "NameId": 7667,
+    "ModelId": 32,
+    "ModelFileName": "fairy_m_farmer_01.adr",
+    "Scale": 1,
+    "Name": "Toilin"
   }
 ]
