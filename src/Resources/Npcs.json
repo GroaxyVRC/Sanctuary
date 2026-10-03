@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33502,
+    "CaptureGuid": "104110007255058",
+    "NameId": 434542,
+    "ModelId": 3655,
+    "ModelFileName": "overworld_tree_sunleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Sunleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434542,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33503,
+    "CaptureGuid": "137301514518546",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33505,
+    "CaptureGuid": "79370995630098",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33508,
+    "CaptureGuid": "104247446208530",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33509,
+    "CaptureGuid": "112081466556434",
+    "NameId": 5100852,
+    "ModelId": 4226,
+    "ModelFileName": "overworld_vinelow_punkin_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Punkin Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100852,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33510,
+    "CaptureGuid": "133796821205010",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33511,
+    "CaptureGuid": "95245194756114",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33512,
+    "CaptureGuid": "112287624986642",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
