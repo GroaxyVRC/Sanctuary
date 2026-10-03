@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33893,
+    "CaptureGuid": "36959945928736802",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33894,
+    "CaptureGuid": "51264729645090",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33895,
+    "CaptureGuid": "52845277610018",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33896,
+    "CaptureGuid": "31809764744757282",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33897,
+    "CaptureGuid": "36959739770306594",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33898,
+    "CaptureGuid": "36960083367690274",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33899,
+    "CaptureGuid": "54013508714530",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33900,
+    "CaptureGuid": "49134425866274",
+    "NameId": 5100854,
+    "ModelId": 3666,
+    "ModelFileName": "overworld_bush_stainberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Stainberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5100854,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
