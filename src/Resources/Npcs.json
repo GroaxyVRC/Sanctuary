@@ -20787,5 +20787,59 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33393,
+    "SubTextNameId": 2923,
+    "CaptureGuid": "121564754346066",
+    "NameId": 5102400,
+    "ModelId": 4545,
+    "ModelFileName": "human_f_merchant_postman_african.agr",
+    "Scale": 1,
+    "Name": "Wake",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102400,
+        "ReferenceId": 2923,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33694,
+    "SubTextNameId": 2923,
+    "CaptureGuid": "41781441855522",
+    "NameId": 5102420,
+    "ModelId": 4549,
+    "ModelFileName": "human_f_merchant_postman_caucasian.agr",
+    "Scale": 1,
+    "Name": "Reba",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102420,
+        "ReferenceId": 2923,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
