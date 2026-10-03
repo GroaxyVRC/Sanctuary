@@ -20787,5 +20787,38 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33678,
+    "CaptureGuid": "13194139533346",
+    "NameId": 36828,
+    "ModelId": 27,
+    "ModelFileName": "mail_01.adr",
+    "Scale": 1,
+    "Name": "Permit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": true,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 11,
+        "IconState": 6,
+        "Unknown": 0,
+        "NameId": 36828,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 5192,
+        "Enabled": true
+      }
+    ],
+    "InteractionList": {
+      "Unknown": true,
+      "Interactions": [],
+      "Name": "",
+      "Unknown2": true
+    },
+    "InteractionUnknown": false
   }
 ]
