@@ -20787,5 +20787,110 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33392,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "1305670058066",
+    "NameId": 7606,
+    "ModelId": 361,
+    "ModelFileName": "fairy_m_freestyle_jestin_01.agr",
+    "Scale": 1,
+    "Name": "Jestin",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 7606,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33396,
+    "CaptureGuid": "97993973825618",
+    "NameId": 432588,
+    "ModelId": 3383,
+    "ModelFileName": "fairy_f_ari_dresswell.agr",
+    "Scale": 1.15,
+    "Name": "Ari Dresswell",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 432588,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33406,
+    "CaptureGuid": "74491912781906",
+    "NameId": 391444,
+    "ModelId": 30,
+    "ModelFileName": "fairy_m_old_01.adr",
+    "Scale": 1,
+    "Name": "Napoleon",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 391444,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33417,
+    "CaptureGuid": "86449101733970",
+    "NameId": 427714,
+    "ModelId": 2118,
+    "ModelFileName": "human_f_pirate_01.agr",
+    "Scale": 1,
+    "Name": "Mistress Kala Mari",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 427714,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
