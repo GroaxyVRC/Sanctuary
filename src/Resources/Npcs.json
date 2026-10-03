@@ -20787,5 +20787,85 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33380,
+    "CaptureGuid": "163071318294610",
+    "NameId": 20527,
+    "ModelId": 308,
+    "ModelFileName": "sh_table_battlechair01.adr",
+    "Scale": 1,
+    "Name": "Chair",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33381,
+    "CaptureGuid": "158604552306770",
+    "NameId": 20527,
+    "ModelId": 308,
+    "ModelFileName": "sh_table_battlechair01.adr",
+    "Scale": 1,
+    "Name": "Chair",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33382,
+    "CaptureGuid": "134209138065490",
+    "NameId": 20527,
+    "ModelId": 308,
+    "ModelFileName": "sh_table_battlechair01.adr",
+    "Scale": 1,
+    "Name": "Chair",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33385,
+    "CaptureGuid": "22608707846226",
+    "NameId": 20527,
+    "ModelId": 308,
+    "ModelFileName": "sh_table_battlechair01.adr",
+    "Scale": 1,
+    "Name": "Chair",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33386,
+    "CaptureGuid": "141562122076242",
+    "NameId": 20527,
+    "ModelId": 308,
+    "ModelFileName": "sh_table_battlechair01.adr",
+    "Scale": 1,
+    "Name": "Chair",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33387,
+    "CaptureGuid": "147953033412690",
+    "NameId": 20527,
+    "ModelId": 308,
+    "ModelFileName": "sh_table_battlechair01.adr",
+    "Scale": 1,
+    "Name": "Chair",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33391,
+    "CaptureGuid": "153588030505042",
+    "NameId": 20527,
+    "ModelId": 308,
+    "ModelFileName": "sh_table_battlechair01.adr",
+    "Scale": 1,
+    "Name": "Chair",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33394,
+    "CaptureGuid": "124863289229394",
+    "NameId": 20527,
+    "ModelId": 308,
+    "ModelFileName": "sh_table_battlechair01.adr",
+    "Scale": 1,
+    "Name": "Chair",
+    "HideNamePlate": true
   }
 ]
