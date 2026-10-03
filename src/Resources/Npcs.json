@@ -20787,5 +20787,38 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33778,
+    "CaptureGuid": "9816645971214370",
+    "NameId": 425009,
+    "ModelId": 1960,
+    "ModelFileName": "evnt_winter_holiday_party_banner_01.adr",
+    "Scale": 1,
+    "Name": "Party Lights",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5350
+  },
+  {
+    "Id": 33794,
+    "CaptureGuid": "9816920849121314",
+    "NameId": 425009,
+    "ModelId": 1960,
+    "ModelFileName": "evnt_winter_holiday_party_banner_01.adr",
+    "Scale": 1,
+    "Name": "Party Lights",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5350
+  },
+  {
+    "Id": 33795,
+    "CaptureGuid": "9816989568598050",
+    "NameId": 425009,
+    "ModelId": 1960,
+    "ModelFileName": "evnt_winter_holiday_party_banner_01.adr",
+    "Scale": 1,
+    "Name": "Party Lights",
+    "HideNamePlate": true,
+    "CompositeEffectId": 5350
   }
 ]
