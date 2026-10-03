@@ -20787,5 +20787,25 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33695,
+    "SubTextNameId": 5054,
+    "CaptureGuid": "3298534883362",
+    "NameId": 5035,
+    "ModelId": 228,
+    "ModelFileName": "sh_mailbox_blue_group_01.adr",
+    "Scale": 1.5,
+    "Name": "Snowhill Postboxes"
+  },
+  {
+    "Id": 33696,
+    "CaptureGuid": "25838523252770",
+    "NameId": 115689,
+    "ModelId": 268,
+    "ModelFileName": "sg_mail_package_01.adr",
+    "Scale": 1,
+    "Name": "Snowhill Dropped Mail",
+    "HideNamePlate": true
   }
 ]
