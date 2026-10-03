@@ -20787,5 +20787,24 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33945,
+    "CaptureGuid": "9139690405922",
+    "NameId": 22807,
+    "ModelId": 7,
+    "ModelFileName": "humanchild_f_skirtandtunic.adr",
+    "Scale": 1,
+    "Name": "Amma"
+  },
+  {
+    "Id": 33946,
+    "CaptureGuid": "35940286332962",
+    "NameId": 70337,
+    "ModelId": 548,
+    "ModelFileName": "human_f_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Pet Owner",
+    "HideNamePlate": true
   }
 ]
