@@ -20787,5 +20787,14 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33630,
+    "CaptureGuid": "11132555231266",
+    "NameId": 24362,
+    "ModelId": 274,
+    "ModelFileName": "sg_farming_node_common_01.adr",
+    "Scale": 1,
+    "Name": "Hot Food Basket"
   }
 ]
