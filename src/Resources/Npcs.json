@@ -20787,5 +20787,45 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33116,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "56487409877074",
+    "NameId": 78660,
+    "ModelId": 184,
+    "ModelFileName": "human_m_freestyle_01.agr",
+    "Scale": 1,
+    "Name": "Roscoe",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33117,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "58136677318738",
+    "NameId": 3263,
+    "ModelId": 540,
+    "ModelFileName": "cat_longhair.adr",
+    "Scale": 1,
+    "Name": "Rex",
+    "TextureAlias": "striped",
+    "TintAlias": "striped_orange",
+    "HideNamePlate": true,
+    "CompositeEffectId": 3,
+    "Animation": 5404
+  },
+  {
+    "Id": 33118,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "58067957842002",
+    "NameId": 91516,
+    "ModelId": 169,
+    "ModelFileName": "dog_large_floppy.adr",
+    "Scale": 1,
+    "Name": "Buddy",
+    "TextureAlias": "darkmark",
+    "TintAlias": "darkmark-ivory",
+    "HideNamePlate": true,
+    "Animation": 5520
   }
 ]
