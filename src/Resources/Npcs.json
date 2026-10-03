@@ -20787,5 +20787,30 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33977,
+    "CaptureGuid": "35734127902754",
+    "NameId": 415162,
+    "ModelId": 171,
+    "ModelFileName": "dog_large_shortears.adr",
+    "Scale": 1,
+    "Name": "Sleeping Dog",
+    "TextureAlias": "spots",
+    "TintAlias": "spots-brown",
+    "HideNamePlate": true,
+    "Animation": 5403
+  },
+  {
+    "Id": 33987,
+    "CaptureGuid": "35802847379490",
+    "NameId": 415164,
+    "ModelId": 169,
+    "ModelFileName": "dog_large_floppy.adr",
+    "Scale": 1,
+    "Name": "Sniffing Dog",
+    "TextureAlias": "darkmark",
+    "TintAlias": "darkmark-brown",
+    "HideNamePlate": true
   }
 ]
