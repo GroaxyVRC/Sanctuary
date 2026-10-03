@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33881,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "15668040695842",
+    "NameId": 39763,
+    "ModelId": 535,
+    "ModelFileName": "chicken.adr",
+    "Scale": 1,
+    "Name": "Perry's Mama Hen"
   }
 ]
