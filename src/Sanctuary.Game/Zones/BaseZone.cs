@@ -723,6 +723,9 @@ public abstract class BaseZone : IZone, IDisposable
             CompositeEffectId = definition.CompositeEffectId,
             VerticalOffset = definition.VerticalOffset,
             Attachments = new List<CharacterAttachmentData>(definition.Attachments),
+            CursorId = definition.CursorId,
+            HasCursor = definition.HasCursor,
+            RelevanceUnknown2 = definition.RelevanceUnknown2,
             Visible = true
         };
 

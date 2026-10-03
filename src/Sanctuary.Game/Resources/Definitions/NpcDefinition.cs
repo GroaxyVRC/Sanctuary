@@ -33,5 +33,8 @@ public class NpcDefinition
     public List<CharacterAttachmentData> Attachments { get; set; } = [];
     public NotificationInfo? Notification { get; set; }
     public List<NotificationInfo> Notifications { get; set; } = [];
+    public byte CursorId { get; set; }
+    public bool? HasCursor { get; set; }
+    public bool RelevanceUnknown2 { get; set; }
     public string[]? Scripts { get; set; }
 }
