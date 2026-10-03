@@ -20787,5 +20787,109 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33351,
+    "CaptureGuid": "37245956390994",
+    "NameId": 382885,
+    "ModelId": 309,
+    "ModelFileName": "sg_gametable_01.adr",
+    "Scale": 1,
+    "Name": "Checkers & Chess",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 334,
+        "IconState": 20,
+        "Unknown": 0,
+        "NameId": 382885,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33464,
+    "CaptureGuid": "15942918602770",
+    "NameId": 382885,
+    "ModelId": 309,
+    "ModelFileName": "sg_gametable_01.adr",
+    "Scale": 1,
+    "Name": "Checkers & Chess",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 334,
+        "IconState": 20,
+        "Unknown": 0,
+        "NameId": 382885,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33774,
+    "CaptureGuid": "25975962206242",
+    "NameId": 382885,
+    "ModelId": 309,
+    "ModelFileName": "sg_gametable_01.adr",
+    "Scale": 1,
+    "Name": "Checkers & Chess",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 334,
+        "IconState": 20,
+        "Unknown": 0,
+        "NameId": 382885,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33837,
+    "CaptureGuid": "25907242729506",
+    "NameId": 382885,
+    "ModelId": 309,
+    "ModelFileName": "sg_gametable_01.adr",
+    "Scale": 1,
+    "Name": "Checkers & Chess",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 334,
+        "IconState": 20,
+        "Unknown": 0,
+        "NameId": 382885,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
