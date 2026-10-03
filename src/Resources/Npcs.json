@@ -20787,5 +20787,24 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33317,
+    "CaptureGuid": "6940667150418",
+    "NameId": 15904,
+    "ModelId": 203,
+    "ModelFileName": "human_m_hooligan_brawler_01.agr",
+    "Scale": 1,
+    "Name": "Finn"
+  },
+  {
+    "Id": 33318,
+    "CaptureGuid": "7009386627154",
+    "NameId": 15903,
+    "ModelId": 241,
+    "ModelFileName": "fairychild_f_pigtailsdress.adr",
+    "Scale": 1,
+    "Name": "Pixie Child",
+    "HideNamePlate": true
   }
 ]
