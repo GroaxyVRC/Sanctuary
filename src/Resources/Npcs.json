@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33618,
+    "CaptureGuid": "12781822672930",
+    "NameId": 36749,
+    "ModelId": 19,
+    "ModelFileName": "humanchild_f_skates.adr",
+    "Scale": 1,
+    "Name": "Smart Kid",
+    "TextureAlias": "asian",
+    "TintAlias": "green",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33619,
+    "CaptureGuid": "12850542149666",
+    "NameId": 36749,
+    "ModelId": 8,
+    "ModelFileName": "humanchild_m_tshirtwithbaggypants.adr",
+    "Scale": 1,
+    "Name": "Smart Kid",
+    "HideNamePlate": true
   }
 ]
