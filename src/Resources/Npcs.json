@@ -20787,5 +20787,83 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33936,
+    "CaptureGuid": "43361989820450",
+    "NameId": 104067,
+    "ModelId": 176,
+    "ModelFileName": "wolf.adr",
+    "Scale": 1,
+    "Name": "Frostfang Growler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 104067,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 34013,
+    "CaptureGuid": "46110768889890",
+    "NameId": 104067,
+    "ModelId": 176,
+    "ModelFileName": "wolf.adr",
+    "Scale": 1,
+    "Name": "Frostfang Growler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 104067,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36117,
+    "CaptureGuid": "25769803776034",
+    "NameId": 104067,
+    "ModelId": 176,
+    "ModelFileName": "wolf.adr",
+    "Scale": 1,
+    "Name": "Frostfang Growler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 104067,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
