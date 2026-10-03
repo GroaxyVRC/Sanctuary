@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 using Sanctuary.Game;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
 using Sanctuary.Packet.Common.Attributes;
@@ -66,6 +67,7 @@ public static class PacketMountSpawnHandler
         mount.Seat = 0;
         mount.QueuePosition = 1;
 
+        BoomboxHelper.PauseDance(connection.Player);
         connection.Player.Mount = mount;
 
         connection.Player.UpdatePosition(connection.Player.Position, connection.Player.Rotation);

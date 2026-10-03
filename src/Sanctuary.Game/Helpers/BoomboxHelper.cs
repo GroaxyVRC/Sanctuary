@@ -7,6 +7,29 @@ namespace Sanctuary.Game.Helpers;
 
 public static class BoomboxHelper
 {
+    private const int IdleAnimationId = 1;
+
+    public static void PauseDance(Player player)
+    {
+        if (player.BoomboxDanceAnimation == 0)
+            return;
+
+        player.BoomboxDanceAnimation = 0;
+        player.BoomboxDanceIsStanding = false;
+        player.SendTunneledToVisible(new PlayerUpdatePacketSetAnimation
+        {
+            Guid = player.Guid,
+            AnimationId = IdleAnimationId,
+            Flags = 1
+        }, true);
+        player.SendTunneledToVisible(new PlayerUpdatePacketSetAnimation
+        {
+            Guid = player.Guid,
+            AnimationId = IdleAnimationId,
+            Unknown = 1
+        }, true);
+    }
+
     public static void SyncDance(List<Player> targets, int animationId)
     {
         if (targets.Count == 0)
