@@ -20787,5 +20787,35 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33700,
+    "CaptureGuid": "44530220924962",
+    "NameId": 2237,
+    "ModelId": 47,
+    "ModelFileName": "penguin_baby_01.adr",
+    "Scale": 1,
+    "Name": "Penguin",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33701,
+    "CaptureGuid": "28381143892002",
+    "NameId": 2237,
+    "ModelId": 16,
+    "ModelFileName": "penguin_01.adr",
+    "Scale": 1,
+    "Name": "Penguin",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33702,
+    "CaptureGuid": "27900107554850",
+    "NameId": 2237,
+    "ModelId": 47,
+    "ModelFileName": "penguin_baby_01.adr",
+    "Scale": 1,
+    "Name": "Penguin",
+    "HideNamePlate": true
   }
 ]
