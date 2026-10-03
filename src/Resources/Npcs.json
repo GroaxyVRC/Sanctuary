@@ -20787,5 +20787,34 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33534,
+    "CaptureGuid": "11407433138194",
+    "NameId": 22805,
+    "ModelId": 519,
+    "ModelFileName": "human_m_hooligan_brawler_03.agr",
+    "Scale": 1,
+    "Name": "Rourke Ironfist"
+  },
+  {
+    "Id": 33538,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "5153960755218",
+    "NameId": 19671,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Merri De'Flor"
+  },
+  {
+    "Id": 33540,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "19035295055890",
+    "NameId": 38107,
+    "ModelId": 643,
+    "ModelFileName": "fairy_f_tcg_bry.agr",
+    "Scale": 1,
+    "Name": "Bry"
   }
 ]
