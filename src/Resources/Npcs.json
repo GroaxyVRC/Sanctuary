@@ -20787,5 +20787,25 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33169,
+    "CaptureGuid": "73461120630866",
+    "NameId": 388173,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Force Warp Effect Caster",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33600,
+    "CaptureGuid": "28587302322210",
+    "NameId": 388173,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Force Warp Effect Caster",
+    "HideNamePlate": true
   }
 ]
