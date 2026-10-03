@@ -20787,5 +20787,55 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33657,
+    "CaptureGuid": "40901145358499874",
+    "NameId": 130764,
+    "ModelId": 489,
+    "ModelFileName": "human_m_hooligan_brawler_02.agr",
+    "Scale": 1,
+    "Name": "PCA Trickster",
+    "CompositeEffectId": 46
+  },
+  {
+    "Id": 33677,
+    "CaptureGuid": "40901282797453346",
+    "NameId": 130764,
+    "ModelId": 489,
+    "ModelFileName": "human_m_hooligan_brawler_02.agr",
+    "Scale": 1,
+    "Name": "PCA Trickster",
+    "CompositeEffectId": 46
+  },
+  {
+    "Id": 33679,
+    "CaptureGuid": "40901557675360290",
+    "NameId": 130764,
+    "ModelId": 489,
+    "ModelFileName": "human_m_hooligan_brawler_02.agr",
+    "Scale": 1,
+    "Name": "PCA Trickster",
+    "CompositeEffectId": 46
+  },
+  {
+    "Id": 33744,
+    "CaptureGuid": "40902176150650914",
+    "NameId": 130764,
+    "ModelId": 489,
+    "ModelFileName": "human_m_hooligan_brawler_02.agr",
+    "Scale": 1,
+    "Name": "PCA Trickster",
+    "CompositeEffectId": 46
+  },
+  {
+    "Id": 33780,
+    "CaptureGuid": "40903825418092578",
+    "NameId": 130764,
+    "ModelId": 489,
+    "ModelFileName": "human_m_hooligan_brawler_02.agr",
+    "Scale": 1,
+    "Name": "PCA Trickster",
+    "CompositeEffectId": 46
   }
 ]
