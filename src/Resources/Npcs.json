@@ -20787,5 +20787,83 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 34011,
+    "CaptureGuid": "36352603193378",
+    "NameId": 4412,
+    "ModelId": 954,
+    "ModelFileName": "env_icon_snowhill.adr",
+    "Scale": 1,
+    "Name": "Elite Exploration Coin",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 105,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 4412,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 5741,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36196,
+    "CaptureGuid": "2405181685826",
+    "NameId": 386170,
+    "ModelId": 4057,
+    "ModelFileName": "env_icon_sunstone_valley.adr",
+    "Scale": 1,
+    "Name": "Rare Exploration Coin",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 105,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 386170,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 5741,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36199,
+    "CaptureGuid": "2611340116034",
+    "NameId": 4412,
+    "ModelId": 4057,
+    "ModelFileName": "env_icon_sunstone_valley.adr",
+    "Scale": 1,
+    "Name": "Elite Exploration Coin",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 105,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 4412,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 5741,
+        "Enabled": true
+      }
+    ]
   }
 ]
