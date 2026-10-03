@@ -20787,5 +20787,87 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33319,
+    "CaptureGuid": "29068338659410",
+    "NameId": 21980,
+    "ModelId": 371,
+    "ModelFileName": "bw_flag_01_green.adr",
+    "Scale": 1,
+    "Name": "Race Flag",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 32,
+        "IconState": 27,
+        "Unknown": 0,
+        "NameId": 21980,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33320,
+    "SubTextNameId": 422710,
+    "CaptureGuid": "85418309582930",
+    "NameId": 422709,
+    "ModelId": 1457,
+    "ModelFileName": "human_m_manager_landon.agr",
+    "Scale": 1,
+    "Name": "Preston Daly",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 422709,
+        "ReferenceId": 422710,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33321,
+    "CaptureGuid": "86036784873554",
+    "NameId": 427443,
+    "ModelId": 377,
+    "ModelFileName": "fairy_farmer_f.adr",
+    "Scale": 1,
+    "Name": "Dusti Rodez",
+    "TextureAlias": "farmer_f_01",
+    "TintAlias": "farmer_f_01_red",
+    "Disposition": 2,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 185,
+        "IconState": 246,
+        "Unknown": 0,
+        "NameId": 427443,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
