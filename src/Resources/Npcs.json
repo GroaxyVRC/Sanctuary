@@ -20787,5 +20787,3956 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33132,
+    "CaptureGuid": "18966575579218",
+    "NameId": 23141,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey's Honey Keg",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 22,
+        "IconState": 11,
+        "Unknown": 0,
+        "NameId": 23141,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33161,
+    "CaptureGuid": "99162204930130",
+    "NameId": 434638,
+    "ModelId": 488,
+    "ModelFileName": "chugawug_farmer_m.adr",
+    "Scale": 1,
+    "Name": "Farmer Wug",
+    "TextureAlias": "farmer",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 434638,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33163,
+    "SubTextNameId": 103007,
+    "CaptureGuid": "100261716557906",
+    "NameId": 100674,
+    "ModelId": 364,
+    "ModelFileName": "dog_small_fluffy.adr",
+    "Scale": 1,
+    "Name": "Rascal",
+    "TextureAlias": "lightmark",
+    "TintAlias": "lightmark-gray",
+    "HasCursor": true,
+    "CursorId": 24,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": -1,
+        "IconId": 101,
+        "IconState": 189,
+        "Unknown": 0,
+        "NameId": 100674,
+        "ReferenceId": 103007,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33164,
+    "CaptureGuid": "100192997081170",
+    "NameId": 420571,
+    "ModelId": 1759,
+    "ModelFileName": "tyrannosaurus_m.adr",
+    "Scale": 1,
+    "Name": "Zax",
+    "TextureAlias": "trex-dino",
+    "TintAlias": "trex-army",
+    "HasCursor": true,
+    "CursorId": 24,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": -1,
+        "IconId": 101,
+        "IconState": 189,
+        "Unknown": 0,
+        "NameId": 420571,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33165,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "1443109011538",
+    "NameId": 7608,
+    "ModelId": 363,
+    "ModelFileName": "fairy_m_freestyle_speedy_01.agr",
+    "Scale": 1,
+    "Name": "Speedy",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 7608,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33168,
+    "CaptureGuid": "70162585747538",
+    "NameId": 384749,
+    "ModelId": 468,
+    "ModelFileName": "fairy_druid_m.adr",
+    "Scale": 1,
+    "Name": "Kellin Warpwatcher",
+    "TextureAlias": "base_02",
+    "TintAlias": "mahogany",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 384749,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33305,
+    "SubTextNameId": 103007,
+    "CaptureGuid": "100055558127698",
+    "NameId": 389081,
+    "ModelId": 514,
+    "ModelFileName": "dog_large_dalmation.adr",
+    "Scale": 1,
+    "Name": "Dot",
+    "TextureAlias": "dalmation",
+    "TintAlias": "white",
+    "HasCursor": true,
+    "CursorId": 24,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": -1,
+        "IconId": 101,
+        "IconState": 189,
+        "Unknown": 0,
+        "NameId": 389081,
+        "ReferenceId": 103007,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33306,
+    "SubTextNameId": 46437,
+    "CaptureGuid": "36490042146898",
+    "NameId": 45951,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Florina",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 45951,
+        "ReferenceId": 46437,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33307,
+    "SubTextNameId": 46438,
+    "CaptureGuid": "62603443306578",
+    "NameId": 116863,
+    "ModelId": 557,
+    "ModelFileName": "human_m_freestyle_11.agr",
+    "Scale": 1,
+    "Name": "Brent",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 116863,
+        "ReferenceId": 46438,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33308,
+    "CaptureGuid": "100124277604434",
+    "NameId": 4560,
+    "ModelId": 1760,
+    "ModelFileName": "triceratops_m_basic.adr",
+    "Scale": 1,
+    "Name": "Iggy",
+    "TextureAlias": "stripes",
+    "TintAlias": "triceratops-brown",
+    "HasCursor": true,
+    "CursorId": 24,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": -1,
+        "IconId": 101,
+        "IconState": 189,
+        "Unknown": 0,
+        "NameId": 4560,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33310,
+    "CaptureGuid": "95451353186386",
+    "NameId": 429986,
+    "ModelId": 744,
+    "ModelFileName": "human_blackspore_miner_m.adr",
+    "Scale": 1,
+    "Name": "Manager Shin",
+    "TextureAlias": "miner_01",
+    "TintAlias": "miner_01_orange",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 429986,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33315,
+    "SubTextNameId": 429561,
+    "CaptureGuid": "89747636617298",
+    "NameId": 409940,
+    "ModelId": 558,
+    "ModelFileName": "human_m_freestyle_05.agr",
+    "Scale": 1,
+    "Name": "Clark",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 409940,
+        "ReferenceId": 429561,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33319,
+    "CaptureGuid": "29068338659410",
+    "NameId": 21980,
+    "ModelId": 371,
+    "ModelFileName": "bw_flag_01_green.adr",
+    "Scale": 1,
+    "Name": "Race Flag",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 32,
+        "IconState": 27,
+        "Unknown": 0,
+        "NameId": 21980,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33320,
+    "SubTextNameId": 422710,
+    "CaptureGuid": "85418309582930",
+    "NameId": 422709,
+    "ModelId": 1457,
+    "ModelFileName": "human_m_manager_landon.agr",
+    "Scale": 1,
+    "Name": "Preston Daly",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 422709,
+        "ReferenceId": 422710,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33321,
+    "CaptureGuid": "86036784873554",
+    "NameId": 427443,
+    "ModelId": 377,
+    "ModelFileName": "fairy_farmer_f.adr",
+    "Scale": 1,
+    "Name": "Dusti Rodez",
+    "TextureAlias": "farmer_f_01",
+    "TintAlias": "farmer_f_01_red",
+    "Disposition": 2,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 185,
+        "IconState": 246,
+        "Unknown": 0,
+        "NameId": 427443,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33322,
+    "CaptureGuid": "96963181674578",
+    "NameId": 6403,
+    "ModelId": 3209,
+    "ModelFileName": "trex_armor_mount.adr",
+    "Scale": 1,
+    "Name": "Armored T-Rex",
+    "TextureAlias": "armor",
+    "TintAlias": "saphire",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 6403,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33323,
+    "CaptureGuid": "96894462197842",
+    "NameId": 436152,
+    "ModelId": 3366,
+    "ModelFileName": "ball_m_bowlingball.adr",
+    "Scale": 1,
+    "Name": "Bowling Ball",
+    "TextureAlias": "bowlingball_basic",
+    "TintAlias": "grape",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 436152,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33324,
+    "CaptureGuid": "96069828477010",
+    "NameId": 6369,
+    "ModelId": 3199,
+    "ModelFileName": "panthera_m_tiger_lava.adr",
+    "Scale": 1,
+    "Name": "Lava Tiger",
+    "TextureAlias": "tiger-lava",
+    "TintAlias": "merlot",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 6369,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33326,
+    "CaptureGuid": "130635725275218",
+    "NameId": 430047,
+    "ModelId": 525,
+    "ModelFileName": "human_m_wizard_rio.agr",
+    "Scale": 1,
+    "Name": "Rio Cloudjumps",
+    "CompositeEffectId": 16565,
+    "Animation": 2110,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 430047,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33329,
+    "CaptureGuid": "96138547953746",
+    "NameId": 430179,
+    "ModelId": 3208,
+    "ModelFileName": "panthera_m_sabertooth_stone.adr",
+    "Scale": 1,
+    "Name": "Stone Sabertooth",
+    "TextureAlias": "tiger-stripes",
+    "TintAlias": "raincloud",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 430179,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33330,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2954937499730",
+    "NameId": 10087,
+    "ModelId": 167,
+    "ModelFileName": "troll_peasant_02.adr",
+    "Scale": 1.5,
+    "Name": "Gulsh",
+    "TintAlias": "saphire",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 10087,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33332,
+    "CaptureGuid": "131666517426258",
+    "NameId": 436321,
+    "ModelId": 3836,
+    "ModelFileName": "sg_spot_the_difference_01.adr",
+    "Scale": 1,
+    "Name": "Spot the Difference",
+    "HasCursor": true,
+    "CursorId": 0,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 333,
+        "IconState": 375,
+        "Unknown": 0,
+        "NameId": 436321,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33333,
+    "CaptureGuid": "95588792139858",
+    "NameId": 5091,
+    "ModelId": 151,
+    "ModelFileName": "sg_treasure_chest_01.adr",
+    "Scale": 1,
+    "Name": "Treasure Chest",
+    "TextureAlias": "Default3",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 5091,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33336,
+    "CaptureGuid": "83288005804114",
+    "NameId": 415047,
+    "ModelId": 1692,
+    "ModelFileName": "skeleton_m_01.adr",
+    "Scale": 1,
+    "Name": "Halloween Harry",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 415047,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33338,
+    "CaptureGuid": "97925254348882",
+    "NameId": 416777,
+    "ModelId": 438,
+    "ModelFileName": "human_m_andrew.agr",
+    "Scale": 1,
+    "Name": "Ghost Hunter",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 416777,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33340,
+    "SubTextNameId": 38093,
+    "CaptureGuid": "27144193310802",
+    "NameId": 74093,
+    "ModelId": 646,
+    "ModelFileName": "human_f_tcg_sam_potts.agr",
+    "Scale": 1,
+    "Name": "Sam Potts",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 74093,
+        "ReferenceId": 38093,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33342,
+    "CaptureGuid": "87479893885010",
+    "NameId": 429145,
+    "ModelId": 488,
+    "ModelFileName": "chugawug_farmer_m.adr",
+    "Scale": 1,
+    "Name": "Coin Farmer Dang Dang",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 429145,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33348,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2680059592786",
+    "NameId": 10100,
+    "ModelId": 345,
+    "ModelFileName": "fairy_royalguard_m.adr",
+    "Scale": 1,
+    "Name": "Guard Snapdragon",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 10100,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33349,
+    "SubTextNameId": 441416,
+    "CaptureGuid": "100536594464850",
+    "NameId": 441072,
+    "ModelId": 4106,
+    "ModelFileName": "robgoblin_m_banker.adr",
+    "Scale": 1,
+    "Name": "Bezzle",
+    "TextureAlias": "Banker",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 343,
+        "IconState": 380,
+        "Unknown": 0,
+        "NameId": 441072,
+        "ReferenceId": 441416,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33350,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "3435973836882",
+    "NameId": 10095,
+    "ModelId": 365,
+    "ModelFileName": "human_m_burton_01.agr",
+    "Scale": 1,
+    "Name": "Barton",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 10095,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33351,
+    "CaptureGuid": "37245956390994",
+    "NameId": 382885,
+    "ModelId": 309,
+    "ModelFileName": "sg_gametable_01.adr",
+    "Scale": 1,
+    "Name": "Checkers & Chess",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 334,
+        "IconState": 20,
+        "Unknown": 0,
+        "NameId": 382885,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33355,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "46866683134034",
+    "NameId": 38111,
+    "ModelId": 648,
+    "ModelFileName": "human_m_tcg_poe_tatters.agr",
+    "Scale": 1,
+    "Name": "Poe Tatters",
+    "HasCursor": true,
+    "CursorId": 23,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 39,
+        "IconState": 10,
+        "Unknown": 0,
+        "NameId": 38111,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33376,
+    "CaptureGuid": "83769042141266",
+    "NameId": 415613,
+    "ModelId": 1713,
+    "ModelFileName": "human_m_costume_finklestein.agr",
+    "Scale": 1,
+    "Name": "Finklestein",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 415613,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33379,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "186642098815058",
+    "NameId": 140745,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Hard Bixie Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 80,
+        "IconState": 138,
+        "Unknown": 0,
+        "NameId": 140745,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33383,
+    "CaptureGuid": "65008624992338",
+    "NameId": 140744,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Easy Bixie Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 80,
+        "IconState": 138,
+        "Unknown": 0,
+        "NameId": 140744,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33384,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "186573379338322",
+    "NameId": 140746,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Bixie Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 65,
+        "IconState": 69,
+        "Unknown": 0,
+        "NameId": 140746,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33388,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "186367220908114",
+    "NameId": 93863,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Medium Bixie Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 80,
+        "IconState": 138,
+        "Unknown": 0,
+        "NameId": 93863,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33389,
+    "CaptureGuid": "7421703487570",
+    "NameId": 17267,
+    "ModelId": 340,
+    "ModelFileName": "sg_mailbox_group_01.adr",
+    "Scale": 1,
+    "Name": "Sanctuary Postboxes",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 22,
+        "IconState": 11,
+        "Unknown": 0,
+        "NameId": 17267,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33392,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "1305670058066",
+    "NameId": 7606,
+    "ModelId": 361,
+    "ModelFileName": "fairy_m_freestyle_jestin_01.agr",
+    "Scale": 1,
+    "Name": "Jestin",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 7606,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33396,
+    "CaptureGuid": "97993973825618",
+    "NameId": 432588,
+    "ModelId": 3383,
+    "ModelFileName": "fairy_f_ari_dresswell.agr",
+    "Scale": 1.15,
+    "Name": "Ari Dresswell",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 432588,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33397,
+    "SubTextNameId": 432606,
+    "CaptureGuid": "98062693302354",
+    "NameId": 432605,
+    "ModelId": 68,
+    "ModelFileName": "sh_icecube_01.adr",
+    "Scale": 1,
+    "Name": "Dress Up!",
+    "TerrainObjectId": 1287004708,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 432605,
+        "ReferenceId": 432606,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33406,
+    "CaptureGuid": "74491912781906",
+    "NameId": 391444,
+    "ModelId": 30,
+    "ModelFileName": "fairy_m_old_01.adr",
+    "Scale": 1,
+    "Name": "Napoleon",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 391444,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33417,
+    "CaptureGuid": "86449101733970",
+    "NameId": 427714,
+    "ModelId": 2118,
+    "ModelFileName": "human_f_pirate_01.agr",
+    "Scale": 1,
+    "Name": "Mistress Kala Mari",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 427714,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33423,
+    "SubTextNameId": 4572,
+    "CaptureGuid": "122320668590162",
+    "NameId": 5102529,
+    "ModelId": 889,
+    "ModelFileName": "human_f_sanctuary.adr",
+    "Scale": 1,
+    "Name": "Calista",
+    "TextureAlias": "goldthread",
+    "TintAlias": "goldthread-green",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102529,
+        "ReferenceId": 4572,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33426,
+    "SubTextNameId": 47154,
+    "CaptureGuid": "68307159875666",
+    "NameId": 382902,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Baxi Sparkletoes",
+    "TextureAlias": "sanctuary_01",
+    "TintAlias": "sanctuary_01_Blue",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 382902,
+        "ReferenceId": 47154,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33427,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "3367254360146",
+    "NameId": 10094,
+    "ModelId": 401,
+    "ModelFileName": "fairy_seaside_f_01.adr",
+    "Scale": 1,
+    "Name": "Cadie",
+    "TextureAlias": "seaside_dress",
+    "TintAlias": "seaside_dress-yellow",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 10094,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33428,
+    "SubTextNameId": 4575,
+    "CaptureGuid": "4329327034450",
+    "NameId": 14698,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Periwinkle",
+    "TextureAlias": "sanctuary_03",
+    "TintAlias": "sanctuary_03_Red",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 14698,
+        "ReferenceId": 4575,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33433,
+    "SubTextNameId": 5102998,
+    "CaptureGuid": "123557619171410",
+    "NameId": 5102997,
+    "ModelId": 4748,
+    "ModelFileName": "human_m_edwin.agr",
+    "Scale": 1,
+    "Name": "Edwin",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 5102997,
+        "ReferenceId": 5102998,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33434,
+    "SubTextNameId": 4571,
+    "CaptureGuid": "4466765987922",
+    "NameId": 14700,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Orchid",
+    "TextureAlias": "sanctuary_01",
+    "TintAlias": "sanctuary_01_Purple",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 14700,
+        "ReferenceId": 4571,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33435,
+    "SubTextNameId": 4574,
+    "CaptureGuid": "122389388066898",
+    "NameId": 5102530,
+    "ModelId": 780,
+    "ModelFileName": "human_sanctuary_m.adr",
+    "Scale": 1,
+    "Name": "Biff",
+    "TextureAlias": "01",
+    "TintAlias": "01-red",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102530,
+        "ReferenceId": 4574,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33438,
+    "CaptureGuid": "83562883711058",
+    "NameId": 415500,
+    "ModelId": 1708,
+    "ModelFileName": "fairy_m_costume_skelly.agr",
+    "Scale": 1,
+    "Name": "Skelly",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 415500,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33440,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2336462209106",
+    "NameId": 10073,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Rose",
+    "TextureAlias": "sanctuary_02",
+    "TintAlias": "sanctuary_02_Purple",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 10073,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33442,
+    "SubTextNameId": 434650,
+    "CaptureGuid": "2267742732370",
+    "NameId": 10072,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Violet",
+    "TextureAlias": "sanctuary_02",
+    "TintAlias": "sanctuary_02_Purple",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": true,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 164,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 10072,
+        "ReferenceId": 434650,
+        "Unknown3": false,
+        "Unknown2": 5568,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33445,
+    "CaptureGuid": "122664265973842",
+    "NameId": 5102577,
+    "ModelId": 4605,
+    "ModelFileName": "human_m_sunstone_jones.agr",
+    "Scale": 1,
+    "Name": "Sunstone Jones",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 341,
+        "IconState": 378,
+        "Unknown": 0,
+        "NameId": 5102577,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33447,
+    "SubTextNameId": 5102739,
+    "CaptureGuid": "56624848830546",
+    "NameId": 79006,
+    "ModelId": 570,
+    "ModelFileName": "fairy_f_freestyle_08.agr",
+    "Scale": 1,
+    "Name": "Yia",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 79006,
+        "ReferenceId": 5102739,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33450,
+    "CaptureGuid": "123351460741202",
+    "NameId": 442672,
+    "ModelId": 4448,
+    "ModelFileName": "cybercycle_m_default.adr",
+    "Scale": 1,
+    "Name": "The Cyber Cycle",
+    "TextureAlias": "cybercycle_m",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 442672,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33457,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "86380382257170",
+    "NameId": 15623,
+    "ModelId": 168,
+    "ModelFileName": "troll_shaman.adr",
+    "Scale": 1,
+    "Name": "Troll Summoner",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 15623,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33464,
+    "CaptureGuid": "15942918602770",
+    "NameId": 382885,
+    "ModelId": 309,
+    "ModelFileName": "sg_gametable_01.adr",
+    "Scale": 1,
+    "Name": "Checkers & Chess",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 334,
+        "IconState": 20,
+        "Unknown": 0,
+        "NameId": 382885,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33465,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "16492674416658",
+    "NameId": 36468,
+    "ModelId": 366,
+    "ModelFileName": "fairy_f_freestyle_03.agr",
+    "Scale": 1,
+    "Name": "Dori Tendersole",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 36468,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33467,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "106583908417554",
+    "NameId": 15623,
+    "ModelId": 168,
+    "ModelFileName": "troll_shaman.adr",
+    "Scale": 1,
+    "Name": "Troll Summoner",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 15623,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33470,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "25220047962130",
+    "NameId": 15623,
+    "ModelId": 168,
+    "ModelFileName": "troll_shaman.adr",
+    "Scale": 1,
+    "Name": "Troll Summoner",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 15623,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33476,
+    "SubTextNameId": 5102502,
+    "CaptureGuid": "84456236908562",
+    "NameId": 5102506,
+    "ModelId": 4572,
+    "ModelFileName": "human_f_merchant_chef_african.agr",
+    "Scale": 1,
+    "Name": "Lorraine",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102506,
+        "ReferenceId": 5102502,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33477,
+    "SubTextNameId": 5102092,
+    "CaptureGuid": "83150566850578",
+    "NameId": 5102119,
+    "ModelId": 4497,
+    "ModelFileName": "fairy_m_merchant_blacksmith_asian_magma.agr",
+    "Scale": 1,
+    "Name": "Masa",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102119,
+        "ReferenceId": 5102092,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33481,
+    "CaptureGuid": "15736760172562",
+    "NameId": 36164,
+    "ModelId": 273,
+    "ModelFileName": "sg_anvil_stump_01.adr",
+    "Scale": 1.5,
+    "Name": "Anvil",
+    "HasCursor": true,
+    "CursorId": 22,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 47,
+        "IconState": 60,
+        "Unknown": 0,
+        "NameId": 36164,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33506,
+    "SubTextNameId": 5102555,
+    "CaptureGuid": "84799834292242",
+    "NameId": 5102559,
+    "ModelId": 4596,
+    "ModelFileName": "human_m_merchant_miner_african.agr",
+    "Scale": 1,
+    "Name": "Grasberg",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102559,
+        "ReferenceId": 5102555,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33542,
+    "CaptureGuid": "34909494181906",
+    "NameId": 76029,
+    "ModelId": 385,
+    "ModelFileName": "fairy_f_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Lan Spryleaf",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 76029,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33564,
+    "CaptureGuid": "76965813944338",
+    "NameId": 4893,
+    "ModelId": 2064,
+    "ModelFileName": "wyvern_m.adr",
+    "Scale": 1,
+    "Name": "Gold-Tipped Dragon",
+    "TextureAlias": "basic-goldtips",
+    "TintAlias": "goldtips-black",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 4893,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33565,
+    "CaptureGuid": "76897094467602",
+    "NameId": 5570,
+    "ModelId": 2040,
+    "ModelFileName": "trex_mount.adr",
+    "Scale": 1,
+    "Name": "Striped T-Rex",
+    "TextureAlias": "basic",
+    "TintAlias": "trexbasic-orange",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 5570,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33566,
+    "CaptureGuid": "76828374990866",
+    "NameId": 5570,
+    "ModelId": 2040,
+    "ModelFileName": "trex_mount.adr",
+    "Scale": 1,
+    "Name": "Striped T-Rex",
+    "TextureAlias": "basic",
+    "TintAlias": "trexbasic-green",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 5570,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33567,
+    "CaptureGuid": "76690936037394",
+    "NameId": 427569,
+    "ModelId": 424,
+    "ModelFileName": "human_m_farmer_henry.agr",
+    "Scale": 1,
+    "Name": "Charlie",
+    "Disposition": 2,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 185,
+        "IconState": 246,
+        "Unknown": 0,
+        "NameId": 427569,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33569,
+    "CaptureGuid": "77378130804754",
+    "NameId": 6403,
+    "ModelId": 3209,
+    "ModelFileName": "trex_armor_mount.adr",
+    "Scale": 1,
+    "Name": "Armored T-Rex",
+    "TextureAlias": "armor",
+    "TintAlias": "charcoal",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 6403,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33570,
+    "CaptureGuid": "76759655514130",
+    "NameId": 4893,
+    "ModelId": 2064,
+    "ModelFileName": "wyvern_m.adr",
+    "Scale": 1,
+    "Name": "Gold-Tipped Dragon",
+    "TextureAlias": "basic-goldtips",
+    "TintAlias": "goldtips-red",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 4893,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33589,
+    "CaptureGuid": "26525718020130",
+    "NameId": 116212,
+    "ModelId": 4547,
+    "ModelFileName": "sh_standard_yeti_01.adr",
+    "Scale": 1,
+    "Name": "Frosty Yeti",
+    "Animation": 1301,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 116212,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33592,
+    "CaptureGuid": "22471268892706",
+    "NameId": 78096,
+    "ModelId": 1938,
+    "ModelFileName": "sg_spawner_wolf_01.adr",
+    "Scale": 1,
+    "Name": "Frostfang Snarler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 78096,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33601,
+    "CaptureGuid": "26250840113186",
+    "NameId": 130731,
+    "ModelId": 468,
+    "ModelFileName": "fairy_druid_m.adr",
+    "Scale": 1,
+    "Name": "Vaelen Warpwatcher",
+    "TextureAlias": "base_03",
+    "TintAlias": "olive",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 130731,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33604,
+    "CaptureGuid": "38070590111778",
+    "NameId": 420583,
+    "ModelId": 1935,
+    "ModelFileName": "robgoblin_m_reindeerantlers.adr",
+    "Scale": 1,
+    "Name": "Crafty Robgoblin",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 420583,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33605,
+    "SubTextNameId": 429556,
+    "CaptureGuid": "39444979646498",
+    "NameId": 429539,
+    "ModelId": 826,
+    "ModelFileName": "human_f_snowhill.adr",
+    "Scale": 1,
+    "Name": "Nikki",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 429539,
+        "ReferenceId": 429556,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33607,
+    "CaptureGuid": "45904610459682",
+    "NameId": 78096,
+    "ModelId": 1938,
+    "ModelFileName": "sg_spawner_wolf_01.adr",
+    "Scale": 1,
+    "Name": "Frostfang Snarler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 78096,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33610,
+    "CaptureGuid": "39376260169762",
+    "NameId": 429152,
+    "ModelId": 488,
+    "ModelFileName": "chugawug_farmer_m.adr",
+    "Scale": 1,
+    "Name": "Coin Farmer Lubag",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 429152,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33614,
+    "CaptureGuid": "39307540693026",
+    "NameId": 427724,
+    "ModelId": 2119,
+    "ModelFileName": "human_m_pirate_01.agr",
+    "Scale": 1,
+    "Name": "Captain Ironsides",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 427724,
+        "ReferenceId": 0,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33615,
+    "CaptureGuid": "37314675867682",
+    "NameId": 420397,
+    "ModelId": 837,
+    "ModelFileName": "human_m_snowhill.adr",
+    "Scale": 1,
+    "Name": "Calvin Coldcastle",
+    "TextureAlias": "goggles",
+    "TintAlias": "goggles-green",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 170,
+        "IconState": 239,
+        "Unknown": 0,
+        "NameId": 420397,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33620,
+    "CaptureGuid": "34840774705186",
+    "NameId": 408640,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Frostbitten Banks",
+    "TerrainObjectId": 1259130091,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 151,
+        "IconState": 236,
+        "Unknown": 0,
+        "NameId": 408640,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33623,
+    "CaptureGuid": "41644002902050",
+    "NameId": 5102405,
+    "ModelId": 4552,
+    "ModelFileName": "penguin_baby_8bit_01.adr",
+    "Scale": 3,
+    "Name": "Momma Meepster",
+    "TextureAlias": "penguin_baby8bit-P",
+    "TintAlias": "dyetint-amethyst",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 5102405,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33624,
+    "SubTextNameId": 440942,
+    "CaptureGuid": "40829951980601378",
+    "NameId": 440941,
+    "ModelId": 4103,
+    "ModelFileName": "sogg_f_vendor.adr",
+    "Scale": 1,
+    "Name": "Cragara",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 344,
+        "IconState": 381,
+        "Unknown": 0,
+        "NameId": 440941,
+        "ReferenceId": 440942,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33634,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "11063835754530",
+    "NameId": 23788,
+    "ModelId": 32,
+    "ModelFileName": "fairy_m_farmer_01.adr",
+    "Scale": 1,
+    "Name": "Lucca De'Flor",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": true,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 23788,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33641,
+    "SubTextNameId": 2941,
+    "CaptureGuid": "41918880808994",
+    "NameId": 5102505,
+    "ModelId": 4578,
+    "ModelFileName": "fairy_f_merchant_chef_asian_phoenix.agr",
+    "Scale": 1,
+    "Name": "Skye",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102505,
+        "ReferenceId": 2941,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33645,
+    "CaptureGuid": "26044681682978",
+    "NameId": 117257,
+    "ModelId": 559,
+    "ModelFileName": "human_m_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Tad Slopeslider",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 117257,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33649,
+    "SubTextNameId": 5102733,
+    "CaptureGuid": "33191507263522",
+    "NameId": 408638,
+    "ModelId": 1585,
+    "ModelFileName": "fairy_m_chip_numbwing.agr",
+    "Scale": 1,
+    "Name": "Chip Numbwing",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 408638,
+        "ReferenceId": 5102733,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33650,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "5909874999330",
+    "NameId": 6156,
+    "ModelId": 12,
+    "ModelFileName": "fairychild_m_pointyhair.adr",
+    "Scale": 1,
+    "Name": "Kiel",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 6156,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33652,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "893353197602",
+    "NameId": 3070,
+    "ModelId": 48,
+    "ModelFileName": "fairy_m_01.adr",
+    "Scale": 1,
+    "Name": "Mr. Twinkle",
+    "TextureAlias": "01",
+    "TintAlias": "raisin",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 3070,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33653,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "6047313952802",
+    "NameId": 6375,
+    "ModelId": 49,
+    "ModelFileName": "fairy_m_02.adr",
+    "Scale": 1,
+    "Name": "Big J",
+    "TextureAlias": "02",
+    "TintAlias": "blizzard",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 6375,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33662,
+    "SubTextNameId": 441418,
+    "CaptureGuid": "40338332844066",
+    "NameId": 441346,
+    "ModelId": 4106,
+    "ModelFileName": "robgoblin_m_banker.adr",
+    "Scale": 1,
+    "Name": "Yoink",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 343,
+        "IconState": 380,
+        "Unknown": 0,
+        "NameId": 441346,
+        "ReferenceId": 441418,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33666,
+    "SubTextNameId": 5102255,
+    "CaptureGuid": "41369124995106",
+    "NameId": 5102292,
+    "ModelId": 4521,
+    "ModelFileName": "fairy_f_merchant_medic_asian_cupid.agr",
+    "Scale": 1,
+    "Name": "Spratt",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102292,
+        "ReferenceId": 5102255,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33668,
+    "CaptureGuid": "36902359007266",
+    "NameId": 419832,
+    "ModelId": 45,
+    "ModelFileName": "human_f_santa.adr",
+    "Scale": 1,
+    "Name": "Candi Ivy",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 177,
+        "IconState": 242,
+        "Unknown": 0,
+        "NameId": 419832,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33669,
+    "CaptureGuid": "24120536334370",
+    "NameId": 92578,
+    "ModelId": 30,
+    "ModelFileName": "fairy_m_old_01.adr",
+    "Scale": 1,
+    "Name": "Jonathon Forkpath",
+    "TextureAlias": "old-01",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 92578,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33670,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "687194767394",
+    "NameId": 3063,
+    "ModelId": 49,
+    "ModelFileName": "fairy_m_02.adr",
+    "Scale": 1,
+    "Name": "Murphy",
+    "TextureAlias": "02",
+    "TintAlias": "jungle",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 3063,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33672,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "5772436045858",
+    "NameId": 5454,
+    "ModelId": 48,
+    "ModelFileName": "fairy_m_01.adr",
+    "Scale": 1,
+    "Name": "Lealin",
+    "TextureAlias": "01",
+    "TintAlias": "barndoor",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 5454,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33678,
+    "CaptureGuid": "13194139533346",
+    "NameId": 36828,
+    "ModelId": 27,
+    "ModelFileName": "mail_01.adr",
+    "Scale": 1,
+    "Name": "Permit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": true,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 11,
+        "IconState": 6,
+        "Unknown": 0,
+        "NameId": 36828,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 5192,
+        "Enabled": true
+      }
+    ],
+    "InteractionList": {
+      "Unknown": true,
+      "Interactions": [],
+      "Name": "",
+      "Unknown2": true
+    },
+    "InteractionUnknown": false
+  },
+  {
+    "Id": 33691,
+    "CaptureGuid": "13125420056610",
+    "NameId": 36827,
+    "ModelId": 837,
+    "ModelFileName": "human_m_snowhill.adr",
+    "Scale": 1,
+    "Name": "Willie",
+    "TextureAlias": "goggles",
+    "TintAlias": "goggles-brown",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 36827,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33706,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "57930518888482",
+    "NameId": 93806,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Penguin Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 71,
+        "IconState": 72,
+        "Unknown": 0,
+        "NameId": 93806,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33707,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "25151328485410",
+    "NameId": 93834,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Medium Penguin Defense",
+    "VerticalOffset": -0.1,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 83,
+        "IconState": 141,
+        "Unknown": 0,
+        "NameId": 93834,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33709,
+    "CaptureGuid": "30030411333666",
+    "NameId": 391188,
+    "ModelId": 43,
+    "ModelFileName": "fairy_f_03.adr",
+    "Scale": 1,
+    "Name": "Arci Joan",
+    "TextureAlias": "03",
+    "TintAlias": "mahogany",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 391188,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33710,
+    "CaptureGuid": "26594437496866",
+    "NameId": 140375,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Easy Penguin Defense",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 83,
+        "IconState": 141,
+        "Unknown": 0,
+        "NameId": 140375,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33717,
+    "CaptureGuid": "25082609008674",
+    "NameId": 2232,
+    "ModelId": 189,
+    "ModelFileName": "robgoblin_m_bruiser.adr",
+    "Scale": 1,
+    "Name": "Robgoblin",
+    "TextureAlias": "Colander",
+    "TintAlias": "Skin05",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 2232,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33719,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "25220047962146",
+    "NameId": 93846,
+    "ModelId": 325,
+    "ModelFileName": "sh_table_wartable01.adr",
+    "Scale": 1,
+    "Name": "Hard Penguin Defense",
+    "VerticalOffset": -0.15,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 83,
+        "IconState": 141,
+        "Unknown": 0,
+        "NameId": 93846,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33724,
+    "SubTextNameId": 3227,
+    "CaptureGuid": "26456998543394",
+    "NameId": 139451,
+    "ModelId": 524,
+    "ModelFileName": "fairy_f_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Linnie",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 139451,
+        "ReferenceId": 3227,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33725,
+    "SubTextNameId": 3227,
+    "CaptureGuid": "27968827031586",
+    "NameId": 385662,
+    "ModelId": 837,
+    "ModelFileName": "human_m_snowhill.adr",
+    "Scale": 1,
+    "Name": "Freddy MacIsaac",
+    "TextureAlias": "dogearhat",
+    "TintAlias": "dogearhat-darkgreen",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 385662,
+        "ReferenceId": 3227,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33728,
+    "CaptureGuid": "47828755808290",
+    "NameId": 78096,
+    "ModelId": 1938,
+    "ModelFileName": "sg_spawner_wolf_01.adr",
+    "Scale": 1,
+    "Name": "Frostfang Snarler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 78096,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33730,
+    "SubTextNameId": 3227,
+    "CaptureGuid": "22402549415970",
+    "NameId": 90186,
+    "ModelId": 573,
+    "ModelFileName": "fairy_f_freestyle_11.agr",
+    "Scale": 1,
+    "Name": "Fritti Bluebelle",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 90186,
+        "ReferenceId": 3227,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33731,
+    "SubTextNameId": 961,
+    "CaptureGuid": "18004502904866",
+    "NameId": 46947,
+    "ModelId": 41,
+    "ModelFileName": "fairy_f_01.adr",
+    "Scale": 1,
+    "Name": "Holly Singsong",
+    "TextureAlias": "01",
+    "TintAlias": "pumpkin",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 46947,
+        "ReferenceId": 961,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33732,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2336462209058",
+    "NameId": 4554,
+    "ModelId": 32,
+    "ModelFileName": "fairy_m_farmer_01.adr",
+    "Scale": 1,
+    "Name": "Cinn",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 4554,
+        "ReferenceId": 1114,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33743,
+    "CaptureGuid": "30167850287138",
+    "NameId": 394914,
+    "ModelId": 1067,
+    "ModelFileName": "fairy_f_autumn_mistflower.agr",
+    "Scale": 1,
+    "Name": "Autumn Mistflower",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 118,
+        "IconState": 201,
+        "Unknown": 0,
+        "NameId": 394914,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33763,
+    "SubTextNameId": 420810,
+    "CaptureGuid": "38208029065250",
+    "NameId": 420809,
+    "ModelId": 38,
+    "ModelFileName": "human_m_miner_01.adr",
+    "Scale": 1,
+    "Name": "Everett",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 177,
+        "IconState": 242,
+        "Unknown": 0,
+        "NameId": 420809,
+        "ReferenceId": 420810,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33772,
+    "CaptureGuid": "13469017440290",
+    "NameId": 36923,
+    "ModelId": 41,
+    "ModelFileName": "fairy_f_01.adr",
+    "Scale": 1,
+    "Name": "Scarlet Shadeveil",
+    "TextureAlias": "01",
+    "TintAlias": "mahogany",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 36923,
+        "ReferenceId": -1,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33774,
+    "CaptureGuid": "25975962206242",
+    "NameId": 382885,
+    "ModelId": 309,
+    "ModelFileName": "sg_gametable_01.adr",
+    "Scale": 1,
+    "Name": "Checkers & Chess",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 334,
+        "IconState": 20,
+        "Unknown": 0,
+        "NameId": 382885,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33776,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "18073222381602",
+    "NameId": 47830,
+    "ModelId": 391,
+    "ModelFileName": "fairy_m_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Steele",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 47830,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33779,
+    "CaptureGuid": "18279380811810",
+    "NameId": 36173,
+    "ModelId": 387,
+    "ModelFileName": "sg_practicedummy_nodes_01.adr",
+    "Scale": 1,
+    "Name": "Practice Dummy",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 63,
+        "IconState": 68,
+        "Unknown": 0,
+        "NameId": 36173,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33790,
+    "CaptureGuid": "42193758715938",
+    "NameId": 420171,
+    "ModelId": 1963,
+    "ModelFileName": "human_m_tiger_the_party_animal_holiday.agr",
+    "Scale": 1,
+    "Name": "Tiger the Party Animal",
+    "CompositeEffectId": 15588,
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 420171,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33813,
+    "CaptureGuid": "6253472383010",
+    "NameId": 7053,
+    "ModelId": 11,
+    "ModelFileName": "fairychild_f_sleevesandshorts.adr",
+    "Scale": 1,
+    "Name": "Wintara",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 7053,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33816,
+    "CaptureGuid": "46454366273570",
+    "NameId": 116212,
+    "ModelId": 4547,
+    "ModelFileName": "sh_standard_yeti_01.adr",
+    "Scale": 1,
+    "Name": "Frosty Yeti",
+    "Animation": 1301,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 116212,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33822,
+    "CaptureGuid": "43636867727394",
+    "NameId": 116741,
+    "ModelId": 4546,
+    "ModelFileName": "sg_troll_hut_02_snow.adr",
+    "Scale": 1,
+    "Name": "Ice Troll Scout",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 116741,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33823,
+    "CaptureGuid": "6116033429538",
+    "NameId": 5698,
+    "ModelId": 251,
+    "ModelFileName": "sh_cave_entrance_bat_cave_01.adr",
+    "Scale": 0.8,
+    "Name": "Frostfang Caverns",
+    "VerticalOffset": -0.1,
+    "TerrainObjectId": 1345838138,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 5698,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33824,
+    "SubTextNameId": 432171,
+    "CaptureGuid": "39651138076706",
+    "NameId": 432170,
+    "ModelId": 565,
+    "ModelFileName": "human_m_roland_spore.agr",
+    "Scale": 0.8,
+    "Name": "Roland Sporeling",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 432170,
+        "ReferenceId": 432171,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33834,
+    "CaptureGuid": "28656021798946",
+    "NameId": 388454,
+    "ModelId": 428,
+    "ModelFileName": "fairy_m_sakka.agr",
+    "Scale": 1,
+    "Name": "Ree Peatpants",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 388454,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33836,
+    "CaptureGuid": "4535485464610",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 1.25,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33837,
+    "CaptureGuid": "25907242729506",
+    "NameId": 382885,
+    "ModelId": 309,
+    "ModelFileName": "sg_gametable_01.adr",
+    "Scale": 1,
+    "Name": "Checkers & Chess",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 334,
+        "IconState": 20,
+        "Unknown": 0,
+        "NameId": 382885,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33840,
+    "CaptureGuid": "4672924418082",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 1,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33841,
+    "CaptureGuid": "4604204941346",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 0.75,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33842,
+    "SubTextNameId": 2922,
+    "CaptureGuid": "41437844471842",
+    "NameId": 5102377,
+    "ModelId": 4530,
+    "ModelFileName": "fairy_m_merchant_ninja_cauasian_disney.agr",
+    "Scale": 1,
+    "Name": "Dizzy Toad",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102377,
+        "ReferenceId": 2922,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33843,
+    "CaptureGuid": "4741643894818",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 0.75,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33847,
+    "CaptureGuid": "4466765987874",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 1,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33848,
+    "CaptureGuid": "4398046511138",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 0.75,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33879,
+    "SubTextNameId": 5102849,
+    "CaptureGuid": "481036337186",
+    "NameId": 3059,
+    "ModelId": 44,
+    "ModelFileName": "human_f_gardener.adr",
+    "Scale": 1,
+    "Name": "Perry",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 3059,
+        "ReferenceId": 5102849,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33880,
+    "CaptureGuid": "4191888080930",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 1,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33936,
+    "CaptureGuid": "43361989820450",
+    "NameId": 104067,
+    "ModelId": 176,
+    "ModelFileName": "wolf.adr",
+    "Scale": 1,
+    "Name": "Frostfang Growler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 104067,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33953,
+    "SubTextNameId": 5102541,
+    "CaptureGuid": "33809982554146",
+    "NameId": 410139,
+    "ModelId": 1084,
+    "ModelFileName": "human_m_soccerblue.agr",
+    "Scale": 1,
+    "Name": "Tommy Crackletoe",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 410139,
+        "ReferenceId": 5102541,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33954,
+    "SubTextNameId": 408589,
+    "CaptureGuid": "30305289240610",
+    "NameId": 401744,
+    "ModelId": 1457,
+    "ModelFileName": "human_m_manager_landon.agr",
+    "Scale": 1,
+    "Name": "Manager Landon",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 401744,
+        "ReferenceId": 408589,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33958,
+    "SubTextNameId": 3227,
+    "CaptureGuid": "33603824123938",
+    "NameId": 410116,
+    "ModelId": 1085,
+    "ModelFileName": "human_m_soccerred.agr",
+    "Scale": 1,
+    "Name": "Gary Goallaso ",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 410116,
+        "ReferenceId": 3227,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33964,
+    "SubTextNameId": 3922,
+    "CaptureGuid": "33741263077410",
+    "NameId": 410136,
+    "ModelId": 1085,
+    "ModelFileName": "human_m_soccerred.agr",
+    "Scale": 1,
+    "Name": "Fred Futbol",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 410136,
+        "ReferenceId": 3922,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33970,
+    "SubTextNameId": 3227,
+    "CaptureGuid": "33328946216994",
+    "NameId": 410062,
+    "ModelId": 1084,
+    "ModelFileName": "human_m_soccerblue.agr",
+    "Scale": 1,
+    "Name": "Bicycle Kick Sam ",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 410062,
+        "ReferenceId": 3227,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33972,
+    "CaptureGuid": "36077725286434",
+    "NameId": 416257,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Right Side Soccer Gate ",
+    "TerrainObjectId": 1254789685,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 119,
+        "IconState": 22,
+        "Unknown": 0,
+        "NameId": 416257,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33973,
+    "CaptureGuid": "36146444763170",
+    "NameId": 416258,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Left Side Soccer Gate",
+    "TerrainObjectId": 1254789670,
+    "ReplaceTerrainObject": false,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 119,
+        "IconState": 22,
+        "Unknown": 0,
+        "NameId": 416258,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 34004,
+    "SubTextNameId": 3227,
+    "CaptureGuid": "33672543600674",
+    "NameId": 410133,
+    "ModelId": 1084,
+    "ModelFileName": "human_m_soccerblue.agr",
+    "Scale": 1,
+    "Name": "Offside Oscar ",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 410133,
+        "ReferenceId": 3227,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 34013,
+    "CaptureGuid": "46110768889890",
+    "NameId": 104067,
+    "ModelId": 176,
+    "ModelFileName": "wolf.adr",
+    "Scale": 1,
+    "Name": "Frostfang Growler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 104067,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 36117,
+    "CaptureGuid": "25769803776034",
+    "NameId": 104067,
+    "ModelId": 176,
+    "ModelFileName": "wolf.adr",
+    "Scale": 1,
+    "Name": "Frostfang Growler",
+    "HasCursor": true,
+    "CursorId": 11,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 3,
+        "IconId": 7,
+        "IconState": 24,
+        "Unknown": 0,
+        "NameId": 104067,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
