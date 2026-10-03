@@ -20787,5 +20787,26 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33443,
+    "CaptureGuid": "7146825580626",
+    "NameId": 15915,
+    "ModelId": 345,
+    "ModelFileName": "fairy_royalguard_m.adr",
+    "Scale": 1,
+    "Name": "Royal Guard",
+    "TextureAlias": "03",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33444,
+    "CaptureGuid": "7215545057362",
+    "NameId": 15915,
+    "ModelId": 345,
+    "ModelFileName": "fairy_royalguard_m.adr",
+    "Scale": 1,
+    "Name": "Royal Guard",
+    "HideNamePlate": true
   }
 ]
