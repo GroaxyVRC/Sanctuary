@@ -20787,5 +20787,114 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33340,
+    "SubTextNameId": 38093,
+    "CaptureGuid": "27144193310802",
+    "NameId": 74093,
+    "ModelId": 646,
+    "ModelFileName": "human_f_tcg_sam_potts.agr",
+    "Scale": 1,
+    "Name": "Sam Potts",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 74093,
+        "ReferenceId": 38093,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33348,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "2680059592786",
+    "NameId": 10100,
+    "ModelId": 345,
+    "ModelFileName": "fairy_royalguard_m.adr",
+    "Scale": 1,
+    "Name": "Guard Snapdragon",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 10100,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33349,
+    "SubTextNameId": 441416,
+    "CaptureGuid": "100536594464850",
+    "NameId": 441072,
+    "ModelId": 4106,
+    "ModelFileName": "robgoblin_m_banker.adr",
+    "Scale": 1,
+    "Name": "Bezzle",
+    "TextureAlias": "Banker",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 343,
+        "IconState": 380,
+        "Unknown": 0,
+        "NameId": 441072,
+        "ReferenceId": 441416,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33350,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "3435973836882",
+    "NameId": 10095,
+    "ModelId": 365,
+    "ModelFileName": "human_m_burton_01.agr",
+    "Scale": 1,
+    "Name": "Barton",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 10095,
+        "ReferenceId": 1114,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
