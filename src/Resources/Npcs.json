@@ -20787,5 +20787,25 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33682,
+    "CaptureGuid": "39238821216290",
+    "NameId": 426433,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Post Office Controller",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33685,
+    "CaptureGuid": "26388279066658",
+    "NameId": 130877,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Zone Flag Cube",
+    "HideNamePlate": true
   }
 ]
