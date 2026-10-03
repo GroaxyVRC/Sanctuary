@@ -20787,5 +20787,117 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33371,
+    "CaptureGuid": "3917010174034",
+    "NameId": 10208,
+    "ModelId": 12,
+    "ModelFileName": "fairychild_m_pointyhair.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33372,
+    "CaptureGuid": "50233937494098",
+    "NameId": 75475,
+    "ModelId": 242,
+    "ModelFileName": "fairychild_m_mohawkshorts.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie Child",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33402,
+    "CaptureGuid": "3779571220562",
+    "NameId": 10208,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie",
+    "TextureAlias": "sanctuary_01",
+    "TintAlias": "sanctuary_01_LightBlue",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33403,
+    "CaptureGuid": "3985729650770",
+    "NameId": 10208,
+    "ModelId": 241,
+    "ModelFileName": "fairychild_f_pigtailsdress.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33404,
+    "CaptureGuid": "50096498540626",
+    "NameId": 10208,
+    "ModelId": 30,
+    "ModelFileName": "fairy_m_old_01.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie",
+    "TextureAlias": "old-01",
+    "TintAlias": "old-01-red",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33407,
+    "CaptureGuid": "4054449127506",
+    "NameId": 10208,
+    "ModelId": 398,
+    "ModelFileName": "fairy_sanctuary_m_01.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie",
+    "TextureAlias": "sanctuary-m-03",
+    "TintAlias": "sanctuary-m-blue",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33408,
+    "CaptureGuid": "4123168604242",
+    "NameId": 10208,
+    "ModelId": 654,
+    "ModelFileName": "fairy_m_freestyle_05.agr",
+    "Scale": 1,
+    "Name": "Partying Pixie",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33410,
+    "CaptureGuid": "58274116272210",
+    "NameId": 75475,
+    "ModelId": 242,
+    "ModelFileName": "fairychild_m_mohawkshorts.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie Child",
+    "TextureAlias": "africanblue",
+    "TintAlias": "yellow",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33411,
+    "CaptureGuid": "58342835748946",
+    "NameId": 75475,
+    "ModelId": 11,
+    "ModelFileName": "fairychild_f_sleevesandshorts.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie Child",
+    "TextureAlias": "asianblue",
+    "TintAlias": "red",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33413,
+    "CaptureGuid": "3848290697298",
+    "NameId": 10208,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Partying Pixie",
+    "TextureAlias": "sanctuary_01",
+    "TintAlias": "sanctuary_01_Blue",
+    "HideNamePlate": true
   }
 ]
