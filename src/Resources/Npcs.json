@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 34019,
+    "CaptureGuid": "73942156967954",
+    "NameId": 401708,
+    "ModelId": 668,
+    "ModelFileName": "chugawug_m_02_ltgreen_drinking.agr",
+    "Scale": 1,
+    "Name": "Lazy Chugawug",
+    "HideNamePlate": true,
+    "Animation": 2140
+  },
+  {
+    "Id": 34020,
+    "CaptureGuid": "73873437491218",
+    "NameId": 401708,
+    "ModelId": 667,
+    "ModelFileName": "chugawug_m_01_blue_drinking.agr",
+    "Scale": 1,
+    "Name": "Lazy Chugawug",
+    "HideNamePlate": true,
+    "Animation": 2140
   }
 ]
