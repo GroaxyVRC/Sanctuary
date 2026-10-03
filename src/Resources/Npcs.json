@@ -20787,5 +20787,194 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33836,
+    "CaptureGuid": "4535485464610",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 1.25,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33840,
+    "CaptureGuid": "4672924418082",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 1,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33841,
+    "CaptureGuid": "4604204941346",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 0.75,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33843,
+    "CaptureGuid": "4741643894818",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 0.75,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33847,
+    "CaptureGuid": "4466765987874",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 1,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33848,
+    "CaptureGuid": "4398046511138",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 0.75,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33880,
+    "CaptureGuid": "4191888080930",
+    "NameId": 313,
+    "ModelId": 145,
+    "ModelFileName": "cow.adr",
+    "Scale": 1,
+    "Name": "Cow",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 103,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 313,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
