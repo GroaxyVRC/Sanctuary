@@ -20787,5 +20787,34 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33107,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "24876450578514",
+    "NameId": 37189,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Bella"
+  },
+  {
+    "Id": 33127,
+    "CaptureGuid": "893353197650",
+    "NameId": 7587,
+    "ModelId": 211,
+    "ModelFileName": "bixie_f_mage.adr",
+    "Scale": 1,
+    "Name": "Mrs. B"
+  },
+  {
+    "Id": 33146,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "1924145348690",
+    "NameId": 7666,
+    "ModelId": 377,
+    "ModelFileName": "fairy_farmer_f.adr",
+    "Scale": 1,
+    "Name": "Honey"
   }
 ]
