@@ -20787,5 +20787,24 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33337,
+    "CaptureGuid": "84456236908626",
+    "NameId": 416765,
+    "ModelId": 1726,
+    "ModelFileName": "evnt_halloween_candybag_01.adr",
+    "Scale": 1,
+    "Name": "Goo'd Candy"
+  },
+  {
+    "Id": 33432,
+    "CaptureGuid": "41437844471890",
+    "NameId": 36515,
+    "ModelId": 541,
+    "ModelFileName": "ss_deco_flower_04.adr",
+    "Scale": 1,
+    "Name": "Flowers",
+    "HideNamePlate": true
   }
 ]
