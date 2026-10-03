@@ -20787,5 +20787,65 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33343,
+    "CaptureGuid": "6459630813266",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33424,
+    "CaptureGuid": "6528350290002",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33436,
+    "CaptureGuid": "6665789243474",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33580,
+    "CaptureGuid": "962072674322",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33581,
+    "CaptureGuid": "893353197586",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33582,
+    "CaptureGuid": "755914244114",
+    "NameId": 5166,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 0.1,
+    "Name": "Dog Spawner",
+    "HideNamePlate": true
   }
 ]
