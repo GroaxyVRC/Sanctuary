@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33913,
+    "CaptureGuid": "54357106098210",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33914,
+    "CaptureGuid": "53944789237794",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33915,
+    "CaptureGuid": "52776558133282",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33916,
+    "CaptureGuid": "52020643889186",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33917,
+    "CaptureGuid": "49065706389538",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33919,
+    "CaptureGuid": "56487409877026",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33920,
+    "CaptureGuid": "36959808489783330",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33921,
+    "CaptureGuid": "36959877209260066",
+    "NameId": 434025,
+    "ModelId": 3628,
+    "ModelFileName": "overworld_spiralmint_bush_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Spiralmint Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434025,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
