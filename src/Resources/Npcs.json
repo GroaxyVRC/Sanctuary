@@ -20787,5 +20787,24 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33101,
+    "CaptureGuid": "39788577030226",
+    "NameId": 70013,
+    "ModelId": 83,
+    "ModelFileName": "sh_barrel_01.adr",
+    "Scale": 1,
+    "Name": "Honey Collection",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33106,
+    "CaptureGuid": "24945170055250",
+    "NameId": 37238,
+    "ModelId": 27,
+    "ModelFileName": "mail_01.adr",
+    "Scale": 1,
+    "Name": "Chain Letters"
   }
 ]
