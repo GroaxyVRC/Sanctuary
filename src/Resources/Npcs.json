@@ -20787,5 +20787,15 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33658,
+    "CaptureGuid": "38414187495458",
+    "NameId": 421106,
+    "ModelId": 321,
+    "ModelFileName": "human_f_diana.adr",
+    "Scale": 1,
+    "Name": "Storyteller",
+    "HideNamePlate": true
   }
 ]
