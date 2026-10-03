@@ -20787,5 +20787,42 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33401,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "3161095929938",
+    "NameId": 10091,
+    "ModelId": 241,
+    "ModelFileName": "fairychild_f_pigtailsdress.adr",
+    "Scale": 1,
+    "Name": "May",
+    "TextureAlias": "africanred",
+    "TintAlias": "green",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33409,
+    "CaptureGuid": "4191888080978",
+    "NameId": 10207,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Auralie",
+    "TextureAlias": "sanctuary_02",
+    "TintAlias": "sanctuary_02_Purple"
+  },
+  {
+    "Id": 33412,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "3229815406674",
+    "NameId": 10092,
+    "ModelId": 12,
+    "ModelFileName": "fairychild_m_pointyhair.adr",
+    "Scale": 1,
+    "Name": "June",
+    "TextureAlias": "asiangreen",
+    "TintAlias": "orange",
+    "HideNamePlate": true
   }
 ]
