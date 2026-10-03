@@ -20787,5 +20787,721 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33086,
+    "SubTextNameId": 36,
+    "CaptureGuid": "824633720914",
+    "NameId": 7581,
+    "ModelId": 32,
+    "ModelFileName": "fairy_m_farmer_01.adr",
+    "Scale": 1,
+    "Name": "Banter",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 7581,
+        "ReferenceId": 36,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33368,
+    "CaptureGuid": "53120155517010",
+    "NameId": 76404,
+    "ModelId": 889,
+    "ModelFileName": "human_f_sanctuary.adr",
+    "Scale": 1,
+    "Name": "Shopper",
+    "TextureAlias": "blackpants",
+    "TintAlias": "blackpants-sea",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33373,
+    "SubTextNameId": 5102738,
+    "CaptureGuid": "4535485464658",
+    "NameId": 14701,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Dani",
+    "TextureAlias": "sanctuary_02",
+    "TintAlias": "sanctuary_02_Amber",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 14701,
+        "ReferenceId": 5102738,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33393,
+    "SubTextNameId": 2923,
+    "CaptureGuid": "121564754346066",
+    "NameId": 5102400,
+    "ModelId": 4545,
+    "ModelFileName": "human_f_merchant_postman_african.agr",
+    "Scale": 1,
+    "Name": "Wake",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102400,
+        "ReferenceId": 2923,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33400,
+    "SubTextNameId": 15717,
+    "CaptureGuid": "4398046511186",
+    "NameId": 14699,
+    "ModelId": 398,
+    "ModelFileName": "fairy_sanctuary_m_01.adr",
+    "Scale": 1,
+    "Name": "Ikee",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 14699,
+        "ReferenceId": 15717,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33416,
+    "SubTextNameId": 15717,
+    "CaptureGuid": "3642132267090",
+    "NameId": 10175,
+    "ModelId": 574,
+    "ModelFileName": "fairy_m_blacksmith_01.agr",
+    "Scale": 1,
+    "Name": "Crofti",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 10175,
+        "ReferenceId": 15717,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33418,
+    "SubTextNameId": 36,
+    "CaptureGuid": "56693568307282",
+    "NameId": 79011,
+    "ModelId": 834,
+    "ModelFileName": "human_m_medicstudent.agr",
+    "Scale": 1,
+    "Name": "Pharmacist Ryan",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 79011,
+        "ReferenceId": 36,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33422,
+    "SubTextNameId": 5102738,
+    "CaptureGuid": "5703716569170",
+    "NameId": 15413,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Ruby",
+    "TextureAlias": "sanctuary_03",
+    "TintAlias": "sanctuary_03_Black",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 163,
+        "IconState": 237,
+        "Unknown": 0,
+        "NameId": 15413,
+        "ReferenceId": 5102738,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33430,
+    "SubTextNameId": 36,
+    "CaptureGuid": "38139309588562",
+    "NameId": 46931,
+    "ModelId": 41,
+    "ModelFileName": "fairy_f_01.adr",
+    "Scale": 1,
+    "Name": "Jyn Warbletune",
+    "TextureAlias": "01",
+    "TintAlias": "mahogany",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 46931,
+        "ReferenceId": 36,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33446,
+    "SubTextNameId": 2928,
+    "CaptureGuid": "36215164239954",
+    "NameId": 45555,
+    "ModelId": 764,
+    "ModelFileName": "fairy_m_osgood.adr",
+    "Scale": 1,
+    "Name": "Osgood",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 45555,
+        "ReferenceId": 2928,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33448,
+    "CaptureGuid": "53326313947218",
+    "NameId": 76404,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Shopper",
+    "TextureAlias": "sanctuary_03",
+    "TintAlias": "sanctuary_03_Brown",
+    "HideNamePlate": true,
+    "Animation": 3101
+  },
+  {
+    "Id": 33452,
+    "CaptureGuid": "53257594470482",
+    "NameId": 76404,
+    "ModelId": 545,
+    "ModelFileName": "human_f_freestyle_03.agr",
+    "Scale": 1,
+    "Name": "Shopper",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33478,
+    "SubTextNameId": 5101979,
+    "CaptureGuid": "83013127897106",
+    "NameId": 5101986,
+    "ModelId": 4489,
+    "ModelFileName": "fairy_f_merchant_archer_caucasian_forest.agr",
+    "Scale": 1,
+    "Name": "Kimi",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5101986,
+        "ReferenceId": 5101979,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33479,
+    "SubTextNameId": 15717,
+    "CaptureGuid": "5428838662162",
+    "NameId": 19676,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Bluerose",
+    "TextureAlias": "sanctuary_03",
+    "TintAlias": "sanctuary_03_Blue",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 19676,
+        "ReferenceId": 15717,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33482,
+    "CaptureGuid": "15874199126034",
+    "NameId": 2061,
+    "ModelId": 419,
+    "ModelFileName": "sg_cooking_table_nodes_01.adr",
+    "Scale": 1,
+    "Name": "Cooking Table",
+    "HasCursor": true,
+    "CursorId": 15,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 35,
+        "IconState": 58,
+        "Unknown": 0,
+        "NameId": 2061,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33533,
+    "SubTextNameId": 5102194,
+    "CaptureGuid": "83288005804050",
+    "NameId": 5102201,
+    "ModelId": 4509,
+    "ModelFileName": "fairy_f_merchant_brawler_caucasian_skygoddess.agr",
+    "Scale": 1,
+    "Name": "Kristane",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102201,
+        "ReferenceId": 5102194,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33535,
+    "SubTextNameId": 2935,
+    "CaptureGuid": "84181359001618",
+    "NameId": 5102438,
+    "ModelId": 4562,
+    "ModelFileName": "fairy_m_merchant_warrior_caucasian_fire.agr",
+    "Scale": 1,
+    "Name": "Alexander",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102438,
+        "ReferenceId": 2935,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33556,
+    "SubTextNameId": 36,
+    "CaptureGuid": "5497558138898",
+    "NameId": 19682,
+    "ModelId": 184,
+    "ModelFileName": "human_m_freestyle_01.agr",
+    "Scale": 1,
+    "Name": "Mister Nooklings",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 19682,
+        "ReferenceId": 36,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33636,
+    "CaptureGuid": "11338713661474",
+    "NameId": 2061,
+    "ModelId": 419,
+    "ModelFileName": "sg_cooking_table_nodes_01.adr",
+    "Scale": 1,
+    "Name": "Cooking Table",
+    "HasCursor": true,
+    "CursorId": 15,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 35,
+        "IconState": 58,
+        "Unknown": 0,
+        "NameId": 2061,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33665,
+    "SubTextNameId": 2935,
+    "CaptureGuid": "41850161332258",
+    "NameId": 5102437,
+    "ModelId": 4559,
+    "ModelFileName": "human_f_merchant_warrior_caucasian.agr",
+    "Scale": 1,
+    "Name": "Sonja",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102437,
+        "ReferenceId": 2935,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33667,
+    "SubTextNameId": 5101979,
+    "CaptureGuid": "41094247088162",
+    "NameId": 5101985,
+    "ModelId": 4476,
+    "ModelFileName": "human_m_merchant_archer_asian.agr",
+    "Scale": 1,
+    "Name": "Tommy",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5101985,
+        "ReferenceId": 5101979,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33694,
+    "SubTextNameId": 2923,
+    "CaptureGuid": "41781441855522",
+    "NameId": 5102420,
+    "ModelId": 4549,
+    "ModelFileName": "human_f_merchant_postman_caucasian.agr",
+    "Scale": 1,
+    "Name": "Reba",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102420,
+        "ReferenceId": 2923,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33698,
+    "SubTextNameId": 2928,
+    "CaptureGuid": "41987600285730",
+    "NameId": 5102517,
+    "ModelId": 4587,
+    "ModelFileName": "fairy_m_merchant_wizard_caucasian_volcano.agr",
+    "Scale": 1,
+    "Name": "Fladnag",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102517,
+        "ReferenceId": 2928,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33715,
+    "SubTextNameId": 5102194,
+    "CaptureGuid": "41231686041634",
+    "NameId": 5102200,
+    "ModelId": 4500,
+    "ModelFileName": "human_m_merchant_brawler_african.agr",
+    "Scale": 1,
+    "Name": "Dempsy",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 5102200,
+        "ReferenceId": 5102194,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33791,
+    "SubTextNameId": 5102215,
+    "CaptureGuid": "9816096215400482",
+    "NameId": 134483,
+    "ModelId": 1954,
+    "ModelFileName": "human_f_mannequin_winterholiday09_girlyelf.agr",
+    "Scale": 1,
+    "Name": "Toy Maker Outfit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 134483,
+        "ReferenceId": 5102215,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33792,
+    "SubTextNameId": 5102215,
+    "CaptureGuid": "9816164934877218",
+    "NameId": 134488,
+    "ModelId": 1955,
+    "ModelFileName": "human_f_mannequin_winterholiday09_girlysanta.agr",
+    "Scale": 1,
+    "Name": "Miss Santa Outfit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 134488,
+        "ReferenceId": 5102215,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33793,
+    "SubTextNameId": 5102215,
+    "CaptureGuid": "9816233654353954",
+    "NameId": 134486,
+    "ModelId": 1956,
+    "ModelFileName": "human_f_mannequin_winterholiday09_girlytoysoldier.agr",
+    "Scale": 1,
+    "Name": "Toy Soldier Outfit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 134486,
+        "ReferenceId": 5102215,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33797,
+    "SubTextNameId": 5102214,
+    "CaptureGuid": "9816302373830690",
+    "NameId": 134489,
+    "ModelId": 1957,
+    "ModelFileName": "human_m_mannequin_winterholiday09_santasuit.agr",
+    "Scale": 1,
+    "Name": "Santa Claus Outfit",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 134489,
+        "ReferenceId": 5102214,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
