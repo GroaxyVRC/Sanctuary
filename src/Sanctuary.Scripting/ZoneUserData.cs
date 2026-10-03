@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
@@ -43,7 +44,10 @@ internal sealed class ZoneUserData(IScriptableZone zone) : ILuaUserData
         var self = context.GetArgument<ZoneUserData>(0);
 
         var npcId = context.GetArgument<int>(1);
-        var npcGuid = context.GetArgument<ulong>(2);
+        // Captured GUIDs can exceed the exact integer range of Lua's numbers.
+        var npcGuid = context.Arguments[2].TryRead<string>(out var guidText)
+            ? ulong.Parse(guidText, NumberStyles.None, CultureInfo.InvariantCulture)
+            : context.GetArgument<ulong>(2);
         var x = context.GetArgument<float>(3);
         var y = context.GetArgument<float>(4);
         var z = context.GetArgument<float>(5);
