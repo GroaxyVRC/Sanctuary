@@ -20787,5 +20787,32 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33450,
+    "CaptureGuid": "123351460741202",
+    "NameId": 442672,
+    "ModelId": 4448,
+    "ModelFileName": "cybercycle_m_default.adr",
+    "Scale": 1,
+    "Name": "The Cyber Cycle",
+    "TextureAlias": "cybercycle_m",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 123,
+        "IconState": 171,
+        "Unknown": 0,
+        "NameId": 442672,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
