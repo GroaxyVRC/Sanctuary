@@ -20787,5 +20787,85 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33824,
+    "SubTextNameId": 432171,
+    "CaptureGuid": "39651138076706",
+    "NameId": 432170,
+    "ModelId": 565,
+    "ModelFileName": "human_m_roland_spore.agr",
+    "Scale": 0.8,
+    "Name": "Roland Sporeling",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 0,
+        "IconId": 18,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 432170,
+        "ReferenceId": 432171,
+        "Unknown3": true,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33834,
+    "CaptureGuid": "28656021798946",
+    "NameId": 388454,
+    "ModelId": 428,
+    "ModelFileName": "fairy_m_sakka.agr",
+    "Scale": 1,
+    "Name": "Ree Peatpants",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 388454,
+        "ReferenceId": -1,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33879,
+    "SubTextNameId": 5102849,
+    "CaptureGuid": "481036337186",
+    "NameId": 3059,
+    "ModelId": 44,
+    "ModelFileName": "human_f_gardener.adr",
+    "Scale": 1,
+    "Name": "Perry",
+    "HasCursor": true,
+    "CursorId": 5,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 2,
+        "IconId": 2,
+        "IconState": 2,
+        "Unknown": 0,
+        "NameId": 3059,
+        "ReferenceId": 5102849,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
