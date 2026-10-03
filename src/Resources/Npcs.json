@@ -20787,5 +20787,36 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33431,
+    "CaptureGuid": "41231686041682",
+    "NameId": 70739,
+    "ModelId": 401,
+    "ModelFileName": "fairy_seaside_f_01.adr",
+    "Scale": 1,
+    "Name": "Bellis",
+    "TextureAlias": "seaside_tanktop",
+    "TintAlias": "seaside_tanktop-red"
+  },
+  {
+    "Id": 33441,
+    "SubTextNameId": 3227,
+    "CaptureGuid": "56762287784018",
+    "NameId": 79014,
+    "ModelId": 762,
+    "ModelFileName": "fairy_m_gilly.adr",
+    "Scale": 1,
+    "Name": "Lavarius Sparksizzle"
+  },
+  {
+    "Id": 33449,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "3092376453202",
+    "NameId": 10090,
+    "ModelId": 179,
+    "ModelFileName": "changeling_m.adr",
+    "Scale": 1,
+    "Name": "Sandbur"
   }
 ]
