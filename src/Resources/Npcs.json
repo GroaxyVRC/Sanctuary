@@ -20787,5 +20787,17 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33735,
+    "CaptureGuid": "13606456393762",
+    "NameId": 21049,
+    "ModelId": 271,
+    "ModelFileName": "invisible_cube.adr",
+    "Scale": 1,
+    "Name": "Tree",
+    "HideNamePlate": true,
+    "TerrainObjectId": 1263417512,
+    "ReplaceTerrainObject": false
   }
 ]
