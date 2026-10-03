@@ -20787,5 +20787,221 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33214,
+    "CaptureGuid": "21044308958249042",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33217,
+    "CaptureGuid": "20772111110897746",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33218,
+    "CaptureGuid": "21461092584652882",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33220,
+    "CaptureGuid": "21809500331704402",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33221,
+    "CaptureGuid": "22456356766220370",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33222,
+    "CaptureGuid": "22128289984282706",
+    "NameId": 434163,
+    "ModelId": 3633,
+    "ModelFileName": "overworld_vinelow_gummyfruit_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Gummyfruit Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434163,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33224,
+    "CaptureGuid": "20771973671944274",
+    "NameId": 434044,
+    "ModelId": 3651,
+    "ModelFileName": "overworld_bush_bumbleberry_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Bumbleberry Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434044,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
+  },
+  {
+    "Id": 33225,
+    "CaptureGuid": "21095573687894098",
+    "NameId": 434158,
+    "ModelId": 3653,
+    "ModelFileName": "overworld_tree_rainleaf_harvestable_01.adr",
+    "Scale": 1,
+    "Name": "Rainleaf Plant",
+    "HideNamePlate": true,
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 6,
+        "IconId": 3,
+        "IconState": 0,
+        "Unknown": 0,
+        "NameId": 434158,
+        "ReferenceId": 0,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ]
   }
 ]
