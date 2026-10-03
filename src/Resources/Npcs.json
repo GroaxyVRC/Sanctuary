@@ -20787,5 +20787,211 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33951,
+    "CaptureGuid": "32023276159010",
+    "NameId": 407428,
+    "ModelId": 7,
+    "ModelFileName": "humanchild_f_skirtandtunic.adr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33952,
+    "CaptureGuid": "31954556682274",
+    "NameId": 407428,
+    "ModelId": 9,
+    "ModelFileName": "humanchild_m_tshirtwithbeltbig.adr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "TextureAlias": "africanblue",
+    "TintAlias": "teal",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33959,
+    "CaptureGuid": "31885837205538",
+    "NameId": 407428,
+    "ModelId": 221,
+    "ModelFileName": "chugawug_m_02.adr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33960,
+    "CaptureGuid": "32091995635746",
+    "NameId": 407428,
+    "ModelId": 577,
+    "ModelFileName": "human_f_freestyle_07.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33965,
+    "CaptureGuid": "31817117728802",
+    "NameId": 407428,
+    "ModelId": 555,
+    "ModelFileName": "human_m_freestyle_09.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33966,
+    "CaptureGuid": "31610959298594",
+    "NameId": 407428,
+    "ModelId": 358,
+    "ModelFileName": "human_f_freestyle_02.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33967,
+    "CaptureGuid": "31542239821858",
+    "NameId": 407428,
+    "ModelId": 575,
+    "ModelFileName": "fairy_m_freestyle_04.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33968,
+    "CaptureGuid": "31679678775330",
+    "NameId": 407428,
+    "ModelId": 505,
+    "ModelFileName": "human_m_freestyle_11.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33969,
+    "CaptureGuid": "31748398252066",
+    "NameId": 407428,
+    "ModelId": 657,
+    "ModelFileName": "fairy_m_freestyle_08.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33982,
+    "CaptureGuid": "32366873542690",
+    "NameId": 407428,
+    "ModelId": 551,
+    "ModelFileName": "human_f_freestyle_10.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33991,
+    "CaptureGuid": "32298154065954",
+    "NameId": 407428,
+    "ModelId": 13,
+    "ModelFileName": "chugawug_f_01.adr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33992,
+    "CaptureGuid": "32641751449634",
+    "NameId": 407428,
+    "ModelId": 548,
+    "ModelFileName": "human_f_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33993,
+    "CaptureGuid": "32779190403106",
+    "NameId": 407428,
+    "ModelId": 667,
+    "ModelFileName": "chugawug_m_01_blue_drinking.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33994,
+    "CaptureGuid": "32847909879842",
+    "NameId": 407428,
+    "ModelId": 559,
+    "ModelFileName": "human_m_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33995,
+    "CaptureGuid": "32435593019426",
+    "NameId": 407428,
+    "ModelId": 242,
+    "ModelFileName": "fairychild_m_mohawkshorts.adr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "TextureAlias": "caucasianbrown",
+    "TintAlias": "orange",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33996,
+    "CaptureGuid": "32504312496162",
+    "NameId": 407428,
+    "ModelId": 311,
+    "ModelFileName": "human_m_freestyle_02.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33997,
+    "CaptureGuid": "32573031972898",
+    "NameId": 407428,
+    "ModelId": 9,
+    "ModelFileName": "humanchild_m_tshirtwithbeltbig.adr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "TextureAlias": "caucasianbrown",
+    "TintAlias": "purple",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 34000,
+    "CaptureGuid": "32160715112482",
+    "NameId": 407428,
+    "ModelId": 572,
+    "ModelFileName": "fairy_f_freestyle_10.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 34001,
+    "CaptureGuid": "32229434589218",
+    "NameId": 407428,
+    "ModelId": 558,
+    "ModelFileName": "human_m_freestyle_05.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 34002,
+    "CaptureGuid": "32710470926370",
+    "NameId": 407428,
+    "ModelId": 524,
+    "ModelFileName": "fairy_f_freestyle_06.agr",
+    "Scale": 1,
+    "Name": "Soccer Fan",
+    "HideNamePlate": true
   }
 ]
