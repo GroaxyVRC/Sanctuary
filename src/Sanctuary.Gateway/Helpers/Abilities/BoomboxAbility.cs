@@ -4,6 +4,7 @@ using System.Numerics;
 
 using Sanctuary.Game.Entities;
 using Sanctuary.Game.Helpers;
+using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Zones;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -12,44 +13,39 @@ namespace Sanctuary.Gateway.Helpers.Abilities;
 
 public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility(services)
 {
-    // How long a boombox stays out, which is also its use cooldown.
-    private const int BoomboxDurationMs = 180_000;
-
-    // PFX_smoke_black_explosion
-    private const int PoofEffectId = 21;
-
     public override bool Matches(ClientItemDefinition itemDefinition) =>
         _resourceManager.Consumables.Boomboxes.ContainsKey(itemDefinition.Id);
 
-    public override bool HandleAbility(Player player, AbilityPacketClientRequestStartAbility packet, int slot, ClientItem clientItem, ClientItemDefinition itemDefinition)
+    public override bool HandleAbility(Player player, AbilityPacketClientRequestStartAbility abilityPacketClientRequestStartAbility, int slot, ClientItem clientItem, ClientItemDefinition itemDefinition)
     {
         if (player.IsItemOnCooldown(itemDefinition.Id))
             return SendFailure(player);
 
-        SpawnBoomboxNpc(player, itemDefinition);
+        if (!_resourceManager.Consumables.Boomboxes.TryGetValue(itemDefinition.Id, out var definition))
+            return SendFailure(player);
 
-        player.StartItemCooldown(itemDefinition.Id, ClampCooldown(BoomboxDurationMs));
-        player.StartActionBarCooldown(ActionBarId, slot, itemDefinition.Icon.Id, itemDefinition.NameId, clientItem.Count, ClampCooldown(BoomboxDurationMs));
+        SpawnBoomboxNpc(player, itemDefinition, definition);
+
+        player.StartItemCooldown(itemDefinition.Id, ClampCooldown(definition.DurationMs));
+        player.StartActionBarCooldown(ActionBarId, slot, itemDefinition.Icon.Id, itemDefinition.NameId, clientItem.Count, ClampCooldown(definition.DurationMs));
 
         return true;
     }
 
-    private void SpawnBoomboxNpc(Player player, ClientItemDefinition itemDefinition)
+    private void SpawnBoomboxNpc(Player player, ClientItemDefinition itemDefinition, BoomboxDefinition definition)
     {
-        _resourceManager.Consumables.Boomboxes.TryGetValue(itemDefinition.Id, out var boomboxDefinition);
-
-        var modelId = boomboxDefinition?.ModelId ?? 1062;
-        var effectIds = boomboxDefinition?.EffectIds ?? [];
+        var modelId = definition.ModelId;
+        var effectIds = definition.EffectIds;
         var effectId = effectIds.Length > 0 ? effectIds[System.Random.Shared.Next(effectIds.Length)] : 0;
 
-        var danceSequence = boomboxDefinition?.DanceSequence ?? [3501, 3502, 3503, 3504, 3505];
-        var transformModelId = boomboxDefinition?.TransformModelId ?? 0;
+        var danceSequence = definition.DanceSequence;
+        var transformModelId = definition.TransformModelId;
 
         var leftDirection = Vector3.Transform(new Vector3(-1, 0, 0), player.Rotation);
         var spawnPosition = new Vector4(
-            player.Position.X + leftDirection.X * 2.0f,
-            player.Position.Y + leftDirection.Y * 2.0f,
-            player.Position.Z + leftDirection.Z * 2.0f,
+            player.Position.X + leftDirection.X * definition.SpawnOffset,
+            player.Position.Y + leftDirection.Y * definition.SpawnOffset,
+            player.Position.Z + leftDirection.Z * definition.SpawnOffset,
             player.Position.W
         );
 
@@ -61,7 +57,7 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
             npc.TextureAlias = itemDefinition.TextureAlias ?? "";
             npc.TintAlias = itemDefinition.TintAlias ?? "";
             npc.Scale = 1.0f;
-            npc.Animation = 2100; // Bouncing animation
+            npc.Animation = definition.SpawnAnimationId; // Bouncing animation
             npc.CompositeEffectId = effectId; // Owned by the entity, so the client stops it on RemovePlayer
             npc.HideNamePlate = true;
             npc.IsInteractable = false;
@@ -70,7 +66,7 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
         if (boomboxNpc is null)
             return;
 
-        var poofRecipients = BroadcastSpawn(player, boomboxNpc, spawnPosition, PoofEffectId);
+        var poofRecipients = BroadcastSpawn(player, boomboxNpc, spawnPosition, definition.SpawnEffectId);
 
         // Tag-attached so it can be stopped cleanly on despawn.
         var songTagId = 0;
@@ -91,12 +87,11 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
                 recipient.SendTunneled(songEffect);
         }
 
-        StartDanceLoop(player.Zone, boomboxNpc, spawnPosition, danceSequence, songTagId, effectId, transformModelId);
+        StartDanceLoop(player.Zone, boomboxNpc, spawnPosition, definition, danceSequence, songTagId, effectId, transformModelId);
     }
 
-    private static void StartDanceLoop(IZone zone, Npc boomboxNpc, Vector4 spawnPosition, int[] danceSequence, int songTagId, int effectId, int transformModelId)
+    private static void StartDanceLoop(IZone zone, Npc boomboxNpc, Vector4 spawnPosition, BoomboxDefinition definition, int[] danceSequence, int songTagId, int effectId, int transformModelId)
     {
-        const float BoomboxRangeInMeters = 15.0f;
         const int SwitchMs = 4000;
 
         var danceCenter = new Vector3(spawnPosition.X, spawnPosition.Y, spawnPosition.Z);
@@ -110,7 +105,7 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
 
         boomboxNpc.UpdateEverySecondAction = () =>
         {
-            if (elapsedMs >= BoomboxDurationMs)
+            if (elapsedMs >= definition.DurationMs)
             {
                 foreach (var player in zone.Players.Where(p => dancing.Contains(p.Guid)))
                     StopDancing(player, transformModelId);
@@ -127,7 +122,7 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
                         player.SendTunneled(stopSong);
                 }
 
-                DespawnNpc(boomboxNpc, PoofEffectId);
+                DespawnNpc(boomboxNpc, definition.SpawnEffectId);
                 return;
             }
 
@@ -153,7 +148,7 @@ public sealed class BoomboxAbility(AbilityServices services) : ConsumableAbility
 
             var players = zone.Players.ToList();
             var inRange = players.Where(p =>
-                Vector3.Distance(new Vector3(p.Position.X, p.Position.Y, p.Position.Z), danceCenter) <= BoomboxRangeInMeters)
+                Vector3.Distance(new Vector3(p.Position.X, p.Position.Y, p.Position.Z), danceCenter) <= definition.Range)
                 .ToList();
             var inRangeGuids = inRange.Select(p => p.Guid).ToHashSet();
 
