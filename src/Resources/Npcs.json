@@ -20787,5 +20787,56 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33346,
+    "CaptureGuid": "51814485459026",
+    "NameId": 75749,
+    "ModelId": 780,
+    "ModelFileName": "human_sanctuary_m.adr",
+    "Scale": 1,
+    "Name": "Seating Area",
+    "TextureAlias": "01",
+    "TintAlias": "01-red",
+    "HideNamePlate": true,
+    "Animation": 3101
+  },
+  {
+    "Id": 33347,
+    "CaptureGuid": "51883204935762",
+    "NameId": 75749,
+    "ModelId": 889,
+    "ModelFileName": "human_f_sanctuary.adr",
+    "Scale": 1,
+    "Name": "Seating Area",
+    "TextureAlias": "blondehair",
+    "TintAlias": "blondehair-pink",
+    "HideNamePlate": true,
+    "Animation": 3101
+  },
+  {
+    "Id": 33352,
+    "CaptureGuid": "51951924412498",
+    "NameId": 75749,
+    "ModelId": 414,
+    "ModelFileName": "fairy_seaside_m_01_lod0.adr",
+    "Scale": 1,
+    "Name": "Seating Area",
+    "TextureAlias": "flowershirt",
+    "TintAlias": "tshirt-purple",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33353,
+    "CaptureGuid": "52020643889234",
+    "NameId": 75749,
+    "ModelId": 384,
+    "ModelFileName": "fairy_sanctuary_f.adr",
+    "Scale": 1,
+    "Name": "Seating Area",
+    "TextureAlias": "sanctuary_03",
+    "TintAlias": "sanctuary_03_Blue",
+    "HideNamePlate": true,
+    "Animation": 3101
   }
 ]
