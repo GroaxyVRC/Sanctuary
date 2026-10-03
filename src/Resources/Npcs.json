@@ -20787,5 +20787,207 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33632,
+    "SubTextNameId": 15717,
+    "CaptureGuid": "22333829939234",
+    "NameId": 90184,
+    "ModelId": 49,
+    "ModelFileName": "fairy_m_02.adr",
+    "Scale": 1,
+    "Name": "Assistant Chef Edward",
+    "TextureAlias": "02",
+    "TintAlias": "skyblue",
+    "HasCursor": true,
+    "CursorId": 17,
+    "RelevanceUnknown2": false,
+    "Notifications": [
+      {
+        "IsCompact": false,
+        "NotificationType": 1,
+        "IconId": 1,
+        "IconState": 12,
+        "Unknown": 0,
+        "NameId": 90184,
+        "ReferenceId": 15717,
+        "Unknown3": false,
+        "Unknown2": 0,
+        "Enabled": true
+      }
+    ],
+    "InteractionList": {
+      "Unknown": true,
+      "Interactions": [
+        {
+          "Id": 3767,
+          "IconId": 22665,
+          "ButtonText": 3227,
+          "Type": 17,
+          "Param1": 0,
+          "Param2": 0,
+          "TooltipId": 0
+        }
+      ],
+      "Name": "",
+      "Unknown2": true
+    },
+    "InteractionUnknown": false,
+    "MerchantList": {
+      "Unknown": 468,
+      "Unknown4": 90184,
+      "Entries": [
+        {
+          "ItemDefinitionId": 13231, "Unknown8": 1000, "IconId": 3906,
+          "TintId": 0, "NameId": 995, "DescriptionId": 996,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2906, "Unknown8": 5, "IconId": 1019,
+          "TintId": 0, "NameId": 23316, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2904, "Unknown8": 5, "IconId": 4330,
+          "TintId": 0, "NameId": 23314, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2902, "Unknown8": 5, "IconId": 996,
+          "TintId": 0, "NameId": 23312, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2900, "Unknown8": 5, "IconId": 1018,
+          "TintId": 0, "NameId": 23310, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2899, "Unknown8": 5, "IconId": 995,
+          "TintId": 0, "NameId": 23309, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2898, "Unknown8": 5, "IconId": 1256,
+          "TintId": 0, "NameId": 23308, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2897, "Unknown8": 5, "IconId": 998,
+          "TintId": 0, "NameId": 23307, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2896, "Unknown8": 5, "IconId": 997,
+          "TintId": 0, "NameId": 23306, "DescriptionId": 68324,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2895, "Unknown8": 5, "IconId": 1020,
+          "TintId": 0, "NameId": 23305, "DescriptionId": 68324,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2893, "Unknown8": 5, "IconId": 1013,
+          "TintId": 0, "NameId": 18617, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2862, "Unknown8": 5, "IconId": 993,
+          "TintId": 0, "NameId": 18597, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2861, "Unknown8": 5, "IconId": 2823,
+          "TintId": 0, "NameId": 18593, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2860, "Unknown8": 5, "IconId": 994,
+          "TintId": 0, "NameId": 18589, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 2859, "Unknown8": 5, "IconId": 1007,
+          "TintId": 0, "NameId": 18585, "DescriptionId": 3021,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 883, "Unknown8": 5, "IconId": 1793,
+          "TintId": 0, "NameId": 882, "DescriptionId": 887,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 882, "Unknown8": 5, "IconId": 1787,
+          "TintId": 0, "NameId": 881, "DescriptionId": 886,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 881, "Unknown8": 5, "IconId": 1786,
+          "TintId": 0, "NameId": 880, "DescriptionId": 885,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 880, "Unknown8": 5, "IconId": 1794,
+          "TintId": 0, "NameId": 879, "DescriptionId": 884,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 879, "Unknown8": 5, "IconId": 1795,
+          "TintId": 0, "NameId": 878, "DescriptionId": 883,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 57, "Unknown8": 5, "IconId": 673,
+          "TintId": 0, "NameId": 933, "DescriptionId": 939,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 56, "Unknown8": 5, "IconId": 671,
+          "TintId": 0, "NameId": 932, "DescriptionId": 938,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 55, "Unknown8": 5, "IconId": 675,
+          "TintId": 0, "NameId": 931, "DescriptionId": 937,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 54, "Unknown8": 5, "IconId": 670,
+          "TintId": 0, "NameId": 928, "DescriptionId": 934,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        },
+        {
+          "ItemDefinitionId": 53, "Unknown8": 5, "IconId": 674,
+          "TintId": 0, "NameId": 929, "DescriptionId": 935,
+          "PurchasableQty": -1, "MembersOnly": false, "Unknown9": 0,
+          "AvailableTintGroupId": 0, "CanBuy": true
+        }
+      ]
+    }
   }
 ]

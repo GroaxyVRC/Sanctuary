@@ -3425,4 +3425,5 @@ end
 
 registerCallback("start", function(zone)
     spawnStaticNpcs(zone)
+    zone:spawnNpcWithGuid(33632, "22333829939234", 193.70468, 22.740154, 363.95743, 0.508053002)
 end)
