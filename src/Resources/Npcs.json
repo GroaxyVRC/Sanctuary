@@ -20768,24 +20768,54 @@
     "ModelFileName": "hsg_painting_tcg_chaos_creepylaughter_01.adr"
   },
   {
-    "Id": 33082,
+    "Id": 33167,
+    "CaptureGuid": "14293651161170",
     "NameId": 20831,
+    "ModelId": 280,
+    "ModelFileName": "sg_warpstone_01.adr",
+    "Scale": 1,
     "Name": "Sanctuary Warpstone",
-    "ModelId": 280,
-    "ModelFileName": "sg_warpstone_01.adr"
+    "OpensAtlas": true,
+    "AutoSelectSingleInteraction": true,
+    "CursorId": 17,
+    "Notification": {
+      "NotificationType": 6,
+      "IconId": 3,
+      "NameId": 20831
+    }
   },
   {
-    "Id": 33083,
+    "Id": 33558,
+    "CaptureGuid": "23983097380882",
     "NameId": 41298,
-    "Name": "Lakeshore Warpstone",
     "ModelId": 280,
-    "ModelFileName": "sg_warpstone_01.adr"
+    "ModelFileName": "sg_warpstone_01.adr",
+    "Scale": 1,
+    "Name": "Lakeshore Warpstone",
+    "OpensAtlas": true,
+    "AutoSelectSingleInteraction": true,
+    "CursorId": 17,
+    "Notification": {
+      "NotificationType": 6,
+      "IconId": 3,
+      "NameId": 41298
+    }
   },
   {
-    "Id": 33084,
+    "Id": 33602,
+    "CaptureGuid": "7215545057314",
     "NameId": 20830,
-    "Name": "Snowhill Warpstone",
     "ModelId": 280,
-    "ModelFileName": "sg_warpstone_01.adr"
+    "ModelFileName": "sg_warpstone_01.adr",
+    "Scale": 1,
+    "Name": "Snowhill Warpstone",
+    "OpensAtlas": true,
+    "AutoSelectSingleInteraction": true,
+    "CursorId": 17,
+    "Notification": {
+      "NotificationType": 6,
+      "IconId": 3,
+      "NameId": 20830
+    }
   }
 ]
