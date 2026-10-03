@@ -20787,5 +20787,27 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33548,
+    "CaptureGuid": "33073172324548626",
+    "NameId": 2232,
+    "ModelId": 189,
+    "ModelFileName": "robgoblin_m_bruiser.adr",
+    "Scale": 1,
+    "Name": "Robgoblin",
+    "TextureAlias": "Bikini",
+    "TintAlias": "Skin05",
+    "HideNamePlate": true
+  },
+  {
+    "Id": 33550,
+    "CaptureGuid": "37933151158290",
+    "NameId": 40577,
+    "ModelId": 391,
+    "ModelFileName": "fairy_m_warrior_01.agr",
+    "Scale": 1,
+    "Name": "Guard",
+    "HideNamePlate": true
   }
 ]
