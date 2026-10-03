@@ -374,7 +374,7 @@ public static class BoomboxHelper
             Unknown = 1
         }, true);
     }
-    public static void SyncDance(List<Player> targets, int animationId)
+    private static void SyncDance(List<Player> targets, int animationId)
     {
         if (targets.Count == 0)
             return;
