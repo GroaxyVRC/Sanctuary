@@ -20787,5 +20787,24 @@
     "Name": "Snowhill Warpstone",
     "ModelId": 280,
     "ModelFileName": "sg_warpstone_01.adr"
+  },
+  {
+    "Id": 33663,
+    "SubTextNameId": 1114,
+    "CaptureGuid": "137438953506",
+    "NameId": 178,
+    "ModelId": 48,
+    "ModelFileName": "fairy_m_01.adr",
+    "Scale": 1,
+    "Name": "Loryn"
+  },
+  {
+    "Id": 33664,
+    "CaptureGuid": "18760417148962",
+    "NameId": 72171,
+    "ModelId": 490,
+    "ModelFileName": "fairy_m_old_02.adr",
+    "Scale": 1,
+    "Name": "Milus Featherfeet"
   }
 ]
