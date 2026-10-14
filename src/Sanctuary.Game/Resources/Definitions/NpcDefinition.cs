@@ -17,9 +17,14 @@ public class NpcDefinition
     public string ModelFileName { get; set; } = null!;
 
     public string? TextureAlias { get; set; }
+    public string? TintAlias { get; set; }
+    public int TintId { get; set; }
     public int TerrainObjectId { get; set; }
     public bool ReplaceTerrainObject { get; set; }
+    public int AreaDefinitionId { get; set; }
+    public bool IsPlacedObject { get; set; }
     public float? Scale { get; set; }
+    public bool HideNamePlate { get; set; }
     public bool OpensAtlas { get; set; }
     public bool AutoSelectSingleInteraction { get; set; }
     public int InteractRange { get; set; } = 100;

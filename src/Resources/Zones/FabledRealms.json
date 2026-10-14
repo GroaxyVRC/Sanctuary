@@ -18,7 +18,36 @@
     0.8330676
   ],
   "Scripts": [
-    "FabledRealms"
+    "FabledRealms",
+    "BruceConcert",
+    "HalloweenDanceOff"
+  ],
+  "EnabledClientAreaIds": [
+    4173
+  ],
+  "SeasonalClientAreas": [
+    {
+      "Name": "Halloween",
+      "StartMonth": 9,
+      "StartDay": 20,
+      "EndMonth": 11,
+      "EndDay": 11,
+      "AreaIds": [
+        3992,
+        3993,
+        3994,
+        3995,
+        3996,
+        3997,
+        3998,
+        3999,
+        4000,
+        4001,
+        4002,
+        4003,
+        4004
+      ]
+    }
   ],
   "AreaDefinitions": [
     {

@@ -599,7 +599,7 @@ public abstract class BaseZone : IZone, IDisposable
 
     #region Scripting API
 
-    public bool TrySpawnNpc(int npcId, ulong? npcGuid, float x, float y, float z, float heading, [MaybeNullWhen(false)] out IScriptableNpc npc)
+    public bool TrySpawnNpc(int npcId, ulong? npcGuid, float x, float y, float z, float heading, float pitch, float roll, [MaybeNullWhen(false)] out IScriptableNpc npc)
     {
         npc = null;
 
@@ -628,10 +628,39 @@ public abstract class BaseZone : IZone, IDisposable
         var position = new Vector4(x, y, z, 1f);
         var rotation = new Quaternion(MathF.Sin(heading), 0f, MathF.Cos(heading), 0f);
 
+        if (definition.IsPlacedObject || pitch != 0f || roll != 0f)
+            spawnedNpc.Tilt = new Vector4(heading, pitch, roll, 0f);
+
         spawnedNpc.UpdatePosition(position, rotation);
 
         npc = spawnedNpc;
         return true;
+    }
+
+    public virtual void SetClientAreaEnabled(int areaId, bool enabled)
+    {
+    }
+
+    public virtual bool IsSeasonActive(string seasonName) => false;
+
+    public void Broadcast(string message)
+    {
+        var broadcastPacketZone = new BroadcastPacketZone { Message = message };
+
+        foreach (var player in Players)
+            player.SendTunneled(broadcastPacketZone);
+    }
+
+    public void BroadcastNear(string message, float x, float z, float radius)
+    {
+        var broadcastPacketZone = new BroadcastPacketZone { Message = message };
+        var center = new Vector2(x, z);
+
+        foreach (var player in Players)
+        {
+            if (Vector2.Distance(new Vector2(player.Position.X, player.Position.Z), center) <= radius)
+                player.SendTunneled(broadcastPacketZone);
+        }
     }
 
     #endregion
@@ -717,6 +746,10 @@ public abstract class BaseZone : IZone, IDisposable
             RelevanceUnknown2 = definition.RelevanceUnknown2,
             TextureAlias = definition.TextureAlias,
             Scale = definition.Scale ?? scale,
+            AreaDefinitionId = definition.AreaDefinitionId,
+            TintAlias = definition.TintAlias,
+            TintId = definition.TintId,
+            HideNamePlate = definition.HideNamePlate,
             Visible = true
         };
 
@@ -1350,12 +1383,19 @@ public abstract class BaseZone : IZone, IDisposable
                 {
                     entity.Value.UpdateEverySecond();
                 }
+
+                UpdateEverySecond();
             }
             catch (Exception ex)
             {
                 _logger.LogCritical(ex, $"{Name} ({Id}) - Zone Exception");
             }
         }
+    }
+
+    protected virtual void UpdateEverySecond()
+    {
+        GetOrCreateScriptContext().FireEvent("second");
     }
 
     #endregion

@@ -1,10 +1,14 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+
+using Microsoft.Extensions.Logging;
 
 using Sanctuary.Core.Extensions;
 using Sanctuary.Core.IO;
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Resources.Definitions.Zones;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -15,10 +19,23 @@ public sealed class WorldZone : BaseZone
 {
     private readonly WorldZoneDefinition _zoneDefinition;
 
+    private readonly object _clientAreasLock = new();
+    private readonly HashSet<SeasonalClientAreaDefinition> _activeSeasonalClientAreas = [];
+    private readonly HashSet<int> _scriptEnabledClientAreaIds = [];
+
+    private const int ClientAreaRefreshSeconds = 3;
+    private int _secondsSinceClientAreaRefresh;
+
     public WorldZone(WorldZoneDefinition zoneDefinition, IServiceProvider serviceProvider)
         : base(zoneDefinition, serviceProvider)
     {
         _zoneDefinition = zoneDefinition;
+
+        foreach (var seasonalClientArea in _zoneDefinition.SeasonalClientAreas)
+        {
+            if (seasonalClientArea.IsActive(DateTime.Now))
+                _activeSeasonalClientAreas.Add(seasonalClientArea);
+        }
     }
 
     public override void OnClientIsReady(Player player)
@@ -32,6 +49,92 @@ public sealed class WorldZone : BaseZone
             SendWelcomeInfo(player);
 
         SendShopData(player);
+    }
+
+    public override void OnClientFinishedLoading(Player player)
+    {
+        base.OnClientFinishedLoading(player);
+
+        SendEnabledClientAreas(player);
+    }
+
+    protected override void UpdateEverySecond()
+    {
+        base.UpdateEverySecond();
+
+        var now = DateTime.Now;
+
+        lock (_clientAreasLock)
+        {
+            foreach (var seasonalClientArea in _zoneDefinition.SeasonalClientAreas)
+            {
+                var isActive = seasonalClientArea.IsActive(now);
+
+                if (isActive == _activeSeasonalClientAreas.Contains(seasonalClientArea))
+                    continue;
+
+                if (isActive)
+                    _activeSeasonalClientAreas.Add(seasonalClientArea);
+                else
+                    _activeSeasonalClientAreas.Remove(seasonalClientArea);
+
+                Logger.LogInformation("Seasonal client areas {name} {state}", seasonalClientArea.Name, isActive ? "enabled" : "disabled");
+
+                if (!isActive)
+                {
+                    foreach (var player in Players)
+                        SendClientAreas(player, seasonalClientArea.AreaIds, false);
+                }
+            }
+        }
+
+        if (++_secondsSinceClientAreaRefresh < ClientAreaRefreshSeconds)
+            return;
+
+        _secondsSinceClientAreaRefresh = 0;
+
+        foreach (var player in Players)
+            SendEnabledClientAreas(player);
+    }
+
+    public override bool IsSeasonActive(string seasonName)
+    {
+        var now = DateTime.Now;
+
+        return _zoneDefinition.SeasonalClientAreas.Any(x => x.Name == seasonName && x.IsActive(now));
+    }
+
+    public override void SetClientAreaEnabled(int areaId, bool enabled)
+    {
+        lock (_clientAreasLock)
+        {
+            var changed = enabled ? _scriptEnabledClientAreaIds.Add(areaId) : _scriptEnabledClientAreaIds.Remove(areaId);
+
+            if (!changed)
+                return;
+        }
+
+        foreach (var player in Players)
+            SendClientAreas(player, [areaId], enabled);
+    }
+
+    private void SendEnabledClientAreas(Player player)
+    {
+        SendClientAreas(player, _zoneDefinition.EnabledClientAreaIds, true);
+
+        lock (_clientAreasLock)
+        {
+            foreach (var seasonalClientArea in _activeSeasonalClientAreas)
+                SendClientAreas(player, seasonalClientArea.AreaIds, true);
+
+            SendClientAreas(player, [.. _scriptEnabledClientAreaIds], true);
+        }
+    }
+
+    private static void SendClientAreas(Player player, List<int> areaIds, bool enabled)
+    {
+        foreach (var areaId in areaIds)
+            player.SendTunneled(new PacketSetClientArea { AreaId = areaId, Enabled = enabled });
     }
 
     public int GetZoneAreaId(Vector4 position)
