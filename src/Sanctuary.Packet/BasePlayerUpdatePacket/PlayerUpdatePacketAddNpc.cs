@@ -49,7 +49,7 @@ public class PlayerUpdatePacketAddNpc : BasePlayerUpdatePacket, ISerializablePac
 
     public int Animation;
 
-    public bool Unknown16;
+    public bool HideHealthBar;
 
     public float VerticalOffset;
 
@@ -202,7 +202,7 @@ public class PlayerUpdatePacketAddNpc : BasePlayerUpdatePacket, ISerializablePac
 
         writer.Write(TintId);
 
-        writer.Write(Unknown16);
+        writer.Write(HideHealthBar);
 
         writer.Write(VerticalOffset);
 
