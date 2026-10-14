@@ -73,35 +73,42 @@ public static class InventoryPacketEquippedRemoveHandler
             return true;
         }
 
-        using var dbContext = _dbContextFactory.CreateDbContext();
-
-        var dbProfile = dbContext.Profiles
-            .Include(x => x.Items)
-            .SingleOrDefault(x => x.CharacterId == GuidHelper.GetPlayerId(connection.Player.Guid) && x.Id == inventoryPacketEquippedRemove.ProfileId);
-
-        if (dbProfile is null)
-        {
-            _logger.LogWarning("Invalid database profile.");
-            return true;
-        }
-
-        var dbItem = dbProfile.Items.SingleOrDefault(x => x.CharacterId == GuidHelper.GetPlayerId(connection.Player.Guid) && x.Id == profileItem.Id);
-
-        if (dbItem is null)
-        {
-            _logger.LogWarning("Invalid database item.");
-            return true;
-        }
-
-        dbProfile.Items.Remove(dbItem);
-
-        if (dbContext.SaveChanges() <= 0)
-        {
-            _logger.LogWarning("Failed to save to database.");
-            return true;
-        }
-
         profile.Items.Remove(inventoryPacketEquippedRemove.Slot);
+
+        var characterId = GuidHelper.GetPlayerId(connection.Player.Guid);
+        var profileId = inventoryPacketEquippedRemove.ProfileId;
+        var itemId = profileItem.Id;
+
+        connection.QueueWork(() =>
+        {
+            using var dbContext = _dbContextFactory.CreateDbContext();
+
+            var dbProfile = dbContext.Profiles
+                .Include(x => x.Items)
+                .SingleOrDefault(x => x.CharacterId == characterId && x.Id == profileId);
+
+            if (dbProfile is null)
+            {
+                _logger.LogWarning("Invalid database profile.");
+                return;
+            }
+
+            var dbItem = dbProfile.Items.SingleOrDefault(x => x.Id == itemId);
+
+            if (dbItem is null)
+            {
+                _logger.LogWarning("Invalid database item.");
+                return;
+            }
+
+            dbProfile.Items.Remove(dbItem);
+
+            if (dbContext.SaveChanges() <= 0)
+            {
+                _logger.LogWarning("Failed to save to database.");
+                return;
+            }
+        });
 
         var clientUpdatePacketUnequipSlot = new ClientUpdatePacketUnequipSlot();
 

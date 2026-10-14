@@ -66,26 +66,7 @@ public static class InventoryPacketEquipByItemRecordHandler
             return true;
         }
 
-        using var dbContext = _dbContextFactory.CreateDbContext();
-
-        var dbProfile = dbContext.Profiles
-            .Include(x => x.Items)
-            .SingleOrDefault(x => x.CharacterId == GuidHelper.GetPlayerId(connection.Player.Guid) && x.Id == inventoryPacketEquipByItemRecord.ProfileId);
-
-        if (dbProfile is null)
-        {
-            _logger.LogWarning("Invalid database profile.");
-            return true;
-        }
-
-        var dbItem = dbContext.Items
-            .SingleOrDefault(x => x.CharacterId == GuidHelper.GetPlayerId(connection.Player.Guid) && x.Id == clientItem.Id);
-
-        if (dbItem is null)
-        {
-            _logger.LogWarning("Invalid database item.");
-            return true;
-        }
+        int? oldItemId = null;
 
         if (!profile.Items.TryGetValue(clientItemDefinition.Slot, out var profileItem))
         {
@@ -95,32 +76,58 @@ public static class InventoryPacketEquipByItemRecordHandler
             profileItem.Slot = clientItemDefinition.Slot;
 
             profile.Items.Add(profileItem.Slot, profileItem);
-
-            dbProfile.Items.Add(dbItem);
         }
         else
         {
-            var dbItemOld = dbContext.Items
-                .SingleOrDefault(x => x.CharacterId == GuidHelper.GetPlayerId(connection.Player.Guid) && x.Id == profileItem.Id);
-
-            if (dbItemOld is null)
-            {
-                _logger.LogWarning("Invalid database item.");
-                return true;
-            }
+            oldItemId = profileItem.Id;
 
             profileItem.Id = clientItem.Id;
             profileItem.Slot = clientItemDefinition.Slot;
+        }
+
+        var characterId = GuidHelper.GetPlayerId(connection.Player.Guid);
+        var profileId = inventoryPacketEquipByItemRecord.ProfileId;
+        var itemId = clientItem.Id;
+
+        connection.QueueWork(() =>
+        {
+            using var dbContext = _dbContextFactory.CreateDbContext();
+
+            var dbProfile = dbContext.Profiles
+                .Include(x => x.Items)
+                .SingleOrDefault(x => x.CharacterId == characterId && x.Id == profileId);
+
+            if (dbProfile is null)
+            {
+                _logger.LogWarning("Invalid database profile.");
+                return;
+            }
+
+            var dbItem = dbContext.Items
+                .SingleOrDefault(x => x.CharacterId == characterId && x.Id == itemId);
+
+            if (dbItem is null)
+            {
+                _logger.LogWarning("Invalid database item.");
+                return;
+            }
+
+            if (oldItemId is not null)
+            {
+                var dbItemOld = dbProfile.Items.SingleOrDefault(x => x.Id == oldItemId);
+
+                if (dbItemOld is not null)
+                    dbProfile.Items.Remove(dbItemOld);
+            }
 
             dbProfile.Items.Add(dbItem);
-            dbProfile.Items.Remove(dbItemOld);
-        }
 
-        if (dbContext.SaveChanges() <= 0)
-        {
-            _logger.LogWarning("Failed to save to database.");
-            return true;
-        }
+            if (dbContext.SaveChanges() <= 0)
+            {
+                _logger.LogWarning("Failed to save to database.");
+                return;
+            }
+        });
 
         var clientUpdatePacketEquipItem = new ClientUpdatePacketEquipItem();
 

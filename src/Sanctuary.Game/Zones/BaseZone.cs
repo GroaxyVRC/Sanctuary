@@ -334,6 +334,11 @@ public abstract class BaseZone : IZone, IDisposable
 
     protected void SendShopData(Player player)
     {
+        if (player.ShopDataSent)
+            return;
+
+        player.ShopDataSent = true;
+
         SendCoinStoreItemList(player);
         SendInGamePurchase(player);
     }
@@ -345,26 +350,6 @@ public abstract class BaseZone : IZone, IDisposable
         coinStoreItemListPacket.StaticItems = _resourceManager.CoinStoreItems.ToDictionary();
 
         player.SendTunneled(coinStoreItemListPacket);
-
-        var clientItemDefinitions = new List<ClientItemDefinition>();
-
-        foreach (var coinStoreItem in _resourceManager.CoinStoreItems)
-        {
-            if (!_resourceManager.ClientItemDefinitions.TryGetValue(coinStoreItem.Key, out var clientItemDefinition))
-                continue;
-
-            clientItemDefinitions.Add(clientItemDefinition);
-        }
-
-        using var writer = new PacketWriter();
-
-        writer.Write(clientItemDefinitions);
-
-        var playerUpdatePacketItemDefinitions = new PlayerUpdatePacketItemDefinitions();
-
-        playerUpdatePacketItemDefinitions.Payload = writer.Buffer;
-
-        player.SendTunneled(playerUpdatePacketItemDefinitions);
     }
 
 
