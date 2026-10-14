@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Numerics;
 
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Interactions;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
 
@@ -20,9 +21,14 @@ public static class InteractionMenuHelper
         commandPacketInteractionList.List.Unknown2 = true;
         foreach (var interaction in interactions)
         {
+            var id = interaction.Type switch
+            {
+                SnowballInteraction.Type => SnowballInteraction.Data.Id,
+                _ => interaction.Id
+            };
             commandPacketInteractionList.List.Interactions.Add(new InteractionData
             {
-                Id = interaction.Id,
+                Id = id,
                 IconId = interaction.IconId,
                 ButtonText = interaction.ButtonText,
                 Type = interaction.Type,

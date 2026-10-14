@@ -15,6 +15,12 @@ public class Target : ISerializableType, IDeserializable<Target>
     {
     }
 
+    public static Target CreateTarget(long? guid = null, int boneId = -1) => new()
+    {
+        Type = guid is null ? TargetType.None : TargetType.CharacterBoneId,
+        TargetBase = guid is null ? null : new TargetCharacterBoneId { Guid = guid.Value, BoneId = boneId }
+    };
+
     public static Target CreateTargetLocation(Vector4 unknown2, Vector4 unknown3)
     {
         return new Target

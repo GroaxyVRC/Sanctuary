@@ -7,12 +7,14 @@ using System.Numerics;
 using System.Threading.Tasks;
 
 using Sanctuary.Core.Collections;
+using Sanctuary.Core.Extensions;
 using Sanctuary.Core.IO;
 using Sanctuary.Game;
 using Sanctuary.Game.ChatCommands;
 using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Interactions;
 using Sanctuary.Game.Resources.Definitions.Combat;
+using Sanctuary.Game.Resources.Definitions;
 using Sanctuary.Game.Zones;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -24,6 +26,13 @@ namespace Sanctuary.Game.Entities;
 
 public sealed class Player : ClientPcData, IEntity
 {
+    private enum PacketSendType
+    {
+        All,
+        AllAndSelf,
+        SelfOnly
+    }
+
     private const int WeaponSlot = 7;
     private const int FlairShardSlot = 13;
 
@@ -73,6 +82,12 @@ public sealed class Player : ClientPcData, IEntity
 
     public int TemporaryAppearance { get; private set; }
 
+    public int BoomboxDancePriority { get; set; }
+    public ulong BoomboxDanceOwner { get; set; }
+    public int BoomboxDanceAnimation { get; set; }
+    public bool BoomboxDanceIsStanding { get; set; }
+    public int BoomboxDanceTransform { get; set; }
+
     public ulong LastSillyStringTarget { get; set; }
 
     public int ActiveFoodEffectId { get; set; }
@@ -88,7 +103,7 @@ public sealed class Player : ClientPcData, IEntity
     // For one-off delayed packets unrelated to tracked effects (e.g. a silly string reset
     // animation, a boombox poof) - see PlayerEffect/AddEffect for anything with its own state.
     // Min-heap ordered by send time.
-    private readonly PriorityQueue<(ISerializablePacket Packet, bool SendToSelf), DateTimeOffset> _delayedPackets = new();
+    private readonly PriorityQueue<(ISerializablePacket Packet, PacketSendType SendType), DateTimeOffset> _delayedPackets = new();
 
     // One scheduled personal-UI packet per action bar slot (the cooldown re-enable) - keyed, not queued,
     // so a slot that gets emptied before its cooldown naturally expires (last item consumed) can cancel
@@ -193,7 +208,16 @@ public sealed class Player : ClientPcData, IEntity
     {
         lock (_delayedPackets)
         {
-            _delayedPackets.Enqueue((packet, sendToSelf), DateTimeOffset.UtcNow.AddMilliseconds(delayMs));
+            var sendType = sendToSelf ? PacketSendType.AllAndSelf : PacketSendType.All;
+            _delayedPackets.Enqueue((packet, sendType), DateTimeOffset.UtcNow.AddMilliseconds(delayMs));
+        }
+    }
+
+    public void SendTunneledDelayed(ISerializablePacket packet, int delayMs)
+    {
+        lock (_delayedPackets)
+        {
+            _delayedPackets.Enqueue((packet, PacketSendType.SelfOnly), DateTimeOffset.UtcNow.AddMilliseconds(delayMs));
         }
     }
 
@@ -225,18 +249,14 @@ public sealed class Player : ClientPcData, IEntity
             CharacterStats.GlideEnabled.Set(0),
             CharacterStats.JumpHeight.Set(0f));
 
-        SendTunneledToVisible(new PlayerUpdatePacketRemovePlayerGracefully
-        {
-            Guid = Mount.Guid,
-            Animate = false,
-            Delay = 0,
-            EffectDelay = 0,
-            CompositeEffectId = 0,
-            Duration = 1000
-        }, sendToSelf: true);
-
-        Mount.Dispose();
+        EntityHelper.RemovePlayerGracefully(Mount, recipients: VisiblePlayers.Values.Append(this));
         Mount = null;
+        if (BoomboxDanceTransform != 0 && TemporaryAppearance == BoomboxDanceTransform)
+            SendTunneledToVisible(new PlayerUpdatePacketUpdateTemporaryAppearance
+            {
+                Guid = Guid,
+                TemporaryAppearance = TemporaryAppearance
+            }, true);
     }
 
     #endregion
@@ -251,7 +271,7 @@ public sealed class Player : ClientPcData, IEntity
 
         while (true)
         {
-            (ISerializablePacket Packet, bool SendToSelf) due;
+            (ISerializablePacket Packet, PacketSendType SendType) due;
 
             lock (_delayedPackets)
             {
@@ -261,7 +281,18 @@ public sealed class Player : ClientPcData, IEntity
                 due = _delayedPackets.Dequeue();
             }
 
-            SendTunneledToVisible(due.Packet, due.SendToSelf);
+            switch (due.SendType)
+            {
+                case PacketSendType.All:
+                    SendTunneledToVisible(due.Packet);
+                    break;
+                case PacketSendType.AllAndSelf:
+                    SendTunneledToVisible(due.Packet, sendToSelf: true);
+                    break;
+                case PacketSendType.SelfOnly:
+                    SendTunneled(due.Packet);
+                    break;
+            }
         }
 
         foreach (var (key, scheduled) in _delayedSlotPackets)
@@ -274,8 +305,17 @@ public sealed class Player : ClientPcData, IEntity
         }
     }
 
+    public ProjectileHelper Projectiles { get; } = new();
+    public int NpcAbilityEffectId { get; set; }
+
+    public NpcAbilityDefinition? NpcAbility { get; set; }
+    public DateTimeOffset NpcAbilityExpiresAt { get; set; }
+    public DateTimeOffset NpcAbilityNextCastAt { get; set; }
+    public int NpcAbilityProfileId { get; set; }
+
     public void UpdateEverySecond()
     {
+        SnowballInteraction.Update(this);
     }
 
     // The client animates the cooldown sweep itself from TotalRefreshTime -
@@ -348,6 +388,37 @@ public sealed class Player : ClientPcData, IEntity
         }
 
         return nearest;
+    }
+
+    public Vector3 GetFacingDirection()
+    {
+        var direction = new Vector3(Rotation.X, 0, Rotation.Z);
+        if (Rotation.W != 0)
+            direction = Vector3.Transform(Vector3.UnitZ, Rotation);
+
+        var lengthSquared = direction.LengthSquared();
+
+        return float.IsFinite(lengthSquared) && lengthSquared > 0
+            ? Vector3.Normalize(direction) : Vector3.UnitZ;
+    }
+
+    public IEntity? FindTarget(ulong guid, float range, ulong excludeGuid = 0)
+    {
+        if (!float.IsFinite(range) || range < 0)
+            return null;
+
+        if (guid == 0 || guid == Guid)
+            return FindNearestPlayer(range, excludeGuid) ?? FindNearestPlayer(range);
+
+        IEntity? target = VisiblePlayers.TryGetValue(guid, out var player) ? player :
+            VisibleNpcs.TryGetValue(guid, out var npc) ? npc : null;
+        if (target is null || !ReferenceEquals(target.Zone, Zone))
+            return null;
+
+        var distance = Vector3.DistanceSquared(Position.ToVector3(),
+            target.Position.ToVector3());
+
+        return float.IsFinite(distance) && distance <= range * range ? target : null;
     }
 
     private void UpdateZoneTile()
@@ -468,10 +539,9 @@ public sealed class Player : ClientPcData, IEntity
 
         foreach (var npc in npcs)
         {
-            if (npc.Notification is null)
-                continue;
-
-            playerUpdatePacketAddNotifications.Notifications.Add(npc.Notification);
+            playerUpdatePacketAddNotifications.Notifications.AddRange(npc.Notifications);
+            if (npc.Notification is not null)
+                playerUpdatePacketAddNotifications.Notifications.Add(npc.Notification);
         }
 
         if (playerUpdatePacketAddNotifications.Notifications.Count > 0)
@@ -500,6 +570,14 @@ public sealed class Player : ClientPcData, IEntity
             else
                 SendTunneled(player.GetAddPcPacket());
 
+            if (player.Mount is null && player.BoomboxDanceIsStanding && player.BoomboxDanceAnimation != 0)
+                SendTunneled(new PlayerUpdatePacketSetAnimation
+                {
+                    Guid = player.Guid,
+                    AnimationId = player.BoomboxDanceAnimation,
+                    Flags = 1
+                });
+
             SendTunneled(player.GetWeaponFlairOverridePacket());
         }
 
@@ -519,25 +597,6 @@ public sealed class Player : ClientPcData, IEntity
 
         foreach (var npc in npcs)
             VisibleNpcs.TryRemove(npc.Guid, out _);
-    }
-
-    public void OnRemoveVisibleNpcGracefully(Npc npc, bool animate, int delay, int effectDelay,
-        int compositeEffectId, int duration)
-    {
-        if (npc is Mount)
-            return;
-
-        SendTunneled(new PlayerUpdatePacketRemovePlayerGracefully
-        {
-            Guid = npc.Guid,
-            Animate = animate,
-            Delay = delay,
-            EffectDelay = effectDelay,
-            CompositeEffectId = compositeEffectId,
-            Duration = duration
-        });
-
-        VisibleNpcs.TryRemove(npc.Guid, out _);
     }
 
     public void OnRemoveVisiblePlayers(params IEnumerable<Player> players)
