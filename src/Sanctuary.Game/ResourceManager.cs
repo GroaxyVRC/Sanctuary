@@ -44,6 +44,7 @@ public class ResourceManager : IResourceManager
 
     public static readonly string ZonesDirectory = Path.Combine(BaseDirectory, "Zones");
     public static readonly string HousesFile = Path.Combine(BaseDirectory, "Houses.json");
+    public static readonly string PetsFile = Path.Combine(BaseDirectory, "Pets.json");
     public static readonly string MountsFile = Path.Combine(BaseDirectory, "Mounts.json");
     public static readonly string ProfilesFile = Path.Combine(BaseDirectory, "Profiles.json");
     public static readonly string QuickChatsFile = Path.Combine(BaseDirectory, "QuickChats.json");
@@ -88,6 +89,7 @@ public class ResourceManager : IResourceManager
     public ZoneDefinitionCollection Zones { get; }
     public HouseDefinitionCollection Houses { get; }
     public MountDefinitionCollection Mounts { get; }
+    public PetDefinitionCollection Pets { get; }
     public PlayerTitleCollection PlayerTitles { get; }
     public ProfileDefinitionCollection Profiles { get; }
     public QuickChatDefinitionCollection QuickChats { get; }
@@ -143,6 +145,7 @@ public class ResourceManager : IResourceManager
         Zones = new(_logger);
         Houses = new(_logger);
         Mounts = new(_logger);
+        Pets = new(_logger);
         Profiles = new(_logger);
         QuickChats = new(_logger);
         PlayerTitles = new(_logger);
@@ -305,6 +308,9 @@ public class ResourceManager : IResourceManager
         if (!Houses.Load(HousesFile))
             return false;
 
+        if (!Pets.Load(PetsFile))
+            return false;
+
         if (!Mounts.Load(MountsFile))
             return false;
 
@@ -407,6 +413,8 @@ public class ResourceManager : IResourceManager
                 loaded = StoreBundleCategoryGroups.Load(StoreBundleCategoryGroupsFile);
             else if (e.FullPath == HousesFile)
                 loaded = Houses.Load(HousesFile);
+            else if (e.FullPath == PetsFile)
+                loaded = Pets.Load(PetsFile);
             else if (e.FullPath == MountsFile)
                 loaded = Mounts.Load(MountsFile);
             else if (e.FullPath == ProfilesFile)

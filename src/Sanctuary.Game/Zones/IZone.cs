@@ -44,6 +44,7 @@ public interface IZone : IScriptableZone, IDisposable
     bool TryGetEntity(ulong guid, [MaybeNullWhen(false)] out IEntity entity);
 
     bool TryAddMount(Mount mount);
+    bool TryAddNpc<TNpc>(Func<IZone, ulong, TNpc> createNpc, [MaybeNullWhen(false)] out TNpc npc) where TNpc : Npc;
     bool TryAddPlayer(Player player);
 
     bool TryCreateNpc([MaybeNullWhen(false)] out Npc npc);

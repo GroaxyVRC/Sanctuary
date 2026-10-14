@@ -721,7 +721,7 @@ public abstract class BaseZone : IZone, IDisposable
         }
 
         var position = new Vector4(x, y, z, 1f);
-        var rotation = new Quaternion(MathF.Sin(heading), 0f, MathF.Cos(heading), 0f);
+        var rotation = QuaternionExtensions.FromHeading(heading);
 
         spawnedNpc.UpdatePosition(position, rotation);
 
@@ -757,6 +757,22 @@ public abstract class BaseZone : IZone, IDisposable
         return TryCreateNpc(null, out npc);
     }
 
+    public bool TryAddNpc<TNpc>(Func<IZone, ulong, TNpc> createNpc, [MaybeNullWhen(false)] out TNpc npc) where TNpc : Npc
+    {
+        return TryAddNpc(null, createNpc, out npc);
+    }
+
+    private bool TryAddNpc<TNpc>(ulong? guid, Func<IZone, ulong, TNpc> createNpc, [MaybeNullWhen(false)] out TNpc npc) where TNpc : Npc
+    {
+        npc = createNpc(this, GetNpcGuid(guid));
+
+        if (TryRegisterEntity(_npcs, npc))
+            return true;
+
+        npc = null;
+        return false;
+    }
+
     private bool TryRegisterEntity<TEntity>(ConcurrentDictionary<ulong, TEntity> collection, TEntity entity)
         where TEntity : IEntity
     {
@@ -774,18 +790,7 @@ public abstract class BaseZone : IZone, IDisposable
 
     public bool TryCreateNpc(ulong? guid, [MaybeNullWhen(false)] out Npc npc)
     {
-        npc = new Npc(this)
-        {
-            Guid = GetNpcGuid(guid)
-        };
-
-        if (!TryRegisterEntity(_npcs, npc))
-        {
-            npc = null;
-            return false;
-        }
-
-        return true;
+        return TryAddNpc(guid, (zone, npcGuid) => new Npc(zone) { Guid = npcGuid }, out npc);
     }
 
     public bool TryCreateNpc(ulong? guid, NpcDefinition definition, [MaybeNullWhen(false)] out Npc npc)

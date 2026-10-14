@@ -16,6 +16,20 @@ public sealed class PathState
             _waypoints = waypoints;
     }
 
+    public void SetTarget(Vector3 targetPosition)
+    {
+        lock (_lock)
+        {
+            _waypoints.Clear();
+            _waypoints.Enqueue(targetPosition);
+        }
+    }
+
+    public void Clear()
+    {
+        lock (_lock)
+            _waypoints.Clear();
+    }
 
     public bool TryGetCurrentTarget(out Vector3 targetPosition)
     {

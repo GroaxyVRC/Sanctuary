@@ -31,6 +31,7 @@ public interface IResourceManager
 
     ZoneDefinitionCollection Zones { get; }
     MountDefinitionCollection Mounts { get; }
+    PetDefinitionCollection Pets { get; }
     PlayerTitleCollection PlayerTitles { get; }
     ProfileDefinitionCollection Profiles { get; }
     QuickChatDefinitionCollection QuickChats { get; }

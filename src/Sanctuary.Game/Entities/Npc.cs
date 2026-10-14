@@ -8,6 +8,7 @@ using System.Numerics;
 using Microsoft.Extensions.Logging;
 
 using Sanctuary.Core.Collections;
+using Sanctuary.Core.Extensions;
 using Sanctuary.Game.Pathfinding;
 using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Zones;
@@ -64,6 +65,7 @@ public class Npc : IScriptableNpc, IEntity
 
     public Action<Player>? InteractAction { get; set; }
     public Action? UpdateEverySecondAction { get; set; }
+    public Action? UpdateEveryTickAction { get; set; }
 
     public int Animation { get; set; } = 1;
 
@@ -151,6 +153,7 @@ public class Npc : IScriptableNpc, IEntity
 
     public void UpdateEveryTick()
     {
+        UpdateEveryTickAction?.Invoke();
         if (!_scripts.IsEmpty)
             GetOrCreateScriptContext().FireEvent("tick");
 
@@ -496,16 +499,36 @@ public class Npc : IScriptableNpc, IEntity
     {
         if (direct || Zone.Pathfinder is null)
         {
-            var waypoints = new Queue<Vector3>();
-            waypoints.Enqueue(goalPosition);
-            _path.Set(waypoints);
+            _path.SetTarget(goalPosition);
             return;
         }
 
         _pathBuilder ??= new PathBuilder(Zone.Pathfinder);
 
-        var currentPosition = new Vector3(Position.X, Position.Y, Position.Z);
-        var newWaypoints = _pathBuilder.TryRecompute(currentPosition, goalPosition);
+        SetPath(_pathBuilder.TryRecompute(Position.ToVector3(), goalPosition));
+    }
+
+    public void MoveTo(Queue<Vector3> waypoints) => _path.Set(waypoints);
+
+    public void MoveTo(Vector3 goalPosition, List<MapNode> route)
+    {
+        if (Zone.Pathfinder is null)
+        {
+            _path.SetTarget(goalPosition);
+            return;
+        }
+
+        _pathBuilder ??= new PathBuilder(Zone.Pathfinder);
+
+        SetPath(_pathBuilder.TryRecompute(Position.ToVector3(), goalPosition, route));
+    }
+
+    public void StopMoving() => _path.Clear();
+
+    public void SetPositionY(float y) => Position = Position with { Y = y };
+
+    private void SetPath(Queue<Vector3>? newWaypoints)
+    {
         if (newWaypoints is not null)
             _path.Set(newWaypoints);
     }
