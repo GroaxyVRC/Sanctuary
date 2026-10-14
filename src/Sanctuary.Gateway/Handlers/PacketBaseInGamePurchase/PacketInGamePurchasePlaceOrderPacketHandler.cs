@@ -11,6 +11,7 @@ using Sanctuary.Core.IO;
 using Sanctuary.Database;
 using Sanctuary.Database.Entities;
 using Sanctuary.Game;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
 using Sanctuary.Packet.Common.Attributes;
@@ -103,6 +104,7 @@ public static class PacketInGamePurchasePlaceOrderPacketHandler
         var dbCharacter = dbContext.Characters
             .Include(x => x.Items)
             .Include(x => x.Mounts)
+            .Include(x => x.Pets)
             .AsSplitQuery()
             .SingleOrDefault(x => x.Id == GuidHelper.GetPlayerId(connection.Player.Guid));
 
@@ -117,6 +119,7 @@ public static class PacketInGamePurchasePlaceOrderPacketHandler
 
         var lastItemId = dbCharacter.Items.Count > 0 ? dbCharacter.Items.Max(i => i.Id) : 0;
         var lastMountId = dbCharacter.Mounts.Count > 0 ? dbCharacter.Mounts.Max(x => x.Id) : 0;
+        var lastPetId = dbCharacter.Pets.Count > 0 ? dbCharacter.Pets.Max(x => x.Id) : 0;
 
         var pendingUpdates = new List<Action>();
 
@@ -131,7 +134,8 @@ public static class PacketInGamePurchasePlaceOrderPacketHandler
                 return true;
             }
 
-            if (clientItemDefinition.Type == 1 || clientItemDefinition.Type == 12)
+            if (clientItemDefinition.Type == 1 || clientItemDefinition.Type == ItemDefinitionHelper.PetClothingItemType
+                || clientItemDefinition.Type == ItemDefinitionHelper.PetUtilityItemType || clientItemDefinition.Type == 12)
             {
                 var totalQuantity = orderDetail.Quantity * bundleEntry.Quantity;
 
@@ -208,6 +212,54 @@ public static class PacketInGamePurchasePlaceOrderPacketHandler
 
                         connection.SendTunneled(clientUpdatePacketItemUpdate);
                     }
+                });
+            }
+            else if (clientItemDefinition.Type == ItemDefinitionHelper.PetItemType)
+            {
+                if (!PetHelper.TryGetModel(_resourceManager, clientItemDefinition, out var modelDefinition))
+                {
+                    packetInGamePurchasePlaceOrderResponse.Result = 2;
+                    connection.SendTunneled(packetInGamePurchasePlaceOrderResponse);
+                    return true;
+                }
+
+                var totalQuantityValue = (long)orderDetail.Quantity * bundleEntry.Quantity;
+
+                if (totalQuantityValue > int.MaxValue - lastPetId)
+                {
+                    packetInGamePurchasePlaceOrderResponse.Result = 2;
+                    connection.SendTunneled(packetInGamePurchasePlaceOrderResponse);
+                    return true;
+                }
+
+                var totalQuantity = (int)totalQuantityValue;
+
+                if (clientItemDefinition.MaxStackSize > 0
+                    && dbCharacter.Pets.Count(pet => pet.Definition == clientItemDefinition.Id && (!appStoreBundleDefinition.IsTintable || pet.Tint == orderDetailTint))
+                        + totalQuantity > clientItemDefinition.MaxStackSize)
+                {
+                    packetInGamePurchasePlaceOrderResponse.Result = 2;
+                    connection.SendTunneled(packetInGamePurchasePlaceOrderResponse);
+                    return true;
+                }
+
+                var petTint = appStoreBundleDefinition.IsTintable ? orderDetailTint : clientItemDefinition.Icon.TintId;
+                var dbPets = new List<DbPet>();
+
+                for (var i = 0; i < totalQuantity; i++)
+                {
+                    var dbPet = PetHelper.CreatePet(++lastPetId, clientItemDefinition.Id, petTint);
+
+                    dbCharacter.Pets.Add(dbPet);
+                    dbPets.Add(dbPet);
+                }
+
+                pendingUpdates.Add(() =>
+                {
+                    foreach (var dbPet in dbPets)
+                        PetHelper.AddPet(connection.Player, _resourceManager, dbPet, clientItemDefinition, modelDefinition);
+
+                    connection.Player.PlayerPet.SendPetList();
                 });
             }
             else if (clientItemDefinition.Type == 19) // Mounts

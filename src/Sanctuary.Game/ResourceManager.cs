@@ -44,6 +44,7 @@ public class ResourceManager : IResourceManager
 
     public static readonly string ZonesDirectory = Path.Combine(BaseDirectory, "Zones");
     public static readonly string HousesFile = Path.Combine(BaseDirectory, "Houses.json");
+    public static readonly string PetsFile = Path.Combine(BaseDirectory, "Pets.json");
     public static readonly string MountsFile = Path.Combine(BaseDirectory, "Mounts.json");
     public static readonly string ProfilesFile = Path.Combine(BaseDirectory, "Profiles.json");
     public static readonly string QuickChatsFile = Path.Combine(BaseDirectory, "QuickChats.json");
@@ -53,6 +54,8 @@ public class ResourceManager : IResourceManager
     public static readonly string NpcsFile = Path.Combine(BaseDirectory, "Npcs.json");
     public static readonly string NameFilterFile = Path.Combine(BaseDirectory, "NameFilter.txt");
     public static readonly string MapsDirectory = Path.Combine(BaseDirectory, "Maps");
+    public static readonly string TerrainDirectory = Path.Combine(BaseDirectory, "Terrain");
+    public static readonly string NavMeshDirectory = Path.Combine(BaseDirectory, "NavMeshes");
     public static readonly string RewardTablesFile = Path.Combine(BaseDirectory, "Rewards.json");
     public static readonly string CombatAbilitiesFile = Path.Combine(BaseDirectory, "CombatAbilities.json");
     public static readonly string CombatJobsFile = Path.Combine(BaseDirectory, "CombatJobs.json");
@@ -86,6 +89,7 @@ public class ResourceManager : IResourceManager
     public ZoneDefinitionCollection Zones { get; }
     public HouseDefinitionCollection Houses { get; }
     public MountDefinitionCollection Mounts { get; }
+    public PetDefinitionCollection Pets { get; }
     public PlayerTitleCollection PlayerTitles { get; }
     public ProfileDefinitionCollection Profiles { get; }
     public QuickChatDefinitionCollection QuickChats { get; }
@@ -94,6 +98,8 @@ public class ResourceManager : IResourceManager
     public NpcDefinitionCollection Npcs { get; }
     public NameFilterCollection NameFilter { get; }
     public MapGraphCollection Maps { get; }
+    public TerrainCollection Terrains { get; }
+    public NavMeshCollection NavMeshes { get; }
 
     public RewardTableDefinitionCollection RewardTables { get; }
 
@@ -139,6 +145,7 @@ public class ResourceManager : IResourceManager
         Zones = new(_logger);
         Houses = new(_logger);
         Mounts = new(_logger);
+        Pets = new(_logger);
         Profiles = new(_logger);
         QuickChats = new(_logger);
         PlayerTitles = new(_logger);
@@ -147,6 +154,8 @@ public class ResourceManager : IResourceManager
         Npcs = new(_logger);
         NameFilter = new(_logger);
         Maps = new(_logger);
+        Terrains = new(_logger);
+        NavMeshes = new(_logger);
         RewardTables = new(_logger);
         CombatAbilities = new(_logger);
         CombatJobs = new(_logger);
@@ -299,6 +308,9 @@ public class ResourceManager : IResourceManager
         if (!Houses.Load(HousesFile))
             return false;
 
+        if (!Pets.Load(PetsFile))
+            return false;
+
         if (!Mounts.Load(MountsFile))
             return false;
 
@@ -320,7 +332,18 @@ public class ResourceManager : IResourceManager
         if (!Npcs.Load(NpcsFile))
             return false;
 
+        return true;
+    }
+
+    public bool LoadZoneGeometry()
+    {
         if (!Maps.Load(MapsDirectory))
+            return false;
+
+        if (!Terrains.Load(TerrainDirectory))
+            return false;
+
+        if (!NavMeshes.Load(NavMeshDirectory))
             return false;
 
         return true;
@@ -390,6 +413,8 @@ public class ResourceManager : IResourceManager
                 loaded = StoreBundleCategoryGroups.Load(StoreBundleCategoryGroupsFile);
             else if (e.FullPath == HousesFile)
                 loaded = Houses.Load(HousesFile);
+            else if (e.FullPath == PetsFile)
+                loaded = Pets.Load(PetsFile);
             else if (e.FullPath == MountsFile)
                 loaded = Mounts.Load(MountsFile);
             else if (e.FullPath == ProfilesFile)

@@ -17,6 +17,7 @@ using Sanctuary.Database;
 using Sanctuary.Database.Entities;
 using Sanctuary.Game;
 using Sanctuary.Game.Entities;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Gateway.Handlers;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
@@ -365,9 +366,21 @@ public class GatewayConnection : UdpConnection
             });
         }
 
+        foreach (var dbPet in dbCharacter.Pets)
+        {
+            if (!_resourceManager.ClientItemDefinitions.TryGetValue(dbPet.Definition, out var clientItemDefinition) ||
+                !PetHelper.TryGetModel(_resourceManager, clientItemDefinition, out var modelDefinition))
+            {
+                continue;
+            }
+
+            PetHelper.AddPet(Player, _resourceManager, dbPet, clientItemDefinition, modelDefinition);
+        }
+
         // TODO
 
         // Start - Store on DB
+
         var clientActionBar = new ClientActionBar();
 
         clientActionBar.Id = 2; // ItemActionBar
@@ -539,6 +552,9 @@ public class GatewayConnection : UdpConnection
         dbCharacter.ChatBubbleForegroundColor = Player.ChatBubbleForegroundColor;
         dbCharacter.ChatBubbleBackgroundColor = Player.ChatBubbleBackgroundColor;
         dbCharacter.ChatBubbleSize = Player.ChatBubbleSize;
+
+        foreach (var dbPet in dbContext.Pets.Where(pet => pet.CharacterId == dbCharacter.Id))
+            PetHelper.SavePetState(Player, dbPet);
 
         if (dbContext.SaveChanges() <= 0)
             _logger.LogError("Failed to save character data to database");

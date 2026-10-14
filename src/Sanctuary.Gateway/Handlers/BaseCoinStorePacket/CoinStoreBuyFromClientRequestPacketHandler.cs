@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Sanctuary.Core.Helpers;
 using Sanctuary.Database;
 using Sanctuary.Game;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common.Attributes;
 
@@ -100,8 +101,18 @@ public static class CoinStoreBuyFromClientRequestPacketHandler
 
         var deleteItem = clientItem.Count == packet.Quantity;
 
+        var isPetItem = clientItemDefinition.Type == ItemDefinitionHelper.PetClothingItemType || clientItemDefinition.Type == ItemDefinitionHelper.PetUtilityItemType;
+
         if (deleteItem)
+        {
+            if (isPetItem)
+            {
+                foreach (var dbPet in dbContext.Pets.Where(pet => pet.CharacterId == dbQuery.Character.Id))
+                    PetHelper.RemoveItem(dbPet, clientItem.Id);
+            }
+
             dbContext.Items.Remove(dbItem);
+        }
         else
             dbItem.Count -= packet.Quantity;
 
@@ -117,7 +128,12 @@ public static class CoinStoreBuyFromClientRequestPacketHandler
         }
 
         if (deleteItem)
+        {
             connection.Player.Items.Remove(clientItem);
+
+            if (isPetItem)
+                PetHelper.RemoveItem(connection.Player, clientItem.Id, clientItemDefinition.Slot);
+        }
         else
             clientItem.Count = dbItem.Count;
 

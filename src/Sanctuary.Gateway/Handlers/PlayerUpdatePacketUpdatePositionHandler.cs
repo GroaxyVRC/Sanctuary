@@ -31,6 +31,7 @@ public static class PlayerUpdatePacketUpdatePositionHandler
 
         packet.Guid = connection.Player.Guid;
 
+        connection.Player.PositionState = packet.State;
         connection.Player.UpdatePosition(packet.Position, packet.Rotation);
 
         connection.Player.SendTunneledToVisible(packet);

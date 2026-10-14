@@ -7,6 +7,7 @@ using System.Numerics;
 using System.Threading.Tasks;
 
 using Sanctuary.Core.Collections;
+using Sanctuary.Core.Extensions;
 using Sanctuary.Core.IO;
 using Sanctuary.Game;
 using Sanctuary.Game.ChatCommands;
@@ -53,6 +54,17 @@ public sealed class Player : ClientPcData, IEntity
         Profiles.FirstOrDefault(x => x.Id == ActiveProfileId) ?? Profiles.First();
 
     public Mount? Mount { get; set; }
+    public PlayerPet PlayerPet { get; }
+    public Npc? Pet => PlayerPet.Pet;
+    public Dictionary<int, int> PetDefinitions { get; } = [];
+    public Dictionary<int, PetTrait> PetTraits { get; } = [];
+    public Dictionary<int, DateTimeOffset> PetTreasureFoundAt { get; } = [];
+
+    public PetClientInfo? GetPetClientInfo(int petId) => Pets.FirstOrDefault(petClientInfo => petClientInfo.Id == petId);
+
+    public PetClientInfo? GetActivePetClientInfo() => GetPetClientInfo(ActivePetId);
+
+    public byte PositionState { get; set; }
 
     public List<FriendData> Friends { get; set; } = [];
     public List<IgnoreData> Ignores { get; set; } = [];
@@ -61,6 +73,8 @@ public sealed class Player : ClientPcData, IEntity
     public ConcurrentSet<ulong> IncomingGuildInvites { get; } = [];
 
     public ConcurrentDictionary<ChatChannel, bool> ChatChannelStatus { get; set; } = [];
+
+    public long NextClientPathRequestAt { get; set; }
 
     public int StationCash { get; set; }
     public List<CoinStoreTransactionRecord> CoinStoreTransactions { get; set; } = [];
@@ -114,6 +128,7 @@ public sealed class Player : ClientPcData, IEntity
         _connection = connection;
         _resourceManager = resourceManager;
         _zoneManager = zoneManager;
+        PlayerPet = new PlayerPet(this, resourceManager);
     }
 
     #region Connection
@@ -220,7 +235,7 @@ public sealed class Player : ClientPcData, IEntity
             CompositeEffectId = 46
         }, sendToSelf: true);
 
-        UpdateCharacterStats(
+        UpdateMovementStats(
             CharacterStats.MaxMovementSpeed.Set(8f),
             CharacterStats.GlideEnabled.Set(0),
             CharacterStats.JumpHeight.Set(0f));
@@ -248,6 +263,7 @@ public sealed class Player : ClientPcData, IEntity
         var now = DateTimeOffset.UtcNow;
 
         TickEffects(now);
+        PlayerPet.UpdateEveryTick();
 
         while (true)
         {
@@ -336,9 +352,7 @@ public sealed class Player : ClientPcData, IEntity
             if (candidate.Guid == Guid || candidate.Guid == excludeGuid)
                 continue;
 
-            var deltaX = candidate.Position.X - Position.X;
-            var deltaZ = candidate.Position.Z - Position.Z;
-            var distance = deltaX * deltaX + deltaZ * deltaZ;
+            var distance = candidate.Position.ToVector3().DistanceSquaredXZ(Position.ToVector3());
 
             if (distance >= nearestDistance)
                 continue;
@@ -418,6 +432,14 @@ public sealed class Player : ClientPcData, IEntity
         SendTunneled(packetPOIChangeMessage);
     }
 
+    // Movement stats are set absolutely, so the pet speed buff comes off first and goes back on top of the new values.
+    public void UpdateMovementStats(params CharacterStat[] characterStats)
+    {
+        PlayerPet.RemovePetSpeedBuff();
+        UpdateCharacterStats(characterStats);
+        PlayerPet.UpdatePetSpeedBuff();
+    }
+
     public void UpdateCharacterStats(params CharacterStat[] characterStats)
     {
         var clientUpdatePacketUpdateStat = new ClientUpdatePacketUpdateStat
@@ -457,10 +479,16 @@ public sealed class Player : ClientPcData, IEntity
             if (npc is Mount)
                 continue;
 
-            SendTunneled(npc.GetAddNpcPacket());
+            var playerUpdatePacketAddNpc = npc.GetAddNpcPacket();
+
+            if (npc is PetTreasureChest petTreasureChest && !petTreasureChest.IsOwner(this))
+                playerUpdatePacketAddNpc.IsInteractable = false;
+
+            SendTunneled(playerUpdatePacketAddNpc);
         }
 
-        var playerUpdatePacketNpcRelevance = InteractionMenuHelper.GetNpcRelevancePacket(npcs);
+        var playerUpdatePacketNpcRelevance = InteractionMenuHelper.GetNpcRelevancePacket(
+            npcs.Where(npc => npc is not PetTreasureChest petTreasureChest || petTreasureChest.IsOwner(this)));
         if (playerUpdatePacketNpcRelevance.Entries.Count > 0)
             SendTunneled(playerUpdatePacketNpcRelevance);
 
@@ -501,6 +529,9 @@ public sealed class Player : ClientPcData, IEntity
                 SendTunneled(player.GetAddPcPacket());
 
             SendTunneled(player.GetWeaponFlairOverridePacket());
+
+            foreach (var effect in player._effects.Values.Where(effect => effect.WorldEffectStarted))
+                SendTunneled(player.GetAddEffectTagCompositeEffectPacket(effect));
         }
 
         foreach (var player in players)
@@ -607,6 +638,15 @@ public sealed class Player : ClientPcData, IEntity
         Slot = slot,
         CompositeEffect = Math.Max(0, compositeEffect)
     };
+
+    public Vector3 GetFacingDirection()
+    {
+        var direction = Rotation.GetFacing();
+        var lengthSquared = direction.LengthSquared();
+
+        return float.IsFinite(lengthSquared) && lengthSquared > 0
+            ? Vector3.Normalize(direction) : Vector3.UnitZ;
+    }
 
     public PlayerUpdatePacketSlotCompositeEffectOverride GetWeaponFlairOverridePacket() =>
         GetSlotCompositeEffectOverridePacket(WeaponSlot, GetEquippedCompositeEffectId(FlairShardSlot));
@@ -854,6 +894,7 @@ public sealed class Player : ClientPcData, IEntity
                 EffectTag = new EffectTag
                 {
                     InstanceId = effect.Id,
+                    DefinitionId = effect.BuffDefinitionId,
                     Duration = durationSeconds,
                     StartTime = 0,
                     StopTime = (uint)-durationSeconds
@@ -862,6 +903,9 @@ public sealed class Player : ClientPcData, IEntity
                 NameId = effect.BuffNameId
             });
         }
+
+        if (effect.MovementSpeedBonus != 0)
+            UpdateCharacterStats(CharacterStats.MaxMovementSpeed.Set(Stats[CharacterStatId.MaxMovementSpeed].Float + effect.MovementSpeedBonus));
     }
 
     private void UnapplyEffect(PlayerEffect effect)
@@ -881,6 +925,9 @@ public sealed class Player : ClientPcData, IEntity
 
         if (effect.BuffIconId != 0)
             SendTunneled(new ClientUpdatePacketRemoveEffectTag { TagId = effect.Id });
+
+        if (effect.MovementSpeedBonus != 0)
+            UpdateCharacterStats(CharacterStats.MaxMovementSpeed.Set(Stats[CharacterStatId.MaxMovementSpeed].Float - effect.MovementSpeedBonus));
     }
 
     private void StartWorldEffect(PlayerEffect effect)
@@ -888,14 +935,16 @@ public sealed class Player : ClientPcData, IEntity
         effect.WorldEffectStarted = true;
         effect.WorldTagId = EffectTagIdGenerator.Next();
 
-        SendTunneledToVisible(new PlayerUpdatePacketAddEffectTagCompositeEffect
-        {
-            Guid = Guid,
-            TagId = effect.WorldTagId,
-            CompositeEffectId = effect.WorldEffectId,
-            SourceGuid = Guid
-        }, true);
+        SendTunneledToVisible(GetAddEffectTagCompositeEffectPacket(effect), true);
     }
+
+    private PlayerUpdatePacketAddEffectTagCompositeEffect GetAddEffectTagCompositeEffectPacket(PlayerEffect effect) => new()
+    {
+        Guid = Guid,
+        TagId = effect.WorldTagId,
+        CompositeEffectId = effect.WorldEffectId,
+        SourceGuid = effect.SourceGuid != 0 ? effect.SourceGuid : Guid
+    };
 
     // A temporary appearance change is unreliable about which world-visible effect tags survive
     // it - sometimes a tag keeps playing across it, sometimes it doesn't, and the client also
@@ -1074,6 +1123,8 @@ public sealed class Player : ClientPcData, IEntity
 
     public void OnZoneChanged(IZone zone, Vector4 position, Quaternion rotation)
     {
+        PlayerPet.RecallPet(remember: zone is not CombatZone);
+
         RemoveFromVisibleEntities(true);
 
         ZoneTile.Entities.Remove(Guid, out _);
@@ -1089,6 +1140,8 @@ public sealed class Player : ClientPcData, IEntity
 
     public void Dispose()
     {
+        PlayerPet.Dispose();
+
         RemoveFromVisibleEntities(false); // no need to notify self since we're DCing
 
         Mount?.Dispose();

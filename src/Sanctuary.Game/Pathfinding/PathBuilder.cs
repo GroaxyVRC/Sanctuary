@@ -15,10 +15,11 @@ public class PathBuilder
         _pathfinder = pathfinder;
     }
 
-    public Queue<Vector3>? TryRecompute(Vector3 searchStart, Vector3 goalPosition)
-    {
-        var path = _pathfinder.FindPath(searchStart, goalPosition);
+    public Queue<Vector3>? TryRecompute(Vector3 searchStart, Vector3 goalPosition) =>
+        TryRecompute(searchStart, goalPosition, _pathfinder.FindPath(searchStart, goalPosition));
 
+    public Queue<Vector3>? TryRecompute(Vector3 searchStart, Vector3 goalPosition, List<MapNode> path)
+    {
         if (IsSimilarPath(_lastComputedPath, path))
             return null;
 

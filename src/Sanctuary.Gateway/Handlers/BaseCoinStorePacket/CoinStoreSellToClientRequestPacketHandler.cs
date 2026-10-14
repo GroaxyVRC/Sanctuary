@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using Sanctuary.Core.IO;
 using Sanctuary.Database;
 using Sanctuary.Database.Entities;
 using Sanctuary.Game;
+using Sanctuary.Game.Helpers;
 using Sanctuary.Packet;
 using Sanctuary.Packet.Common;
 using Sanctuary.Packet.Common.Attributes;
@@ -19,6 +21,11 @@ namespace Sanctuary.Gateway.Handlers;
 [PacketHandler]
 public static class CoinStoreSellToClientRequestPacketHandler
 {
+    private const int SuccessResult = 1;
+    private const int InvalidItemResult = 3;
+    private const int InvalidQuantityResult = 4;
+    private const int ErrorResult = 8;
+
     private static ILogger _logger = null!;
     private static IResourceManager _resourceManager = null!;
     private static IDbContextFactory<DatabaseContext> _dbContextFactory = null!;
@@ -63,6 +70,9 @@ public static class CoinStoreSellToClientRequestPacketHandler
 
         // TODO: Implement other item types
         if (clientItemDefinition.Type != 1 &&
+            clientItemDefinition.Type != ItemDefinitionHelper.PetItemType &&
+            clientItemDefinition.Type != ItemDefinitionHelper.PetClothingItemType &&
+            clientItemDefinition.Type != ItemDefinitionHelper.PetUtilityItemType &&
             clientItemDefinition.Type != 12)
         {
             coinStoreTransactionCompletePacket.Result = 8;
@@ -91,6 +101,9 @@ public static class CoinStoreSellToClientRequestPacketHandler
 
         if (!clientItemDefinition.IsTintable)
             tint = clientItemDefinition.Icon.TintId;
+
+        if (clientItemDefinition.Type == ItemDefinitionHelper.PetItemType)
+            return BuyPet(connection, packet, coinStoreTransactionCompletePacket, clientItemDefinition, tint, totalCost);
 
         using var dbContext = _dbContextFactory.CreateDbContext();
 
@@ -220,6 +233,93 @@ public static class CoinStoreSellToClientRequestPacketHandler
 
         connection.SendTunneled(coinStoreTransactionCompletePacket);
 
+        connection.Player.CoinStoreTransactions.Add(coinStoreTransactionCompletePacket.TransactionRecord);
+
+        return true;
+    }
+
+    private static bool BuyPet(GatewayConnection connection, CoinStoreSellToClientRequestPacket coinStoreSellToClientRequestPacket,
+        CoinStoreTransactionCompletePacket coinStoreTransactionCompletePacket, ClientItemDefinition clientItemDefinition, int tint,
+        int totalCost)
+    {
+        if (coinStoreSellToClientRequestPacket.Quantity <= 0)
+        {
+            coinStoreTransactionCompletePacket.Result = InvalidQuantityResult;
+            connection.SendTunneled(coinStoreTransactionCompletePacket);
+            return true;
+        }
+
+        if (!PetHelper.TryGetModel(_resourceManager, clientItemDefinition, out var modelDefinition))
+        {
+            coinStoreTransactionCompletePacket.Result = InvalidItemResult;
+            connection.SendTunneled(coinStoreTransactionCompletePacket);
+            return true;
+        }
+
+        using var dbContext = _dbContextFactory.CreateDbContext();
+        var characterId = GuidHelper.GetPlayerId(connection.Player.Guid);
+        var dbCharacter = dbContext.Characters.SingleOrDefault(character => character.Id == characterId);
+
+        if (dbCharacter is null)
+        {
+            coinStoreTransactionCompletePacket.Result = ErrorResult;
+            connection.SendTunneled(coinStoreTransactionCompletePacket);
+            return true;
+        }
+
+        if (clientItemDefinition.MaxStackSize > 0
+            && dbContext.Pets.Count(pet => pet.CharacterId == characterId && pet.Definition == clientItemDefinition.Id && (!clientItemDefinition.IsTintable || pet.Tint == tint))
+                + coinStoreSellToClientRequestPacket.Quantity > clientItemDefinition.MaxStackSize)
+        {
+            coinStoreTransactionCompletePacket.Result = InvalidQuantityResult;
+            connection.SendTunneled(coinStoreTransactionCompletePacket);
+            return true;
+        }
+
+        var lastPetId = dbContext.Pets.Where(pet => pet.CharacterId == characterId)
+            .Max(pet => (int?)pet.Id) ?? 0;
+
+        if (coinStoreSellToClientRequestPacket.Quantity > int.MaxValue - lastPetId)
+        {
+            coinStoreTransactionCompletePacket.Result = ErrorResult;
+            connection.SendTunneled(coinStoreTransactionCompletePacket);
+            return true;
+        }
+
+        var pets = new List<DbPet>();
+
+        for (var i = 0; i < coinStoreSellToClientRequestPacket.Quantity; i++)
+        {
+            var dbPet = PetHelper.CreatePet(++lastPetId, clientItemDefinition.Id, tint);
+            dbCharacter.Pets.Add(dbPet);
+            pets.Add(dbPet);
+        }
+
+        dbCharacter.Coins -= totalCost;
+
+        if (dbContext.SaveChanges() <= 0)
+        {
+            coinStoreTransactionCompletePacket.Result = ErrorResult;
+            connection.SendTunneled(coinStoreTransactionCompletePacket);
+            return true;
+        }
+
+        foreach (var dbPet in pets)
+            PetHelper.AddPet(connection.Player, _resourceManager, dbPet, clientItemDefinition, modelDefinition);
+
+        connection.Player.Coins = dbCharacter.Coins;
+        connection.Player.PlayerPet.SendPetList();
+        connection.SendTunneled(new ClientUpdatePacketCoinCount { Coins = dbCharacter.Coins });
+
+        coinStoreTransactionCompletePacket.Result = SuccessResult;
+        coinStoreTransactionCompletePacket.ItemGuid = pets[0].Id;
+        coinStoreTransactionCompletePacket.TransactionRecord.Id = connection.Player.CoinStoreTransactions.Count + 1;
+        coinStoreTransactionCompletePacket.TransactionRecord.Timestamp = DateTimeOffset.UtcNow;
+        coinStoreTransactionCompletePacket.TransactionRecord.ItemRecord.Definition = clientItemDefinition.Id;
+        coinStoreTransactionCompletePacket.TransactionRecord.ItemRecord.Tint = tint;
+        coinStoreTransactionCompletePacket.TransactionRecord.Quantity = coinStoreSellToClientRequestPacket.Quantity;
+        coinStoreTransactionCompletePacket.TransactionRecord.Price = totalCost;
+        connection.SendTunneled(coinStoreTransactionCompletePacket);
         connection.Player.CoinStoreTransactions.Add(coinStoreTransactionCompletePacket.TransactionRecord);
 
         return true;
