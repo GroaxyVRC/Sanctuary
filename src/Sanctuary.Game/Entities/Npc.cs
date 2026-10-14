@@ -99,6 +99,9 @@ public class Npc : IScriptableNpc, IEntity
 
     private PathBuilder? _pathBuilder;
 
+    private const float GroundStepHeight = 3f;
+    private const float GroundMaxDrop = 20f;
+
     public Npc(IZone zone)
     {
         Zone = zone;
@@ -156,7 +159,9 @@ public class Npc : IScriptableNpc, IEntity
 
         if (result.Moved)
         {
-            UpdatePosition(new Vector4(result.NewPosition, 1f), result.NewRotation!.Value);
+            var newPosition = Zone.GetGroundPosition(result.NewPosition, GroundStepHeight, GroundMaxDrop);
+
+            UpdatePosition(new Vector4(newPosition, 1f), result.NewRotation!.Value);
         }
     }
 

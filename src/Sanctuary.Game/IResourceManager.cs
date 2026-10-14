@@ -39,6 +39,8 @@ public interface IResourceManager
     NpcDefinitionCollection Npcs { get; }
     NameFilterCollection NameFilter { get; }
     MapGraphCollection Maps { get; }
+    TerrainCollection Terrains { get; }
+    NavMeshCollection NavMeshes { get; }
 
     RewardTableDefinitionCollection RewardTables { get; }
 
@@ -46,4 +48,6 @@ public interface IResourceManager
     JobKitDefinitionCollection CombatJobs { get; }
 
     bool Load();
+
+    bool LoadZoneGeometry();
 }

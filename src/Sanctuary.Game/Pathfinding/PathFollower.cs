@@ -21,7 +21,7 @@ public static class PathFollower
 
         // This logic here is pretty simple: if we're within a tolerance of the waypoint,
         // 'path.Advance' will pop the waypoint. 
-        if (distance <= tolerance)
+        if (toTarget.X * toTarget.X + toTarget.Z * toTarget.Z <= tolerance * tolerance)
         {
             path.Advance();
             return new AdvanceResult(false, currentPosition, null, path.IsEmpty);
