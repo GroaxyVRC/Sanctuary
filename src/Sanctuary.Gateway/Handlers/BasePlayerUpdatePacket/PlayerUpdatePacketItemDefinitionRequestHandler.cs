@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 using Sanctuary.Core.IO;
 using Sanctuary.Game;
+using Sanctuary.Game.Entities;
 using Sanctuary.Packet;
+using Sanctuary.Packet.Common;
 using Sanctuary.Packet.Common.Attributes;
 
 namespace Sanctuary.Gateway.Handlers;
@@ -13,6 +17,8 @@ namespace Sanctuary.Gateway.Handlers;
 [PacketHandler]
 public static class PlayerUpdatePacketItemDefinitionRequestHandler
 {
+    private const int CoinStoreItemDefinitionBatchSize = 100;
+
     private static ILogger _logger = null!;
     private static IResourceManager _resourceManager = null!;
 
@@ -40,6 +46,12 @@ public static class PlayerUpdatePacketItemDefinitionRequestHandler
             return true;
         }
 
+        if (_resourceManager.CoinStoreItems.TryGetValue(clientItemDefinition.Id, out var itemDefinitionMetaData))
+        {
+            SendCoinStoreItemDefinitions(connection.Player, itemDefinitionMetaData);
+            return true;
+        }
+
         using var writer = new PacketWriter();
 
         clientItemDefinition.Serialize(writer);
@@ -49,5 +61,34 @@ public static class PlayerUpdatePacketItemDefinitionRequestHandler
         connection.SendTunneled(packet);
 
         return true;
+    }
+
+    private static void SendCoinStoreItemDefinitions(Player player, ItemDefinitionMetaData requestedItemDefinitionMetaData)
+    {
+        var clientItemDefinitions = new List<ClientItemDefinition>();
+
+        foreach (var coinStoreItem in _resourceManager.CoinStoreItems.Values
+            .Where(x => x.CategoryId == requestedItemDefinitionMetaData.CategoryId)
+            .SkipWhile(x => x.Id != requestedItemDefinitionMetaData.Id))
+        {
+            if (clientItemDefinitions.Count >= CoinStoreItemDefinitionBatchSize)
+                break;
+
+            if (!player.SentCoinStoreItemDefinitionIds.TryAdd(coinStoreItem.Id) && coinStoreItem.Id != requestedItemDefinitionMetaData.Id)
+                continue;
+
+            if (_resourceManager.ClientItemDefinitions.TryGetValue(coinStoreItem.Id, out var clientItemDefinition))
+                clientItemDefinitions.Add(clientItemDefinition);
+        }
+
+        using var writer = new PacketWriter();
+
+        writer.Write(clientItemDefinitions);
+
+        var playerUpdatePacketItemDefinitions = new PlayerUpdatePacketItemDefinitions();
+
+        playerUpdatePacketItemDefinitions.Payload = writer.Buffer;
+
+        player.SendTunneled(playerUpdatePacketItemDefinitions);
     }
 }

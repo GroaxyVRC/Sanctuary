@@ -168,6 +168,12 @@ public class Npc : IScriptableNpc, IEntity
             GetOrCreateScriptContext().FireEvent("second");
     }
 
+    public const int FollowerPositionIntervalMs = 500;
+
+    public int PositionSendIntervalMs { get; set; }
+    private long _nextPositionSendAllowedAt;
+    private byte _lastSentPositionState;
+
     public void UpdatePosition(Vector4 position, Quaternion rotation, bool updateZoneArea = true)
     {
         Position = position;
@@ -186,6 +192,17 @@ public class Npc : IScriptableNpc, IEntity
             State = 1,
             Unknown = 0
         };
+
+        if (PositionSendIntervalMs > 0)
+        {
+            var now = Environment.TickCount64;
+
+            if (playerUpdatePacketUpdatePosition.State == _lastSentPositionState && now < _nextPositionSendAllowedAt)
+                return;
+
+            _lastSentPositionState = playerUpdatePacketUpdatePosition.State;
+            _nextPositionSendAllowedAt = now + PositionSendIntervalMs;
+        }
 
         if (VisiblePlayers.IsEmpty)
             return;

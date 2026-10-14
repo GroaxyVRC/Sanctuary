@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Numerics;
 using System.Text;
+using System.Threading.Tasks;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -35,6 +36,9 @@ public class GatewayConnection : UdpConnection
     private readonly IServiceProvider _serviceProvider;
     private readonly IResourceManager _resourceManager;
     private readonly IDbContextFactory<DatabaseContext> _dbContextFactory;
+
+    private readonly object _workLock = new();
+    private Task _workTail = Task.CompletedTask;
 
     private ICipher _cipher;
 #pragma warning disable CS0649
@@ -86,6 +90,24 @@ public class GatewayConnection : UdpConnection
         SavePlayerToDatabase();
 
         Player.Dispose();
+    }
+
+    public void QueueWork(Action work)
+    {
+        lock (_workLock)
+        {
+            _workTail = _workTail.ContinueWith(_ =>
+            {
+                try
+                {
+                    work();
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "{connection} queued work failed.", this);
+                }
+            }, TaskScheduler.Default);
+        }
     }
 
     public override void OnRoutePacket(Span<byte> data)

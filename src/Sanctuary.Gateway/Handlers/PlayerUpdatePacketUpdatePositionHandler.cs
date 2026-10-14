@@ -33,7 +33,7 @@ public static class PlayerUpdatePacketUpdatePositionHandler
 
         connection.Player.UpdatePosition(packet.Position, packet.Rotation);
 
-        connection.Player.SendTunneledToVisible(packet);
+        connection.Player.RelayPosition(packet);
 
         return true;
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Sanctuary.Core.Collections;
@@ -106,6 +107,16 @@ public sealed class Player : ClientPcData, IEntity
     public Quaternion StartingZoneRotation { get; set; }
 
     public ConcurrentSet<OneTimeNotification> SeenOneTimeNotifications { get; } = [];
+
+    private const int CrowdedVisiblePlayerCount = 50;
+    private const int CrowdedRelayIntervalMs = 500;
+
+    public RelayedPosition? LatestPosition { get; private set; }
+    private long _positionVersion;
+    private readonly ConcurrentDictionary<ulong, (long Version, byte State, long NextDueAt)> _sentPositions = new();
+
+    public bool ShopDataSent { get; set; }
+    public ConcurrentSet<int> SentCoinStoreItemDefinitionIds { get; } = [];
 
     public Player(BaseZone zone, UdpConnection connection, IResourceManager resourceManager, IZoneManager zoneManager)
     {
@@ -248,6 +259,7 @@ public sealed class Player : ClientPcData, IEntity
         var now = DateTimeOffset.UtcNow;
 
         TickEffects(now);
+        SendVisiblePositions();
 
         while (true)
         {
@@ -276,6 +288,47 @@ public sealed class Player : ClientPcData, IEntity
 
     public void UpdateEverySecond()
     {
+    }
+
+    public void RelayPosition(PlayerUpdatePacketUpdatePosition playerUpdatePacketUpdatePosition)
+    {
+        var data = SerializeTunneled(playerUpdatePacketUpdatePosition);
+
+        LatestPosition = new RelayedPosition(data, playerUpdatePacketUpdatePosition.State, Interlocked.Increment(ref _positionVersion));
+    }
+
+    private void SendVisiblePositions()
+    {
+        if (VisiblePlayers.IsEmpty)
+            return;
+
+        var now = Environment.TickCount64;
+        var crowded = VisiblePlayers.Count >= CrowdedVisiblePlayerCount;
+        List<byte[]>? positionData = null;
+
+        foreach (var (guid, visiblePlayer) in VisiblePlayers)
+            QueuePosition(guid, visiblePlayer.LatestPosition, now, crowded, ref positionData);
+
+        if (positionData is not null)
+            _connection.Send(UdpChannel.Reliable1, positionData);
+    }
+
+    private void QueuePosition(ulong guid, RelayedPosition? latestPosition, long now, bool crowded, ref List<byte[]>? positionData)
+    {
+        if (latestPosition is null)
+            return;
+
+        _sentPositions.TryGetValue(guid, out var sentPosition);
+
+        if (latestPosition.Version == sentPosition.Version)
+            return;
+
+        if (latestPosition.State == sentPosition.State && now < sentPosition.NextDueAt)
+            return;
+
+        _sentPositions[guid] = (latestPosition.Version, latestPosition.State, crowded ? now + CrowdedRelayIntervalMs : now);
+
+        (positionData ??= []).Add(latestPosition.Data);
     }
 
     // The client animates the cooldown sweep itself from TotalRefreshTime -
@@ -551,7 +604,10 @@ public sealed class Player : ClientPcData, IEntity
         }
 
         foreach (var player in players)
+        {
             VisiblePlayers.TryRemove(player.Guid, out _);
+            _sentPositions.TryRemove(player.Guid, out _);
+        }
     }
 
     public void OnInteract(Player player)
