@@ -224,9 +224,55 @@ public abstract class BaseZone : IZone, IDisposable
 
         GetOrCreateScriptContext().FireEvent("start");
         ActivateCollectionNodePools();
+        CreateNpcConversationGroups();
 
         _updateEveryTickTask = Task.Factory.StartNew(UpdateEveryTickAsync, _cancellationTokenSource.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default).Unwrap();
         _updateEverySecondTask = Task.Factory.StartNew(UpdateEverySecondAsync, _cancellationTokenSource.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default).Unwrap();
+    }
+
+    private const float NpcConversationRadius = 6f;
+
+    private void CreateNpcConversationGroups()
+    {
+        var talkers = _npcs.Values
+            .Select(npc => npc.AmbientController)
+            .OfType<NpcAmbientController>()
+            .Where(ambientController => ambientController.Definition.ConversationAnimationIds.Count > 0)
+            .ToList();
+
+        var grouped = new HashSet<NpcAmbientController>();
+
+        foreach (var talker in talkers)
+        {
+            if (grouped.Contains(talker))
+                continue;
+
+            var members = new List<NpcAmbientController> { talker };
+
+            for (var index = 0; index < members.Count; index++)
+            {
+                foreach (var other in talkers)
+                {
+                    if (grouped.Contains(other) || members.Contains(other))
+                        continue;
+
+                    var offset = other.Position - members[index].Position;
+                    if (offset.X * offset.X + offset.Z * offset.Z <= NpcConversationRadius * NpcConversationRadius)
+                        members.Add(other);
+                }
+            }
+
+            if (members.Count < 2)
+                continue;
+
+            var conversationGroup = new NpcConversationGroup(members);
+
+            foreach (var member in members)
+            {
+                member.ConversationGroup = conversationGroup;
+                grouped.Add(member);
+            }
+        }
     }
 
     public virtual void OnClientIsReady(Player player)
@@ -724,6 +770,12 @@ public abstract class BaseZone : IZone, IDisposable
         var rotation = new Quaternion(MathF.Sin(heading), 0f, MathF.Cos(heading), 0f);
 
         spawnedNpc.UpdatePosition(position, rotation);
+
+        if (_resourceManager.NpcMovements.TryGetForNpc(spawnedNpc.Guid, definition.ModelFileName, out var npcMovementDefinition))
+            spawnedNpc.MovementController = new NpcMovementController(spawnedNpc, npcMovementDefinition);
+
+        if (_resourceManager.NpcAmbient.TryGetForModel(definition.ModelFileName, out var npcAmbientDefinition))
+            spawnedNpc.AmbientController = new NpcAmbientController(spawnedNpc, npcAmbientDefinition);
 
         npc = spawnedNpc;
         return true;

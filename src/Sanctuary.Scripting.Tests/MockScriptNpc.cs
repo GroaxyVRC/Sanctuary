@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 using Microsoft.Extensions.Logging;
 
@@ -32,6 +33,18 @@ internal class MockScriptNpc(IScriptableZone _zone) : IScriptableNpc
     {
         throw new NotImplementedException();
     }
+
+    public IReadOnlyList<ulong> GetNearbyPlayerGuids(float radius)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void PlayAnimation(int animationId)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool IsMoving => false;
 
     public bool TryAddScript(string scriptName)
     {

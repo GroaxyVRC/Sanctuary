@@ -200,7 +200,13 @@ public static class PacketLoginHandler
 
         // TODO
         // AchievementObjectiveActivatedPacket - Part 1?
-        // EncounterOverworldCombatPacket
+
+        var encounterOverworldCombatPacket = new EncounterOverworldCombatPacket
+        {
+            InWorldCombat = true
+        };
+
+        connection.SendTunneled(encounterOverworldCombatPacket);
 
         connection.SendInitializationParameters();
         connection.SendZoneDetails();

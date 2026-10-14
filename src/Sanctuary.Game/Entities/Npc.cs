@@ -8,6 +8,7 @@ using System.Numerics;
 using Microsoft.Extensions.Logging;
 
 using Sanctuary.Core.Collections;
+using Sanctuary.Core.Extensions;
 using Sanctuary.Game.Pathfinding;
 using Sanctuary.Game.Helpers;
 using Sanctuary.Game.Zones;
@@ -95,12 +96,25 @@ public class Npc : IScriptableNpc, IEntity
     public float WaypointTolerance { get; set; } = 0f;
     public float Speed { get; set; } = 6.25f;
 
-    private readonly PathState _path = new();
+    public int PositionUpdateIntervalMs { get; set; }
 
-    private PathBuilder? _pathBuilder;
+    public NpcMovementController? MovementController { get; set; }
 
+    public NpcAmbientController? AmbientController { get; set; }
+
+    public bool IsMoving => _pathMoving || !_path.IsEmpty;
+
+    private const int HostileDisposition = 0;
+    private const byte MovingPositionState = 0;
+    private const byte StoppedPositionState = 1;
     private const float GroundStepHeight = 3f;
     private const float GroundMaxDrop = 20f;
+
+    private readonly PathState _path = new();
+    private bool _pathMoving;
+    private long _nextPositionSendAt;
+
+    private PathBuilder? _pathBuilder;
 
     public Npc(IZone zone)
     {
@@ -154,14 +168,36 @@ public class Npc : IScriptableNpc, IEntity
         if (!_scripts.IsEmpty)
             GetOrCreateScriptContext().FireEvent("tick");
 
-        var currentPosition = new Vector3(Position.X, Position.Y, Position.Z);
+        MovementController?.Update();
+        AmbientController?.Update();
+
+        var currentPosition = Position.ToVector3();
         var result = PathFollower.Advance(_path, currentPosition, Speed, WaypointTolerance, Zone.TickDeltaSeconds);
 
         if (result.Moved)
         {
+            _pathMoving = true;
+            var rotation = result.NewRotation!.Value;
             var newPosition = Zone.GetGroundPosition(result.NewPosition, GroundStepHeight, GroundMaxDrop);
 
-            UpdatePosition(new Vector4(newPosition, 1f), result.NewRotation!.Value);
+            if (PositionUpdateIntervalMs == 0 || Environment.TickCount64 >= _nextPositionSendAt)
+            {
+                _nextPositionSendAt = Environment.TickCount64 + PositionUpdateIntervalMs;
+                UpdatePosition(new Vector4(newPosition, 1f), rotation, MovingPositionState);
+            }
+            else
+            {
+                Position = new Vector4(newPosition, 1f);
+                Rotation = rotation;
+
+                if (Visible)
+                    UpdateZoneTile();
+            }
+        }
+        else if (_pathMoving && result.Arrived)
+        {
+            _pathMoving = false;
+            UpdatePosition(Position, Rotation, StoppedPositionState);
         }
     }
 
@@ -173,7 +209,27 @@ public class Npc : IScriptableNpc, IEntity
             GetOrCreateScriptContext().FireEvent("second");
     }
 
-    public void UpdatePosition(Vector4 position, Quaternion rotation, bool updateZoneArea = true)
+    private void SendExpectedSpeed()
+    {
+        if (VisiblePlayers.IsEmpty)
+            return;
+
+        var playerUpdatePacketExpectedSpeed = new PlayerUpdatePacketExpectedSpeed
+        {
+            Guid = Guid,
+            ExpectedSpeed = Speed
+        };
+
+        var data = Player.SerializeTunneled(playerUpdatePacketExpectedSpeed);
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendSerialized(data);
+    }
+
+    public void UpdatePosition(Vector4 position, Quaternion rotation, bool updateZoneArea = true) =>
+        UpdatePosition(position, rotation, StoppedPositionState);
+
+    private void UpdatePosition(Vector4 position, Quaternion rotation, byte state)
     {
         Position = position;
         Rotation = rotation;
@@ -188,7 +244,7 @@ public class Npc : IScriptableNpc, IEntity
             Guid = Guid,
             Position = position,
             Rotation = rotation,
-            State = 1,
+            State = state,
             Unknown = 0
         };
 
@@ -251,7 +307,7 @@ public class Npc : IScriptableNpc, IEntity
 
             Animation = Animation,
 
-            Unknown16 = default,
+            HideHealthBar = Disposition != HostileDisposition,
             VerticalOffset = VerticalOffset,
 
             CompositeEffectId = CompositeEffectId,
@@ -461,6 +517,31 @@ public class Npc : IScriptableNpc, IEntity
     {
         MoveTo(new Vector3(x, y, z), direct);
     }
+
+    public void PlayAnimation(int animationId)
+    {
+        var playerUpdatePacketSetAnimation = new PlayerUpdatePacketSetAnimation
+        {
+            Guid = Guid,
+            AnimationId = animationId
+        };
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendTunneled(playerUpdatePacketSetAnimation);
+    }
+
+    public IReadOnlyList<ulong> GetNearbyPlayerGuids(float radius)
+    {
+        var nearbyPlayerGuids = new List<ulong>();
+
+        foreach (var visiblePlayer in VisiblePlayers)
+        {
+            if (visiblePlayer.Value.Position.IsInRange(Position, radius))
+                nearbyPlayerGuids.Add(visiblePlayer.Key);
+        }
+
+        return nearbyPlayerGuids;
+    }
     
     #endregion
 
@@ -494,6 +575,8 @@ public class Npc : IScriptableNpc, IEntity
 
     public void MoveTo(Vector3 goalPosition, bool direct = false)
     {
+        StartLeg();
+
         if (direct || Zone.Pathfinder is null)
         {
             var waypoints = new Queue<Vector3>();
@@ -504,9 +587,19 @@ public class Npc : IScriptableNpc, IEntity
 
         _pathBuilder ??= new PathBuilder(Zone.Pathfinder);
 
-        var currentPosition = new Vector3(Position.X, Position.Y, Position.Z);
-        var newWaypoints = _pathBuilder.TryRecompute(currentPosition, goalPosition);
+        var newWaypoints = _pathBuilder.TryRecompute(Position.ToVector3(), goalPosition);
         if (newWaypoints is not null)
             _path.Set(newWaypoints);
+        else
+            _path.SetGoal(goalPosition);
+    }
+
+    private void StartLeg()
+    {
+        if (PositionUpdateIntervalMs == 0)
+            return;
+
+        _nextPositionSendAt = Environment.TickCount64;
+        SendExpectedSpeed();
     }
 }

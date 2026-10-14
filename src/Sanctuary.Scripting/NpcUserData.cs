@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
@@ -56,7 +57,36 @@ internal sealed class NpcUserData(IScriptableNpc npc) : ILuaUserData
         return new ValueTask<int>(context.Return());
     });
 
+    private static readonly LuaFunction GetNearbyPlayersFunction = new("getNearbyPlayers", static (context, cancellationToken) =>
+    {
+        var self = context.GetArgument<NpcUserData>(0);
+        var radius = context.GetArgument<float>(1);
+
+        return new ValueTask<int>(context.Return(ToGuidTable(self._npc.GetNearbyPlayerGuids(radius))));
+    });
+
+    private static readonly LuaFunction PlayAnimationFunction = new("playAnimation", static (context, cancellationToken) =>
+    {
+        var self = context.GetArgument<NpcUserData>(0);
+        var animationId = context.GetArgument<int>(1);
+
+        self._npc.PlayAnimation(animationId);
+
+        return new ValueTask<int>(context.Return());
+    });
+
     #endregion
+
+    private static LuaTable ToGuidTable(IEnumerable<ulong> guids)
+    {
+        var guidTable = new LuaTable();
+        var index = 1;
+
+        foreach (var guid in guids)
+            guidTable[index++] = guid.ToString();
+
+        return guidTable;
+    }
 
     private static readonly LuaTable SharedMetatable = BuildMetatable();
 
@@ -85,6 +115,9 @@ internal sealed class NpcUserData(IScriptableNpc npc) : ILuaUserData
                 "say" => SayFunction,
                 "sayLocalized" => SayLocalizedFunction,
                 "moveTo" => MoveToFunction,
+                "getNearbyPlayers" => GetNearbyPlayersFunction,
+                "playAnimation" => PlayAnimationFunction,
+                "isMoving" => new LuaValue(self._npc.IsMoving),
                 _ => LuaValue.Nil
             };
 

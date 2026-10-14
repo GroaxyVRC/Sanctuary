@@ -51,6 +51,8 @@ public class ResourceManager : IResourceManager
     public static readonly string PointOfInterestsFile = Path.Combine(BaseDirectory, "PointOfInterests.json");
     public static readonly string ConsumablesFile = Path.Combine(BaseDirectory, "Consumables.json");
     public static readonly string NpcsFile = Path.Combine(BaseDirectory, "Npcs.json");
+    public static readonly string NpcMovementsFile = Path.Combine(BaseDirectory, "NpcMovements.json");
+    public static readonly string NpcAmbientFile = Path.Combine(BaseDirectory, "NpcAmbient.json");
     public static readonly string NameFilterFile = Path.Combine(BaseDirectory, "NameFilter.txt");
     public static readonly string MapsDirectory = Path.Combine(BaseDirectory, "Maps");
     public static readonly string TerrainDirectory = Path.Combine(BaseDirectory, "Terrain");
@@ -95,6 +97,8 @@ public class ResourceManager : IResourceManager
     public ConsumableCollection Consumables { get; }
     public NpcDefinitionCollection Npcs { get; }
     public NameFilterCollection NameFilter { get; }
+    public NpcMovementDefinitionCollection NpcMovements { get; }
+    public NpcAmbientDefinitionCollection NpcAmbient { get; }
     public MapGraphCollection Maps { get; }
     public TerrainCollection Terrains { get; }
     public NavMeshCollection NavMeshes { get; }
@@ -150,6 +154,8 @@ public class ResourceManager : IResourceManager
         Consumables = new(_logger);
         Npcs = new(_logger);
         NameFilter = new(_logger);
+        NpcMovements = new(_logger);
+        NpcAmbient = new(_logger);
         Maps = new(_logger);
         Terrains = new(_logger);
         NavMeshes = new(_logger);
@@ -326,6 +332,12 @@ public class ResourceManager : IResourceManager
         if (!Npcs.Load(NpcsFile))
             return false;
 
+        if (!NpcMovements.Load(NpcMovementsFile))
+            return false;
+
+        if (!NpcAmbient.Load(NpcAmbientFile))
+            return false;
+
         return true;
     }
 
@@ -419,6 +431,10 @@ public class ResourceManager : IResourceManager
                 loaded = PointOfInterests.Load(PointOfInterestsFile);
             else if (e.FullPath == NpcsFile)
                 loaded = Npcs.Load(NpcsFile);
+            else if (e.FullPath == NpcMovementsFile)
+                loaded = NpcMovements.Load(NpcMovementsFile);
+            else if (e.FullPath == NpcAmbientFile)
+                loaded = NpcAmbient.Load(NpcAmbientFile);
             else if (e.FullPath == NameFilterFile)
                 loaded = NameFilter.Load(NameFilterFile);
             else if (e.FullPath == RewardTablesFile)

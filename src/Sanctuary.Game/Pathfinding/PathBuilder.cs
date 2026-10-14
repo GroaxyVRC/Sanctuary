@@ -24,11 +24,24 @@ public class PathBuilder
 
         _lastComputedPath = path;
 
-        var waypoints = new Queue<Vector3>();
-        foreach (var node in path)
-            waypoints.Enqueue(node.Position);
+        var positions = new List<Vector3>(path.Count + 1);
 
-        waypoints.Enqueue(goalPosition);
+        foreach (var node in path)
+            positions.Add(node.Position);
+
+        positions.Add(goalPosition);
+
+        var start = 0;
+        while (start < positions.Count - 1
+            && Vector3.DistanceSquared(searchStart, positions[start + 1]) <= Vector3.DistanceSquared(positions[start], positions[start + 1]))
+        {
+            start++;
+        }
+
+        var waypoints = new Queue<Vector3>(positions.Count - start);
+
+        for (var index = start; index < positions.Count; index++)
+            waypoints.Enqueue(positions[index]);
 
         return waypoints;
     }

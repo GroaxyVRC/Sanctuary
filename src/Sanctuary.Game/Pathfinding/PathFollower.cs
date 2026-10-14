@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Numerics;
 
+using Sanctuary.Core.Extensions;
+
 namespace Sanctuary.Game.Pathfinding;
 
 
@@ -34,11 +36,6 @@ public static class PathFollower
 
         var newPosition = currentPosition + step;
 
-        // NOTE: FreeRealms conventions is y-up. Movement is typically mostly in the xy-plane
-        // in my field, so just adding this here in case anyone else comes across a potentially
-        // "unconventional" coordinate frame definition. 
-        var newRotation = Quaternion.CreateFromYawPitchRoll(MathF.Atan2(direction.X, direction.Z), 0f, 0f);
-
-        return new AdvanceResult(true, newPosition, newRotation, false);
+        return new AdvanceResult(true, newPosition, direction.ToFlatRotation(), false);
     }
 }

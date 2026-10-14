@@ -11,4 +11,12 @@ public static class Vector3Extensions
 
         return deltaX * deltaX + deltaZ * deltaZ;
     }
+
+    public static Quaternion ToFlatRotation(this Vector3 direction)
+    {
+        var flatDirection = new Vector2(direction.X, direction.Z);
+        flatDirection = flatDirection.LengthSquared() > 0f ? Vector2.Normalize(flatDirection) : Vector2.UnitY;
+
+        return new Quaternion(flatDirection.X, 0f, flatDirection.Y, 0f);
+    }
 }

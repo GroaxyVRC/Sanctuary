@@ -38,6 +38,8 @@ public interface IResourceManager
     ConsumableCollection Consumables { get; }
     NpcDefinitionCollection Npcs { get; }
     NameFilterCollection NameFilter { get; }
+    NpcMovementDefinitionCollection NpcMovements { get; }
+    NpcAmbientDefinitionCollection NpcAmbient { get; }
     MapGraphCollection Maps { get; }
     TerrainCollection Terrains { get; }
     NavMeshCollection NavMeshes { get; }
