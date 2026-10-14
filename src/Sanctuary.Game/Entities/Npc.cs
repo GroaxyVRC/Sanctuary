@@ -31,6 +31,8 @@ public class Npc : IScriptableNpc, IEntity
 
     public bool Visible { get; set; }
 
+    public bool Collidable { get; private set; } = true;
+
     public IZone Zone { get; set; }
     public ZoneTile ZoneTile { get; protected set; } = ZoneTile.Empty;
     public ConcurrentDictionary<ulong, Npc> VisibleNpcs { get; } = [];
@@ -55,6 +57,8 @@ public class Npc : IScriptableNpc, IEntity
 
     public float Scale { get; set; } = 1f;
 
+    public Vector4? Tilt { get; set; }
+
     /// <summary>
     /// 0 - Hostile
     /// 1 - Neutral
@@ -75,7 +79,10 @@ public class Npc : IScriptableNpc, IEntity
     public bool AutoSelectSingleInteraction { get; set; }
     public List<InteractionData> Interactions { get; } = [];
 
-    public int MovementType => 2;
+    private const int DefaultMovementType = 2;
+    private const int PlacedObjectMovementType = 0;
+
+    public int MovementType => Tilt.HasValue ? PlacedObjectMovementType : DefaultMovementType;
 
     public int AreaDefinitionId { get; set; }
 
@@ -274,7 +281,7 @@ public class Npc : IScriptableNpc, IEntity
             StandAnimId = default, // Idle GroupAnimId
 
             Unknown33 = default,
-            Unknown34 = default,
+            Unknown34 = Tilt.HasValue,
 
             SubTextNameId = SubTextNameId,
 
@@ -287,13 +294,13 @@ public class Npc : IScriptableNpc, IEntity
             Unknown39 = default,
             Unknown40 = default,
             Unknown41 = default,
-            Unknown42 = default,
+            Unknown42 = !Collidable,
 
-            HasTilt = default,
+            HasTilt = Tilt.HasValue,
 
             // playerUpdatePacketAddNpc.Customization = TODO
 
-            Tilt = default,
+            Tilt = Tilt ?? default,
 
             NameColor = default,
 
@@ -456,7 +463,131 @@ public class Npc : IScriptableNpc, IEntity
     {
         MoveTo(new Vector3(x, y, z), direct);
     }
-    
+
+    private const byte SetBaseAnimationFlag = 1;
+
+    public void SetBaseAnimation(int animationId)
+    {
+        Animation = animationId;
+
+        var playerUpdatePacketSetAnimation = new PlayerUpdatePacketSetAnimation
+        {
+            Guid = Guid,
+            AnimationId = animationId,
+            Flags = SetBaseAnimationFlag
+        };
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendTunneled(playerUpdatePacketSetAnimation);
+    }
+
+    public void PlayAnimation(int animationId)
+    {
+        var playerUpdatePacketSetAnimation = new PlayerUpdatePacketSetAnimation
+        {
+            Guid = Guid,
+            AnimationId = animationId
+        };
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendTunneled(playerUpdatePacketSetAnimation);
+    }
+
+    public IReadOnlyList<ulong> GetPlayerGuidsOnTop(float horizontalRadius, float minHeight, float maxHeight)
+    {
+        var playerGuidsOnTop = new List<ulong>();
+
+        foreach (var visiblePlayer in VisiblePlayers)
+        {
+            var offset = visiblePlayer.Value.Position - Position;
+            var horizontalDistance = MathF.Sqrt(offset.X * offset.X + offset.Z * offset.Z);
+
+            if (horizontalDistance <= horizontalRadius && offset.Y >= minHeight && offset.Y <= maxHeight)
+                playerGuidsOnTop.Add(visiblePlayer.Key);
+        }
+
+        return playerGuidsOnTop;
+    }
+
+    public void SetCollidable(bool collidable)
+    {
+        Collidable = collidable;
+
+        var playerUpdatePacketSetCollidable = new PlayerUpdatePacketSetCollidable
+        {
+            Guid = Guid,
+            Collidable = collidable
+        };
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendTunneled(playerUpdatePacketSetCollidable);
+    }
+
+    public int AddEffectTag(int compositeEffectId)
+    {
+        var tagId = EffectTagIdGenerator.Next();
+
+        var playerUpdatePacketAddEffectTagCompositeEffect = new PlayerUpdatePacketAddEffectTagCompositeEffect
+        {
+            Guid = Guid,
+            TagId = tagId,
+            CompositeEffectId = compositeEffectId,
+            SourceGuid = Guid
+        };
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendTunneled(playerUpdatePacketAddEffectTagCompositeEffect);
+
+        return tagId;
+    }
+
+    public void RemoveEffectTag(int tagId)
+    {
+        var playerUpdatePacketRemoveEffectTagCompositeEffect = new PlayerUpdatePacketRemoveEffectTagCompositeEffect
+        {
+            Guid = Guid,
+            TagId = tagId
+        };
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendTunneled(playerUpdatePacketRemoveEffectTagCompositeEffect);
+    }
+
+    private const float ScriptedWalkWaypointTolerance = 0.25f;
+
+    private const int ScriptedRemoveDurationMs = 1000;
+
+    public void SetSpeed(float speed)
+    {
+        Speed = speed;
+
+        if (WaypointTolerance == 0)
+            WaypointTolerance = ScriptedWalkWaypointTolerance;
+    }
+
+    public void SetHeading(float heading) =>
+        UpdatePosition(Position, new Quaternion(MathF.Sin(heading), 0f, MathF.Cos(heading), 0f));
+
+    public void PlayEffect(int compositeEffectId)
+    {
+        var playerUpdatePacketPlayCompositeEffect = new PlayerUpdatePacketPlayCompositeEffect
+        {
+            Guid = Guid,
+            CompositeEffectId = compositeEffectId,
+            Position = Position
+        };
+
+        foreach (var visiblePlayer in VisiblePlayers)
+            visiblePlayer.Value.SendTunneled(playerUpdatePacketPlayCompositeEffect);
+    }
+
+    public void Remove(int compositeEffectId)
+    {
+        DisposeGracefully(false, 0, 0, compositeEffectId, ScriptedRemoveDurationMs);
+
+        Zone.ScriptManager.DeleteContext(this);
+    }
+
     #endregion
 
     public virtual void Dispose()
