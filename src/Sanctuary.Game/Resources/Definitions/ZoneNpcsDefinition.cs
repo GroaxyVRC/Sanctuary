@@ -21,4 +21,6 @@ public class ZoneNpcSpawnDefinition
     public Vector4 Position { get; set; }
 
     public float Heading { get; set; }
+    public float Pitch { get; set; }
+    public float Roll { get; set; }
 }

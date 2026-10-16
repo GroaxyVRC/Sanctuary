@@ -791,7 +791,7 @@ public abstract class BaseZone : IZone, IDisposable
             return;
 
         foreach (var spawn in zoneNpcs.Spawns)
-            TrySpawnNpc(spawn.NpcId, spawn.Guid, spawn.Position.X, spawn.Position.Y, spawn.Position.Z, spawn.Heading, 0f, 0f, out _);
+            TrySpawnNpc(spawn.NpcId, spawn.Guid, spawn.Position.X, spawn.Position.Y, spawn.Position.Z, spawn.Heading, spawn.Pitch, spawn.Roll, out _);
     }
 
     public bool TrySpawnNpc(int npcId, ulong? npcGuid, float x, float y, float z, float heading, float pitch, float roll, [MaybeNullWhen(false)] out IScriptableNpc npc)
