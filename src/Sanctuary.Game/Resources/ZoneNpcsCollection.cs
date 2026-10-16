@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 using Microsoft.Extensions.Logging;
 
@@ -26,7 +27,8 @@ public class ZoneNpcsCollection : ObservableConcurrentDictionary<string, ZoneNpc
         var jsonSerializerOptions = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
-            IncludeFields = true
+            IncludeFields = true,
+            Converters = { new JsonStringEnumConverter() }
         };
 
         foreach (var filePath in Directory.EnumerateFiles(directoryPath, "*.json"))

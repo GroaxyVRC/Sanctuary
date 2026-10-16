@@ -791,7 +791,13 @@ public abstract class BaseZone : IZone, IDisposable
             return;
 
         foreach (var spawn in zoneNpcs.Spawns)
-            TrySpawnNpc(spawn.NpcId, spawn.Guid, spawn.Position.X, spawn.Position.Y, spawn.Position.Z, spawn.Heading, spawn.Pitch, spawn.Roll, out _);
+        {
+            if (TrySpawnNpc(spawn.NpcId, spawn.Guid, spawn.Position.X, spawn.Position.Y, spawn.Position.Z, spawn.Heading, spawn.Pitch, spawn.Roll, out var npc)
+                && spawn.Movement is not null && npc is Npc spawnedNpc)
+            {
+                spawnedNpc.MovementController = new NpcMovementController(spawnedNpc, spawn.Movement);
+            }
+        }
     }
 
     public bool TrySpawnNpc(int npcId, ulong? npcGuid, float x, float y, float z, float heading, float pitch, float roll, [MaybeNullWhen(false)] out IScriptableNpc npc)
@@ -827,9 +833,6 @@ public abstract class BaseZone : IZone, IDisposable
             spawnedNpc.Tilt = new Vector4(heading, pitch, roll, 0f);
 
         spawnedNpc.UpdatePosition(position, rotation);
-
-        if (_resourceManager.NpcMovements.TryGetForNpc(spawnedNpc.Guid, definition.ModelFileName, out var npcMovementDefinition))
-            spawnedNpc.MovementController = new NpcMovementController(spawnedNpc, npcMovementDefinition);
 
         if (_resourceManager.NpcAmbient.TryGetForModel(definition.ModelFileName, out var npcAmbientDefinition))
             spawnedNpc.AmbientController = new NpcAmbientController(spawnedNpc, npcAmbientDefinition);

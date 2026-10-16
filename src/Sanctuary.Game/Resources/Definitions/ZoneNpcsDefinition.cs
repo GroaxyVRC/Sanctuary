@@ -23,4 +23,6 @@ public class ZoneNpcSpawnDefinition
     public float Heading { get; set; }
     public float Pitch { get; set; }
     public float Roll { get; set; }
+
+    public NpcMovementDefinition? Movement { get; set; }
 }
