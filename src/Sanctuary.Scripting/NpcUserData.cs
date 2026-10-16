@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 
 using Lua;
@@ -53,6 +54,23 @@ internal sealed class NpcUserData(IScriptableNpc npc) : ILuaUserData
         }
 
         self._npc.MoveTo(x, y, z, direct);
+
+        return new ValueTask<int>(context.Return());
+    });
+
+    private static readonly LuaFunction SetMovementFunction = new("setMovement", static (context, cancellationToken) =>
+    {
+        var self = context.GetArgument<NpcUserData>(0);
+        var movementTable = context.GetArgument<LuaTable>(1);
+
+        return new ValueTask<int>(context.Return(self._npc.SetMovement(ToJsonNode(movementTable).ToJsonString())));
+    });
+
+    private static readonly LuaFunction ClearMovementFunction = new("clearMovement", static (context, cancellationToken) =>
+    {
+        var self = context.GetArgument<NpcUserData>(0);
+
+        self._npc.ClearMovement();
 
         return new ValueTask<int>(context.Return());
     });
@@ -178,6 +196,35 @@ internal sealed class NpcUserData(IScriptableNpc npc) : ILuaUserData
         return guidTable;
     }
 
+    private static JsonNode? ToJsonNode(LuaValue value) => value.Type switch
+    {
+        LuaValueType.Table => ToJsonNode(value.Read<LuaTable>()),
+        LuaValueType.Number => JsonValue.Create(value.Read<double>()),
+        LuaValueType.String => JsonValue.Create(value.Read<string>()),
+        LuaValueType.Boolean => JsonValue.Create(value.Read<bool>()),
+        _ => null
+    };
+
+    private static JsonNode ToJsonNode(LuaTable table)
+    {
+        if (table.ArrayLength > 0)
+        {
+            var jsonArray = new JsonArray();
+
+            for (var index = 1; index <= table.ArrayLength; index++)
+                jsonArray.Add(ToJsonNode(table[index]));
+
+            return jsonArray;
+        }
+
+        var jsonObject = new JsonObject();
+
+        foreach (var (key, value) in table)
+            jsonObject[key.ToString()] = ToJsonNode(value);
+
+        return jsonObject;
+    }
+
     private static readonly LuaTable SharedMetatable = BuildMetatable();
 
     private static LuaTable BuildMetatable()
@@ -205,6 +252,8 @@ internal sealed class NpcUserData(IScriptableNpc npc) : ILuaUserData
                 "say" => SayFunction,
                 "sayLocalized" => SayLocalizedFunction,
                 "moveTo" => MoveToFunction,
+                "setMovement" => SetMovementFunction,
+                "clearMovement" => ClearMovementFunction,
                 "getNearbyPlayers" => GetNearbyPlayersFunction,
                 "playAnimation" => PlayAnimationFunction,
                 "getPlayersOnTop" => GetPlayersOnTopFunction,

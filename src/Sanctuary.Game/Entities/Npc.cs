@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Numerics;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 using Microsoft.Extensions.Logging;
 
@@ -575,6 +577,37 @@ public class Npc : IScriptableNpc, IEntity
     public void MoveTo(float x, float y, float z, bool direct)
     {
         MoveTo(new Vector3(x, y, z), direct);
+    }
+
+    private static readonly JsonSerializerOptions MovementJsonSerializerOptions = new()
+    {
+        PropertyNameCaseInsensitive = true,
+        Converters = { new JsonStringEnumConverter() }
+    };
+
+    public bool SetMovement(string movementJson)
+    {
+        NpcMovementDefinition? npcMovementDefinition;
+
+        try
+        {
+            npcMovementDefinition = JsonSerializer.Deserialize<NpcMovementDefinition>(movementJson, MovementJsonSerializerOptions);
+        }
+        catch (JsonException)
+        {
+            return false;
+        }
+
+        if (npcMovementDefinition is null)
+            return false;
+
+        MovementController = new NpcMovementController(this, npcMovementDefinition);
+        return true;
+    }
+
+    public void ClearMovement()
+    {
+        MovementController = null;
     }
 
     private const byte SetBaseAnimationFlag = 1;

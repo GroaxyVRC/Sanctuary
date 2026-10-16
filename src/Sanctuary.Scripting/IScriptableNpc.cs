@@ -16,6 +16,10 @@ public interface IScriptableNpc : IScriptable
     void SayLocalized(int stringId);
     void MoveTo(float x, float y, float z, bool direct);
 
+    bool SetMovement(string movementJson);
+
+    void ClearMovement();
+
     void SetHeading(float heading);
 
     void SetSpeed(float speed);

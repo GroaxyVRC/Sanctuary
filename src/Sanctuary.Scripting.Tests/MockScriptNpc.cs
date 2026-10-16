@@ -34,6 +34,16 @@ internal class MockScriptNpc(IScriptableZone _zone) : IScriptableNpc
         throw new NotImplementedException();
     }
 
+    public bool SetMovement(string movementJson)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void ClearMovement()
+    {
+        throw new NotImplementedException();
+    }
+
     public IReadOnlyList<ulong> GetNearbyPlayerGuids(float radius)
     {
         throw new NotImplementedException();
